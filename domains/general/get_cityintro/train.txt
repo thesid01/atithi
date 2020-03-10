@@ -1,0 +1,16 @@
+tell me {about|city_intro} {jaipur|city_name}
+tell me {about|city_intro} city {jaipur|city_name}
+{about|city_intro} {jaipur|city_name}
+{jaipur|city_name} {intro|city_intro}
+give me {introduction|city_intro} of {jaipur|city_name}
+tell me {about|city_intro} {jodhpur|city_name}
+{about|city_intro} {jodhpur|city_name}
+{jodhpur|city_name} {intro|city_intro}
+give me {introduction|city_intro} of {jodhpur|city_name}
+tell me something {about|city_intro} {Mumbai|city_name}
+tell me something {about|city_intro} {Nagpur|city_name}
+What {about|city_intro} {Kolkata|city_name}
+{Delhi|city_name} {wiki|city_name}
+{about|city_intro} {jaipur|city_name} city
+city {jaipur|city_name} {intro|city_intro}
+

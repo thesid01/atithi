@@ -1,0 +1,3 @@
+give me {introduction|city_intro} of {jaipur|city_name}
+tell me {about|city_intro} of {jodhpur|city_name}
+info {about|city_intro} {jodhpur|city_name}

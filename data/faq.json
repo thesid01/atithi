@@ -1,0 +1,57 @@
+[
+    {
+        "id": "faq0",
+        "question": "Payment options available in India/Bharat/?",
+        "answer": "You can use ATM card/ Online payments/ Cash"
+    },
+    {
+        "id": "faq1",
+        "question": "I need current location tourism information",
+        "answer": "please provide your current location."
+    },
+    {
+        "id": "faq2",
+        "question": "how do i book hotels?",
+        "answer": "You can use online services like Paytm/Oyo/Zolostays/Make my trip/trivago."
+    },
+    {
+        "id": "faq3",
+        "question": "Famous food outlet near me?",
+        "answer": "please provide your current location."
+    },
+    {
+        "id": "faq4",
+        "question": "nearest currency exchange center",
+        "answer": "please provide your current location."
+    },
+    {
+        "id": "faq5",
+        "question": "what are the Transport facilities near me?",
+        "answer": "Train/Government Buses are available almost everywhere."
+    },
+    {
+        "id": "faq6",
+        "question": "how do i book  a cab in India?",
+        "answer": "Its as easy as you book in US, use Uber/OLA."
+    },
+    {
+        "id": "faq7",
+        "question": "Is this bot secure?",
+        "answer": "Yes. For sure."
+    },
+    {
+        "id": "faq8",
+        "question": "How do i book a bus?",
+        "answer": "You can use online services like Paytm/red Bus/chal App/Make my trip"
+    },
+    {
+        "id": "faq9",
+        "question": "what is the entry fee for tourist in india?",
+        "answer": "You can just find it out on Ticket counter or specify the exact location for which you find the fee. But it is just 10x than Indian Tourist."
+    },
+    {
+        "id": "faq10",
+        "question": "which city is best for shopping?",
+        "answer": "Multiple cities offer different varieties of market. You can find good stuffs in cities like Lucknow/ Kolkata/ Delhi/ Mumbai etc.."
+    }
+ ]
