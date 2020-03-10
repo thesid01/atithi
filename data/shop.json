@@ -1,0 +1,309 @@
+[   
+    {
+        "name":"Departmental Store and Hall 1 Canteen",
+        "location":"Way to hall, 1, PDPM IIITDM Jabalpur Campus, Khamaria, Chakdehi, Madhya Pradesh 482005",
+        "type":"DEPARTMENTAL",
+        "number":"",
+        "latitude":"23.1901118",
+        "longitude":"79.9940703"
+
+    },
+    
+    {
+        "name":"Parivar Stores",
+        "location":"State Highway 22, Central Ordinance Depot Area, Jabalpur, Madhya Pradesh 482005",
+        "type":"GIFTS",
+        "number":"",
+        "latitude":"23.1908174",
+        "longitude":"80.0023609"
+
+    },
+    {
+        "name":"STOP N SHOP",
+        "location":"105 Laxmi narayan market, Ranjhi, Jabalpur, Madhya Pradesh 482011",
+        "type":"CLOTHING",
+        "number":"09907299072",
+        "latitude":"23.1908174",
+        "longitude":"80.0023609"
+
+    },
+    {
+        "name":"Parivar Gift'z",
+        "location":"Main Road, Ranjhi Bazar, Jabalpur, Madhya Pradesh 482011",
+        "type":"GIFTS",
+        "number":"09685479777",
+        "latitude":"23.1908169",
+        "longitude":"80.0023609"
+
+    },
+    {
+        "name":"Op Books & Stationers",
+        "location":"Mandla - Jabalpur Rd, near State Bank, Bilhari, Jabalpur, Madhya Pradesh 482020",
+        "type":"STATIONERY",
+        "number":"09826146430",
+        "latitude":"23.1318296",
+        "longitude":"79.9557569"
+
+    },
+    {
+        "name":"Rama Readymade And Cutpiece Emporium",
+        "location":"Ranhji Bazar, Main Road Ranjhi, Jabalpur, Madhya Pradesh 482005",
+        "type":"CLOTHING",
+        "number":"09424658644",
+        "latitude":"23.1908169",
+        "longitude":"80.0023609"
+
+    },
+    {
+        "name":"Kiran Mobile",
+        "location":"Infront Of Sharma Welding Main Road, Ranjhi, Jabalpur, Madhya Pradesh 482005",
+        "type":"MOBILE",
+        "number":"09329587452",
+        "latitude":"23.1908169",
+        "longitude":"80.0023609"
+
+    },
+    {
+        "name":"NARANG ELECTRONICS , FURNITURE & MOBILE SHOPE",
+        "location":"main road ranjhi jabalpur, near ranjhi police station, Jabalpur, Madhya Pradesh 482005",
+        "type":"ELECRONICS",
+        "number":"07614009696",
+        "latitude":"23.1908169",
+        "longitude":"80.0023609"
+
+    },
+    {
+        "name":"New Janta Cycle Shop - AVON",
+        "location":"Bazar, Darshan Singh Tiraha Ranjhi, Jabalpur, Madhya Pradesh 482005",
+        "type":"CYCLE",
+        "number":"09893085005",
+        "latitude":"23.1908169",
+        "longitude":"80.0023609"
+
+    },
+    {
+        "name":"Joy Chicken Bromark",
+        "location":"Shyam Lal Market, Main Road, Ranjhi, Jabalpur, Madhya Pradesh 482005",
+        "type":"FOOD",
+        "number":"07614008005",
+        "latitude":"23.1908169",
+        "longitude":"80.0023609"
+
+    },
+    {
+        "name":"Priya Ice Cream",
+        "location":"Ranjhi, Madhya Pradesh State Highway 22, Karondi Gram, Gandhi Vyayam Shala, Central Ordinance Depot Area, Jabalpur, Madhya Pradesh 482005",
+        "type":"FOOD",
+        "number":"",
+        "latitude":"23.1908169",
+        "longitude":"80.0023609"
+
+    },
+    {
+        "name":"Chaman Bags",
+        "location":"Shop No. 1, Chowdhary Shyam Lal Yadav Complex, Main Road Ranjhi, Jabalpur, Madhya Pradesh 482005",
+        "type":"BAG",
+        "number":"09893526070",
+        "latitude":"23.1908169",
+        "longitude":"80.0023609"
+
+    },
+    {
+        "name":"Vestige DCC",
+        "location":"Central Ordinance Depot Area, Jabalpur, Madhya Pradesh 482011",
+        "type":"BEAUTY",
+        "number":"09827262027",
+        "latitude":"23.1908559",
+        "longitude":"80.0023609"
+
+    },{
+        "name":"Bata Footwear Shop",
+        "location":"Adarsh Market, Shop No. 16, Main Rd, Ranjhi, Bazar, Jabalpur, Madhya Pradesh 482011",
+        "type":"FOOTWEAR",
+        "number":"097554 01127",
+        "latitude":"23.1908559",
+        "longitude":"80.0023609"
+
+    },
+    {
+        "name":"Glamour Zone, Jabalpur",
+        "location":"Sadar Main Rd, Sadar, Jabalpur, Madhya Pradesh 482001",
+        "type":"BEAUTY",
+        "number":"07614049595",
+        "latitude":"23.1519335",
+        "longitude":"79.9455147"
+
+    },
+    {
+        "name":"Army Store",
+        "location":"11, Street Number 6, Sadar Bazar, Sadar, Jabalpur, Madhya Pradesh 482001",
+        "type":"BAG",
+        "number":"09425385128",
+        "latitude":"23.1519335",
+        "longitude":"79.9455147"
+    },
+    {
+        "name":"Chouksey Mobile Store",
+        "location":"Shop No. 849, Near Subji Market, Street1/16, I Sadar, Jabalpur, Madhya Pradesh",
+        "type":"MOBILE",
+        "number":"0989335440",
+        "latitude":"23.1519335",
+        "longitude":"79.9455147"
+
+    },
+    {
+        "name":"Jai Ambe Kirana & General Stores",
+        "location":"Gali No.1, Boberdeeen Chowk,Sadar, Jabalpur, Madhya Pradesh 482001",
+        "type":"DEPARTMENTAL",
+        "number":"09039907852",
+        "latitude":"23.1519335",
+        "longitude":"79.9455147"
+
+    },
+    {
+        "name":"Levi's Exclusive Store",
+        "location":"Moti Building, Sadar, near Variety Book Shop, Jabalpur, Madhya Pradesh 482001",
+        "type":"CLOTHING",
+        "number":"09977002750",
+        "latitude":"23.1519335",
+        "longitude":"79.9455147"
+
+    },
+    {
+        "name":"Woodland Store",
+        "location":"Sadar Main Road, Sadar, Jabalpur, Madhya Pradesh 482001",
+        "type":"FOOTWEAR",
+        "number":"07612620514",
+        "latitude":"23.1519323",
+        "longitude":"79.9452584"
+
+    },
+    {
+        "name":"Tanishq Jewellery - Jabalpur",
+        "location":"11g, Kings Way, Main Road,, Sadar,, Jabalpur, Madhya Pradesh 482001",
+        "type":"JWELLERY",
+        "number":"07614069666",
+        "latitude":"23.1527314",
+        "longitude":"79.9452663"
+
+    },
+    {
+        "name":"Peekay Books & Stationers",
+        "location":"Moti Building, Sadar Main Road, Jabalpur, Madhya Pradesh 482001",
+        "type":"STATIONERY",
+        "number":"07612624840",
+        "latitude":"23.1544698",
+        "longitude":"79.9454143"
+
+    },
+    {
+        "name":"RH Chicken Point (Riyaz Hotel 1953)",
+        "location":"Garrison Ground, 44-A Kingsway, Opposite, Sadar Main Rd, Jabalpur, Madhya Pradesh 482001",
+        "type":"RESTAURANT",
+        "number":"07614051555",
+        "latitude":"23.1544698",
+        "longitude":"79.9454143"
+
+    },
+    {
+        "name":"Indian Coffee House",
+        "location":"592, Malviya Marg, Jabalpur, Madhya Pradesh 482002",
+        "type":"RESTAURANT",
+        "number":"07612400498",
+        "latitude":"23.1544698",
+        "longitude":"79.9454143"
+
+    },
+    {
+        "name":"Keventers",
+        "location":"Sadar Main Rd, Near IDBI ATM, Sadar, Jabalpur, Madhya Pradesh 482001",
+        "type":"RESTAURANT",
+        "number":"07614928727",
+        "latitude":"23.1544698",
+        "longitude":"79.9454143"
+
+    },
+    {
+        "name":"Mahawar Pusthak Bhandar",
+        "location":"Gali No: 4, Sadar Bazar, Jabalpur, Madhya Pradesh 482001",
+        "type":"STATIONERY",
+        "number":"07612625295",
+        "latitude":"23.1541621",
+        "longitude":"79.947558"
+
+    },
+    {
+        "name":"Bajaj Traders",
+        "location":"8/9, Hitkarini Market, City Coffee House Road, Badi Omti, Jabalpur, Madhya Pradesh 482002",
+        "type":"ELECTRONICS",
+        "number":"07612480581",
+        "latitude":"23.170413",
+        "longitude":"79.9279643"
+
+    },
+    {
+        "name":"Shrinath Electronics",
+        "location":"167,Main road Shanti Nagar , Damohnaka , Jabalpur, Shanti Nagar, Jabalpur, Madhya Pradesh 482002",
+        "type":"ELECTRONICS",
+        "number":"08770468510",
+        "latitude":"23.1874947",
+        "longitude":"79.922592"
+
+    },
+    {
+        "name":"[Samsung Smart Plaza] Golchha Electronics",
+        "location":"Moti Building, Sadar Main Rd, Sadar Bazar, Jabalpur, Madhya Pradesh 482001",
+        "type":"ELECTRONICS",
+        "number":"09893408000",
+        "latitude":"23.1538803",
+        "longitude":"79.9458691"
+
+    },
+    {
+        "name":"Rose Beauty Salon",
+        "location":"Bhoomika Estate, Duplex No. 3, Narmada Rd, Above Chen Dental Clinic, Jabalpur, Madhya Pradesh 482001",
+        "type":"SALON",
+        "number":"09039494786",
+        "latitude":"23.1525303",
+        "longitude":"79.9358783"
+
+    },
+    {
+        "name":"Makeup Zone",
+        "location":"Dhani Ki Kutiya Road, Jabalpur, opp. Akarshan Kala Kendra, Jabalpur, Madhya Pradesh 482004",
+        "type":"SALON",
+        "number":"08989499419",
+        "latitude":"23.220327",
+        "longitude":"79.9494093"
+
+    },
+    {
+        "name":"Lakme Unisex Salon",
+        "location":"Next To Pili Kothi School Behind Christ Church School, near Tayeb Ali Petrol Pump, Napier Town, Jabalpur, Madhya Pradesh 482001",
+        "type":"SALON",
+        "number":"07614035002",
+        "latitude":"23.165123",
+        "longitude":"79.9312493"
+
+    },
+    {
+        "name":"Angel'z Ladies Beauty Parlour",
+        "location":"Gora Bazar, Jabalpur, Madhya Pradesh 482001",
+        "type":"SALON",
+        "number":"09669038879",
+        "latitude":"23.1525303",
+        "longitude":"79.9358783"
+
+    },
+    {
+        "name":"Dal chini Restaurant",
+        "location":"4th bridge, Napier Town, Jabalpur, Madhya Pradesh 482002",
+        "type":"RESTAURANT",
+        "number":"07694888899",
+        "latitude":"23.1600128",
+        "longitude":"79.9357202"
+
+    }
+
+    
+]
