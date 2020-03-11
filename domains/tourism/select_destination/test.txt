@@ -1,0 +1,4 @@
+select {Jammu|city_name}
+I want to travel to {Jaipur|city_name}
+I like to travel to {Delhi|city_name}
+

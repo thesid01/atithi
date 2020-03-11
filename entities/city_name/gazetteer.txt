@@ -4,4 +4,15 @@ city Jaipur
 Jodhpur
 Jodhpur city
 city Jodhpur
-
+Delhi
+Delhi city
+city Delhi
+Manali
+Manali city
+city Manali
+Jammu
+Jammu city
+city Jammu
+Lucknow
+Lucknow city
+city Lucknow

@@ -1,4 +1,5 @@
 import numpy as np
+import json
 from .root import app
 from .helpers import extract_entities_from_type
 
@@ -40,3 +41,24 @@ def _fetch_from_kb(responder, name, entity_type):
     responder.slots['city_name'] = name
     responder.slots[entity_type] = entity_option
     return responder
+
+
+@app.handle(intent='select_user_location')
+def select_user_location(request, responder):
+    file = open('userInfo.json','r')
+    data = json.loads(file.read())
+    file.close()
+    try:
+        datastore = {
+            "to" : data["from"],
+            "from": request.entities[0]["text"]
+            }
+    except IndexError:
+        datastore = {
+            "to" : "",
+            "from" : ""
+        }
+    file = open('userInfo.json','w')
+    json.dump(datastore, file)
+    file.close()
+    responder.reply("Your current location is set")

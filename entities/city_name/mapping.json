@@ -15,6 +15,38 @@
                 "city Jodhpur"
             ],
             "cname": "Jodhpur"
+        },
+        {
+            "whitelist": [
+                "Lucknow",
+                "Lucknow city",
+                "city Lucknow"
+            ],
+            "cname": "Lucknow"
+        },
+        {
+            "whitelist": [
+                "Manali",
+                "Manali city",
+                "city Manali"
+            ],
+            "cname": "Manali"
+        },
+        {
+            "whitelist": [
+                "Delhi",
+                "Delhi city",
+                "city Delhi"
+            ],
+            "cname": "Delhi"
+        },
+        {
+            "whitelist": [
+                "Jammu",
+                "Jammu city",
+                "city Jammu"
+            ],
+            "cname": "Jammu"
         }
         
     ]
