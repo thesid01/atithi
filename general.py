@@ -14,7 +14,6 @@ def get_info_age(request, responder):
     return
 
 def get_city(request, responder, entity_type):
-
     name = request.frame.get('city_name')
 
     # if the user has provided a new name, replace the existing name with it
@@ -32,10 +31,9 @@ def get_city(request, responder, entity_type):
 
 def _fetch_from_kb(responder, name, entity_type):
     """
-    This function is used the fetch a particular information about the given employee
+    This function is used the fetch a particular information about the city
     from the knowledge base.
     """
-
     city = app.question_answerer.get(index='city_data', city_name=name)
     entity_option = city[0][entity_type]
 

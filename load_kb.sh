@@ -1,2 +1,2 @@
-mindmeld load-kb test_app city_data data/city_data.json
-mindmeld load-kb test_app faq data/faq.json
+mindmeld load-kb atithi city_data data/city_data.json
+mindmeld load-kb atithi faq data/faq.json

@@ -9,6 +9,7 @@ from .root import app
 @app.handle(intent='greet')
 def greet(request, responder):
     responder.reply("Namaskar Atithi, What kind of tour would you like to go on today?")
+    responder.listen()
 
 
 @app.handle(intent='exit')

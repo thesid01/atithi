@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 """This module contains the MindMeld HR assistant blueprint application"""
 
-from test_app.root import app
+from atithi.root import app
 
-import test_app.greeting
-import test_app.general
-import test_app.faq
+import atithi.greeting
+import atithi.general
+import atithi.faq
+import atithi.tourism
 
 __all__ = ['app']
