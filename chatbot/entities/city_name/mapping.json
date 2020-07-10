@@ -1,0 +1,21 @@
+{
+    "entities": [
+        {
+            "whitelist": [
+                "Jaipur",
+                "Jaipur city",
+                "city Jaipur"
+            ],
+            "cname": "Jaipur"
+        },
+        {
+            "whitelist": [
+                "Jodhpur",
+                "Jodhpur city",
+                "city Jodhpur"
+            ],
+            "cname": "Jodhpur"
+        }
+        
+    ]
+}
