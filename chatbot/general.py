@@ -1,5 +1,6 @@
 import numpy as np
 from .root import app
+import json
 from .helpers import extract_entities_from_type
 
 NOT_A_CITY="City not found in India"
@@ -14,7 +15,6 @@ def get_info_age(request, responder):
     return
 
 def get_city(request, responder, entity_type):
-
     name = request.frame.get('city_name')
 
     # if the user has provided a new name, replace the existing name with it
@@ -42,3 +42,23 @@ def _fetch_from_kb(responder, name, entity_type):
     responder.slots['city_name'] = name
     responder.slots[entity_type] = entity_option
     return responder
+
+@app.handle(intent='select_user_location')
+def select_user_location(request, responder):
+    file = open('userInfo.json','r')
+    data = json.loads(file.read())
+    file.close()
+    try:
+        datastore = {
+            "to" : data["from"],
+            "from": request.entities[0]["text"]
+            }
+    except IndexError:
+        datastore = {
+            "to" : "",
+            "from" : ""
+        }
+    file = open('userInfo.json','w')
+    json.dump(datastore, file)
+    file.close()
+    responder.reply("Your current location is set")

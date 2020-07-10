@@ -6,5 +6,6 @@ from chatbot.root import app
 import chatbot.greeting
 import chatbot.general
 import chatbot.faq
+import chatbot.tourism
 
 __all__ = ['app']

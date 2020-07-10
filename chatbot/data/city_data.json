@@ -4,6 +4,7 @@
         "city_name": "Jaipur",
         "latitude": "26.9197",
         "longitute": "75.7880",
+	"tourism_type": ["historical","adventure"],
         "city_intro": "Jaipur is also known as the Pink City, due to the dominant color scheme of its buildings. It is located 268 km (167 miles) from the national capital New Delhi. Jaipur was founded in 1727 by the Rajput ruler Jai Singh II, the ruler of Amer, after whom the city is named."
     },
     {
@@ -11,7 +12,40 @@
         "city_name": "Jodhpur",
         "latitude": "26.1795",
         "longitute": "75.1243",
+	"tourism_type": ["historical"],
         "city_intro": "Jodhpur is a city in the Thar Desert of the northwest Indian state of Rajasthan.It is popularly known as Blue city and Sun city among people of Rajasthan and all over India.[1] The city is also said to be the cultural capital of Rajasthan state."
+    },
+    {
+        "id" : "c3",   
+        "city_name": "Lucknow",
+        "latitude": "26.1795",
+        "longitute": "75.1243",
+	"tourism_type": ["historical"],
+        "city_intro": "Lucknow is a city in the Thar Desert of the northwest Indian state of Rajasthan.It is popularly known as Blue city and Sun city among people of Rajasthan and all over India.[1] The city is also said to be the cultural capital of Rajasthan state."
+    },
+    {
+        "id" : "c4",   
+        "city_name": "Jammu",
+        "latitude": "26.1795",
+        "longitute": "75.1243",
+	"tourism_type": ["adventure"],
+        "city_intro": "Jammu is a city in the Thar Desert of the northwest Indian state of Rajasthan.It is popularly known as Blue city and Sun city among people of Rajasthan and all over India.[1] The city is also said to be the cultural capital of Rajasthan state."
+    },
+    {
+        "id" : "c5",   
+        "city_name": "Manali",
+        "latitude": "26.1795",
+        "longitute": "75.1243",
+	"tourism_type": ["adventure"],
+        "city_intro": "Manali is a city in the Thar Desert of the northwest Indian state of Rajasthan.It is popularly known as Blue city and Sun city among people of Rajasthan and all over India.[1] The city is also said to be the cultural capital of Rajasthan state."
+    },
+    {
+        "id" : "c6",   
+        "city_name": "Delhi",
+        "latitude": "26.1795",
+        "longitute": "75.1243",
+	"tourism_type": ["medical"],
+        "city_intro": "Delhi is a city in the Thar Desert of the northwest Indian state of Rajasthan.It is popularly known as Blue city and Sun city among people of Rajasthan and all over India.[1] The city is also said to be the cultural capital of Rajasthan state."
     }
 ]
 
