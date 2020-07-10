@@ -1,0 +1,29 @@
+{
+    "entities": [
+        {
+            "whitelist": [
+                "adventure"
+            ],
+            "cname": "adventure"
+        },
+        {
+            "whitelist": [
+                "historical"
+            ],
+            "cname": "historical"
+        },
+	{
+            "whitelist": [
+                "sport"
+            ],
+            "cname": "sport"
+        },
+	{
+            "whitelist": [
+                "medical"
+            ],
+            "cname": "medical"
+        }
+        
+    ]
+}
