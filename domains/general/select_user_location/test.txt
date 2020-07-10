@@ -1,2 +1,0 @@
-set {Jodhpur|city_name} 
-set {Manali|city_name} 

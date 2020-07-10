@@ -1,6 +1,0 @@
-#!/bin/bash
-set -e
-flake8 *.py tests/
-
-cd tests/functional
-pytest .
