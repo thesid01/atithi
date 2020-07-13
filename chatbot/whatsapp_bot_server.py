@@ -3,15 +3,14 @@ import logging
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
 
+from middleware.firebaseHelper import firebaseHelper
+
 from mindmeld.components import NaturalLanguageProcessor
 from mindmeld.components.dialogue import Conversation
 from mindmeld import configure_logs
 
 
 class WhatsappBotServer:
-    """
-    A sample server class for Whatsapp integration with any MindMeld application
-    """
 
     def __init__(self, name, app_path, nlp=None):
         """
@@ -21,6 +20,7 @@ class WhatsappBotServer:
             nlp (NaturalLanguageProcessor): MindMeld NLP component, will try to load from app path
               if None.
         """
+        self.firebase = firebaseHelper()
         self.app = Flask(name)
         if not nlp:
             self.nlp = NaturalLanguageProcessor(app_path)
@@ -32,12 +32,27 @@ class WhatsappBotServer:
 
         @self.app.route("/", methods=["POST"])
         def handle_message():  # pylint: disable=unused-variable
+            id = request.values.get('From','') #Getting number from which message came
+            # print(request.values) #uncomment this to dif deeper
             incoming_msg = request.values.get('Body', '').lower()
-            resp = MessagingResponse()
-            msg = resp.message()
-            response_text = self.conv.say(incoming_msg)[0]
-            msg.body(response_text)
-            return str(resp)
+            result = self.firebase.addNumber(id)
+            location = {
+                'Latitude': request.values.get('Latitude',''),
+                'Longitude' : request.values.get('Longitude','')
+            }
+            if request.values.get('Latitude','') and request.values.get('Longitude',''):
+                result = self.firebase.setLocation(location, id)
+                resp = MessagingResponse()
+                msg = resp.message()
+                msg.body("We remembered your current location")
+                return str(resp)
+            else :
+                resp = MessagingResponse()
+                msg = resp.message()
+                params = dict(dynamic_resource =dict(id=id)) #Used to send dynamic id of the user making query
+                response_text = self.conv.say(incoming_msg, params=params)[0]
+                msg.body(response_text)
+                return str(resp)
 
     def run(self, host="localhost", port=7150):
         self.app.run(host=host, port=port)
