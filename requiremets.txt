@@ -3,6 +3,5 @@ ciscosparkapi==0.10.1
 flask
 requests
 pyrebase
-dataclasses
-tzlocal
 APScheduler==3.6.3
+twilio==2.1
