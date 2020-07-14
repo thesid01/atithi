@@ -1,0 +1,4 @@
+{nature|tourism}
+{family|tourism} choose
+choose {camping|tourism}
+

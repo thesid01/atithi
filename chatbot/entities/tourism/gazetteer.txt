@@ -1,6 +1,6 @@
-adventure
-historical
-sport
-medical
+nature
+camping
+family
+
 
 

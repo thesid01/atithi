@@ -1,5 +1,0 @@
-set {Lucknow|city_name} 
-set {Jaipur|city_name} 
-set {Manali|city_name} 
-set {Jammu|city_name} 
-set {Delhi|city_name} 

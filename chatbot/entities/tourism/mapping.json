@@ -2,27 +2,21 @@
     "entities": [
         {
             "whitelist": [
-                "adventure"
+                "nature"
             ],
-            "cname": "adventure"
+            "cname": "nature"
         },
         {
             "whitelist": [
-                "historical"
+                "camping"
             ],
-            "cname": "historical"
+            "cname": "camping"
         },
 	{
             "whitelist": [
-                "sport"
+                "family"
             ],
-            "cname": "sport"
-        },
-	{
-            "whitelist": [
-                "medical"
-            ],
-            "cname": "medical"
+            "cname": "family"
         }
         
     ]

@@ -1,4 +1,0 @@
-{adventure|tourism}
-{adventure|tourism} choose
-choose {historical|tourism}
-
