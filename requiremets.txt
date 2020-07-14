@@ -5,3 +5,5 @@ requests
 pyrebase
 APScheduler==3.6.3
 twilio==2.1
+beautifulsoup4
+Request
