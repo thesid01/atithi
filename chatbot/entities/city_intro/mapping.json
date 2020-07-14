@@ -1,0 +1,14 @@
+{
+    "entities": [
+        {
+            "whitelist": [
+                "about",
+                "introduction",
+                "wiki",
+                "something",
+                "intro"
+            ],
+            "cname": "city_intro"
+        }
+    ]
+}

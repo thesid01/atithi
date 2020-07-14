@@ -61,7 +61,6 @@ Hey!  What's going on in your world today?
 howdy mate
 How are you?
 Dude! how are you
-Hi, lets get started
 hey dude.
 hey you
 sup!
@@ -91,7 +90,6 @@ Sup!?
 Hello there!
 Greetings
 Hey how's it going?
-Greetings, ready to start the day?
 Hey man
 Hey, whatcha doing?
 Good day!
@@ -150,7 +148,6 @@ Greetings.
 Hola!
 hey wassup
 how is your day going so far?
-Hi, lets get started
 greetings.
 Hello and how are you doing?
 good morning
@@ -200,7 +197,6 @@ how's everything?
 Hey dude.
 mornin
 Greetings!
-Hi, lets get started
 Hiya! How are you?
 Yo
 Hey buddy
@@ -240,7 +236,6 @@ Hiya! How are you?
 ola
 hey
 Good morning!
-Hi, are we ready to start?
 Greetings!
 Good day!
 Sup
@@ -316,7 +311,6 @@ namasthe, how are you
 HI, how's it going?
 Hey you
 Good morning!
-Hello, how would you like me to start?
 SUP MY FRIEND!
 Hey!
 hey!
@@ -519,7 +513,6 @@ Greetings!
 Hey!  What's going on in your world today?
 hihi
 hello are you there
-Hello, how would you like me to start?
 How are you today
 Morning
 hello, what you up to?
@@ -568,14 +561,12 @@ hi, how's it going?
 yo
 ola
 Hi, How are you today?
-start
 Good day!
 hey
 Yo man, Hows it going.
 Hey what's goin on?
 hi
 Namasthe, How are you
-Hi, are we ready to start?
 How is your doing going so far?
 Namasthe, How are you
 Greetings my friend, how are you?
@@ -819,8 +810,6 @@ Hi, How are you today?
 Yo, what's good?
 hey now!
 hallo mate
-Greetings, ready to start the day?
-Hello, how would you like me to start?
 ay, how are you?
 how goes it?
 Greetings!
@@ -984,7 +973,6 @@ how are you doing?
 Hey now!
 what are you up to?
 what's up
-get started
 how is it going?
 Hello there!
 How are you today?
@@ -1038,7 +1026,6 @@ whats good stranger!
 How are you?
 Hello, how are you?
 Hey man
-get started
 wassup
 HI, how's it going?
 hey you!
@@ -1048,7 +1035,6 @@ Hi,nice to be speaking with you.
 Great seeing you!
 wassup
 Greetings my friend, how are you?
-get started
 Sup!
 hey, whatcha up to?
 whats good stranger!
@@ -1068,7 +1054,6 @@ hihi
 hey there!
 How goes it?
 Hey you!
-Greetings, ready to start the day?
 What's up
 Hello
 Hey
@@ -1147,7 +1132,6 @@ How'd there!
 hey what's up?
 What's going on?
 hey what's up?
-get started
 sup
 Hi, how's it going?
 Hey man
@@ -1180,14 +1164,12 @@ good afternoon
 what's up?
 Hiya! How are you?
 halloo you there
-Hi, are we ready to start?
 Good afternoon
 Hey man
 Howdy there
 greetings earthling.
 Hey!
 Hey there!
-let's get started
 heyo
 How's it going?
 Hows it going?

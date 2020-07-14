@@ -5,8 +5,19 @@ the atithi application
 import os
 import json
 from .root import app
+from chatbot.middleware.firebaseHelper import firebaseHelper
 
-@app.handle(intent='tourism_type')
+firebase = firebaseHelper()
+
+@app.handle(intent='start_tour')
+def start_tour(request, responder):
+    id = request.params.dynamic_resource['id']
+    res = firebase.changeStatus(1,id)
+    responder.params.target_dialogue_state = "select_tourism"
+    responder.reply("What type of Adventure would you like to go on.\n1. Nature\n2. Camping\n3. Family")
+    
+
+@app.handle(intent='select_tourism')
 def select_tourism(request, responder):
     tourism_type = request.entities[0]["text"]
     city_list = _fetch_city_from_kb(tourism_type.lower())
@@ -17,32 +28,27 @@ def select_tourism(request, responder):
         responder.params.target_dialogue_state = "select_destination_from_choice"
         reply = "Here are some good options for " + tourism_type +" tourism: "+city_list[0] + " Type \"select city_name\" to start your journey. \nYou can always ask a like \"Tell me about city\""
     else:
-        reply = "Could not understand try again" + "\n What kind of tour would you like to go on today?"
+        reply = "Could not understand try again" + "\nWhat type of Adventure would you like to go on.\n1.Nature\n2. Camping\n3. Family"
     responder.reply(reply)
 
 
-@app.handle(targeted_only=True)
+@app.handle(intent = 'select_destination', has_entity='city_name')
 def select_destination_from_choice(request, responder):
+
     try:
         if request.entities[0]["text"] in responder.frame["city_list"]:
-            file = open('userInfo.json','r')
-            data = json.loads(file.read())
-            file.close()
-            try:
-                datastore = {
-                    "to" : request.entities[0]["text"],
-                    "from" : data["from"]
-                }
-            except IndexError:
-                datastore = {
-                    "to" : request.entities[0]["text"],
-                    "from" : ""
-                }
-            file = open('userInfo.json','w')
-            json.dump(datastore, file)
-            file.close()
-            responder.reply("You have choosen: " + request.entities[0]["text"])
-            responder.reply("Will recommenend your travel plan soon!!")
+            id = request.params.dynamic_resource['id']
+            data = request.entities[0]["text"]
+
+            res = firebase.setDest(data,id)
+            #######################
+            #Extract location name
+            #based on current coord
+            ######################
+            responder.params.target_dialogue_state = "set_source"
+            responder.reply("Your destination has been set to:" + request.entities[0]["text"] + "\nYour current location is: dummy and is set as source" +
+            "\nIf you want to change the source type 'set your_source_location'")
+
         else:
             all_cities = _fetch_all_city_from_kb()
             if request.entities[0]["text"] in all_cities:
@@ -52,18 +58,13 @@ def select_destination_from_choice(request, responder):
     return
 
 
-@app.handle(intent='select_destination')
-def select_destination(request, responder):
-    try:
-        file = open('userInfo.json','r')
-        from_city = file.read()
-        file.close()
-        from_city = json.loads(from_city)
-        print(from_city)
-        recommend_travel_plan(from_city["from"],request.entities[0]["text"],responder)
-    except IndexError:
-        responder.reply("Wrong Choice Try Again")
+@app.handle(intent='set_source', has_entity='city_name')
+def set_source(request, responder):
+    data = request.entities[0]["text"]
+    id = request.params.dynamic_resource['id']
+    res = firebase.setSource(data,id)
 
+    responder.reply("Your source location is set")
 
 def _fetch_city_from_kb(tourism_type):
     city = app.question_answerer.get(index='city_data')
@@ -77,12 +78,8 @@ def _fetch_city_from_kb(tourism_type):
             city_array.append(city[i]["city_name"])
     return [city_list,city_array]
 
-def _fetch_all_city_from_kb():
-    city = app.question_answerer.get(index='city_data')
-    city_array = []
-    for i in range(len(city)):
-        city_array.append(city[i]["city_name"].lower())
-    return city_array
+
+
 
 def recommend_travel_plan(_from, _to,responder):
     if _from == "":

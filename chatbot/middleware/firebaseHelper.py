@@ -13,16 +13,41 @@ class firebaseHelper:
 		self.config = config
 		self.firebase = pyrebase.initialize_app(config)
 		self.db = self.firebase.database()
+	
+	def existID(self, id):
+		res = self.db.child("user").get()
+		id_list=[]
+		for num in res.each():
+			id_list.append(num.key())
+		if id in id_list:
+			return True
+		else:
+			return False
 
-	def addNumber(self,data):
+	def createID(self,data):
 		print("Adding user",data)
-		results = self.db.child("user").child(data).child("id").set(data)
-		return results
+		res = self.db.child("user").child(data).child("status").set(0)
+		return res
 
-	def setLocation(self,data, id):
+	def changeStatus(self, data, id):
+		res = self.db.child("user").child(id).child("status").set(data)
+		return res
+
+	def setDest(self,data,id):
+		res = self.db.child("user").child(id).child("location").child("destinations").set(data)
+		return res
+
+	def setSource(self,data,id):
+		res = self.db.child("user").child(id).child("location").child("source").set(data)
+		return res
+		
+	def setCurrLocation(self,data, id):
 		print("Seting Location",data, "for", id)
-		results = self.db.child("user").child(id).child("location").set(data)
-		return results
+		results = self.db.child("user").child(id).child("location").child("current").set(data)
+		return res
+
+	def getCurrLocation(self, id):
+		return self.db.child("user").child(id).child("location").child("current").get()
 
 	def setRemainder(self, data, id):
 		print("setting remainder", data, "for", id)
