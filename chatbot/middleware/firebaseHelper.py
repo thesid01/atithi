@@ -23,6 +23,9 @@ class firebaseHelper:
 		print("Seting Location",data, "for", id)
 		results = self.db.child("user").child(id).child("location").set(data)
 		return results
+	
+	def getLocation(self, id):
+		return self.db.child("user").child(id).child("location").get()
 
 	def setRemainder(self, data, id):
 		print("setting remainder", data, "for", id)
