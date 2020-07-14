@@ -46,7 +46,7 @@ class firebaseHelper:
     		res = self.db.child("user").child(id).child("location").child("current").set(data)
 		return res	
 	
- 	def getLocation(self, id):
+ 	def getCurrLocation(self, id):
 		return self.db.child("user").child(id).child("location").get()
   
 	def setRemainder(self, data, id):
