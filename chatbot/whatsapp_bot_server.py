@@ -4,10 +4,18 @@ from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
 
 from middleware.firebaseHelper import firebaseHelper
+from middleware.remainderHelper import remainderHelper
 
 from mindmeld.components import NaturalLanguageProcessor
 from mindmeld.components.dialogue import Conversation
 from mindmeld import configure_logs
+
+from apscheduler.schedulers.blocking import BlockingScheduler
+from apscheduler.schedulers.background import BackgroundScheduler
+from apscheduler.triggers.interval import IntervalTrigger
+
+import atexit
+import time
 
 
 class WhatsappBotServer:
@@ -56,12 +64,29 @@ class WhatsappBotServer:
 
     def run(self, host="localhost", port=7150):
         self.app.run(host=host, port=port)
+    
+    def start_remainder(self):
+        remainder_service = remainderHelper()
+        remainder_service.start(self.firebase.getRemainders())
 
 
 if __name__ == '__main__':
     app = Flask(__name__)
     configure_logs()
     server = WhatsappBotServer(name='whatsapp', app_path='.')
+    
+    # create schedule for printing time
+    scheduler = BackgroundScheduler()
+    scheduler.start()
+    scheduler.add_job(
+        func=server.start_remainder,
+        trigger=IntervalTrigger(seconds=10),
+        id='send_remainders',
+        name='send remainder every minute',
+        replace_existing=True)
+    # Shut down the scheduler when exiting the app
+    atexit.register(lambda: scheduler.shutdown())
+    
     port_number = 8080
     print('Running server on port {}...'.format(port_number))
     server.run(host='localhost', port=port_number)
