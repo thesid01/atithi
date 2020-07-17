@@ -8,7 +8,7 @@ from .root import app
 
 @app.handle(intent='greet')
 def greet(request, responder):
-    responder.reply("Namaskar Atithi, I am your virtual travel agent for your adventure. Type 'start tour' to plan a journey!")
+    responder.reply("Namaskar Atithi, I am your virtual travel agent for your adventure. You can now start and stop journey")
 
 
 @app.handle(intent='exit')

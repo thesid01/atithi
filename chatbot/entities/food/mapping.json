@@ -1,0 +1,42 @@
+{
+    "entities": [
+        {
+            "whitelist": [
+                "veg",
+		"vegan",
+		"vegetarian"
+            ],
+            "cname": "veg"
+        },
+        {
+            "whitelist": [
+                "non-veg",
+		"non veg",
+		"non vegan",
+		"non-vegetarian"
+            ],
+            "cname": "non-veg"
+        },
+	{
+            "whitelist": [
+                "spanish"
+            ],
+            "cname": "spanish"
+        },
+	{
+            "whitelist": [
+                "italian"
+            ],
+            "cname": "italian"
+        },
+	{
+            "whitelist": [
+                "inadian",
+		"north-indian",
+		"south-indian"
+            ],
+            "cname": "indian"
+        }
+        
+    ]
+}

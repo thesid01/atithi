@@ -1,0 +1,4 @@
+my food will be {veg|food} and {spanish|food}
+set {chinese|food}
+{veg|food} and {indian|food}
+{non-veg|food}, {north indian|food}
