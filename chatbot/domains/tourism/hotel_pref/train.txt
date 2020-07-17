@@ -1,0 +1,11 @@
+please set under {Rs 3000|price} and {4 rooms|nof_room}
+yes set {2 room|nof_rooms}
+my room should be {ac|ac} and {3 bed|nof_bed}
+my pref are {rupees 4000|price} and {3 rooms|nof_room}
+set {non ac|non-ac}
+set {2 room|nof_room}
+my hotel will be {ac|ac} and {2 bed|nof_bed}
+my room will be {2 room|nof_room} and {under Rs. 2000|price}
+my pref are {4000 rs|price} and {1 rooms|nof_room}
+please set under {Rs 1000|price} and {4 beds|nof_bed}
+yes set {2 room|nof_rooms} and it will be {ac|ac}

@@ -1,0 +1,4 @@
+my pref are {rupees 4000|price} and {3 rooms|nof_room}
+set {non ac|non-ac}
+set {2 room|nof_room}
+my hotel will be {ac|ac} and {2 bed|nof_bed}

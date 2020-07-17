@@ -28,7 +28,8 @@ def select_tourism(request, responder):
         responder.params.target_dialogue_state = "select_destination_from_choice"
         reply = "Here are some good options for " + tourism_type +" tourism: "+city_list[0] + " Type \"select city_name\" to start your journey. \nYou can always ask a like \"Tell me about city\""
     else:
-        reply = "Could not understand try again" + "\nWhat type of Adventure would you like to go on.\n1.Nature\n2. Camping\n3. Family"
+        responder.params.target_dialogue_state = "select_tourism"
+        reply = "Could not understand try again" + "\nWhat type of Adventure would you like to go on.\n1. Nature\n2. Camping\n3. Family"
     responder.reply(reply)
 
 
@@ -47,13 +48,15 @@ def select_destination_from_choice(request, responder):
             ######################
             responder.params.target_dialogue_state = "set_source"
             responder.reply("Your destination has been set to:" + request.entities[0]["text"] + "\nYour current location is: dummy and is set as source" +
-            "\nIf you want to change the source type 'set your_source_location'")
+            "\nPlease tell us the source loaction if you want to change it'")
 
         else:
             all_cities = _fetch_all_city_from_kb()
             if request.entities[0]["text"] in all_cities:
-                responder.reply("You have choosen city not from recommenend list.\n Would you like to continue")
+                responder.params.target_dialogue_state = "set_source"
+                responder.reply("You have choosen city not from recommenend list.\nContinuing.....")
     except IndexError:
+        responder.params.target_dialogue_state = "start_tour"
         responder.reply("Wrong Choice");
     return
 
@@ -63,8 +66,34 @@ def set_source(request, responder):
     data = request.entities[0]["text"]
     id = request.params.dynamic_resource['id']
     res = firebase.setSource(data,id)
+    responder.params.target_dialogue_state = 'food_pref'
+    responder.params.allowed_intents = ['tourism.food_pref']
+    responder.reply("Before we personalize your journey, we would like to ask some preferences.\nPlease tell us any preferences about your food (veg/italian/etc)")
 
-    responder.reply("Your source location is set")
+@app.handle(intent='food_pref', has_entity='food')
+def food_pref(request, responder):
+    id = request.params.dynamic_resource['id']
+    data=""
+    for item in request.entities:
+        data += item['value'][0]["cname"]+" "
+    print(data)
+    res = firebase.setFoodPref(data,id)
+    responder.params.target_dialogue_state = 'hotel_pref'
+    responder.params.allowed_intents = ['tourism.hotel_pref']
+    responder.reply('Good, Now have you any preferences for hotels(number of rooms/ac/non-ac/etc)')
+
+@app.handle(intent='hotel_pref')
+def hotel_pref(request,responder):
+    id = request.params.dynamic_resource['id']
+    data={}
+    for item in request.entities:
+        data[item["type"]]=item["text"]
+
+    print(data)
+    res = firebase.setHotelPref(data,id)
+    responder.reply('Thank you we will remember these preferences along the journey.\nYou are free to search restaurants and hotels anytime you feel according to your location')
+
+
 
 def _fetch_city_from_kb(tourism_type):
     city = app.question_answerer.get(index='city_data')
@@ -79,28 +108,3 @@ def _fetch_city_from_kb(tourism_type):
     return [city_list,city_array]
 
 
-
-
-def recommend_travel_plan(_from, _to,responder):
-    if _from == "":
-        responder.params.target_dialogue_state = "select_user_location"
-        reply = "Awesome could you please tell Your Location so that i can recomment travel plan as I am unaware of where you are?"
-    else:
-        file = open('userInfo.json','r')
-        data = json.loads(file.read())
-        file.close()
-        try:
-            datastore = {
-                "to" : _to,
-                "from" : data["from"]
-            }
-        except IndexError:
-            datastore = {
-                "to" : _to,
-                "from" : ""
-            }
-        file = open('userInfo.json','w')
-        json.dump(datastore, file)
-        file.close()
-        reply = "suggesting flights from "+_from+" to "+_to
-    responder.reply(reply)
