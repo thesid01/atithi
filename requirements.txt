@@ -4,6 +4,5 @@ flask
 requests
 pyrebase
 APScheduler==3.6.3
-twilio==2.1
+twilio
 beautifulsoup4
-Request

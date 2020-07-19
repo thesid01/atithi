@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 .generated/
+chatbot/.generated/*
 # C extensions
 *.so
 
