@@ -7,3 +7,4 @@ tell some hotels
 hotel search
 inn search
 search inns
+
