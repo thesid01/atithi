@@ -1,12 +1,24 @@
 {
     "entities": [
+		{
+            "whitelist": [
+                "1",
+				"2",
+				"3",
+				"single"
+            ],
+            "cname": "n_room"
+        },
         {
             "whitelist": [
                 "3000 rupees",
                 "rs. 1000",
                 "rs 2000",
                 "rs 7000",
-                "rupess 4k"
+                "rupess 4k",
+				"5000 rupees",
+				"5000",
+				
             ],
             "cname": "price"
         },
@@ -23,7 +35,9 @@
             "whitelist": [
                 "2 bed",
                 "1 bed",
-                "bed 3"
+                "bed 3",
+				"single bed",
+				"double bed"
             ],
             "cname": "nof_bed"
         },
@@ -38,7 +52,7 @@
 	{
             "whitelist": [
                 "non-ac",
-		        "non ac"
+		        "non air conditioned"
             ],
             "cname": "non-ac"
         }
