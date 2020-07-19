@@ -12,8 +12,8 @@ yes set {2 room|nof_rooms} and it will be {ac|ac}
 i want {1|n_room} {ac|ac} under {5000 rupees|price}
 i want to book {ac|ac} room 
 i want a {double bed|nof_bed} room 
-want a {1 room|nof_room}{non ac|non-ac}
-i want {ac|ac} hotel {2 rooms|nof_room} in a {} hote;
+want a {1 room|nof_room} {non ac|non-ac}
+i want {ac|ac} hotel {2 rooms|nof_room} in a hotel
 i want my room with {2 bed|nof_bed}
 i want {1 room|nof_bed} for {rupees 4k|price}
 i need {air conditioned|ac} {single|n_room} for {3000 rupees|price}
@@ -21,16 +21,16 @@ need {2 bed|nof_bed} room
 i want a room with {ac|ac} having {double|nof_bed}
 i will take {2 rooms|nof_room}
 i need {single bed|nof_bed} room for price {rs 2000|price}
-in need of {4 rooms|room} for (rs. 10000|price}
+in need of {4 rooms|nof_room} for {rs. 10000|price}
 need {2 rooms|nof_room}
 book {1|n_room} {ac|ac} room
 set preference as {1 rooms|nof_room} with {2 bed|nof_bed}
 yes, set my choice {single|n_room} {full ac|ac}
 looking for {non-ac|non-ac} room 
-i am looking {single|n__room} room
+i am looking {single|n_room} room
 my hotel will be {air conditioned|ac} {4 rooms|nof_room}
 i prefer a {ac|ac} room with {1 bed|nof_bed}
 my hotel needs to be {full ac|ac}
-my preferences are {double|nof_bed} rooms
+my preferences are {double|n_room} rooms
 my room should be a {ac|ac} room for {rs 2000|price}
-select a {air conditioned|ac} room {3000 rupees}
+select a {air conditioned|ac} room {3000 rupees|price}
