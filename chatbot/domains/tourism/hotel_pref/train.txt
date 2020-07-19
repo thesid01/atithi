@@ -34,10 +34,3 @@ my hotel needs to be {full ac|ac}
 my preferences are {double|nof_bed} rooms
 my room should be a {ac|ac} room for {rs 2000|price}
 select a {air conditioned|ac} room {3000 rupees}
-
-
-
-
-
-
-
