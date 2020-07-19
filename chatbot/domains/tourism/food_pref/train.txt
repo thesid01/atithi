@@ -46,7 +46,7 @@ my choice will be {non-vegetarian|food}
 {vegan|food} is my choice
 {vegan|food}
 give me {mandarin|food} food
-give me {}
+give me {veg|food}, {indian|food}
 i prefer {vegetarian|food}
 my preferences are {non-vegetarian|food} and {north-indian|food}
 my preferences {veg|food}{south-indian}
