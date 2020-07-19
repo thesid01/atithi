@@ -1,4 +1,8 @@
+Rs 3000
 3000 rupees
+4000
+5000
+5000 rupees
 rs. 1000
 rs 2000
 rs 7000
@@ -14,4 +18,9 @@ ac
 full ac
 air conditioned
 non-ac
-non ac
+non air conditioned
+1
+2
+3
+single bed
+double bed

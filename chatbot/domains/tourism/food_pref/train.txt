@@ -1,4 +1,5 @@
 please set my food as {veg|food}
+set it to {non-veg|food}
 yes set {non-veg|food}
 my food will be {veg|food} and {spanish|food}
 my pref are {italian|food}
@@ -12,3 +13,40 @@ my food will be {veg|food} and {spanish|food}
 set {chinese|food}
 {veg|food} and {indian|food}
 {non-veg|food}, {north indian|food}
+please set it to{veg|food}
+please set it to {non-veg|food} and {chinese|food}
+set {non-veg|food}{chinese|food} food
+set it to {seafood|food}
+set {spanish|food}
+set {japanese|food}
+set food to {north-indian|food}
+set food to {mexican|food}
+set my food as {french|food}
+yes {indian|food}
+{veg|food} and {south-indian|food}
+my food will be{vegan|food}
+i need {spanish|food}
+i like to have {italian|food} food
+i like to have {indian|food} food
+i like to have {vegetarian|food} food
+i like to have {taiwanese|food}
+i like to select {mandarin|food}
+i like to eat {seafood|food}
+i like to eat {chinese|food}
+i want to eat {mexican|food} food
+i want to eat {italian|food} {chinese|food}
+i want {japanese|food} {chinese|food}
+i will take {non-vegan|food}
+i will have {vegan|food}
+i will have {chinese|food} and {indian|food}
+{chinese|food} and {italian|food}
+my food will be {vegetarian|food}
+my choice will be {non-vegetarian|food}
+{mexican|food} is my choice
+{vegan|food} is my choice
+{vegan|food}
+give me {mandarin|food} food
+give me {}
+i prefer {vegetarian|food}
+my preferences are {non-vegetarian|food} and {north-indian|food}
+my preferences {veg|food}{south-indian}
