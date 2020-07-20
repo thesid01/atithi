@@ -20,24 +20,24 @@ def start_tour(request, responder):
 @app.handle(intent='select_tourism')
 def select_tourism(request, responder):
     tourism_type = request.entities[0]["text"]
-    city_list = _fetch_city_from_kb(tourism_type.lower())
-    for i in range(len(city_list[1])):
-        city_list[1][i] = city_list[1][i].lower()
-    responder.frame["city_list"] = city_list[1]
-    if len(city_list[0]) > 1:
+    spot_list = _fetch_spot_from_kb(tourism_type.lower())
+    for i in range(len(spot_list[1])):
+        spot_list[1][i] = spot_list[1][i].lower()
+    responder.frame["spot_list"] = spot_list[1]
+    if len(spot_list[0]) > 1:
         responder.params.target_dialogue_state = "select_destination_from_choice"
-        reply = "Here are some good options for " + tourism_type +" tourism: "+city_list[0] + " Type \"select city_name\" to start your journey. \nYou can always ask a like \"Tell me about city\""
+        reply = "Here are some good options for " + tourism_type +" tourism: "+spot_list[0] + " Type \"select spot_name\" to start your journey. \nYou can always ask a like \"Tell me about city\""
     else:
         responder.params.target_dialogue_state = "select_tourism"
         reply = "Could not understand try again" + "\nWhat type of Adventure would you like to go on.\n1. Nature\n2. Camping\n3. Family"
     responder.reply(reply)
 
 
-@app.handle(intent = 'select_destination', has_entity='city_name')
+@app.handle(intent = 'select_destination', has_entity='spot_name')
 def select_destination_from_choice(request, responder):
 
     try:
-        if request.entities[0]["text"] in responder.frame["city_list"]:
+        if request.entities[0]["text"] in responder.frame["spot_list"]:
             id = request.params.dynamic_resource['id']
             data = request.entities[0]["text"]
 
@@ -51,8 +51,8 @@ def select_destination_from_choice(request, responder):
             "\nPlease tell us the source loaction if you want to change it'")
 
         else:
-            all_cities = _fetch_all_city_from_kb()
-            if request.entities[0]["text"] in all_cities:
+            all_cities = _fetch_all_spot_from_kb()
+            if request.entities[0]["text"] in all_cities[0]:
                 responder.params.target_dialogue_state = "set_source"
                 responder.reply("You have choosen city not from recommenend list.\nContinuing.....")
     except IndexError:
@@ -108,3 +108,21 @@ def _fetch_city_from_kb(tourism_type):
     return [city_list,city_array]
 
 
+def _fetch_spot_from_kb(tourism_type):
+    spot = app.question_answerer.get(index='spot_data')
+    spot_list = "\n"
+    spot_array = []
+    j = 1
+    for i in range(len(spot)):
+        if tourism_type in spot[i]["type"]:
+            spot_list += str(j)+": "+spot[i]["spot_name"] + "\n"
+            j = j+1
+            spot_array.append(spot[i]["spot_name"])
+    return [spot_list,spot_array]
+
+def _fetch_all_spot_from_kb():
+    spot = app.question_answerer.get(index='spot_data')
+    spot_array = []
+    for i in range(len(spot)):
+        spot_array.append(spot[i]["spot_name"])
+    return [spot_array]
