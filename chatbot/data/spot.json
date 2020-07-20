@@ -1,0 +1,861 @@
+{
+    "clusters": [
+        {
+            "cluster_id": 1,
+            "states": [
+                {
+                    "state_id": 1,
+                    "state_name": "Jammu & Kashmir",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "Thajiwas Glacier",
+                            "location": {
+                                "Latitude": 34.264704,
+                                "Longitude": 75.275839
+                            },
+                            "city": "Sonarmarg",
+                            "activity": "Trekking, Mountaineering",
+                            "best_season": "April to June",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 2,
+                            "spot_name": "Tarsar Marsar",
+                            "location": {
+                                "Latitude": 34.146933,
+                                "Longitude": 75.109748
+                            },
+                            "city": "Srinagar",
+                            "activity": "Trekking",
+                            "best_season": "July to September",
+                            "type": "camping"
+                        },
+                        {
+                            "spot_id": 3,
+                            "spot_name": "Kolahoi Glacier",
+                            "location": {
+                                "Latitude": 34.164444,
+                                "Longitude": 75.326944
+                            },
+                            "city": "Srinagar",
+                            "activity": "Trekking",
+                            "best_season": "March to October",
+                            "type": "nature"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 2,
+                    "state_name": "Himachal Pradesh",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "Spiti Valley",
+                            "location": {
+                                "Latitude": 32.24619,
+                                "Longitude": 78.034916
+                            },
+                            "city": "Spiti",
+                            "activity": "Trekking, River Rafting",
+                            "best_season": "July to August",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 2,
+                            "spot_name": "Hampta Pass",
+                            "location": {
+                                "Latitude": 31.963024,
+                                "Longitude": 77.453296
+                            },
+                            "city": "Manali",
+                            "activity": "Trekking",
+                            "best_season": "October",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 3,
+                            "spot_name": "Triund Hill Station",
+                            "location": {
+                                "Latitude": 32.2496,
+                                "Longitude": 76.3339
+                            },
+                            "city": "Dharamshala",
+                            "activity": "Trekking",
+                            "best_season": "March to June",
+                            "type": "camping"
+                        },
+                        {
+                            "spot_id": 4,
+                            "spot_name": "Beas River",
+                            "location": {
+                                "Latitude": 31.924663,
+                                "Longitude": 77.115396
+                            },
+                            "city": "Pirdi",
+                            "activity": "River Rafting",
+                            "best_season": "March to July",
+                            "type": "nature"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 3,
+                    "state_name": "Delhi",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "spot1",
+                            "location": {
+                                "Latitude": 74.25,
+                                "Longitude": 25.32
+                            },
+                            "city": "",
+                            "activity": "Bruh, Bruh",
+                            "type": "family"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 4,
+                    "state_name": "Uttarakhand",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "Kedarnath",
+                            "location": {
+                                "Latitude": 30.6529,
+                                "Longitude": 79.0257
+                            },
+                            "city": "Gauri Kund",
+                            "activity": "Trekking",
+                            "best_season": "December to March",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 2,
+                            "spot_name": "Dodital",
+                            "location": {
+                                "Latitude": 30.8981,
+                                "Longitude": 78.5246
+                            },
+                            "city": "Uttarkashi",
+                            "activity": "Trekking, Camping, Hiking",
+                            "best_season": "January",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 3,
+                            "spot_name": "Deoriya Tal",
+                            "location": {
+                                "Latitude": 30.5222,
+                                "Longitude": 79.1277
+                            },
+                            "city": "Ukhimath",
+                            "activity": "Trekking",
+                            "best_season": "March",
+                            "type": "camping"
+                        },
+                        {
+                            "spot_id": 4,
+                            "spot_name": "Roopkund",
+                            "location": {
+                                "Latitude": 30.2622,
+                                "Longitude": 79.7315
+                            },
+                            "city": "Chamoli",
+                            "activity": "Trekking",
+                            "best_season": "June",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 5,
+                            "spot_name": "Har ki Doon",
+                            "location": {
+                                "Latitude": 31.141,
+                                "Longitude": 78.4155
+                            },
+                            "city": "Purola",
+                            "activity": "Trekking",
+                            "best_season": "November to December",
+                            "type": "camping"
+                        },
+                        {
+                            "spot_id": 6,
+                            "spot_name": "Nag Tibba Peak",
+                            "location": {
+                                "Latitude": 30.586389,
+                                "Longitude": 78.151111
+                            },
+                            "city": "Mussoorie",
+                            "activity": "Trekking",
+                            "best_season": "December",
+                            "type": "camping"
+                        },
+                        {
+                            "spot_id": 7,
+                            "spot_name": "Kuari Pass",
+                            "location": {
+                                "Latitude": 30.4456,
+                                "Longitude": 79.57
+                            },
+                            "city": "Joshimath",
+                            "activity": "Trekking",
+                            "best_season": "December",
+                            "type": "camping"
+                        },
+                        {
+                            "spot_id": 8,
+                            "spot_name": "River Ganga",
+                            "location": {
+                                "Latitude": 30.121791,
+                                "Longitude": 78.307204
+                            },
+                            "city": "Rishikesh",
+                            "activity": "River Rafting",
+                            "best_season": "September to June",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 9,
+                            "spot_name": "Bhagirathi River",
+                            "location": {
+                                "Latitude": 30.280148,
+                                "Longitude": 78.495728
+                            },
+                            "city": "Dagar",
+                            "activity": "River Rafting",
+                            "best_season": "October to May",
+                            "type": "camping"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 5,
+                    "state_name": "Rajasthan",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "spot1",
+                            "location": {
+                                "Latitude": 74.25,
+                                "Longitude": 25.32
+                            },
+                            "city": "",
+                            "activity": "Bruh, Bruh",
+                            "type": "camping"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 6,
+                    "state_name": "Uttar Pradesh",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "spot1",
+                            "location": {
+                                "Latitude": 74.25,
+                                "Longitude": 25.32
+                            },
+                            "city": "",
+                            "activity": "Bruh, Bruh",
+                            "type": "family"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 7,
+                    "state_name": "Ladakh",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "Zanskar",
+                            "location": {
+                                "Latitude": 33.771917,
+                                "Longitude": 76.845349
+                            },
+                            "city": "Kargil",
+                            "activity": "Trekking, Mountaineering",
+                            "best_season": "January to February",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 2,
+                            "spot_name": "Lamayuru",
+                            "location": {
+                                "Latitude": 34.282778,
+                                "Longitude": 76.774444
+                            },
+                            "city": "Leh",
+                            "activity": "Trekking",
+                            "best_season": "May to November",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 3,
+                            "spot_name": "Indus River",
+                            "location": {
+                                "Latitude": 34.087592,
+                                "Longitude": 77.612657
+                            },
+                            "city": "Leh",
+                            "activity": "River Rafting",
+                            "best_season": "July to September",
+                            "type": "family"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cluster_id": 2,
+            "states": [
+                {
+                    "state_id": 1,
+                    "state_name": "Maharashtra",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "Kalsubai Peak",
+                            "location": {
+                                "Latitude": 19.6012,
+                                "Longitude": 73.7092
+                            },
+                            "city": "Igatpuri",
+                            "activity": "Trekking, Mountaineering",
+                            "best_season": "June to August",
+                            "type": "family"
+                        },
+                        {
+                            "spot_id": 2,
+                            "spot_name": "Lohagad Fort",
+                            "location": {
+                                "Latitude": 18.708889,
+                                "Longitude": 73.476667
+                            },
+                            "city": "Pune",
+                            "activity": "Trekking",
+                            "best_season": "June to September",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 3,
+                            "spot_name": "Purandar Fort",
+                            "location": {
+                                "Latitude": 18.280778,
+                                "Longitude": 73.973611
+                            },
+                            "city": "Pune",
+                            "activity": "Trekking",
+                            "best_season": "June to September",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 4,
+                            "spot_name": "Rajmachi Fort",
+                            "location": {
+                                "Latitude": 18.825799,
+                                "Longitude": 73.395527
+                            },
+                            "city": "Lonavala",
+                            "activity": "Trekking",
+                            "best_season": "June to September",
+                            "type": "camping"
+                        },
+                        {
+                            "spot_id": 5,
+                            "spot_name": "Korigad Hill Fort",
+                            "location": {
+                                "Latitude": 18.620278,
+                                "Longitude": 73.385556
+                            },
+                            "city": "Lonavala",
+                            "activity": "Trekking",
+                            "best_season": "June to September",
+                            "type": "family"
+                        },
+                        {
+                            "spot_id": 6,
+                            "spot_name": "Mahuli Fort",
+                            "location": {
+                                "Latitude": 19.479479,
+                                "Longitude": 73.238275
+                            },
+                            "city": "Asangaon",
+                            "activity": "Trekking",
+                            "best_season": "June to September",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 7,
+                            "spot_name": "Raireshwar",
+                            "location": {
+                                "Latitude": 18.05,
+                                "Longitude": 73.733333
+                            },
+                            "city": "Pune",
+                            "activity": "Trekking",
+                            "best_season": "June to September",
+                            "type": "camping"
+                        },
+                        {
+                            "spot_id": 8,
+                            "spot_name": "Garbut Point",
+                            "location": {
+                                "Latitude": 18.985229,
+                                "Longitude": 73.289227
+                            },
+                            "city": "Sondewadi",
+                            "activity": "Trekking",
+                            "best_season": "June to September",
+                            "type": "family"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 2,
+                    "state_name": "Madhya Pradesh",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "spot1",
+                            "location": {
+                                "Latitude": 74.25,
+                                "Longitude": 25.32
+                            },
+                            "city": "",
+                            "activity": "Bruh, Bruh",
+                            "type": "family"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 3,
+                    "state_name": "Goa",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "spot1",
+                            "location": {
+                                "Latitude": 74.25,
+                                "Longitude": 25.32
+                            },
+                            "city": "",
+                            "activity": "Bruh, Bruh",
+                            "type": "nature"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 4,
+                    "state_name": "Gujarat",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "spot1",
+                            "location": {
+                                "Latitude": 74.25,
+                                "Longitude": 25.32
+                            },
+                            "city": "",
+                            "activity": "Bruh, Bruh",
+                            "type": "family"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 5,
+                    "state_name": "Chattisgarh",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "spot1",
+                            "location": {
+                                "Latitude": 74.25,
+                                "Longitude": 25.32
+                            },
+                            "city": "",
+                            "activity": "Bruh, Bruh",
+                            "type": "nature"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cluster_id": 3,
+            "states": [
+                {
+                    "state_id": 1,
+                    "state_name": "Andhra Pradesh",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "Leh",
+                            "location": {
+                                "Latitude": 34.1526,
+                                "Longitude": 77.5771
+                            },
+                            "city": "",
+                            "activity": "Trekking, Mountaineering",
+                            "type": "camping"
+                        },
+                        {
+                            "spot_id": 2,
+                            "spot_name": "Sangam",
+                            "location": {
+                                "Latitude": 34.1031,
+                                "Longitude": 74.7764
+                            },
+                            "city": "",
+                            "activity": "",
+                            "type": "family"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 2,
+                    "state_name": "Telangana",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "spot1",
+                            "location": {
+                                "Latitude": 74.25,
+                                "Longitude": 25.32
+                            },
+                            "city": "",
+                            "activity": "Bruh, Bruh",
+                            "type": "nature"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 3,
+                    "state_name": "Kerala",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "spot1",
+                            "location": {
+                                "Latitude": 74.25,
+                                "Longitude": 25.32
+                            },
+                            "city": "",
+                            "activity": "Bruh, Bruh",
+                            "type": "nature"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 4,
+                    "state_name": "Karnataka",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "Nandi Hills",
+                            "location": {
+                                "Latitude": 13.386259,
+                                "Longitude": 77.700934
+                            },
+                            "city": "Bangalore",
+                            "activity": "Trekking",
+                            "best_season": "June to October",
+                            "type": "family"
+                        },
+                        {
+                            "spot_id": 2,
+                            "spot_name": "Barapoole River",
+                            "location": {
+                                "Latitude": 12.028316,
+                                "Longitude": 75.929758
+                            },
+                            "city": "Coorg",
+                            "activity": "River Rafting",
+                            "best_season": "July to September",
+                            "type": "nature"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 5,
+                    "state_name": "Tamil Nadu",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "spot1",
+                            "location": {
+                                "Latitude": 74.25,
+                                "Longitude": 25.32
+                            },
+                            "city": "",
+                            "activity": "Bruh, Bruh",
+                            "type": "nature"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 6,
+                    "state_name": "Andaman & Nicobar",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "spot1",
+                            "location": {
+                                "Latitude": 74.25,
+                                "Longitude": 25.32
+                            },
+                            "city": "",
+                            "activity": "Bruh, Bruh",
+                            "type": "family"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 7,
+                    "state_name": "Lakshwadeep",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "spot1",
+                            "location": {
+                                "Latitude": 74.25,
+                                "Longitude": 25.32
+                            },
+                            "city": "",
+                            "activity": "Bruh, Bruh",
+                            "type": "nature"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cluster_id": 4,
+            "states": [
+                {
+                    "state_id": 1,
+                    "state_name": "Arunachal Pradesh",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "Lohit River",
+                            "location": {
+                                "Latitude": 27.927805,
+                                "Longitude": 96.153181
+                            },
+                            "city": "Tezu",
+                            "activity": "River Rafting",
+                            "type": "camping"
+                        },
+                        {
+                            "spot_id": 2,
+                            "spot_name": "Sangam",
+                            "location": {
+                                "Latitude": 34.1031,
+                                "Longitude": 74.7764
+                            },
+                            "city": "",
+                            "activity": "",
+                            "type": "nature"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 2,
+                    "state_name": "Assam",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "spot1",
+                            "location": {
+                                "Latitude": 74.25,
+                                "Longitude": 25.32
+                            },
+                            "city": "",
+                            "activity": "Bruh, Bruh",
+                            "type": "nature"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 3,
+                    "state_name": "Sikkim",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "Goecha La",
+                            "location": {
+                                "Latitude": 27.607778,
+                                "Longitude": 88.186944
+                            },
+                            "city": "Siliguri",
+                            "activity": "Trekking",
+                            "best_season": "November",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 2,
+                            "spot_name": "Aritar",
+                            "location": {
+                                "Latitude": 27.188056,
+                                "Longitude": 88.674722
+                            },
+                            "city": "Gangtok",
+                            "activity": "Trekking",
+                            "best_season": "November",
+                            "type": "family"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 4,
+                    "state_name": "Meghalaya",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "spot1",
+                            "location": {
+                                "Latitude": 74.25,
+                                "Longitude": 25.32
+                            },
+                            "city": "",
+                            "activity": "Bruh, Bruh",
+                            "type": "family"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 5,
+                    "state_name": "Mizoram",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "spot1",
+                            "location": {
+                                "Latitude": 74.25,
+                                "Longitude": 25.32
+                            },
+                            "city": "",
+                            "activity": "Bruh, Bruh",
+                            "type": "family"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 6,
+                    "state_name": "Tripura",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "Jampui Hills",
+                            "location": {
+                                "Latitude": 23.965916,
+                                "Longitude": 92.277346
+                            },
+                            "city": "Agartala",
+                            "activity": "Trekking",
+                            "best_season": "October to December",
+                            "type": "family"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 7,
+                    "state_name": "Manipur",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "spot1",
+                            "location": {
+                                "Latitude": 74.25,
+                                "Longitude": 25.32
+                            },
+                            "city": "",
+                            "activity": "Bruh, Bruh",
+                            "type": "family"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 8,
+                    "state_name": "Nagaland",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "Dzukou Valley",
+                            "location": {
+                                "Latitude": 25.507336,
+                                "Longitude": 94.134061
+                            },
+                            "city": "Kohima",
+                            "activity": "Trekking",
+                            "best_season": "June to September",
+                            "type": "family"
+                        },
+                        {
+                            "spot_id": 2,
+                            "spot_name": "Saramati Peak",
+                            "location": {
+                                "Latitude": 25.74,
+                                "Longitude": 95.0375
+                            },
+                            "city": "Kiphire",
+                            "activity": "Trekking",
+                            "best_season": "October to November",
+                            "type": "family"
+                        },
+                        {
+                            "spot_id": 3,
+                            "spot_name": "Mount Tiyi",
+                            "location": {
+                                "Latitude": 26.099772,
+                                "Longitude": 94.284282
+                            },
+                            "city": "Wokha",
+                            "activity": "Trekking",
+                            "best_season": "October to February",
+                            "type": "nature"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 9,
+                    "state_name": "West Bengal",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "Mane Bhanjang",
+                            "location": {
+                                "Latitude": 26.9879,
+                                "Longitude": 88.1209
+                            },
+                            "city": "Darjeeling",
+                            "activity": "Trekking",
+                            "best_season": "April",
+                            "type": "camping"
+                        }
+                    ]
+                },
+                {
+                    "state_id": 10,
+                    "state_name": "Odisha",
+                    "spots": [
+                        {
+                            "spot_id": 1,
+                            "spot_name": "spot1",
+                            "location": {
+                                "Latitude": 74.25,
+                                "Longitude": 25.32
+                            },
+                            "city": "",
+                            "activity": "Bruh, Bruh",
+                            "type": "family"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

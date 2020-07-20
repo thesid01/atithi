@@ -7,5 +7,6 @@ import chatbot.greeting
 import chatbot.general
 import chatbot.faq
 import chatbot.tourism
+import chatbot.hotel
 
 __all__ = ['app']

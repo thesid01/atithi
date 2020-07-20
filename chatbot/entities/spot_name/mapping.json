@@ -1,0 +1,284 @@
+{
+    "entities": [
+        {
+            "whitelist": [
+                "Roopkund"
+            ],
+            "cname": "Roopkund"
+        },
+        {
+            "whitelist": [
+                "Goecha",
+                "Goecha La"
+            ],
+            "cname": "Goecha La"
+        },
+        {
+            "whitelist": [
+                "Indus",
+                "Indus River"
+            ],
+            "cname": "Indus River"
+        },
+        {
+            "whitelist": [
+                "Korigad",
+                "Korigad Hill",
+                "Korigad Hill Fort",
+                "Hill Fort"
+            ],
+            "cname": "Korigad Hill Fort"
+        },
+        {
+            "whitelist": [
+                "Bhagirathi",
+                "Bhagirathi River"
+            ],
+            "cname": "Bhagirathi River"
+        },
+        {
+            "whitelist": [
+                "Lohit",
+                "Lohit River"
+            ],
+            "cname": "Lohit River"
+        },
+        {
+            "whitelist": [
+                "Kuari",
+                "Kuari Pass"
+            ],
+            "cname": "Kuari Pass"
+        },
+        {
+            "whitelist": [
+                "Mahuli",
+                "Mahuli Fort"
+            ],
+            "cname": "Mahuli Fort"
+        },
+        {
+            "whitelist": [
+                "Leh"
+            ],
+            "cname": "Leh"
+        },
+        {
+            "whitelist": [
+                "Sangam"
+            ],
+            "cname": "Sangam"
+        },
+        {
+            "whitelist": [
+                "Mount",
+                "Mount Tiyi",
+                "Tiyi"
+            ],
+            "cname": "Mount Tiyi"
+        },
+        {
+            "whitelist": [
+                "Kalsubai",
+                "Kalsubai Peak"
+            ],
+            "cname": "Kalsubai Peak"
+        },
+        {
+            "whitelist": [
+                "Thajiwas",
+                "Thajiwas Glacier"
+            ],
+            "cname": "Thajiwas Glacier"
+        },
+        {
+            "whitelist": [
+                "Aritar"
+            ],
+            "cname": "Aritar"
+        },
+        {
+            "whitelist": [
+                "Saramati",
+                "Saramati Peak"
+            ],
+            "cname": "Saramati Peak"
+        },
+        {
+            "whitelist": [
+                "Deoriya",
+                "Deoriya Tal"
+            ],
+            "cname": "Deoriya Tal"
+        },
+        {
+            "whitelist": [
+                "Zanskar"
+            ],
+            "cname": "Zanskar"
+        },
+        {
+            "whitelist": [
+                "Hampta",
+                "Hampta Pass"
+            ],
+            "cname": "Hampta Pass"
+        },
+        {
+            "whitelist": [
+                "Kolahoi",
+                "Kolahoi Glacier"
+            ],
+            "cname": "Kolahoi Glacier"
+        },
+        {
+            "whitelist": [
+                "Har ki",
+                "Har ki Doon"
+            ],
+            "cname": "Har ki Doon"
+        },
+        {
+            "whitelist": [
+                "Purandar",
+                "Purandar Fort"
+            ],
+            "cname": "Purandar Fort"
+        },
+        {
+            "whitelist": [
+                "Spiti",
+                "Spiti Valley"
+            ],
+            "cname": "Spiti Valley"
+        },
+        {
+            "whitelist": [
+                "Rajmachi",
+                "Rajmachi Fort"
+            ],
+            "cname": "Rajmachi Fort"
+        },
+        {
+            "whitelist": [
+                "River",
+                "River Ganga",
+                "Ganga"
+            ],
+            "cname": "River Ganga"
+        },
+        {
+            "whitelist": [
+                "Nandi",
+                "Nandi Hills"
+            ],
+            "cname": "Nandi Hills"
+        },
+        {
+            "whitelist": [
+                "Tarsar",
+                "Tarsar Marsar",
+                "Marsar"
+            ],
+            "cname": "Tarsar Marsar"
+        },
+        {
+            "whitelist": [
+                "Kedarnath"
+            ],
+            "cname": "Kedarnath"
+        },
+        {
+            "whitelist": [
+                "Lohagad",
+                "Lohagad Fort"
+            ],
+            "cname": "Lohagad Fort"
+        },
+        {
+            "whitelist": [
+                "Garbut",
+                "Garbut Point"
+            ],
+            "cname": "Garbut Point"
+        },
+        {
+            "whitelist": [
+                "spot1"
+            ],
+            "cname": "spot1"
+        },
+        {
+            "whitelist": [
+                "Dzukou",
+                "Dzukou Valley"
+            ],
+            "cname": "Dzukou Valley"
+        },
+        {
+            "whitelist": [
+                "Barapoole",
+                "Barapoole River"
+            ],
+            "cname": "Barapoole River"
+        },
+        {
+            "whitelist": [
+                "Lamayuru"
+            ],
+            "cname": "Lamayuru"
+        },
+        {
+            "whitelist": [
+                "Mane",
+                "Mane Bhanjang",
+                "Bhanjang"
+            ],
+            "cname": "Mane Bhanjang"
+        },
+        {
+            "whitelist": [
+                "Triund",
+                "Triund Hill",
+                "Triund Hill Station",
+                "Hill Station"
+            ],
+            "cname": "Triund Hill Station"
+        },
+        {
+            "whitelist": [
+                "Dodital"
+            ],
+            "cname": "Dodital"
+        },
+        {
+            "whitelist": [
+                "Jampui",
+                "Jampui Hills"
+            ],
+            "cname": "Jampui Hills"
+        },
+        {
+            "whitelist": [
+                "Beas",
+                "Beas River"
+            ],
+            "cname": "Beas River"
+        },
+        {
+            "whitelist": [
+                "Nag",
+                "Nag Tibba",
+                "Nag Tibba Peak",
+                "Tibba Peak"
+            ],
+            "cname": "Nag Tibba Peak"
+        },
+        {
+            "whitelist": [
+                "Raireshwar"
+            ],
+            "cname": "Raireshwar"
+        }
+    ]
+}

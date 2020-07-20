@@ -1,16 +1,16 @@
-select {Lucknow|city_name}
-travel to {Lucknow|city_name}
-I want to travel to {Jodhpur|city_name}
-I like to travel to {Delhi|city_name}
-select {Jammu city|city_name}
-{jammu|city_name}
-{Manali|city_name} will be fine
-select {Delhi city|city_name}
-{Delhi city|city_name} will be fine
-select {Jammu|city_name}
-{Jodhpur|city_name}
-I want to travel to {Jaipur|city_name}
-I like to travel to {Delhi|city_name}
-{jaipur|city_name}
+select {Mount Tiyi|spot_name}
+travel to {Beas River|spot_name}
+I want to travel to {Jampui Hills|spot_name}
+I like to travel to {Kolahoi Glacier|spot_name}
+select {Raireshwar|spot_name}
+{Raireshwar|spot_name}
+{Raireshwar|spot_name} will be fine
+select {Nag Tibba Peak|spot_name}
+{Nag Tibba Peak|spot_name} will be fine
+select {Roopkund|spot_name}
+{Roopkund|spot_name}
+I want to travel to {Roopkund|spot_name}
+I like to travel to {Kolahoi Glacier|spot_name}
+{Roopkund|spot_name}
 
 
