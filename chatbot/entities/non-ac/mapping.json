@@ -1,0 +1,14 @@
+{
+    "entities": [
+	    {
+            "whitelist": [
+                "not ac",
+                "non-ac",
+                "non air conditioned",
+                "non air-conditioned"
+            ],
+            "cname": "non-ac"
+        }        
+    ]
+}
+

@@ -1,0 +1,38 @@
+{
+    "entities": [
+	    {
+            "whitelist": [
+                "1 rooms",
+                "1 room",
+                "room 1"
+            ],
+            "cname": "1 room"
+        },
+        {
+            "whitelist": [
+                "2 rooms",
+                "2 room",
+                "room 2"
+				
+            ],
+            "cname": "2 room"
+        },
+        {
+            "whitelist": [
+                "3 rooms",
+                "3 room",
+                "room 3"
+            ],
+            "cname": "3 room"
+        },
+	    {
+            "whitelist": [
+                "4 rooms",
+                "4 room",
+                "room 4"
+            ],
+            "cname": "4 room"
+        }
+    ]
+}
+

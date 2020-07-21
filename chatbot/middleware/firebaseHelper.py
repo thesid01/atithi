@@ -45,20 +45,23 @@ class firebaseHelper:
 		print("setting Location",data, "for", id)
 		res = self.db.child("user").child(id).child("location").child("current").set(data)
 		return res
-	def getCurrLocation(seld,data,id):
-		return self.db.child("user").child(id).child("location").get()
+	def getCurrLocation(self,id):
+		lat = self.db.child("user").child(id).child("location").child("current").child("Latitude").get()
+		long = self.db.child("user").child(id).child("location").child("current").child("Longitude").get()
+
+		return (lat.val(), long.val())
 
 	def setFoodPref(self,data,id):
 		print("setting food pref",data, "for", id)
 		res = self.db.child("user").child(id).child("preferences").child("food").set(data)
 		return res
 
-	def getFoodPref(self,data,id):
+	def getFoodPref(self,id):
 		res = self.db.child("user").child(id).child("preferences").child("food").get()
 		return res
 
 	def setHotelPref(self,data,id):
-		print("setting fhotel pref",data, "for", id)
+		print("setting hotel pref",data, "for", id)
 		if 'nof_room' in data.keys():
 			res = self.db.child("user").child(id).child("preferences").child("hotel").child("room").set(data['nof_room'])
 		if 'nof_bed' in data.keys():
@@ -70,6 +73,22 @@ class firebaseHelper:
 		if 'n0n-ac' in data.keys():
 			res = self.db.child("user").child(id).child("preferences").child("hotel").child("ac").set(0)
 		return res
+
+	def getHotelPref(self,id):
+		pref = self.db.child("user").child(id).child("preferences").child("hotel").get()
+		pref = pref.val()
+		rooms=beds=price=''
+		ac=0
+
+		if 'room' in pref.keys():
+			rooms = pref["room"]
+		if 'bed' in pref.keys():
+			beds = pref["bed"]
+		if 'price' in pref.keys():
+			price = pref["price"]
+		if 'ac' in pref.keys():
+			ac = pref["ac"]
+		return rooms, beds, price, ac
 
 	def setRemainder(self, data, id):
 		print("setting remainder", data, "for", id)

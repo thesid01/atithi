@@ -1,5 +1,5 @@
-from scrapper import getHotels
-from bookHotel import bookHotel
+from hotelScrapper.scrapper import getHotels
+from hotelScrapper.bookHotel import bookHotel
 import datetime
 
 checkin = datetime.date.today()

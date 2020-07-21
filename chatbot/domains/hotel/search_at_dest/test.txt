@@ -1,0 +1,2 @@
+search hotels in {lohagad|spot_name}
+find hotels near {lohagad fort|spot_name}

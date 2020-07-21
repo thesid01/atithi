@@ -1,0 +1,7 @@
+search hotels in {lohagad|spot_name}
+find hotels near {lohagad fort|spot_name}
+search {mahuli fort|spot_name} hotels
+hotels near {spiti valley|spot_name}
+can you find some hotels in {leh|spot_name}
+tell me some hotels for {rajmachi fort|spot_name}
+

@@ -49,7 +49,7 @@ class WhatsappBotServer:
                 result = self.firebase.createID(id)
 
             incoming_msg = request.values.get('Body', '').lower()
-            
+            print(incoming_msg)
             location = {
                 'Latitude': request.values.get('Latitude',''),
                 'Longitude' : request.values.get('Longitude','')
@@ -58,7 +58,10 @@ class WhatsappBotServer:
                 result = self.firebase.setCurrLocation(location, id)
                 resp = MessagingResponse()
                 msg = resp.message()
-                msg.body("We remembered your current location")
+                params = dict(dynamic_resource =dict(id=id))
+                incoming_msg = "lat long is set"
+                response_text = self.conv.say(incoming_msg, params=params)[0]
+                msg.body(response_text)
                 return str(resp)
             else :
                 resp = MessagingResponse()
