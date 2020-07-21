@@ -1,4 +1,4 @@
-from utils import getDate, getConfiguration
+from hotelScrapper.utils import getDate, getConfiguration
 
 
 def bookHotel(url, checkin, checkout, rooms, guests, guests_per_room):

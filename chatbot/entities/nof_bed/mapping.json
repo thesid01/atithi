@@ -1,0 +1,33 @@
+{
+    "entities": [
+	    {
+            "whitelist": [
+                "1 bed",
+                "1 beds",
+                "bed 1",
+                "single bed"
+            ],
+            "cname": "1 bed"
+        },
+        {
+            "whitelist": [
+                "2 bed",
+                "2 beds",
+                "bed 2",
+                "double bed"
+				
+            ],
+            "cname": "2 bed"
+        },
+        {
+            "whitelist": [
+                "3 bed",
+                "3 beds",
+                "bed 3",
+                "triple bed"
+            ],
+            "cname": "3 bed"
+        }
+    ]
+}
+

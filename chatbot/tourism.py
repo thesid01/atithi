@@ -26,7 +26,7 @@ def select_tourism(request, responder):
     responder.frame["spot_list"] = spot_list[1]
     if len(spot_list[0]) > 1:
         responder.params.target_dialogue_state = "select_destination_from_choice"
-        reply = "Here are some good options for " + tourism_type +" tourism: "+spot_list[0] + " Type \"select spot_name\" to start your journey. \nYou can always ask a like \"Tell me about city\""
+        reply = "Here are some good options for " + tourism_type +" tourism: "+spot_list[0] + "Select the spot name to travel.\nYou can always ask a like 'Tell me about spot name'"
     else:
         responder.params.target_dialogue_state = "select_tourism"
         reply = "Could not understand try again" + "\nWhat type of Adventure would you like to go on.\n1. Nature\n2. Camping\n3. Family"
@@ -67,7 +67,7 @@ def set_source(request, responder):
     id = request.params.dynamic_resource['id']
     res = firebase.setSource(data,id)
     responder.params.target_dialogue_state = 'food_pref'
-    responder.params.allowed_intents = ['tourism.food_pref']
+    # responder.params.allowed_intents = ['tourism.food_pref']
     responder.reply("Before we personalize your journey, we would like to ask some preferences.\nPlease tell us any preferences about your food (veg/italian/etc)")
 
 @app.handle(intent='food_pref', has_entity='food')
@@ -79,7 +79,7 @@ def food_pref(request, responder):
     print(data)
     res = firebase.setFoodPref(data,id)
     responder.params.target_dialogue_state = 'hotel_pref'
-    responder.params.allowed_intents = ['tourism.hotel_pref']
+    # responder.params.allowed_intents = ['tourism.hotel_pref']
     responder.reply('Good, Now have you any preferences for hotels(number of rooms/ac/non-ac/etc)')
 
 @app.handle(intent='hotel_pref')
@@ -87,7 +87,8 @@ def hotel_pref(request,responder):
     id = request.params.dynamic_resource['id']
     data={}
     for item in request.entities:
-        data[item["type"]]=item["text"]
+        print(item)
+        data[item["type"]]=item["value"][0]["cname"]
 
     print(data)
     res = firebase.setHotelPref(data,id)
