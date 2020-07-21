@@ -14,8 +14,9 @@
                         "Latitude":34.264704,
                         "Longitude":75.275839
                      },
-                     "city":"Sonarmarg",
+                     "city":"Sonamarg",
                      "activity":"Trekking, Mountaineering",
+                     "level":"Easy",
                      "best_season":"April to June"
                   },
                   {
@@ -27,6 +28,7 @@
                      },
                      "city":"Srinagar",
                      "activity":"Trekking",
+                     "level":"Moderate",
                      "best_season":"July to September"
                   },
                   {
@@ -38,6 +40,7 @@
                      },
                      "city":"Srinagar",
                      "activity":"Trekking",
+                     "level":"Moderate",
                      "best_season":"March to October"
                   }
                ]
@@ -55,6 +58,7 @@
                      },
                      "city":"Spiti",
                      "activity":"Trekking, River Rafting",
+                     "level":"Difficult",
                      "best_season":"July to August"
                   },
                   {
@@ -66,6 +70,7 @@
                      },
                      "city":"Manali",
                      "activity":"Trekking",
+                     "level":"Moderate",
                      "best_season":"October"
                   },
                   {
@@ -77,6 +82,7 @@
                      },
                      "city":"Dharamshala",
                      "activity":"Trekking",
+                     "level":"Easy",
                      "best_season":"March to June"
                   },
                   {
@@ -88,6 +94,7 @@
                      },
                      "city":"Pirdi",
                      "activity":"River Rafting",
+                     "level":"Moderate to Difficult",
                      "best_season":"March to July"
                   }
                ]
@@ -121,6 +128,7 @@
                      },
                      "city":"Gauri Kund",
                      "activity":"Trekking",
+                     "level":"Easy",
                      "best_season":"December to March"
                   },
                   {
@@ -132,6 +140,7 @@
                      },
                      "city":"Uttarkashi",
                      "activity":"Trekking, Camping, Hiking",
+                     "level":"Easy to Moderate",
                      "best_season":"January"
                   },
                   {
@@ -143,6 +152,7 @@
                      },
                      "city":"Ukhimath",
                      "activity":"Trekking",
+                     "level":"Easy",
                      "best_season":"March"
                   },
                   {
@@ -154,6 +164,7 @@
                      },
                      "city":"Chamoli",
                      "activity":"Trekking",
+                     "level":"Moderate to Difficult",
                      "best_season":"June"
                   },
                   {
@@ -165,6 +176,7 @@
                      },
                      "city":"Purola",
                      "activity":"Trekking",
+                     "level":"Moderate to Difficult",
                      "best_season":"November to December"
                   },
                   {
@@ -176,6 +188,7 @@
                      },
                      "city":"Mussoorie",
                      "activity":"Trekking",
+                     "level":"Easy to Moderate",
                      "best_season":"December"
                   },
                   {
@@ -187,17 +200,19 @@
                      },
                      "city":"Joshimath",
                      "activity":"Trekking",
+                     "level":"Easy to Moderate",
                      "best_season":"December"
                   },
                   {
                      "spot_id":8,
-                     "spot_name":"River Ganga",
+                     "spot_name":"Rishikesh Ganges",
                      "location":{
                         "Latitude":30.121791,
                         "Longitude":78.307204
                      },
                      "city":"Rishikesh",
                      "activity":"River Rafting",
+                     "level":"Easy to Moderate",
                      "best_season":"September to June"
                   },
                   {
@@ -209,6 +224,7 @@
                      },
                      "city":"Dagar",
                      "activity":"River Rafting",
+                     "level":"Moderate to Difficult",
                      "best_season":"October to May"
                   }
                ]
@@ -251,13 +267,14 @@
                "spots":[
                   {
                      "spot_id":1,
-                     "spot_name":"Zanskar",
+                     "spot_name":"Chadar Trek",
                      "location":{
                         "Latitude":33.771917,
                         "Longitude":76.845349
                      },
                      "city":"Kargil",
                      "activity":"Trekking, Mountaineering",
+                     "level":"Difficult",
                      "best_season":"January to February"
                   },
                   {
@@ -269,6 +286,7 @@
                      },
                      "city":"Leh",
                      "activity":"Trekking",
+                     "level":"Difficult",
                      "best_season":"May to November"
                   },
                   {
@@ -280,6 +298,7 @@
                      },
                      "city":"Leh",
                      "activity":"River Rafting",
+                     "level":"Easy",
                      "best_season":"July to September"
                   }
                ]
@@ -302,6 +321,7 @@
                      },
                      "city":"Igatpuri",
                      "activity":"Trekking, Mountaineering",
+                     "level":"Moderate to Difficult",
                      "best_season":"June to August"
                   },
                   {
@@ -313,6 +333,7 @@
                      },
                      "city":"Pune",
                      "activity":"Trekking",
+                     "level":"Easy",
                      "best_season":"June to September"
                   },
                   {
@@ -324,6 +345,7 @@
                      },
                      "city":"Pune",
                      "activity":"Trekking",
+                     "level":"Easy",
                      "best_season":"June to September"
                   },
                   {
@@ -335,6 +357,7 @@
                      },
                      "city":"Lonavala",
                      "activity":"Trekking",
+                     "level":"Moderate",
                      "best_season":"June to September"
                   },
                   {
@@ -346,6 +369,7 @@
                      },
                      "city":"Lonavala",
                      "activity":"Trekking",
+                     "level":"Easy",
                      "best_season":"June to September"
                   },
                   {
@@ -357,6 +381,7 @@
                      },
                      "city":"Asangaon",
                      "activity":"Trekking",
+                     "level":"Moderate",
                      "best_season":"June to September"
                   },
                   {
@@ -368,6 +393,7 @@
                      },
                      "city":"Pune",
                      "activity":"Trekking",
+                     "level":"Moderate",
                      "best_season":"June to September"
                   },
                   {
@@ -379,6 +405,7 @@
                      },
                      "city":"Sondewadi",
                      "activity":"Trekking",
+                     "level":"Easy to Moderate",
                      "best_season":"June to September"
                   }
                ]
@@ -458,7 +485,7 @@
                "spots":[
                   {
                      "spot_id":1,
-                     "spot_name":"Leh",
+                     "spot_name":"",
                      "location":{
                         "Latitude":34.1526,
                         "Longitude":77.5771
@@ -468,7 +495,7 @@
                   },
                   {
                      "spot_id":2,
-                     "spot_name":"Sangam",
+                     "spot_name":"",
                      "location":{
                         "Latitude":34.1031,
                         "Longitude":74.7764
@@ -523,6 +550,7 @@
                      },
                      "city":"Bangalore",
                      "activity":"Trekking",
+                     "level":"Moderate",
                      "best_season":"June to October"
                   },
                   {
@@ -534,6 +562,7 @@
                      },
                      "city":"Coorg",
                      "activity":"River Rafting",
+                     "level":"Difficult",
                      "best_season":"July to September"
                   }
                ]
@@ -603,11 +632,12 @@
                         "Longitude":96.153181
                      },
                      "city":"Tezu",
+                     "level":"Moderate",
                      "activity":"River Rafting"
                   },
                   {
                      "spot_id":2,
-                     "spot_name":"Sangam",
+                     "spot_name":"",
                      "location":{
                         "Latitude":34.1031,
                         "Longitude":74.7764
@@ -646,6 +676,7 @@
                      },
                      "city":"Siliguri",
                      "activity":"Trekking",
+                     "level":"Moderate to Difficult",
                      "best_season":"November"
                   },
                   {
@@ -657,6 +688,7 @@
                      },
                      "city":"Gangtok",
                      "activity":"Trekking",
+                     "level":"Easy",
                      "best_season":"November"
                   }
                ]
@@ -706,6 +738,7 @@
                      },
                      "city":"Agartala",
                      "activity":"Trekking",
+                     "level":"Easy to Moderate",
                      "best_season":"October to December"
                   }
                ]
@@ -739,6 +772,7 @@
                      },
                      "city":"Kohima",
                      "activity":"Trekking",
+                     "level":"Moderate",
                      "best_season":"June to September"
                   },
                   {
@@ -750,6 +784,7 @@
                      },
                      "city":"Kiphire",
                      "activity":"Trekking",
+                     "level":"Moderate to Difficult",
                      "best_season":"October to November"
                   },
                   {
@@ -761,6 +796,7 @@
                      },
                      "city":"Wokha",
                      "activity":"Trekking",
+                     "level":"Moderate to Difficult",
                      "best_season":"October to February"
                   }
                ]
@@ -778,6 +814,7 @@
                      },
                      "city":"Darjeeling",
                      "activity":"Trekking",
+                     "level":"Moderate",
                      "best_season":"April"
                   }
                ]
