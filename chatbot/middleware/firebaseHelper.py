@@ -1,5 +1,6 @@
 import pyrebase
 import time
+from . import nearbyPlacesHelper
 
 config = {
   "apiKey": "AIzaSyBiv6ZNCNcoHDiOkAhq9vHKiG0AqE2VjFY",
@@ -16,6 +17,8 @@ class firebaseHelper:
 	
 	def existID(self, id):
 		res = self.db.child("user").get()
+		if res is None:
+			return False
 		id_list=[]
 		for num in res.each():
 			id_list.append(num.key())
@@ -37,6 +40,10 @@ class firebaseHelper:
 		res = self.db.child("user").child(id).child("location").child("destinations").set(data)
 		return res
 
+	def getDest(self,id):
+		res = self.db.child("user").child(id).child("location").child("destinations").get().val()
+		return res
+
 	def setSource(self,data,id):
 		res = self.db.child("user").child(id).child("location").child("source").set(data)
 		return res
@@ -44,12 +51,23 @@ class firebaseHelper:
 	def setCurrLocation(self,data, id):
 		print("setting Location",data, "for", id)
 		res = self.db.child("user").child(id).child("location").child("current").set(data)
+		self.setCurrLocationName(data, id)
 		return res
+		
 	def getCurrLocation(self,id):
 		lat = self.db.child("user").child(id).child("location").child("current").child("Latitude").get()
 		long = self.db.child("user").child(id).child("location").child("current").child("Longitude").get()
-
 		return (lat.val(), long.val())
+
+	def setCurrLocationName(self,data, id):
+		print("setting Location Name",data, "for", id)
+		res = self.db.child("user").child(id).child("location").child("location_name").set(nearbyPlacesHelper.getCityName(data))
+		return res
+	
+	def getCurrLocationName(self, id):
+		print("getting Location Name", "for", id)
+		res = self.db.child("user").child(id).child("location").child("location_name").get().val()
+		return res
 
 	def setFoodPref(self,data,id):
 		print("setting food pref",data, "for", id)
@@ -77,6 +95,8 @@ class firebaseHelper:
 	def getHotelPref(self,id):
 		pref = self.db.child("user").child(id).child("preferences").child("hotel").get()
 		pref = pref.val()
+		if pref is None:
+			return None, None, None, None
 		rooms=beds=price=''
 		ac=0
 
@@ -90,13 +110,28 @@ class firebaseHelper:
 			ac = pref["ac"]
 		return rooms, beds, price, ac
 
-	def setRemainder(self, data, id):
-		print("setting remainder", data, "for", id)
-		results = self.db.child("user").child(id).child("remainder").child(int(round(time.time() * 1000))).set(data)
+	def setReminder(self, data):
+		print("setting remainder", data,)
+		return self.db.child("reminder").child(int(round(time.time() * 1000))).set(data)
 	
-	def getRemainders(self):
-		users = self.db.child("user").get()
-		remainders = []
-		for user in users.val():
-			remainders.append({"id":user, "remainders" : self.db.child("user").child(user).child("remainder").get()})
-		return remainders
+	def removeReminder(self, data):
+		print("removing remainder", data)
+		self.db.child("reminder").child(data).remove()
+	
+	def getReminders(self):
+		reminders = self.db.child("reminder").get()
+		data = []
+		if reminders.val() is None :
+			return []
+		for rem in reminders.val():
+			data.append(self.db.child("reminder").child(rem).get().val())
+		return data
+
+if __name__ == "__main__":
+	f = firebaseHelper()
+	f.setReminder({
+		"to":"918604074906",
+		"time" : int(round(time.time() * 1000)),
+		"message": "Hi Siddharth Its time to sleep"
+	})
+	f.getReminders()

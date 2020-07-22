@@ -47,8 +47,12 @@ def select_destination_from_choice(request, responder):
             #based on current coord
             ######################
             responder.params.target_dialogue_state = "set_source"
-            responder.reply("Your destination has been set to:" + request.entities[0]["text"] + "\nYour current location is: dummy and is set as source" +
-            "\nPlease tell us the source loaction if you want to change it'")
+            loc = firebase.getCurrLocationName(id)
+            if loc is None:
+                loc= "Your current location is not set. \nPlease tell us your location"
+            else : 
+                loc = "Your current location is \nPlease tell us the source loaction if you want to change it"
+            responder.reply("Your destination has been set to:" + request.entities[0]["text"] + "\n"+loc)
 
         else:
             all_cities = _fetch_all_spot_from_kb()
