@@ -50,6 +50,9 @@ def getHotels(location, count):
 	}
 	return data
 
+def getRestaurantsbyCuisine(location, cuisine):
+	pass
+
 if __name__ == "__main__":
 	hotels = getHotels({"Latitude":26,"Longitude":80},5)
 	print(json.dumps(hotels, indent=4, sort_keys=True))

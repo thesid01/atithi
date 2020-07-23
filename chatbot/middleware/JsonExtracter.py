@@ -37,20 +37,24 @@ def generateMappingjson(data):
         jj["entities"].append(dict(whitelist=t,cname=i))
     return jj
 
-def convertForElasticSearch(filename) :
-    f = open(filename,)
+def convertForElasticSearch(file, filename) :
+    f = open(file,)
     id = 1
     contents = json.load(f) 
     data = []
     for cluster in contents["clusters"]:
         for state in cluster["states"]:
             for spot in state["spots"]:
-                spot["id"] = id
-                spot["state_id"] = state["state_id"]
-                spot["cluster_id"] = cluster["cluster_id"]
-                spot["state_name"]  = state["state_name"]
-                spot["location"] = str(spot["location"]["Latitude"]) + "," + str(spot["location"]["Longitude"])
-                data.append(spot)
+                temp = dict()
+                temp["id"] = str(id)
+                temp["state_id"] = str(state["state_id"])
+                temp["cluster_id"] = str(cluster["cluster_id"])
+                temp["state_name"]  = state["state_name"]
+                for k in spot:
+                    temp[k] = spot[k]
+                temp["location"] = str(spot["location"]["Latitude"]) + "," + str(spot["location"]["Longitude"])
+                temp['spot_id'] = str(spot["spot_id"])
+                data.append(temp)
                 id += 1
     f.close()
     with open(filename, 'w') as json_file:
@@ -60,4 +64,4 @@ if __name__ == "__main__":
     # data = getSpotName("../data/spot.json")
     # data = generateMappingjson(data)
     # print(json.dumps(data,indent=4))
-    convertForElasticSearch("../data/spot_data.json")
+    convertForElasticSearch("../data/spot.json", "../data/spot_data.json")

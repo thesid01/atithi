@@ -1,0 +1,10 @@
+[
+    {
+        "id":1,
+        "suggestion":"search hotels in "
+    },
+    {
+        "id":2,
+        "suggestion":"find hotels near "
+    }
+]

@@ -89,7 +89,7 @@ if __name__ == '__main__':
     scheduler.start()
     scheduler.add_job(
         func=server.start_remainder,
-        trigger=IntervalTrigger(seconds=1*10),
+        trigger=IntervalTrigger(seconds=1*60),
         id='send_remainders',
         name='send remainder every minute',
         replace_existing=True)
