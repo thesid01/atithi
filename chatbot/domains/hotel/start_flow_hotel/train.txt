@@ -1,10 +1,10 @@
 search hotels
-tell me some hotel
+tell me some hotels
 can you suggest some hotels
-suggest hotel
+suggest hotels
 please suggests some hotels
-tell some hotels
-hotel search
+tell some hotel
 inn search
-search inns
+hotels search
+search inn
 

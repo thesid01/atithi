@@ -1,162 +1,162 @@
 [
     {
-        "name": "OYO 46253 A R Hotel",
+        "name": "SPOT ON 62283 Maa Kamala Guest House",
+        "rating": null,
+        "address": "Near Howrah AC Market, Kolkata",
+        "distance": "0.9 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/83792/bd6bf437fa6fd61c.jpg",
+        "url": "https://www.oyorooms.com/83792-spot-on-spot-on-62283-maa-kamala-guest-house-kolkata/"
+    },
+    {
+        "name": "SPOT ON 65762 Day Light",
         "rating": "3.4",
-        "address": "Near Marhar Mau Kala, Lucknow",
-        "distance": "26.6 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/74795/85b88cbce544e85b.jpg",
-        "url": "https://www.oyorooms.com/74795-oyo-rooms-oyo-46253-a-r-hotel-lucknow/"
+        "address": "Near Howrah Ac Market, Howrah, Kolkata",
+        "distance": "1.1 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/89155/1cc6c5db43afcd76.jpg",
+        "url": "https://www.oyorooms.com/89155-spot-on-spot-on-65762-day-light-kolkata/"
     },
     {
-        "name": "OYO 27923 Satya Shiv Resort",
+        "name": "OYO 71260 J S Palace",
+        "rating": null,
+        "address": "Kolkata, Kolkata",
+        "distance": "1.5 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/99109/40cd029539ee8055.jpg",
+        "url": "https://www.oyorooms.com/99109-oyo-rooms-oyo-71260-j-s-palace-kolkata/"
+    },
+    {
+        "name": "OYO Home 48629 Happening Home Near Howrah Station",
+        "rating": "4.5",
+        "address": "Ainuddin Ghat Majhi Lane, Howrah, Kolkata",
+        "distance": "2.2 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/78530/c463317dcf4196fb.jpg",
+        "url": "https://www.oyorooms.com/78530-home-oyo-home-48629-happening-home-near-howrah-station-kolkata/"
+    },
+    {
+        "name": "Capital O 8565 Hotel Golden Palace",
+        "rating": "4.1",
+        "address": "Mahatma Gandhi Road, Kolkata",
+        "distance": "3.1 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/14113/e2239a1a8cb551b4.jpg",
+        "url": "https://www.oyorooms.com/14113-capital-o-capital-o-8565-hotel-golden-palace-kolkata/"
+    },
+    {
+        "name": "OYO 46432 Eennra North Guest House",
+        "rating": "4.5",
+        "address": "Near British institute, Amherst street, Kolkata",
+        "distance": "3.7 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/75007/8c5eec7235a1d58a.jpg",
+        "url": "https://www.oyorooms.com/75007-oyo-rooms-oyo-46432-eennra-north-guest-house-kolkata/"
+    },
+    {
+        "name": "OYO 10471 Hotel Samrat Palace",
+        "rating": "4",
+        "address": "Near Avani Mall, Shibpur Tram Depot, Kolkata",
+        "distance": "4.1 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/17376/fa54c7b7869bb8b2.jpg",
+        "url": "https://www.oyorooms.com/17376-oyo-rooms-oyo-10471-hotel-samrat-palace-kolkata/"
+    },
+    {
+        "name": "SPOT ON 70605 Taj Guest House",
+        "rating": "4",
+        "address": "Choura Bustee, Shibpur, Kolkata",
+        "distance": "4.1 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/97702/1fbdd8c9e8c096db.jpg",
+        "url": "https://www.oyorooms.com/97702-spot-on-spot-on-70605-taj-guest-house-kolkata/"
+    },
+    {
+        "name": "SPOT ON 66984 Hotel Atlantic",
         "rating": "3.7",
-        "address": "Near Radha Swami Ashram, Rae Bareily Road, Lucknow",
-        "distance": "27.7 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/48705/9071592a3e17efe2.jpg",
-        "url": "https://www.oyorooms.com/48705-oyo-rooms-oyo-27923-satya-shiv-resort-lucknow/"
+        "address": "Near Society Cinema Hall, Esplanade, Kolkata",
+        "distance": "4.4 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/91315/deb72b01aabb1d10.jpg",
+        "url": "https://www.oyorooms.com/91315-spot-on-spot-on-66984-hotel-atlantic-kolkata/"
     },
     {
-        "name": "OYO 49717 Hotel Ghar Residency",
-        "rating": "3.5",
-        "address": "Near SGPGI, Mohanlal Ganj, Lucknow",
-        "distance": "29.4 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/79894/6b7cc751e517c048.jpg",
-        "url": "https://www.oyorooms.com/79894-oyo-rooms-oyo-49717-hotel-ghar-residency-lucknow/"
+        "name": "OYO Flagship 47581 Near Nabanna Secretariat Building",
+        "rating": "4",
+        "address": "Howrah, Kolkata",
+        "distance": "4.7 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/104300/7ce73f9482c2c344.jpg",
+        "url": "https://www.oyorooms.com/104300-flagship-oyo-flagship-47581-near-nabanna-secretariat-building-kolkata/"
     },
     {
-        "name": "OYO 46216 Roister Home Stay",
-        "rating": "3.1",
-        "address": "Near Allahabad Bank, Golf City, Lucknow",
-        "distance": "29.7 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/74742/84c29eadf74a3541.jpg",
-        "url": "https://www.oyorooms.com/74742-oyo-rooms-oyo-46216-roister-home-stay-lucknow/"
-    },
-    {
-        "name": "OYO 44175 Hotel Surya Inn",
-        "rating": "4.4",
-        "address": "Near Ahamamau Chauraha, Ahmamau, Lucknow",
-        "distance": "30.3 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/62080/49b4a8a437bc8da6.jpg",
-        "url": "https://www.oyorooms.com/62080-oyo-rooms-oyo-44175-hotel-surya-inn-lucknow/"
-    },
-    {
-        "name": "OYO 67204 Mohit Palace",
+        "name": "SilverKey Executive Stays 37925 River View",
         "rating": "4.3",
-        "address": "Near Amity University, Thasemau, Lucknow",
-        "distance": "30.5 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/91614/9445090ab558f1fc.jpg",
-        "url": "https://www.oyorooms.com/91614-oyo-rooms-oyo-67204-mohit-palace-lucknow/"
+        "address": "Tarapada Chatterjee Lane, Kolkata",
+        "distance": "4.7 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/104371/f1671a25d59ba900.jpg",
+        "url": "https://www.oyorooms.com/104371-silverkey-silverkey-executive-stays-37925-river-view-kolkata/"
     },
     {
-        "name": "OYO 29246 Surabhi Inn",
-        "rating": null,
-        "address": "Near Amity University, Lucknow",
-        "distance": "30.9 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/50257/fc363104ff584d0b.jpg",
-        "url": "https://www.oyorooms.com/50257-oyo-rooms-oyo-29246-surabhi-inn-lucknow/"
-    },
-    {
-        "name": "OYO 61177 Hotel Castle Inn",
-        "rating": "4.2",
-        "address": "Near Amity University, Chinhat, Lucknow",
-        "distance": "30.9 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/82083/f8001e759a97920b.jpg",
-        "url": "https://www.oyorooms.com/82083-oyo-rooms-oyo-61177-hotel-castle-inn-lucknow/"
-    },
-    {
-        "name": "OYO 28244 Hotel Sammy Grand",
-        "rating": "4.2",
-        "address": "Near Arvind Academy, Gomti Nagar, Lucknow",
-        "distance": "31.2 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/49156/18b8292204162f09.jpg",
-        "url": "https://www.oyorooms.com/49156-capital-o-oyo-28244-hotel-sammy-grand-lucknow/"
-    },
-    {
-        "name": "OYO 71409 Vilasa",
-        "rating": "4.9",
-        "address": "Near Amity University, Malhaur, Lucknow",
-        "distance": "31.2 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/99419/1ab9b1df2f3a15dd.jpg",
-        "url": "https://www.oyorooms.com/99419-capital-o-oyo-71409-vilasa-lucknow/"
-    },
-    {
-        "name": "OYO 14458 Hotel Lotus Inn",
+        "name": "OYO 49195 Hotel Jayanti",
         "rating": "3.6",
-        "address": "Near Panacea Hospital, Gomti nagar, Lucknow",
-        "distance": "31.6 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/36787/6bedd97f72f03f94.jpg",
-        "url": "https://www.oyorooms.com/36787-oyo-rooms-oyo-14458-hotel-lotus-inn-lucknow/"
+        "address": "Near Nabanna Bus Stand, Shalimar, Kolkata",
+        "distance": "4.8 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/79226/765f1f468b53ea16.jpg",
+        "url": "https://www.oyorooms.com/79226-oyo-rooms-oyo-49195-hotel-jayanti-kolkata/"
     },
     {
-        "name": "OYO 67897 New Sahaj Palace",
+        "name": "OYO 8863 Hotel Sigma",
+        "rating": "4.2",
+        "address": "Near Buxarah Road, Howrah, Kolkata",
+        "distance": "5.0 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/14418/a3ccd002229c2566.jpg",
+        "url": "https://www.oyorooms.com/14418-oyo-rooms-oyo-8863-hotel-sigma-kolkata/"
+    },
+    {
+        "name": "OYO 64202 Shaan Guest House",
+        "rating": "4",
+        "address": "Near Mission Hospital, Bose Rd, Kolkata",
+        "distance": "5.7 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/86703/58fcfd7e21019124.jpg",
+        "url": "https://www.oyorooms.com/86703-oyo-rooms-oyo-64202-shaan-guest-house-kolkata/"
+    },
+    {
+        "name": "Capital O 16703 Hotel The Platinum",
+        "rating": "4.2",
+        "address": "Salt Lake, Kolkata",
+        "distance": "6.0 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/839/693d92c4add3c6c3.jpg",
+        "url": "https://www.oyorooms.com/839-capital-o-capital-o-16703-hotel-the-platinum-kolkata/"
+    },
+    {
+        "name": "OYO 49605 Le Residency",
+        "rating": "3.8",
+        "address": "Near SweetLim's Bakery, Sector 1, Kolkata",
+        "distance": "6.1 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/79760/42b635ec71d50cd1.jpg",
+        "url": "https://www.oyorooms.com/79760-oyo-rooms-oyo-49605-le-residency-kolkata/"
+    },
+    {
+        "name": "OYO 73844 Delight Residency",
         "rating": null,
-        "address": "Near Sujeet General Store, Lucknow",
-        "distance": "31.6 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/92598/6110bd8e91753619.jpg",
-        "url": "https://www.oyorooms.com/92598-oyo-rooms-oyo-67897-new-sahaj-palace-lucknow/"
+        "address": "Near FC Block, Bidhannagar, Kolkata",
+        "distance": "6.1 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/103821/eb10c6f4c6b8d97e.jpg",
+        "url": "https://www.oyorooms.com/103821-oyo-rooms-oyo-73844-delight-residency-kolkata/"
     },
     {
-        "name": "OYO 29308 Virasat Shaheed Path Inn",
-        "rating": "3.9",
-        "address": "Near Sujeet General Store, Gomti Nagar, Lucknow",
-        "distance": "31.8 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/50327/3bc47475b671af92.JPG",
-        "url": "https://www.oyorooms.com/50327-oyo-rooms-oyo-29308-virasat-shaheed-path-inn-lucknow/"
+        "name": "OYO 70070 Delight Rooms",
+        "rating": "4.5",
+        "address": "Near Tank No 2, Kolkata",
+        "distance": "6.4 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/96596/a27981685eb05c1a.jpg",
+        "url": "https://www.oyorooms.com/96596-oyo-rooms-oyo-70070-delight-rooms-kolkata/"
     },
     {
-        "name": "OYO 40723 Brinda Palace",
-        "rating": "3.9",
-        "address": "Near Medanta Medicity, Vrindavan Colony, Lucknow",
-        "distance": "31.9 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/59131/2834eaa875d4a5e0.jpg",
-        "url": "https://www.oyorooms.com/59131-oyo-rooms-oyo-40723-brinda-palace-lucknow/"
+        "name": "OYO Townhouse 143 Hotel Royal Garden",
+        "rating": "4.7",
+        "address": "Kolkata, Kolkata",
+        "distance": "6.4 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/104357/8c8bdfef17127651.jpg",
+        "url": "https://www.oyorooms.com/104357-townhouse-oyo-townhouse-143-hotel-royal-garden-kolkata/"
     },
     {
-        "name": "SPOT ON 69082 Indra Palace",
-        "rating": "3.5",
-        "address": "Near SGPGI, Ekta Nagar, Lucknow",
-        "distance": "32.3 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/94712/1232c215e0e8de47.jpg",
-        "url": "https://www.oyorooms.com/94712-spot-on-spot-on-69082-indra-palace-lucknow/"
-    },
-    {
-        "name": "OYO 46498 Khusboo Palace",
-        "rating": "4.3",
-        "address": "Near Vrindavan Eye Hospital, Vrindavan Yojna, Lucknow",
-        "distance": "32.4 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/75094/555c969ca2030ebf.jpg",
-        "url": "https://www.oyorooms.com/75094-oyo-rooms-oyo-46498-khusboo-palace-lucknow/"
-    },
-    {
-        "name": "OYO 28185 The Golden Sky",
-        "rating": "4.3",
-        "address": "Near SGPGI Raibareli Road, Lucknow",
-        "distance": "32.5 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/49075/f0076ae656093e94.jpg",
-        "url": "https://www.oyorooms.com/49075-oyo-rooms-oyo-28185-the-golden-sky-lucknow/"
-    },
-    {
-        "name": "OYO 29091 Hotel Shivam International",
-        "rating": "4.4",
-        "address": "Near Mani Maunta Market, Lucknow",
-        "distance": "32.5 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/50053/e64c8859d4658e61.jpg",
-        "url": "https://www.oyorooms.com/50053-oyo-rooms-oyo-29091-hotel-shivam-international-lucknow/"
-    },
-    {
-        "name": "OYO 64984 Hotel Rudransh",
+        "name": "OYO 2125 Salt Lake Sector 1",
         "rating": "3.2",
-        "address": "Near SGPGI Hospital, Lucknow",
-        "distance": "32.5 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/88075/1f694522efd5814d.jpg",
-        "url": "https://www.oyorooms.com/88075-oyo-rooms-oyo-64984-hotel-rudransh-lucknow/"
-    },
-    {
-        "name": "OYO 30849 Hotel Natraj INN",
-        "rating": "4.6",
-        "address": "Near SGPGI, Utrathia, Lucknow",
-        "distance": "32.5 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/52550/76f434a97e8e2a79.jpg",
-        "url": "https://www.oyorooms.com/52550-oyo-rooms-oyo-30849-hotel-natraj-inn-lucknow/"
+        "address": "Near Salt Lake City, Kolkata",
+        "distance": "6.4 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/2818/089ec365dfbeeac2.jpg",
+        "url": "https://www.oyorooms.com/2818-oyo-rooms-oyo-2125-salt-lake-sector-1-kolkata/"
     }
 ]

@@ -67,8 +67,11 @@ class WhatsappBotServer:
                 resp = MessagingResponse()
                 msg = resp.message()
                 params = dict(dynamic_resource =dict(id=id)) #Used to send dynamic id of the user making query
-                response_text = self.conv.say(incoming_msg, params=params)[0]
-                msg.body(response_text)
+                try:
+                    response_text = self.conv.say(incoming_msg, params=params)[0]
+                    msg.body(response_text)
+                except IndexError:
+                    msg.body("Didn't understand. sorry")
                 return str(resp)
 
     def run(self, host="localhost", port=7150):

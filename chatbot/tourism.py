@@ -41,40 +41,41 @@ def select_destination_from_choice(request, responder):
             data = request.entities[0]["text"]
 
             res = firebase.setDest(data,id)
-            #######################
-            #Extract location name
-            #based on current coord
-            ######################
-            responder.params.target_dialogue_state = "set_source"
-            loc = firebase.getCurrLocationName(id)
-            if loc is None:
-                loc= "Your current location is not set. \nPlease tell us your location"
-            else : 
-                for l in loc:
-                    loc = loc[l]
-                    break 
-                loc = "Your current location is "+loc+"\nPlease tell us the source loaction if you want to change it"
-                responder.reply("Your destination has been set to:" + request.entities[0]["text"] + "\n"+loc)
+            lat, long = firebase.getCurrLocation(id)
+
+            if lat and long:
+                responder.params.allowed_intents = ('general.set_current_loc','tourism.set_source','tourism.resume')
+                loc = firebase.getCurrLocationName(id)
+                msg = "Your current location is "+loc['city']+" and is set as source.\n\nPlease tell us the source location or share the new source location if you want to change it, otherwise resume."
+                responder.reply("Your destination has been set to:" + data + "\n\n"+msg)
+
+            else:
+                
+                responder.params.allowed_intents = ['general.set_current_loc','tourism.set_source']
+                msg = "Please tell us the source location or share the location"
+                responder.reply("Your destination has been set to:" + request.entities[0]["text"] + "\n"+msg)
                 # return
 
-        else:
-            all_cities = _fetch_all_spot_from_kb()
-            print(request.entities[0]["text"] in all_cities[0])
-            print(all_cities[0])
-            if request.entities[0]["text"] in all_cities[0]:
-                responder.params.target_dialogue_state = "set_source"
+        elif request.entities[0]["text"]:
+            data = request.entities[0]["text"]
+
+            res = firebase.setDest(data,id)
+            lat, long = firebase.getCurrLocation(id)
+
+            if lat and long:
+                responder.params.allowed_intents = ('general.set_current_loc','tourism.set_source','tourism.resume')
                 loc = firebase.getCurrLocationName(id)
-                if loc is None:
-                    loc= "Your current location is not set. \nPlease tell us your location"
-                else : 
-                    for l in loc:
-                        loc = loc[l]
-                        break 
-                loc = "Your destination has been set to:" + request.entities[0]["text"] + "\nYour current location is "+loc+"\nPlease tell us the source loaction if you want to change it"
-                responder.reply("You have choosen city not from recommenend list.\nContinuing.....\n"+loc)
-            else :
-                responder.params.target_dialogue_state = "start_tour"
-                responder.reply("Didn't unnderstand, say start to start plannig of tour.")
+                msg = "Your current location is "+loc['city']+" and is set as source.\n\nPlease tell us the source location or share the new source location if you want to change it, otherwise resume."
+                responder.reply("The selected adventure spot is not under the chosen class, Continuing.....\nYour destination has been set to:" + data + "\n\n"+msg)
+
+            else:
+                
+                responder.params.allowed_intents = ['general.set_current_loc','tourism.set_source']
+                msg = "Please tell us the source location or share the location"
+                responder.reply("The selected adventure spot is not under the chosen class, Continuing.....\nYour destination has been set to:" + request.entities[0]["text"] + "\n"+msg)
+
+        else:
+            responder.reply("Oops.....your adventure spot is not found in our data, enter any other spot")
     except IndexError:
         responder.params.target_dialogue_state = "start_tour"
         responder.reply("Didn't unnderstand, say start to start plannig of tour.")
@@ -83,6 +84,15 @@ def select_destination_from_choice(request, responder):
         responder.reply("Didn't unnderstand, say start to start plannig of tour.")
     return
 
+@app.handle(domain='tourism',intent='resume')
+def resume(request,responder):
+    responder.params.target_dialogue_state = 'food_pref'
+    responder.reply("Before we personalize your journey, we would like to ask some preferences.\nPlease tell us any preferences about your food (veg/italian/etc)")
+
+@app.handle(domain='general', intent='set_curr_loc')
+def set_curr_loc(request,responder):
+    responder.params.target_dialogue_state = 'food_pref'
+    responder.reply("Before we personalize your journey, we would like to ask some preferences.\nPlease tell us any preferences about your food (veg/italian/etc)")
 
 @app.handle(intent='set_source', has_entity='city_name')
 def set_source(request, responder):

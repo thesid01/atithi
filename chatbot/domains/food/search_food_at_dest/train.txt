@@ -1,0 +1,7 @@
+search restaurants in {lohagad|spot_name}
+find restaurants near {lohagad fort|spot_name}
+search {mahuli fort|spot_name} restaurants
+restaurants near {spiti valley|spot_name}
+can you find some restaurants in {leh|spot_name}
+tell me some restaurants for {rajmachi fort|spot_name}
+
