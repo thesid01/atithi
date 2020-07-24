@@ -17,15 +17,16 @@ class firebaseHelper:
 	
 	def existID(self, id):
 		res = self.db.child("user").get()
-		if res is None:
+		if not res.val():
 			return False
-		id_list=[]
-		for num in res.each():
-			id_list.append(num.key())
-		if id in id_list:
-			return True
 		else:
-			return False
+			id_list=[]
+			for num in res.each():
+				id_list.append(num.key())
+			if id in id_list:
+				return True
+			else:
+				return False
 
 	def createID(self,data):
 		print("Adding user",data)
@@ -61,12 +62,21 @@ class firebaseHelper:
 
 	def setCurrLocationName(self,data, id):
 		print("setting Location Name",data, "for", id)
-		res = self.db.child("user").child(id).child("location").child("location_name").set(nearbyPlacesHelper.getCityName(data))
+		res = self.db.child("user").child(id).child("location").child("current").child("location_name").set(nearbyPlacesHelper.getCityName(data))
 		return res
 	
 	def getCurrLocationName(self, id):
 		print("getting Location Name", "for", id)
-		res = self.db.child("user").child(id).child("location").child("location_name").get().val()
+		try:
+			res = self.db.child("user").child(id).child("location").child("current").child("location_name").get().val()
+			city = res['city']
+		except TypeError:
+			print('d')
+			lat,long = self.getCurrLocation(id)
+			coord = {'Latitude': lat, 'Longitude': long}
+			self.setCurrLocationName(coord,id)
+			res = self.db.child("user").child(id).child("location").child("current").child("location_name").get().val()
+
 		return res
 
 	def setFoodPref(self,data,id):

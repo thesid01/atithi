@@ -25,7 +25,7 @@ def getRestaurantDetails(id):
 	}
 	return temp
 	
-def getHotels(location, count):
+def getRestaurant(location, count):
 	url = 'https://developers.zomato.com/api/v2.1/geocode?lat='+str(location["Latitude"])+'&lon='+str(location["Longitude"])
 	r = requests.get(url, headers=headers)
 	r = json.loads(r.content)

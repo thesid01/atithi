@@ -11,14 +11,14 @@ import random
 
 firebase = firebaseHelper()
 
-@app.handle(intent='start_flow')
-def start_flow(request, responder):
+@app.handle(intent='start_flow_hotel')
+def start_flow_hotel(request, responder):
     # responder.params.target_dialogue_state = "hotel.set_current_loc"
-    responder.params.allowed_intents = ['general.set_current_loc','hotel.search_nearby','hotel.search_at_dest']
+    responder.params.allowed_intents = ['general.set_current_loc','hotel.search_nearby_hotel','hotel.searc_hotel_at_dest']
     responder.reply("Sure, please tell us the the destination name or just share your location if you want to search hotels nearby you")
 
-@app.handle(domain='hotel', intent='search_nearby')
-def search_nearby(request,responder):
+@app.handle(domain='hotel', intent='search_nearby_hotel')
+def search_nearby_hotel(request,responder):
     print('f')
     id = request.params.dynamic_resource['id']
 
@@ -38,7 +38,7 @@ def search_nearby(request,responder):
 
 
 @app.handle(domain='general',intent='set_current_loc')
-def search_at_curr(request, responder):
+def search_hotel_at_curr(request, responder):
 
     # code for getting nearest_city for the loc
     id = request.params.dynamic_resource['id']
@@ -55,8 +55,8 @@ def search_at_curr(request, responder):
         responder.reply("We couldn't find best hotels at your current location, Try sending location again")
 
 
-@app.handle(domain='hotel',intent='search_at_dest', has_entity='spot_name')
-def search_at_dest(request, responder):
+@app.handle(domain='hotel',intent='search_hotel_at_dest', has_entity='spot_name')
+def search_hotel_at_dest(request, responder):
     spot_name = request.entities[0]["value"][0]["cname"]
     print(spot_name)
     print("sidd")

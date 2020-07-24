@@ -1,6 +1,6 @@
 import requests
 import json
-from amadeus import Client, ResponseError
+# from amadeus import Client, ResponseError
 
 
 #foursqaure
@@ -67,10 +67,9 @@ def transit(ori_location, dest_location):
         origin=ori_location,
         destination=dest_location,
         apikey=api_key)
-    print(params)
+    
     resp = requests.get(url=url, params=params)
     resp = json.loads(resp.text)
-    print(resp)
     
     
 if __name__ == "__main__":
