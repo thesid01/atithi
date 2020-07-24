@@ -35,10 +35,9 @@ def select_tourism(request, responder):
 
 @app.handle(intent = 'select_destination', has_entity='spot_name')
 def select_destination_from_choice(request, responder):
-
+    id = request.params.dynamic_resource['id']
     try:
         if request.entities[0]["text"] in responder.frame["spot_list"]:
-            id = request.params.dynamic_resource['id']
             data = request.entities[0]["text"]
 
             res = firebase.setDest(data,id)
@@ -47,17 +46,41 @@ def select_destination_from_choice(request, responder):
             #based on current coord
             ######################
             responder.params.target_dialogue_state = "set_source"
-            responder.reply("Your destination has been set to:" + request.entities[0]["text"] + "\nYour current location is: dummy and is set as source" +
-            "\nPlease tell us the source loaction if you want to change it'")
+            loc = firebase.getCurrLocationName(id)
+            if loc is None:
+                loc= "Your current location is not set. \nPlease tell us your location"
+            else : 
+                for l in loc:
+                    loc = loc[l]
+                    break 
+                loc = "Your current location is "+loc+"\nPlease tell us the source loaction if you want to change it"
+                responder.reply("Your destination has been set to:" + request.entities[0]["text"] + "\n"+loc)
+                # return
 
         else:
             all_cities = _fetch_all_spot_from_kb()
+            print(request.entities[0]["text"] in all_cities[0])
+            print(all_cities[0])
             if request.entities[0]["text"] in all_cities[0]:
                 responder.params.target_dialogue_state = "set_source"
-                responder.reply("You have choosen city not from recommenend list.\nContinuing.....")
+                loc = firebase.getCurrLocationName(id)
+                if loc is None:
+                    loc= "Your current location is not set. \nPlease tell us your location"
+                else : 
+                    for l in loc:
+                        loc = loc[l]
+                        break 
+                loc = "Your destination has been set to:" + request.entities[0]["text"] + "\nYour current location is "+loc+"\nPlease tell us the source loaction if you want to change it"
+                responder.reply("You have choosen city not from recommenend list.\nContinuing.....\n"+loc)
+            else :
+                responder.params.target_dialogue_state = "start_tour"
+                responder.reply("Didn't unnderstand, say start to start plannig of tour.")
     except IndexError:
         responder.params.target_dialogue_state = "start_tour"
-        responder.reply("Wrong Choice");
+        responder.reply("Didn't unnderstand, say start to start plannig of tour.")
+    except KeyError:
+        responder.params.target_dialogue_state = "start_tour"
+        responder.reply("Didn't unnderstand, say start to start plannig of tour.")
     return
 
 
@@ -110,7 +133,7 @@ def _fetch_city_from_kb(tourism_type):
 
 
 def _fetch_spot_from_kb(tourism_type):
-    spot = app.question_answerer.get(index='spot_data')
+    spot = app.question_answerer.get(index='spot_data',size=57)
     spot_list = "\n"
     spot_array = []
     j = 1
@@ -118,12 +141,12 @@ def _fetch_spot_from_kb(tourism_type):
         if tourism_type in spot[i]["type"]:
             spot_list += str(j)+": "+spot[i]["spot_name"] + "\n"
             j = j+1
-            spot_array.append(spot[i]["spot_name"])
+            spot_array.append(spot[i]["spot_name"].lower())
     return [spot_list,spot_array]
 
 def _fetch_all_spot_from_kb():
-    spot = app.question_answerer.get(index='spot_data')
+    spot = app.question_answerer.get(index='spot_data',size=57)
     spot_array = []
     for i in range(len(spot)):
-        spot_array.append(spot[i]["spot_name"])
+        spot_array.append(spot[i]["spot_name"].lower())
     return [spot_array]

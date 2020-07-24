@@ -7,7 +7,8 @@ firebase = firebaseHelper()
 def hotelList(id, latitude, longitude):
 
     r,b,p,a = firebase.getHotelPref(id)
-
+    if r is None :
+        return None
     rooms,guests,price = calc_params(r,b,p)
     hotel_list = getHotels('','',guests,rooms,latitude,longitude)
     with open('hotel.json', 'w') as outfile:
