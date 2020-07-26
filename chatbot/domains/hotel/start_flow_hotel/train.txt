@@ -7,4 +7,124 @@ tell some hotel
 inn search
 hotels search
 search inn
-
+search inns
+recommend hotels
+recommend me some hotel
+suggest hotels
+suggest me some hotel
+can you give some hotels info
+can i get some hotels info
+i want to see some hotels near me
+i want to get some info of hotels near me
+can you give some hotels information
+can i get some hotels information
+i want to see some hotels information near me
+i want to get some information of hotels near me
+can i get hotels information
+give me some hotel information
+can you give some hotels details
+can i get some hotels details
+i want to see some hotels details near me
+i want to get some details of hotels near me
+can i get hotels details
+give me some hotel details
+recommend inns
+recommend me some inns
+suggest innss
+suggest me some inns
+can you give some innss info
+can i get some innss info
+i want to see some innss near me
+i want to get some info of innss near me
+can you give some innss information
+can i get some innss information
+i want to see some innss information near me
+i want to get some information of innss near me
+can i get innss information
+give me some inns information
+can you give some innss details
+can i get some innss details
+i want to see some innss details near me
+i want to get some details of innss near me
+can i get innss details
+give me some inns details
+please recommend hotels
+please recommend me some hotel
+please suggest hotels
+please suggest me some hotel
+please can you give some hotels info
+please can i get some hotels info
+please i want to see some hotels near me
+please i want to get some info of hotels near me
+please can you give some hotels information
+please can i get some hotels information
+please i want to see some hotels information near me
+please i want to get some information of hotels near me
+please can i get hotels information
+please give me some hotel information
+please can you give some hotels details
+please can i get some hotels details
+please i want to see some hotels details near me
+please i want to get some details of hotels near me
+please can i get hotels details
+please give me some hotel details
+please recommend inns
+please recommend me some inns
+please suggest innss
+please suggest me some inns
+please can you give some innss info
+please can i get some innss info
+please i want to see some innss near me
+please i want to get some info of innss near me
+please can you give some innss information
+please can i get some innss information
+please i want to see some innss information near me
+please i want to get some information of innss near me
+please can i get innss information
+please give me some inns information
+please can you give some innss details
+please can i get some innss details
+please i want to see some innss details near me
+please i want to get some details of innss near me
+please can i get innss details
+please give me some inns details
+recommend hotels please
+recommend me some hotel please
+suggest hotels please
+suggest me some hotel please
+can you give some hotels info please
+can i get some hotels info please
+i want to see some hotels near me please
+i want to get some info of hotels near me please
+can you give some hotels information please
+can i get some hotels information please
+i want to see some hotels information near me please
+i want to get some information of hotels near me please
+can i get hotels information please
+give me some hotel information please
+can you give some hotels details please
+can i get some hotels details please
+i want to see some hotels details near me please
+i want to get some details of hotels near me please
+can i get hotels details please
+give me some hotel details please
+recommend inns please
+recommend me some inns please
+suggest innss please
+suggest me some inns please
+can you give some innss info please
+can i get some innss info please
+i want to see some innss near me please
+i want to get some info of innss near me please
+can you give some innss information please
+can i get some innss information please
+i want to see some innss information near me please
+i want to get some information of innss near me please
+can i get innss information please
+give me some inns information please
+can you give some innss details please
+can i get some innss details please
+i want to see some innss details near me please
+i want to get some details of innss near me please
+can i get innss details please
+give me some inns details please
