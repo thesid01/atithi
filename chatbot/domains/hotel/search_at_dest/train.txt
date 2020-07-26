@@ -4,4 +4,45 @@ search {mahuli fort|spot_name} hotels
 hotels near {spiti valley|spot_name}
 can you find some hotels in {leh|spot_name}
 tell me some hotels for {rajmachi fort|spot_name}
-
+find me hotels for {rajmachi fort|spot_name}
+suggest hotels in {spiti valley|spot_name}
+can you suggest some hotels in {leh|spot_name}
+suggest hotel near {lohagad fort|spot_name}
+suggest {mahuli fort|spot_name} hotels
+hotel near {spiti valley|spot_name}
+recommend hotels near {lohagad fort|spot_name} 
+recommend hotels in {lohagad|spot_name}
+search {mahuli fort|spot_name} hotel
+can you recommend some hotels in {leh|spot_name}
+recommend me some hotels for {rajmachi fort|spot_name}
+suggest me some hotels for {rajmachi fort|spot_name}
+find me some hotels for {rajmachi fort|spot_name}
+suggest some hotels in {spiti valley|spot_name}
+suggest some hotel near {lohagad fort|spot_name}
+suggest some {mahuli fort|spot_name} hotels
+some hotel near {spiti valley|spot_name}
+recommend some hotels near {lohagad fort|spot_name} 
+recommend some hotels in {lohagad|spot_name}
+search some {mahuli fort|spot_name} hotel
+find me few hotels for {rajmachi fort|spot_name}
+suggest few hotels in {spiti valley|spot_name}
+suggest few hotel near {lohagad fort|spot_name}
+suggest few {mahuli fort|spot_name} hotels
+few hotel near {spiti valley|spot_name}
+recommend few hotels near {lohagad fort|spot_name} 
+recommend few hotels in {lohagad|spot_name}
+search few {mahuli fort|spot_name} hotel
+please can you recommend some hotels in {leh|spot_name}
+please recommend me some hotels for {rajmachi fort|spot_name}
+please suggest me some hotels for {rajmachi fort|spot_name}
+please find me some hotels for {rajmachi fort|spot_name}
+please suggest some hotels in {spiti valley|spot_name}
+please suggest some hotel near {lohagad fort|spot_name}
+please suggest some {mahuli fort|spot_name} hotels
+please some hotel near {spiti valley|spot_name}
+please recommend some hotels near {lohagad fort|spot_name} 
+please recommend some hotels in {lohagad|spot_name}
+please search some {mahuli fort|spot_name} hotel
+please find me few hotels for {rajmachi fort|spot_name}
+please suggest few hotels in {spiti valley|spot_name}
+please suggest few hotel near {lohagad fort|spot_name}

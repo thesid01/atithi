@@ -54,8 +54,9 @@ def convertForElasticSearch(file, filename) :
                     temp[k] = spot[k]
                 temp["location"] = str(spot["location"]["Latitude"]) + "," + str(spot["location"]["Longitude"])
                 temp['spot_id'] = str(spot["spot_id"])
-                data.append(temp)
-                id += 1
+                if spot["spot_name"] != "spot1":
+                    data.append(temp)
+                    id += 1
     f.close()
     with open(filename, 'w') as json_file:
         json.dump(data, json_file,  indent = 4,)
