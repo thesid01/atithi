@@ -3,3 +3,48 @@ set {Jaipur|city_name}
 set {Manali|city_name} 
 set {Jammu|city_name} 
 set {Delhi|city_name} 
+i am from {Delhi|city_name} 
+i am from {Jammu|city_name} 
+i am from {Manali|city_name} 
+my home is {Manali|city_name} 
+from{Jammu|city_name}
+from {Delhi|city_name}
+from {Jaipur|city_name} 
+from {Lucknow|city_name}
+i want to travel from {Lucknow|city_name} 
+i want to travel from  {Jaipur|city_name} 
+i want to travel from {Manali|city_name} 
+i want to travel from {Jammu|city_name} 
+i want to travel from {Delhi|city_name} 
+i will be travelling from {Lucknow|city_name} 
+i will be travelling from  {Jaipur|city_name} 
+i will be travelling from  {Manali|city_name} 
+i will be travelling from  {Jammu|city_name} 
+i will be travelling from  {Delhi|city_name} 
+{Lucknow|city_name} is okay
+{Lucknow|city_name} is source
+{Jaipur|city_name} is source
+{Manali|city_name} is fine
+{Jammu|city_name} is ok
+{Delhi|city_name} is good
+plan my journey from {Lucknow|city_name} 
+plan my journey from  {Jaipur|city_name} 
+plan my journey from  {Manali|city_name} 
+plan my journey from  {Jammu|city_name} 
+plan my journey from  {Delhi|city_name} 
+source {Lucknow|city_name} 
+source  {Jaipur|city_name} 
+source {Manali|city_name} 
+source {Jammu|city_name} 
+source  {Delhi|city_name} 
+source is {Lucknow|city_name} 
+source  is {Jaipur|city_name} 
+source is {Manali|city_name} 
+source is {Jammu|city_name} 
+source is  {Delhi|city_name} 
+journey from {Lucknow|city_name} 
+journey from  {Jaipur|city_name} 
+journey from {Manali|city_name} 
+journey from {Jammu|city_name} 
+journey from  {Delhi|city_name} 
+
