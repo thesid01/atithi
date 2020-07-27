@@ -6,6 +6,26 @@ lets go
 go
 begin
 ready
+plan tour
+plan
+plan travel
+ready
+start journey
+begin tour
+begin travel
+lets start my tour
+lets begin my tour
+lets plan my tour
+lets start my journey
+lets begin my journey
+lets plan my journey
+lets start fun
+lets begin fun
+lets plan fun
+i am ready to start travel
+i am ready for fun
+i am ready for a tour
+start tour
 lets roll
 off to go
 ready to roll
