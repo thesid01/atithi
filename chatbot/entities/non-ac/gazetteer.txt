@@ -2,3 +2,5 @@ not ac
 non-ac
 non air conditioned
 non air-conditioned
+non-air-conditioned
+no ac

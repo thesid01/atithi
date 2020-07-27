@@ -3,3 +3,65 @@ set {Jaipur|city_name}
 set {Manali|city_name} 
 set {Jammu|city_name} 
 set {Delhi|city_name} 
+select{Delhi|city_name}
+select{Mumbai|city_name}
+select{Nagpur|city_name}
+select{Noida|city_name}
+select{Shimla|city_name}
+source{Ranchi|city_name}
+source{Shillong|city_name}
+source{Surat|city_name}
+my source is {Mumbai|city_name}
+my source is {Banglore|city_name}
+my source is {Amritsar|city_name}
+set start point {Madurai|city_name}
+set start point {Patiala|city_name}
+set start point {Agra|city_name}
+start from {Patna|city_name}
+start from {Jabalpur|city_name}
+start from {Indore|city_name}
+i would like to start from {Varanasi|city_name}
+i would like to start from {Pahalgam|city_name}
+i would like to start from {Palampur|city_name}
+please start from {Faridabad|city_name}
+please start from {Ambala|city_name}
+please start from {Kolakata|city_name}
+source will be {Kanpur|city_name}
+source will be {Kollam|city_name}
+source will be {Howrah|city_name}
+starting point{Jammu|city_name}
+starting point{Katra|city_name}
+starting point{New Delhi|city_name}
+choose{Hyderabad|city_name}
+choose{Vellore|city_name}
+choose{Coimbatore|city_name}
+take {Kasauli|city_name} as start
+take {Patna|city_name} as start
+take {Ayodhya|city_name} as start
+lets start from {Aurangabad|city_name}
+lets start from {Kullu|city_name}
+lets start from {Manali|city_name}
+start the journey {Kanpur|city_name}
+start the journey {Lucknow|city_name|city_name}
+start the journey {Imphal|city_name}
+my source will be {Guwahati|city_name}
+my source will be {Darjeeling|city_name}
+my source will be {Patiala|city_name}
+begin {Tezu|city_name}
+begin {Gangtok|city_name}
+begin {Namchi|city_name}
+i like to begin from {Mumbai|city_name}
+i like to begin from {Pune|city_name}
+i like to begin from {Bhopal|city_name}
+begin the journey {Kota|city_name}
+begin the journey {Jodhpur|city_name}
+begin the journey {Jaisalmer|city_name}
+start the journey from {Srinagar|city_name}
+start the journey from {Vadodra|city_name}
+start the journey from {Porbandar|city_name}
+my starting point is {Prayagraj|city_name}
+my starting point is {Ujjain|city_name}
+my starting point is {Nashik|city_name}
+start from {Trivandrum|city_name}
+begin from {Chennai|city_name}
+
