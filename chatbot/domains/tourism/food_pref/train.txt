@@ -48,3 +48,18 @@ give me {veg|food}, {indian|food}
 i prefer {vegetarian|food}
 my preferences are {non-vegetarian|food} and {north-indian|food}
 my preferences {veg|food},{south-indian|food}
+i would like to have {veg|food}
+remember to suggest only {veg|food}
+{veg|food}
+{veg|food} is my preferences
+i like {north-indian|food}
+i would like to have {veg|food} and {non-vegetarian|food}
+remember to suggest only {veg|food} and {non-vegetarian|food}
+{veg|food} and {non-vegetarian|food}
+{veg|food} and {non-vegetarian|food} is my preferences
+i like {north-indian|food} and {non-vegetarian|food}
+i would like to have {veg|food} {non-vegetarian|food}
+remember to suggest only {veg|food} {non-vegetarian|food}
+{veg|food} {non-vegetarian|food}
+{veg|food} {non-vegetarian|food} is my preferences
+i like {north-indian|food} {non-vegetarian|food}
