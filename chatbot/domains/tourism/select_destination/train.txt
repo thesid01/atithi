@@ -30,8 +30,8 @@ to {Kolahoi Glacier|spot_name}
 go to {Kolahoi Glacier|spot_name}
 I am willing to go to {Kolahoi Glacier|spot_name}
 willing to go to {Kolahoi Glacier|spot_name}
-take me to{Nag Tibba Peak|spot_name}
-travel to{Nag Tibba Peak|spot_name}
+take me to {Nag Tibba Peak|spot_name}
+travel to {Nag Tibba Peak|spot_name}
 to {Nag Tibba Peak|spot_name}
 go to {Nag Tibba Peak|spot_name}
 will be fine {Nag Tibba Peak|spot_name}

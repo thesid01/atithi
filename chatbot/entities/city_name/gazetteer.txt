@@ -55,8 +55,7 @@ Karimnagar
 Chennai
 Coimbatore
 Madurai
-Tiruchirappalli 	
-Trichy
+Tiruchirappalli
 Vellore
 Bengaluru
 Banglore
@@ -155,11 +154,3 @@ Lachung
 Pelling
 Namchi
 Ravangla
-
-
-
-
-
-
-
-		

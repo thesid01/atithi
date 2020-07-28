@@ -7,7 +7,7 @@ i am from {Delhi|city_name}
 i am from {Jammu|city_name} 
 i am from {Manali|city_name} 
 my home is {Manali|city_name} 
-from{Jammu|city_name}
+from {Jammu|city_name}
 from {Delhi|city_name}
 from {Jaipur|city_name} 
 from {Lucknow|city_name}
@@ -47,14 +47,14 @@ journey from  {Jaipur|city_name}
 journey from {Manali|city_name} 
 journey from {Jammu|city_name} 
 journey from  {Delhi|city_name} 
-select{Delhi|city_name}
-select{Mumbai|city_name}
-select{Nagpur|city_name}
-select{Noida|city_name}
-select{Shimla|city_name}
-source{Ranchi|city_name}
-source{Shillong|city_name}
-source{Surat|city_name}
+select {Delhi|city_name}
+select {Mumbai|city_name}
+select {Nagpur|city_name}
+select {Noida|city_name}
+select {Shimla|city_name}
+source {Ranchi|city_name}
+source {Shillong|city_name}
+source {Surat|city_name}
 my source is {Mumbai|city_name}
 my source is {Banglore|city_name}
 my source is {Amritsar|city_name}
@@ -73,12 +73,12 @@ please start from {Kolakata|city_name}
 source will be {Kanpur|city_name}
 source will be {Kollam|city_name}
 source will be {Howrah|city_name}
-starting point{Jammu|city_name}
-starting point{Katra|city_name}
-starting point{New Delhi|city_name}
-choose{Hyderabad|city_name}
-choose{Vellore|city_name}
-choose{Coimbatore|city_name}
+starting point {Jammu|city_name}
+starting point {Katra|city_name}
+starting point {New Delhi|city_name}
+choose {Hyderabad|city_name}
+choose {Vellore|city_name}
+choose {Coimbatore|city_name}
 take {Kasauli|city_name} as start
 take {Patna|city_name} as start
 take {Ayodhya|city_name} as start

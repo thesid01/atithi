@@ -81,7 +81,7 @@ i will go with {family|tourism}
 i like to experience {camping|tourism}
 i like to experience {family|tourism}
 i like to experience {nature|tourism}
-lets start{camping|tourism}
+lets start {camping|tourism}
 lets start {family|tourism}
 lets start {nature|tourism}
 ok lets begin {camping|tourism}
@@ -89,7 +89,7 @@ ok lets begin {family|tourism}
 ok lets begin {nature|tourism}
 please choose {camping|tourism}
 please choose {family|tourism}
-i want to set{family|tourism}
+i want to set {family|tourism}
 i will set {nature|tourism}
 please set {family|tourism}
 please set {nature|tourism}
