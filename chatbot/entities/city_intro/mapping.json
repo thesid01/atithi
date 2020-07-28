@@ -1,14 +1,25 @@
 {
-    "entities": [
-        {
-            "whitelist": [
-                "about",
-                "introduction",
-                "wiki",
-                "something",
-                "intro"
-            ],
-            "cname": "city_intro"
-        }
-    ]
+    "entities": [{
+        "whitelist": [
+            "about",
+            "introduction",
+            "wiki",
+            "something",
+            "intro",
+            "tell me",
+            "give me",
+            "i want to know about",
+            "tell me something about",
+            "tell me about",
+            "tell me about this place",
+            "history of",
+            "introduction of",
+            "give some information about",
+            "throw some light on",
+            "give info for",
+            "give info about",
+            "i want information of"
+        ],
+        "cname": "city_intro"
+    }]
 }
