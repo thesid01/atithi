@@ -1,10 +1,13 @@
 {
-    "entities": [
-	    {
+    "entities": [{
             "whitelist": [
                 "1 rooms",
                 "1 room",
-                "room 1"
+                "room 1",
+                "one room",
+                "one rooms",
+                "single room",
+                "single rooms"
             ],
             "cname": "1 room"
         },
@@ -12,8 +15,12 @@
             "whitelist": [
                 "2 rooms",
                 "2 room",
-                "room 2"
-				
+                "room 2",
+                "two room",
+                "two rooms",
+                "double room",
+                "double rooms"
+
             ],
             "cname": "2 room"
         },
@@ -21,18 +28,25 @@
             "whitelist": [
                 "3 rooms",
                 "3 room",
-                "room 3"
+                "room 3",
+                "three room",
+                "three rooms",
+                "triple room",
+                "triple rooms"
             ],
             "cname": "3 room"
         },
-	    {
+        {
             "whitelist": [
                 "4 rooms",
                 "4 room",
-                "room 4"
+                "room 4",
+                "four room",
+                "four rooms",
+                "quadruple rooms",
+                "quadruple rooom"
             ],
             "cname": "4 room"
         }
     ]
 }
-

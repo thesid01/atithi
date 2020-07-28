@@ -2,13 +2,20 @@
 1 beds
 bed 1
 single bed
+one bed
+one beds
+
 2 bed
 2 beds
 bed 2
 double bed
+two beds
+two bed
+
 3 bed
 3 beds
 bed 3
 triple bed
-
+three bed
+three beds
 

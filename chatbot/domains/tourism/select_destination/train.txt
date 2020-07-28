@@ -10,7 +10,38 @@ select {Nag Tibba Peak|spot_name}
 select {Roopkund|spot_name}
 {Roopkund|spot_name}
 I want to travel to {Roopkund|spot_name}
+I want to travel to {Spiti Valley|spot_name}
 I like to travel to {Kolahoi Glacier|spot_name}
 {Roopkund|spot_name}
+select {Mahuli Fort|spot_name}
+i want to go to {Leh|spot_name}
+firstly i want to go {River Ganga|spot_name}
+lets go to {Kedarnath|spot_name}
+lets go to {Goecha La|spot_name}
+i want to experience {Nandi Hills|spot_name}
+{Deoriya Tal|spot_name} is the place i want to go 
+{Lamayuru|spot_name} is the place i want to go 
+would love to travel to {Har ki Doon|spot_name}
+my choice will be {Kuari Pass|spot_name}
+my choice will be {Triund Hill Station|spot_name}
+{Dzukou Valley|spot_name} is my choice
+i wiil prefer {Tarsar Marsar|spot_name}
+{Dodital|spot_name} will be my preference
+my selection is {Aritar|spot_name}
+my selection is {Kalsubai Peak|spot_name}
+my selected choice is {Lohagad Fort|spot_name}
+lets begin with {Garbut Point|spot_name}
+go to {Mane Bhanjang|spot_name}
+lets go to {Bhagirathi River|spot_name}
+lets go to {Hampta Pass|spot_name}
+lets travel to {Indus River|spot_name}
+{Saramati Peak|spot_name} is ok
+{Purandar Fort|spot_name} is ok
+{Lohit River|spot_name} would be great
+{Zanskar|spot_name} would be my destination
+i want to explore {Sangam|spot_name} 
+{Rajmachi Fort|spot_name} will work for me
+
+
 
 

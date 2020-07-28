@@ -6,4 +6,68 @@ choose {camping|tourism}
 {nature|tourism}
 {camping|tourism} choose 
 {family|tourism} choose 
+select {nature|tourism}
+select {camping|tourism}
+select {family|tourism}
+set {nature|tourism}
+set {camping|tourism}
+set {family|tourism}
+start {nature|tourism}
+start {camping|tourism}
+start {family|tourism}
+begin {nature|tourism}
+begin {camping|tourism}
+begin {family|tourism}
+continue with {nature|tourism}
+continue with {camping|tourism}
+continue with {family|tourism}
+i want to select {nature|tourism}
+i want to select {camping|tourism}
+i want to select {family|tourism}
+i want to begin with {nature|tourism}
+i want to begin with {camping|tourism}
+i want to begin with {family|tourism}
+lets start with {nature|tourism}
+lets start with {camping|tourism}
+lets start with {family|tourism}
+i want to do {nature|tourism}
+i want to do {camping|tourism}
+i want to do {family|tourism}
+my preference is {nature|tourism}
+my preference is {camping|tourism}
+my preference is {family|tourism}
+my choice is {nature|tourism}
+my choice is {camping|tourism}
+my choice is {family|tourism}
+i will select {nature|tourism}
+i will select {camping|tourism}
+i will select {family|tourism}
+i will go with {nature|tourism}
+i will go with {camping|tourism}
+i will go with {family|tourism}
+i will go with {nature|tourism}
+i will go with {camping|tourism}
+i will go with {family|tourism}
+i like to experience {camping|tourism}
+i like to experience {family|tourism}
+i like to experience {nature|tourism}
+lets start{camping|tourism}
+lets start {family|tourism}
+lets start {nature|tourism}
+ok lets begin {camping|tourism}
+ok lets begin {family|tourism}
+ok lets begin {nature|tourism}
+please choose {camping|tourism}
+please choose {family|tourism}
+i want to set{family|tourism}
+i will set {nature|tourism}
+please set {family|tourism}
+please set {nature|tourism}
+select {nature|tourism} as my choice
+set {family|tourism} as my preference
+{camping|tourism} i want to experience
+{camping|tourism} i want to explore
+
+
+
 
