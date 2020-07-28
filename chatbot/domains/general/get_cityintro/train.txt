@@ -14,3 +14,23 @@ What {about|city_intro} {Kolkata|city_name}
 {about|city_intro} {jaipur|city_name} city
 city {jaipur|city_name} {intro|city_intro}
 {Jodhpur|city_name} city {wiki|city_intro}
+I want to know more about {jaipur|city_name}
+I am curious about {jaipur|city_name}
+Curious about {jaipur|city_name}
+tell me more about {jaipur|city_name}
+Do you know more about {jaipur|city_name}
+info about {jaipur|city_name}
+Love to know more about {jaipur|city_name}
+I would love to know more about {jaipur|city_name}
+info {jaipur|city_name}
+how is {jaipur|city_name}
+is {jaipur|city_name} good 
+info {jaipur|city_name}
+describe {jaipur|city_name}
+description of {jaipur|city_name}
+why should i go to {jaipur|city_name}
+anything would you like to tell me about {jaipur|city_name}
+few lines about {jaipur|city_name}
+say something about {jaipur|city_name}
+what do you know about {jaipur |city_name}
+summary of {jaipur |city_name}

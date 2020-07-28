@@ -1,4 +1,8 @@
 select {Jammu|city_name}
 I want to travel to {Jaipur|city_name}
 I like to travel to {Delhi|city_name}
+I want to go to {Delhi|city_name}
+to {Delhi|city_name}
+take me to {Delhi|city_name}
+{Kolahoi Glacier|spot_name} is okay
 

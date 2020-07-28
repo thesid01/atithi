@@ -13,6 +13,32 @@ I want to travel to {Roopkund|spot_name}
 I want to travel to {Spiti Valley|spot_name}
 I like to travel to {Kolahoi Glacier|spot_name}
 {Roopkund|spot_name}
+set {Roopkund|spot_name}
+i like {Roopkund|spot_name}
+lets go to {Roopkund|spot_name}
+take me to {Roopkund|spot_name}
+travel to {Roopkund|spot_name}
+to {Roopkund|spot_name}
+my destination is {Roopkund|spot_name}
+destination {Roopkund|spot_name}
+set {Kolahoi Glacier|spot_name}
+i like {Kolahoi Glacier|spot_name}
+will be fine {Kolahoi Glacier|spot_name}
+take me to {Kolahoi Glacier|spot_name}
+travel to {Kolahoi Glacier|spot_name}
+to {Kolahoi Glacier|spot_name}
+go to {Kolahoi Glacier|spot_name}
+I am willing to go to {Kolahoi Glacier|spot_name}
+willing to go to {Kolahoi Glacier|spot_name}
+take me to{Nag Tibba Peak|spot_name}
+travel to{Nag Tibba Peak|spot_name}
+to {Nag Tibba Peak|spot_name}
+go to {Nag Tibba Peak|spot_name}
+will be fine {Nag Tibba Peak|spot_name}
+willing to go to  {Nag Tibba Peak|spot_name}
+{Nag Tibba Peak|spot_name}
+{Kolahoi Glacier|spot_name} is ok
+{Kolahoi Glacier|spot_name} is okay
 select {Mahuli Fort|spot_name}
 i want to go to {Leh|spot_name}
 firstly i want to go {River Ganga|spot_name}
@@ -41,7 +67,3 @@ lets travel to {Indus River|spot_name}
 {Zanskar|spot_name} would be my destination
 i want to explore {Sangam|spot_name} 
 {Rajmachi Fort|spot_name} will work for me
-
-
-
-

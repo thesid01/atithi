@@ -6,6 +6,36 @@ choose {camping|tourism}
 {nature|tourism}
 {camping|tourism} choose 
 {family|tourism} choose 
+i like {family|tourism} 
+i like {camping|tourism}
+i like {nature|tourism}
+set {nature|tourism}
+set {camping|tourism}
+set {family|tourism}
+{nature|tourism} is ok
+{camping|tourism} is ok
+{family|tourism} is ok
+i want to select {nature|tourism}
+i want to select {camping|tourism}
+i want to select {family|tourism}
+i choose {nature|tourism}
+i choose {camping|tourism}
+i choose {family|tourism}
+{nature|tourism} is fine with me
+{camping|tourism} is fine with me
+{family|tourism} is fine with me
+{nature|tourism} is fine
+{camping|tourism} is fine
+{family|tourism} is fine
+i select {nature|tourism}
+i select {camping|tourism}
+i select {family|tourism}
+my choice is {nature|tourism} 
+my choice is {camping|tourism}
+my choice is {family|tourism}
+i want to go for {nature|tourism}
+i want to go for {camping|tourism}
+i want to go for {family|tourism}
 select {nature|tourism}
 select {camping|tourism}
 select {family|tourism}
@@ -67,7 +97,3 @@ select {nature|tourism} as my choice
 set {family|tourism} as my preference
 {camping|tourism} i want to experience
 {camping|tourism} i want to explore
-
-
-
-

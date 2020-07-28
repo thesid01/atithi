@@ -1,4 +1,6 @@
 {nature|tourism}
 {family|tourism} choose
 choose {camping|tourism}
-
+{nature|tourism} is ok
+{camping|tourism} is good
+to {family|tourism} 
