@@ -8,6 +8,10 @@ begin
 ready
 plan tour
 plan
+yes
+I am ready
+lets go
+yeah i am ready
 plan travel
 ready
 start journey
