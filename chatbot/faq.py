@@ -18,4 +18,4 @@ def india(request, responder):
         reply = ['Here is the top result:', answers[0]['question'], answers[0]['answer']]
         responder.reply('\n'.join(reply))
     else:
-        responder.reply("I'm sorry, I couldn't find an answer to your question")
+        responder.reply("Sorry😕, I couldn't find an answer to your question")

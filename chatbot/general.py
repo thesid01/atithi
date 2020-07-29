@@ -3,17 +3,7 @@ from .root import app
 import json
 from .helpers import extract_entities_from_type
 
-NOT_A_CITY="City not found in India"
-
-@app.handle(intent='get_cityintro', has_entity='city_intro')
-def get_info_age(request, responder):
-    responder = get_city(request, responder, 'city_intro')
-    try:
-        responder.reply("About {city_name}: {city_intro}")
-    except KeyError:
-        responder.reply(NOT_A_CITY)
-    return
-
+NOT_A_CITY="Sorry😕...This city is not in India."+"~"+"Let me help you with this🙂"+"~"+"Some popular cities in India are : Lucknow, Goa, Jodhpur,  etc."+"~"+"Please choose another city."
 def get_city(request, responder, entity_type):
     name = request.frame.get('city_name')
 
