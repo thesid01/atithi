@@ -1,2 +1,7 @@
 set {Jodhpur|city_name} 
 set {Manali|city_name} 
+source is {Lucknow|city_name} 
+source  {Jaipur|city_name} 
+from  {Manali|city_name} 
+journey starts {Jammu|city_name} 
+journey from  {Delhi|city_name} 

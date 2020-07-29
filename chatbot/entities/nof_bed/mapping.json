@@ -5,7 +5,9 @@
                 "1 bed",
                 "1 beds",
                 "bed 1",
-                "single bed"
+                "single bed",
+				"one bed",
+				"one beds"
             ],
             "cname": "1 bed"
         },
@@ -14,7 +16,9 @@
                 "2 bed",
                 "2 beds",
                 "bed 2",
-                "double bed"
+                "double bed",
+				"two bed",
+				"two beds"
 				
             ],
             "cname": "2 bed"
@@ -24,7 +28,9 @@
                 "3 bed",
                 "3 beds",
                 "bed 3",
-                "triple bed"
+                "triple bed",
+				"three beds",
+				"three bed"
             ],
             "cname": "3 bed"
         }

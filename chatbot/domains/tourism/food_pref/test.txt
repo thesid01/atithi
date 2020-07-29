@@ -11,4 +11,4 @@ remember to suggest only {veg|food}
 {veg|food}
 {veg|food} is my preferences
 i like {north-indian|food}
-i would like to have {veg|food} and {non-vegetarian}
+i would like to have {veg|food} and {non-vegetarian|food}

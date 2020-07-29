@@ -5,7 +5,10 @@
                 "ac",
                 "full ac",
                 "air conditioned",
-                "air-conditioned"
+                "air-conditioned",
+				"fully air conditioned",
+				"fully air-conditioned",
+				"fully ac"
             ],
             "cname": "ac"
         }        

@@ -1,3 +1,7 @@
 give me {introduction|city_intro} of {jaipur|city_name}
 tell me {about|city_intro} of {jodhpur|city_name}
 info {about|city_intro} {jodhpur|city_name}
+more about {jaipur |city_name} 
+few lines about {jaipur |city_name}
+summary of {jaipur |city_name}
+I want to know more about {jaipur|city_name}

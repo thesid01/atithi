@@ -53,13 +53,13 @@ remember to suggest only {veg|food}
 {veg|food}
 {veg|food} is my preferences
 i like {north-indian|food}
-i would like to have {veg|food} and {non-vegetarian}
-remember to suggest only {veg|food} and {non-vegetarian}
-{veg|food} and {non-vegetarian}
-{veg|food} and {non-vegetarian} is my preferences
-i like {north-indian|food} and {non-vegetarian}
-i would like to have {veg|food} {non-vegetarian}
-remember to suggest only {veg|food} {non-vegetarian}
-{veg|food} {non-vegetarian}
-{veg|food} {non-vegetarian} is my preferences
-i like {north-indian|food} {non-vegetarian}
+i would like to have {veg|food} and {non-vegetarian|food}
+remember to suggest only {veg|food} and {non-vegetarian|food}
+{veg|food} and {non-vegetarian|food}
+{veg|food} and {non-vegetarian|food} is my preferences
+i like {north-indian|food} and {non-vegetarian|food}
+i would like to have {veg|food} {non-vegetarian|food}
+remember to suggest only {veg|food} {non-vegetarian|food}
+{veg|food} {non-vegetarian|food}
+{veg|food} {non-vegetarian|food} is my preferences
+i like {north-indian|food} {non-vegetarian|food}
