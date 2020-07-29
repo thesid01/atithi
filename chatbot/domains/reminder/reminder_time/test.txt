@@ -1,0 +1,2 @@
+set for {5 am|time}
+{5 am|time} will be good

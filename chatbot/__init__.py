@@ -9,5 +9,6 @@ import chatbot.faq
 import chatbot.tourism
 import chatbot.hotel
 import chatbot.food
+import chatbot.reminder
 
 __all__ = ['app']

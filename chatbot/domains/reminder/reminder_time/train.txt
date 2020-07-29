@@ -1,0 +1,8 @@
+remind me at {5 am|time}
+at {5 am|time}
+{5 am|time}
+{5 am|time} will be suitable
+{5 am|time} will be fine
+set for {5 am|time}
+{5 am|time} will be good
+go for {5 am|time}

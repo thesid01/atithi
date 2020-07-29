@@ -1,0 +1,113 @@
+{
+    "entities": [
+        {
+            "whitelist": [
+                "1",
+                "one",
+                "one am",
+                "1 am"
+            ],
+            "cname": "1"
+        },
+        {
+            "whitelist": [
+                "2",
+                "two",
+                "two am",
+                "2 am"
+            ],
+            "cname": "2"
+        },
+        {
+            "whitelist": [
+                "3",
+                "3 am",
+                "three",
+                "three am"
+            ],
+            "cname": "3"
+        },
+        {
+            "whitelist": [
+                "4",
+                "4 am",
+                "four",
+                "four am"
+            ],
+            "cname": "4"
+        },
+        {
+            "whitelist": [
+                "5",
+                "5 am",
+                "5 am",
+                "five am"
+            ],
+            "cname": "5"
+        },
+        {
+            "whitelist": [
+                "6",
+                "5 am",
+                "six",
+                "six am"
+            ],
+            "cname": "6"
+        },
+        {
+            "whitelist": [
+                "7",
+                "7 am",
+                "seven",
+                "seven am"
+            ],
+            "cname": "7"
+        },
+        {
+            "whitelist": [
+                "8",
+                "8 am",
+                "eight",
+                "eight am"
+            ],
+            "cname": "8"
+        },
+        {
+            "whitelist": [
+                "9",
+                "9 am",
+                "nine",
+                "nine am"
+            ],
+            "cname": "9"
+        },
+        {
+            "whitelist": [
+                "10",
+                "10 am",
+                "ten",
+                "ten am"
+            ],
+            "cname": "10"
+        },
+        {
+            "whitelist": [
+                "11",
+                "11 am",
+                "eleven",
+                "eleven am"
+            ],
+            "cname": "11"
+        },
+        {
+            "whitelist": [
+                "12",
+                "12 pm",
+                "tweleve",
+                "tweleve pm",
+                "noon"
+            ],
+            "cname": "12"
+        }
+    ]
+}

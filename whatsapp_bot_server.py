@@ -14,6 +14,8 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 
+from chatbot.middleware import next_target_setHelper as nth
+
 import atexit
 import time
 
@@ -66,7 +68,11 @@ class WhatsappBotServer:
             else :
                 resp = MessagingResponse()
                 msg = resp.message()
-                params = dict(dynamic_resource =dict(id=id)) #Used to send dynamic id of the user making query
+                params = None
+                if nth.getTarget() == None :
+                    params = dict(dynamic_resource =dict(id=id)) #Used to send dynamic id of the user making query
+                else:
+                    params = dict(dynamic_resource =dict(id=id),target_dialogue_state=nth.getTarget())
                 try:
                     response_text = self.conv.say(incoming_msg, params=params)[0]
                     msg.body(response_text)
@@ -86,7 +92,9 @@ if __name__ == '__main__':
     app = Flask(__name__)
     configure_logs()
     server = WhatsappBotServer(name='whatsapp', app_path='./chatbot')
-    
+
+    nth.delTarget()
+
     # create schedule for printing time
     scheduler = BackgroundScheduler()
     scheduler.start()
