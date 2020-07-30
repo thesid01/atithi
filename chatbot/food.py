@@ -36,8 +36,6 @@ def search_nearby_food(request,responder):
             lat,long = firebase.getCurrLocation(id)
             if lat and long:
                 res_msg = getRestaurant(id, lat, long)
-                # hotel_msg = hotelList(id,lat,long)
-                # print(hotel_msg)
                 print('d')
                 responder.reply("Yay ..I found some restaurants nearby you🌮~Go and enjoy some yummy local food there😋~Below is list of restaurants, check it out:\n"+res_msg)
         except (TypeError,AttributeError):
@@ -63,19 +61,21 @@ def search_at_dest(request, responder):
     id = request.params.dynamic_resource['id']
     lat,long = _fetch_spot_from_kb(spot_name)
     res = firebase.getFoodPref('id')
-
-    print(lat,long)
-    # hotel_msg = hotelList(id,lat,long)
-    # print(hotel_msg)
     
     if not res:
         responder.params.allowed_intents = ('tourism.food_pref')
         responder.reply("Sure, Can you tell me your food preference😋?~So What would you like to have like veg, non-veg, italian or something else?")
     else:
         res_msg = getRestaurant(id,lat,long)
-        # print(hotel_msg)
-        responder.reply("There are some restaurants at your destination😋~"+"Kindly check out the following list:\n"+res_msg)
 
-# TODO: @Srijan this func is not implemented
-def _fetch_spot_from_kb(k):
-    return 0, 0
+        responder.reply("There are some restaurants at your destination😋~"+"Kindly check out the following list:\n~"+res_msg)
+
+def _fetch_spot_from_kb(spot_name):
+    spots = app.question_answerer.get(index='spot_data')
+    j = 1
+    for i in range(len(spots)):
+        if spot_name in spots[i]["spot_name"]:
+            loc = spots[i]["location"]
+            lat,long = loc.split(',')
+            break
+    return lat,long
