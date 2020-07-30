@@ -18,6 +18,9 @@ from twilio.rest import Client
 import atexit
 import time
 
+TWILIO_ACCOUNT_SID = 'AC090860c33f406130a009592dbd376709'
+TWILIO_AUTH_TOKEN = '6e41fd5c5be903def94f9e7efaaa15ed'
+client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 
 class WhatsappBotServer:
 
@@ -51,7 +54,6 @@ class WhatsappBotServer:
                 result = self.firebase.createID(id)
 
             incoming_msg = request.values.get('Body', '').lower()
-            print(incoming_msg)
             location = {
                 'Latitude': request.values.get('Latitude', ''),
                 'Longitude': request.values.get('Longitude', '')
@@ -73,22 +75,16 @@ class WhatsappBotServer:
                 try:
                     response_text = self.conv.say(incoming_msg, params=params)[0]
                     messages = response_text.split("~")
-                    print(messages)
-                    for msgs in messages:
-                        sendMessage(msgs, id)
+                    for msg in messages:
+                        sendMessage(msg, id)
                     #msg.body(response_text)
                 except IndexError:
                     msg.body("Didn't understand. sorry")
             return str(resp)
 
         def sendMessage(msg, number):
-            print("Sending message..")
-            TWILIO_AUTH_TOKEN = 'e0e696089a9a6a65774500c37edcb963'
-            TWILIO_ACCOUNT_SID = 'AC589b234a1d386d213e4434b0f148f1f0'
-            client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
             # Change the from whatsapp number with your twilio account number
             client.messages.create(body=msg, from_="whatsapp:+14155238886", to="whatsapp:+"+str(number))
-            print("Sending to", number)
 
     def run(self, host="localhost", port=7150):
         self.app.run(host=host, port=port)
