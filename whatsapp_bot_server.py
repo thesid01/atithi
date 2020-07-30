@@ -17,11 +17,14 @@ from twilio.rest import Client
 
 import atexit
 import time
+import validators
 
-TWILIO_ACCOUNT_SID = 'AC090860c33f406130a009592dbd376709'
-TWILIO_AUTH_TOKEN = '6e41fd5c5be903def94f9e7efaaa15ed'
-client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
-
+# TWILIO_ACCOUNT_SID = 'ACc47f3cc342412b7097ad6f6c6fe19398'
+# TWILIO_AUTH_TOKEN = '36418b6fe7615bd068ad13f614bdc19d'
+#export TWILIO_AUTH_TOKEN=e0e696089a9a6a65774500c37edcb963
+#export TWILIO_ACCOUNT_SID=AC589b234a1d386d213e4434b0f148f1f0
+# client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
+client = Client()
 class WhatsappBotServer:
 
     def __init__(self, name, app_path, nlp=None):
@@ -41,6 +44,7 @@ class WhatsappBotServer:
             self.nlp = nlp
         self.conv = Conversation(nlp=self.nlp, app_path=app_path)
         self.logger = logging.getLogger(__name__)
+        self.url = None
 
         @self.app.route("/", methods=["POST"])
         def handle_message():  # pylint: disable=unused-variable
@@ -84,7 +88,15 @@ class WhatsappBotServer:
 
         def sendMessage(msg, number):
             # Change the from whatsapp number with your twilio account number
-            client.messages.create(body=msg, from_="whatsapp:+14155238886", to="whatsapp:+"+str(number))
+            valid=validators.url(msg)
+            if valid :
+                self.url = msg
+            else:
+                if self.url:
+                    client.messages.create(body=msg, from_="whatsapp:+14155238886", to="whatsapp:+"+str(number), media_url=[self.url])
+                    self.url = None
+                else:
+                    client.messages.create(body=msg, from_="whatsapp:+14155238886", to="whatsapp:+"+str(number))
 
     def run(self, host="localhost", port=7150):
         self.app.run(host=host, port=port)

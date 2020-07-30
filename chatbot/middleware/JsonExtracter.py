@@ -20,7 +20,9 @@ def getSpotName(filename):
     for cluster in contents["clusters"]:
         for state in cluster["states"]:
             for spot in state["spots"]:
-                s.add(spot["spot_name"])
+                if spot["spot_name"] != "spot1":
+                    print(spot["spot_name"])
+                    s.add(spot["spot_name"])
     return s
 
 def generateMappingjson(data):
@@ -62,7 +64,10 @@ def convertForElasticSearch(file, filename) :
         json.dump(data, json_file,  indent = 4,)
 
 if __name__ == "__main__":
+    addSpotType("../data/spot.json")
     # data = getSpotName("../data/spot.json")
-    # data = generateMappingjson(data)
+    # print(data)
     # print(json.dumps(data,indent=4))
+    # jj = generateMappingjson(list(data))
+    # print(json.dumps(jj,indent=4))
     convertForElasticSearch("../data/spot.json", "../data/spot_data.json")

@@ -2,76 +2,6 @@
     "entities": [
         {
             "whitelist": [
-                "Roopkund"
-            ],
-            "cname": "Roopkund"
-        },
-        {
-            "whitelist": [
-                "Goecha",
-                "Goecha La"
-            ],
-            "cname": "Goecha La"
-        },
-        {
-            "whitelist": [
-                "Indus",
-                "Indus River"
-            ],
-            "cname": "Indus River"
-        },
-        {
-            "whitelist": [
-                "Korigad",
-                "Korigad Hill",
-                "Korigad Hill Fort",
-                "Hill Fort"
-            ],
-            "cname": "Korigad Hill Fort"
-        },
-        {
-            "whitelist": [
-                "Bhagirathi",
-                "Bhagirathi River"
-            ],
-            "cname": "Bhagirathi River"
-        },
-        {
-            "whitelist": [
-                "Lohit",
-                "Lohit River"
-            ],
-            "cname": "Lohit River"
-        },
-        {
-            "whitelist": [
-                "Kuari",
-                "Kuari Pass"
-            ],
-            "cname": "Kuari Pass"
-        },
-        {
-            "whitelist": [
-                "Mahuli",
-                "Mahuli Fort"
-            ],
-            "cname": "Mahuli Fort"
-        },
-        {
-            "whitelist": [
-                "Leh"
-            ],
-            "cname": "Leh"
-        },
-        {
-            "whitelist": [
-                "Sangam"
-            ],
-            "cname": "Sangam"
-        },
-        {
-            "whitelist": [
-                "Mount",
                 "Mount Tiyi",
                 "Tiyi"
             ],
@@ -79,114 +9,11 @@
         },
         {
             "whitelist": [
-                "Kalsubai",
-                "Kalsubai Peak"
+                "Triund",
+                "Triund Hill",
+                "Triund Hill Station"
             ],
-            "cname": "Kalsubai Peak"
-        },
-        {
-            "whitelist": [
-                "Thajiwas",
-                "Thajiwas Glacier"
-            ],
-            "cname": "Thajiwas Glacier"
-        },
-        {
-            "whitelist": [
-                "Aritar"
-            ],
-            "cname": "Aritar"
-        },
-        {
-            "whitelist": [
-                "Saramati",
-                "Saramati Peak"
-            ],
-            "cname": "Saramati Peak"
-        },
-        {
-            "whitelist": [
-                "Deoriya",
-                "Deoriya Tal"
-            ],
-            "cname": "Deoriya Tal"
-        },
-        {
-            "whitelist": [
-                "Zanskar"
-            ],
-            "cname": "Zanskar"
-        },
-        {
-            "whitelist": [
-                "Hampta",
-                "Hampta Pass"
-            ],
-            "cname": "Hampta Pass"
-        },
-        {
-            "whitelist": [
-                "Kolahoi",
-                "Kolahoi Glacier"
-            ],
-            "cname": "Kolahoi Glacier"
-        },
-        {
-            "whitelist": [
-                "Har ki",
-                "Har ki Doon"
-            ],
-            "cname": "Har ki Doon"
-        },
-        {
-            "whitelist": [
-                "Purandar",
-                "Purandar Fort"
-            ],
-            "cname": "Purandar Fort"
-        },
-        {
-            "whitelist": [
-                "Spiti",
-                "Spiti Valley"
-            ],
-            "cname": "Spiti Valley"
-        },
-        {
-            "whitelist": [
-                "Rajmachi",
-                "Rajmachi Fort"
-            ],
-            "cname": "Rajmachi Fort"
-        },
-        {
-            "whitelist": [
-                "River",
-                "River Ganga",
-                "Ganga"
-            ],
-            "cname": "River Ganga"
-        },
-        {
-            "whitelist": [
-                "Nandi",
-                "Nandi Hills"
-            ],
-            "cname": "Nandi Hills"
-        },
-        {
-            "whitelist": [
-                "Tarsar",
-                "Tarsar Marsar",
-                "Marsar"
-            ],
-            "cname": "Tarsar Marsar"
-        },
-        {
-            "whitelist": [
-                "Kedarnath"
-            ],
-            "cname": "Kedarnath"
+            "cname": "Triund Hill Station"
         },
         {
             "whitelist": [
@@ -197,6 +24,85 @@
         },
         {
             "whitelist": [
+                "Dodital"
+            ],
+            "cname": "Dodital"
+        },
+        {
+            "whitelist": [
+                "Rajmachi",
+                "Rajmachi Fort"
+            ],
+            "cname": "Rajmachi Fort"
+        },
+        {
+            "whitelist": [
+                "Kedarnath"
+            ],
+            "cname": "Kedarnath"
+        },
+        {
+            "whitelist": [
+                "Dudhsagar",
+                "Dudhsagar Waterfalls"
+            ],
+            "cname": "Dudhsagar Waterfalls"
+        },
+        {
+            "whitelist": [
+                "Lohit",
+                "Lohit River"
+            ],
+            "cname": "Lohit River"
+        },
+        {
+            "whitelist": [
+                "Arambol",
+                "Arambol Beach"
+            ],
+            "cname": "Arambol Beach"
+        },
+        {
+            "whitelist": [
+                "Munnar"
+            ],
+            "cname": "Munnar"
+        },
+        {
+            "whitelist": [
+                "Manali-Leh"
+            ],
+            "cname": "Manali-Leh"
+        },
+        {
+            "whitelist": [
+                "Colva",
+                "Colva Beach"
+            ],
+            "cname": "Colva Beach"
+        },
+        {
+            "whitelist": [
+                "Raireshwar"
+            ],
+            "cname": "Raireshwar"
+        },
+        {
+            "whitelist": [
+                "Kundalika",
+                "Kundalika River"
+            ],
+            "cname": "Kundalika River"
+        },
+        {
+            "whitelist": [
+                "Barapole",
+                "Barapole River"
+            ],
+            "cname": "Barapole River"
+        },
+        {
+            "whitelist": [
                 "Garbut",
                 "Garbut Point"
             ],
@@ -204,9 +110,17 @@
         },
         {
             "whitelist": [
-                "spot1"
+                "Kolahoi",
+                "Kolahoi Glacier"
             ],
-            "cname": "spot1"
+            "cname": "Kolahoi Glacier"
+        },
+        {
+            "whitelist": [
+                "Calangute",
+                "Calangute Beach"
+            ],
+            "cname": "Calangute Beach"
         },
         {
             "whitelist": [
@@ -217,39 +131,203 @@
         },
         {
             "whitelist": [
-                "Barapoole",
-                "Barapoole River"
+                "Sinquerim",
+                "Sinquerim Beach"
             ],
-            "cname": "Barapoole River"
+            "cname": "Sinquerim Beach"
         },
         {
             "whitelist": [
-                "Lamayuru"
+                "Bambolim",
+                "Bambolim Beach"
             ],
-            "cname": "Lamayuru"
+            "cname": "Bambolim Beach"
+        },
+        {
+            "whitelist": [
+                "Chadar",
+                "Chadar Trek"
+            ],
+            "cname": "Chadar Trek"
+        },
+        {
+            "whitelist": [
+                "Anjuna",
+                "Anjuna Beach"
+            ],
+            "cname": "Anjuna Beach"
+        },
+        {
+            "whitelist": [
+                "Kamshet"
+            ],
+            "cname": "Kamshet"
+        },
+        {
+            "whitelist": [
+                "Vagator",
+                "Vagator Beach"
+            ],
+            "cname": "Vagator Beach"
+        },
+        {
+            "whitelist": [
+                "Grand",
+                "Grand Island"
+            ],
+            "cname": "Grand Island"
         },
         {
             "whitelist": [
                 "Mane",
-                "Mane Bhanjang",
-                "Bhanjang"
+                "Mane Bhanjang"
             ],
             "cname": "Mane Bhanjang"
         },
         {
             "whitelist": [
-                "Triund",
-                "Triund Hill",
-                "Triund Hill Station",
-                "Hill Station"
+                "Spiti",
+                "Spiti Valley"
             ],
-            "cname": "Triund Hill Station"
+            "cname": "Spiti Valley"
         },
         {
             "whitelist": [
-                "Dodital"
+                "Yelagiri"
             ],
-            "cname": "Dodital"
+            "cname": "Yelagiri"
+        },
+        {
+            "whitelist": [
+                "Mahuli",
+                "Mahuli Fort"
+            ],
+            "cname": "Mahuli Fort"
+        },
+        {
+            "whitelist": [
+                "Nandi",
+                "Nandi Hills"
+            ],
+            "cname": "Nandi Hills"
+        },
+        {
+            "whitelist": [
+                "Kalsubai",
+                "Kalsubai Peak"
+            ],
+            "cname": "Kalsubai Peak"
+        },
+        {
+            "whitelist": [
+                "Hampta",
+                "Hampta Pass"
+            ],
+            "cname": "Hampta Pass"
+        },
+        {
+            "whitelist": [
+                "Kuari",
+                "Kuari Pass"
+            ],
+            "cname": "Kuari Pass"
+        },
+        {
+            "whitelist": [
+                "Rishikesh",
+                "Rishikesh Ganges"
+            ],
+            "cname": "Rishikesh Ganges"
+        },
+        {
+            "whitelist": [
+                "Bhagirathi",
+                "Bhagirathi River"
+            ],
+            "cname": "Bhagirathi River"
+        },
+        {
+            "whitelist": [
+                "Purandar",
+                "Purandar Fort"
+            ],
+            "cname": "Purandar Fort"
+        },
+        {
+            "whitelist": [
+                "Benaulim",
+                "Benaulim Beach"
+            ],
+            "cname": "Benaulim Beach"
+        },
+        {
+            "whitelist": [
+                "Palolem",
+                "Palolem Beach"
+            ],
+            "cname": "Palolem Beach"
+        },
+        {
+            "whitelist": [
+                "Goecha",
+                "Goecha La"
+            ],
+            "cname": "Goecha La"
+        },
+        {
+            "whitelist": [
+                "Bir",
+                "Bir billing"
+            ],
+            "cname": "Bir billing"
+        },
+        {
+            "whitelist": [
+                "Leh-Zanskar"
+            ],
+            "cname": "Leh-Zanskar"
+        },
+        {
+            "whitelist": [
+                "Havelock",
+                "Havelock Islands"
+            ],
+            "cname": "Havelock Islands"
+        },
+        {
+            "whitelist": [
+                "Aritar"
+            ],
+            "cname": "Aritar"
+        },
+        {
+            "whitelist": [
+                "Solang",
+                "Solang Valley"
+            ],
+            "cname": "Solang Valley"
+        },
+        {
+            "whitelist": [
+                "Baga",
+                "Baga Beach"
+            ],
+            "cname": "Baga Beach"
+        },
+        {
+            "whitelist": [
+                "Har ki",
+                "Har ki Doon",
+                "ki Doon"
+            ],
+            "cname": "Har ki Doon"
+        },
+        {
+            "whitelist": [
+                "Ashwem",
+                "Ashwem Beach"
+            ],
+            "cname": "Ashwem Beach"
         },
         {
             "whitelist": [
@@ -260,6 +338,64 @@
         },
         {
             "whitelist": [
+                "Indus",
+                "Indus River"
+            ],
+            "cname": "Indus River"
+        },
+        {
+            "whitelist": [
+                "Dona",
+                "Dona Paula",
+                "Dona Paula Beach",
+                "Paula Beach"
+            ],
+            "cname": "Dona Paula Beach"
+        },
+        {
+            "whitelist": [
+                "Kangra",
+                "Kangra Valley"
+            ],
+            "cname": "Kangra Valley"
+        },
+        {
+            "whitelist": [
+                "Korigad",
+                "Korigad Hill",
+                "Korigad Hill Fort"
+            ],
+            "cname": "Korigad Hill Fort"
+        },
+        {
+            "whitelist": [
+                "Deoria",
+                "Deoria Tal"
+            ],
+            "cname": "Deoria Tal"
+        },
+        {
+            "whitelist": [
+                "Candolim",
+                "Candolim Beach"
+            ],
+            "cname": "Candolim Beach"
+        },
+        {
+            "whitelist": [
+                "Panchgani"
+            ],
+            "cname": "Panchgani"
+        },
+        {
+            "whitelist": [
+                "Tarsar",
+                "Tarsar Marsar"
+            ],
+            "cname": "Tarsar Marsar"
+        },
+        {
+            "whitelist": [
                 "Beas",
                 "Beas River"
             ],
@@ -267,7 +403,20 @@
         },
         {
             "whitelist": [
-                "Nag",
+                "Saramati",
+                "Saramati Peak"
+            ],
+            "cname": "Saramati Peak"
+        },
+        {
+            "whitelist": [
+                "Thajiwas",
+                "Thajiwas Glacier"
+            ],
+            "cname": "Thajiwas Glacier"
+        },
+        {
+            "whitelist": [
                 "Nag Tibba",
                 "Nag Tibba Peak",
                 "Tibba Peak"
@@ -276,9 +425,36 @@
         },
         {
             "whitelist": [
-                "Raireshwar"
+                "Roopkund"
             ],
-            "cname": "Raireshwar"
+            "cname": "Roopkund"
+        },
+        {
+            "whitelist": [
+                "Lamayuru"
+            ],
+            "cname": "Lamayuru"
+        },
+        {
+            "whitelist": [
+                "Mobor",
+                "Mobor Beach"
+            ],
+            "cname": "Mobor Beach"
+        },
+        {
+            "whitelist": [
+                "Butterfly",
+                "Butterfly Beach"
+            ],
+            "cname": "Butterfly Beach"
+        },
+        {
+            "whitelist": [
+                "Chapora",
+                "Chapora River"
+            ],
+            "cname": "Chapora River"
         }
     ]
 }

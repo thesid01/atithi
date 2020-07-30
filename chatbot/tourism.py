@@ -109,7 +109,6 @@ def food_pref(request, responder):
     data=""
     for item in request.entities:
         data += item['value'][0]["cname"]+" "
-    print(data)
     res = firebase.setFoodPref(data,id)
     responder.params.target_dialogue_state = 'hotel_pref'
     # responder.params.allowed_intents = ['tourism.hotel_pref']
@@ -120,10 +119,8 @@ def hotel_pref(request,responder):
     id = request.params.dynamic_resource['id']
     data={}
     for item in request.entities:
-        print(item)
         data[item["type"]]=item["value"][0]["cname"]
 
-    print(data)
     res = firebase.setHotelPref(data,id)
     responder.reply("Don't worry😀, I will take care of your comfort throughout the journey~I will remember these preferences along the journey.~Whenever You are hungry or want to have some rest you are free to ask for my help.~I will help you in searching restaurants and hotels😀")
 

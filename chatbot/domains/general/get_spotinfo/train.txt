@@ -1,0 +1,36 @@
+tell me {about|city_intro} {Hampta Pass|spot_name}
+tell me {about|city_intro} city {Hampta Pass|spot_name}
+{about|city_intro} {Hampta Pass|spot_name}
+{Hampta Pass|spot_name} {intro|city_intro}
+give me {introduction|city_intro} of {Hampta Pass|spot_name}
+tell me {about|city_intro} {Dzukou Valley|spot_name}
+{about|city_intro} {Dzukou Valley|spot_name}
+{Dzukou Valley|spot_name} {intro|city_intro}
+give me {introduction|city_intro} of {Dzukou Valley|spot_name}
+tell me something {about|city_intro} {Dodital|spot_name}
+tell me something {about|city_intro} {Dodital|spot_name}
+What {about|city_intro} {Dodital|spot_name}
+{Dodital|spot_name} {wiki|city_intro}
+{about|city_intro} {Hampta Pass|spot_name} city
+city {Hampta Pass|spot_name} {intro|city_intro}
+{Dzukou ValleyValley|spot_name} city {wiki|city_intro}
+I want to know more about {Hampta Pass|spot_name}
+I am curious about {Hampta Pass|spot_name}
+Curious about {Hampta Pass|spot_name}
+tell me more about {Hampta Pass|spot_name}
+Do you know more about {Hampta Pass|spot_name}
+info about {Hampta Pass|spot_name}
+Love to know more about {Hampta Pass|spot_name}
+I would love to know more about {Hampta Pass|spot_name}
+info {Hampta Pass|spot_name}
+how is {Hampta Pass|spot_name}
+is {Hampta Pass|spot_name} good 
+info {Hampta Pass|spot_name}
+describe {Hampta Pass|spot_name}
+description of {Hampta Pass|spot_name}
+why should i go to {Hampta Pass|spot_name}
+anything would you like to tell me about {Hampta Pass|spot_name}
+few lines about {Hampta Pass|spot_name}
+say something about {Hampta Pass|spot_name}
+what do you know about {Hampta Pass |spot_name}
+summary of {Hampta Pass |spot_name}

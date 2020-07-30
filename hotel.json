@@ -1,11 +1,27 @@
 [
     {
+        "name": "SPOT ON 41332 Today Guest House 3",
+        "rating": "3.9",
+        "address": "Near Meckenjee Lane, Howrah, Kolkata",
+        "distance": "0.4 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/59773/23a124fdc7597dba.jpg",
+        "url": "https://www.oyorooms.com/59773-spot-on-spot-on-41332-today-guest-house-3-kolkata/"
+    },
+    {
         "name": "SPOT ON 62283 Maa Kamala Guest House",
         "rating": null,
         "address": "Near Howrah AC Market, Kolkata",
         "distance": "0.6 km",
         "image": "https://images.oyoroomscdn.com/uploads/hotel_image/83792/bd6bf437fa6fd61c.jpg",
         "url": "https://www.oyorooms.com/83792-spot-on-spot-on-62283-maa-kamala-guest-house-kolkata/"
+    },
+    {
+        "name": "SPOT ON 41329 Today Guest House 2",
+        "rating": "3.8",
+        "address": "Near Howrah A.C. Market, Kolkata",
+        "distance": "0.6 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/59769/5b378c338fc5ec1a.jpg",
+        "url": "https://www.oyorooms.com/59769-spot-on-spot-on-41329-today-guest-house-2-kolkata/"
     },
     {
         "name": "SPOT ON 65762 Day Light",
@@ -46,6 +62,14 @@
         "distance": "2.9 km",
         "image": "https://images.oyoroomscdn.com/uploads/hotel_image/14113/e2239a1a8cb551b4.jpg",
         "url": "https://www.oyorooms.com/14113-capital-o-capital-o-8565-hotel-golden-palace-kolkata/"
+    },
+    {
+        "name": "OYO 37046 Apollo Guest House",
+        "rating": "4.1",
+        "address": "Near Rangana Theatre, Kolkata",
+        "distance": "3.5 km",
+        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/55554/ec95d92f23f80242.jpg",
+        "url": "https://www.oyorooms.com/55554-oyo-rooms-oyo-37046-apollo-guest-house-kolkata/"
     },
     {
         "name": "OYO 46432 Eennra North Guest House",
@@ -134,29 +158,5 @@
         "distance": "4.4 km",
         "image": "https://images.oyoroomscdn.com/uploads/hotel_image/104371/f1671a25d59ba900.jpg",
         "url": "https://www.oyorooms.com/104371-silverkey-silverkey-executive-stays-37925-river-view-kolkata/"
-    },
-    {
-        "name": "OYO 49195 Hotel Jayanti",
-        "rating": "3.6",
-        "address": "Near Nabanna Bus Stand, Shalimar, Kolkata",
-        "distance": "4.5 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/79226/765f1f468b53ea16.jpg",
-        "url": "https://www.oyorooms.com/79226-oyo-rooms-oyo-49195-hotel-jayanti-kolkata/"
-    },
-    {
-        "name": "OYO 63600 Hotel Lemon Arrow Inn",
-        "rating": "3.7",
-        "address": "Near Nabana Bhavan, Shibpur, Kolkata",
-        "distance": "4.6 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/85714/c5d9a92727011b91.jpg",
-        "url": "https://www.oyorooms.com/85714-oyo-rooms-oyo-63600-hotel-lemon-arrow-inn-kolkata/"
-    },
-    {
-        "name": "OYO 8863 Hotel Sigma",
-        "rating": "4.2",
-        "address": "Near Buxarah Road, Howrah, Kolkata",
-        "distance": "4.8 km",
-        "image": "https://images.oyoroomscdn.com/uploads/hotel_image/14418/a3ccd002229c2566.jpg",
-        "url": "https://www.oyorooms.com/14418-oyo-rooms-oyo-8863-hotel-sigma-kolkata/"
     }
 ]
