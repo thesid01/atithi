@@ -35,10 +35,11 @@ def search_nearby_food(request,responder):
         try:
             lat,long = firebase.getCurrLocation(id)
             if lat and long:
+                res_msg = getRestaurant(id, lat, long)
                 # hotel_msg = hotelList(id,lat,long)
                 # print(hotel_msg)
                 print('d')
-                responder.reply("Yay ..I found some restaurants nearby you🌮\nGo and enjoy some yummy local food there😋:\n")
+                responder.reply("Yay ..I found some restaurants nearby you🌮~Go and enjoy some yummy local food there😋~Below is list of restaurants, check it out:\n"+res_msg)
         except (TypeError,AttributeError):
             print('g')
             responder.params.target_dialogue_state = "search_food_at_curr"
