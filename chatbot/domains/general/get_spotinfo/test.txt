@@ -1,0 +1,7 @@
+give me {introduction|city_intro} of {Har ki Doon|spot_name}
+tell me {about|city_intro} of {Goecha La|spot_name}
+info {about|city_intro} {Goecha La|spot_name}
+more about {Har ki Doon |spot_name} 
+few lines about {Har ki Doon |spot_name}
+summary of {Har ki Doon |spot_name}
+I want to know more about {Har ki Doon|spot_name}

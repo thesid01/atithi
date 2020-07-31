@@ -13,13 +13,20 @@ from mindmeld import configure_logs
 from apscheduler.schedulers.blocking import BlockingScheduler
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
+from twilio.rest import Client
 
 from chatbot.middleware import next_target_setHelper as nth
 
 import atexit
 import time
+import validators
 
-
+#TWILIO_ACCOUNT_SID = 'ACc47f3cc342412b7097ad6f6c6fe19398'
+#TWILIO_AUTH_TOKEN = '36418b6fe7615bd068ad13f614bdc19d'
+#export TWILIO_AUTH_TOKEN=e0e696089a9a6a65774500c37edcb963
+#export TWILIO_ACCOUNT_SID=AC589b234a1d386d213e4434b0f148f1f0
+#client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
+client = Client()
 class WhatsappBotServer:
 
     def __init__(self, name, app_path, nlp=None):
@@ -39,11 +46,13 @@ class WhatsappBotServer:
             self.nlp = nlp
         self.conv = Conversation(nlp=self.nlp, app_path=app_path)
         self.logger = logging.getLogger(__name__)
+        self.url = None
 
         @self.app.route("/", methods=["POST"])
         def handle_message():  # pylint: disable=unused-variable
             # print(request.values)
-            id = request.values.get('From','') #Getting number from which message came
+            # Getting number from which message came
+            id = request.values.get('From', '')
             id = id.split('+')[1]
             # print(request.values) #uncomment this to dif deeper
             exist = self.firebase.existID(id)
@@ -51,21 +60,20 @@ class WhatsappBotServer:
                 result = self.firebase.createID(id)
 
             incoming_msg = request.values.get('Body', '').lower()
-            print(incoming_msg)
             location = {
-                'Latitude': request.values.get('Latitude',''),
-                'Longitude' : request.values.get('Longitude','')
+                'Latitude': request.values.get('Latitude', ''),
+                'Longitude': request.values.get('Longitude', '')
             }
-            if request.values.get('Latitude','') and request.values.get('Longitude',''):
+            if request.values.get('Latitude', '') and request.values.get('Longitude', ''):
                 result = self.firebase.setCurrLocation(location, id)
                 resp = MessagingResponse()
                 msg = resp.message()
-                params = dict(dynamic_resource =dict(id=id))
+                params = dict(dynamic_resource=dict(id=id))
                 incoming_msg = "lat long is set"
                 response_text = self.conv.say(incoming_msg, params=params)[0]
                 msg.body(response_text)
                 return str(resp)
-            else :
+            else:
                 resp = MessagingResponse()
                 msg = resp.message()
                 params = None
@@ -75,14 +83,29 @@ class WhatsappBotServer:
                     params = dict(dynamic_resource =dict(id=id),target_dialogue_state=nth.getTarget())
                 try:
                     response_text = self.conv.say(incoming_msg, params=params)[0]
-                    msg.body(response_text)
+                    messages = response_text.split("~")
+                    for msg in messages:
+                        sendMessage(msg, id)
+                    #msg.body(response_text)
                 except IndexError:
                     msg.body("Didn't understand. sorry")
-                return str(resp)
+            return str(resp)
+
+        def sendMessage(msg, number):
+            # Change the from whatsapp number with your twilio account number
+            valid=validators.url(msg)
+            if valid :
+                self.url = msg
+            else:
+                if self.url:
+                    client.messages.create(body=msg, from_="whatsapp:+14155238886", to="whatsapp:+"+str(number), media_url=[self.url])
+                    self.url = None
+                else:
+                    client.messages.create(body=msg, from_="whatsapp:+14155238886", to="whatsapp:+"+str(number))
 
     def run(self, host="localhost", port=7150):
         self.app.run(host=host, port=port)
-    
+
     def start_remainder(self):
         remainder_service = remainderHelper(self.firebase)
         # remainder_service.start(self.firebase.getReminders())
@@ -92,6 +115,7 @@ if __name__ == '__main__':
     app = Flask(__name__)
     configure_logs()
     server = WhatsappBotServer(name='whatsapp', app_path='./chatbot')
+
 
     nth.delTarget()
 
@@ -106,8 +130,7 @@ if __name__ == '__main__':
         replace_existing=True)
     # Shut down the scheduler when exiting the app
     atexit.register(lambda: scheduler.shutdown())
-    
+
     port_number = 8080
     print('Running server on port {}...'.format(port_number))
     server.run(host='localhost', port=port_number)
-

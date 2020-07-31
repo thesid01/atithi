@@ -14,10 +14,13 @@
                                 "Latitude": 34.264704,
                                 "Longitude": 75.275839
                             },
-                            "city": "Sonarmarg",
-                            "activity": "Trekking, Mountaineering",
+                            "city": "Sonamarg",
+                            "activity": "Trekking",
+                            "level": "Easy",
+                            "image_URL": "https://www.tourmyindia.com/states/jammu-kashmir/image/thajiwas-glacier-sonmarg2.jpg",
+                            "trivia": "Thajiwas Glacier, located at an altitude of 9,186 feet at a short distance from Sonmarg in Jammu & Kashmir, is enormous and blessed with magnificent beauty. ",
                             "best_season": "April to June",
-                            "type": "nature"
+                            "type": "camping"
                         },
                         {
                             "spot_id": 2,
@@ -28,6 +31,9 @@
                             },
                             "city": "Srinagar",
                             "activity": "Trekking",
+                            "level": "Moderate",
+                            "image_URL": "https://indiahikes.com/wp-content/uploads/2016/05/Tarsar-Marsar-trek-Tarsar-Lake-Kishan.jpg",
+                            "trivia": "Tarsar Marsar is a beautiful trek with wonderful grasslands, dense Pine forests and spectacular views all throughout. Tarsar Marsar trek has 3 glacial lakes on the route \u2013 Tarsar, Marsar and Sundersar.",
                             "best_season": "July to September",
                             "type": "camping"
                         },
@@ -40,8 +46,11 @@
                             },
                             "city": "Srinagar",
                             "activity": "Trekking",
+                            "level": "Moderate",
+                            "image_URL": "https://www.indiahikes.com/wp-content/uploads/2016/08/18.jpg",
+                            "trivia": "Kolahoi glacier lies at an average elevation of 4,700 metres (15,400 ft). The highest peak named after the glacier is Kolahoi Peak has an elevation of 5425 meters. The origin of the glacier is below the cirques on the north flank of Kolahoi Peak.",
                             "best_season": "March to October",
-                            "type": "nature"
+                            "type": "camping"
                         }
                     ]
                 },
@@ -57,9 +66,12 @@
                                 "Longitude": 78.034916
                             },
                             "city": "Spiti",
-                            "activity": "Trekking, River Rafting",
-                            "best_season": "July to August",
-                            "type": "nature"
+                            "activity": "Trekking,River Rafting,Mountain Biking",
+                            "level": "Difficult,Moderate,Moderate to Difficult",
+                            "image_URL": "https://www.weekendthrill.com/wp-content/uploads/2017/02/Spiti-Bike-Trip.jpg",
+                            "trivia": "The name 'Spiti' literally means 'The Middle Land'. Spiti lies on the Indian border with Tibet.",
+                            "best_season": "July to August,October to November,July to August",
+                            "type": "camping"
                         },
                         {
                             "spot_id": 2,
@@ -70,8 +82,11 @@
                             },
                             "city": "Manali",
                             "activity": "Trekking",
+                            "level": "Moderate",
+                            "image_URL": "https://indiahikes.com/wp-content/uploads/2018/09/Hampta-Pass-Karthik-P-A-View-at-the-descent-to-Chattru.jpg",
+                            "trivia": "Hampta Pass gets its name from the Hamta Village located in the Pir Panjal region.",
                             "best_season": "October",
-                            "type": "nature"
+                            "type": "camping"
                         },
                         {
                             "spot_id": 3,
@@ -82,8 +97,11 @@
                             },
                             "city": "Dharamshala",
                             "activity": "Trekking",
+                            "level": "Easy",
+                            "image_URL": "https://banbanjara.com/frontend/uploads/product/1577703696518-triundtrekBanBanjara.jpg?dim=784x422&type=resize",
+                            "trivia": "Triund is only about 13.5 km from Dharamshala and most people reach the destination via trekking. The Triund Trek has fast become a hotspot for trekkers not only from India but from all over the world.",
                             "best_season": "March to June",
-                            "type": "camping"
+                            "type": "nature"
                         },
                         {
                             "spot_id": 4,
@@ -94,8 +112,71 @@
                             },
                             "city": "Pirdi",
                             "activity": "River Rafting",
+                            "level": "Moderate to Difficult",
+                            "image_URL": "https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2014/11/Rafting-in-Beas.jpg",
+                            "trivia": "Beas River, Beas also spelled Bias, ancient Greek Hyphasis, Sanskrit Vipasha, river in Himachal Pradesh and Punjab states, northwestern India. It is one of the five rivers that give the Punjab (\u201cFive Rivers\u201d) its name.",
                             "best_season": "March to July",
+                            "type": "camping"
+                        },
+                        {
+                            "spot_id": 5,
+                            "spot_name": "Manali-Leh",
+                            "location": {
+                                "Latitude": 32.2432,
+                                "Longitude": 77.1892
+                            },
+                            "city": "Manali",
+                            "activity": "Mountain Biking",
+                            "level": "Difficult",
+                            "image_URL": "https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/03/Manali-Leh.jpg",
+                            "trivia": "Manali is named after saint Manu, and literally translates into Manu-alaya, meaning home to Manu. Legend has it that saint Manu came to Manali and meditated here to re-create the human life after it was washed out in the great floods",
+                            "best_season": "June to September",
+                            "type": "camping"
+                        },
+                        {
+                            "spot_id": 6,
+                            "spot_name": "Kangra Valley",
+                            "location": {
+                                "Latitude": 32.2432,
+                                "Longitude": 77.1892
+                            },
+                            "city": "Bir",
+                            "activity": "Mountain Biking",
+                            "level": "Moderate",
+                            "image_URL": "https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/03/Kangra-Valley.jpg",
+                            "trivia": "Bir has the world\u2019s second best paragliding launch site in the world (after Lake Como, Italy), and the best for paragliding in India, at Billing, a valley 14 kms north to Bir.",
+                            "best_season": "September to October",
                             "type": "nature"
+                        },
+                        {
+                            "spot_id": 7,
+                            "spot_name": "Bir billing",
+                            "location": {
+                                "Latitude": 32.0456,
+                                "Longitude": 76.7236
+                            },
+                            "city": "Palampur",
+                            "activity": "Paragliding",
+                            "level": "Easy",
+                            "image_URL": "https://static2.tripoto.com/media/transfer/img/OgData/1465203368_bir_billing_himachal_pradesh.jpg",
+                            "trivia": "Bir has the world\u2019s second best paragliding launch site in the world (after Lake Como, Italy), and the best for paragliding in India, at Billing, a valley 14 kms north to Bir.",
+                            "best_season": "October to June",
+                            "type": "family"
+                        },
+                        {
+                            "spot_id": 8,
+                            "spot_name": "Solang Valley",
+                            "location": {
+                                "Latitude": 32.3105,
+                                "Longitude": 77.15
+                            },
+                            "city": "Manali",
+                            "activity": "Paragliding",
+                            "level": "Easy",
+                            "image_URL": "https://static-blog.treebo.com/wp-content/uploads/2018/08/Paragliding-in-Solang-Valley.jpg",
+                            "trivia": "Solang Valley derives its name from combination of words Solang (Nearby village) and Nallah (water stream). ",
+                            "best_season": "May to October",
+                            "type": "camping"
                         }
                     ]
                 },
@@ -112,7 +193,7 @@
                             },
                             "city": "",
                             "activity": "Bruh, Bruh",
-                            "type": "family"
+                            "type": "camping"
                         }
                     ]
                 },
@@ -129,6 +210,9 @@
                             },
                             "city": "Gauri Kund",
                             "activity": "Trekking",
+                            "level": "Easy",
+                            "image_URL": "https://www.namasteindiatrip.com/blog/wp-content/uploads/2019/04/Trek-to-Kedarnath-Dham.jpg",
+                            "trivia": " The Bhairo Nath Temple which is located at a very short distance from Kedarnath Temple is a guardian of the Kedarnathji. It is believed that Bhaironathji guards the Kedarnath Temple by keeping away the evil while the temple remains close. ",
                             "best_season": "December to March",
                             "type": "nature"
                         },
@@ -140,21 +224,27 @@
                                 "Longitude": 78.5246
                             },
                             "city": "Uttarkashi",
-                            "activity": "Trekking, Camping, Hiking",
+                            "activity": "Trekking",
+                            "level": "Easy to Moderate",
+                            "image_URL": "https://www.outlookindia.com/outlooktraveller//public/uploads/files/2014/09/FS_014201112A10001091-list16-1024x680.jpg",
+                            "trivia": "Dodital is said to be the birth place of Lord Ganesh, and is also the source of the Assi Ganga, a tributary to the Bhagirathi. It is named after the rare Dodi (Himalayan Trout) that can be found in this lake.",
                             "best_season": "January",
                             "type": "nature"
                         },
                         {
                             "spot_id": 3,
-                            "spot_name": "Deoriya Tal",
+                            "spot_name": "Deoria Tal",
                             "location": {
                                 "Latitude": 30.5222,
                                 "Longitude": 79.1277
                             },
                             "city": "Ukhimath",
                             "activity": "Trekking",
+                            "level": "Easy",
+                            "image_URL": "https://images.thrillophilia.com/image/upload/s--rs7NDH22--/c_fill,f_auto,fl_strip_profile,h_775,q_auto,w_1600/v1/images/photos/000/029/307/original/1531388264_Chandrashila_Trek.jpg.jpg?1531388264",
+                            "trivia": "Deoria Tal is surrounded by verdant forests and offers refreshing views of snow-clad peaks at the backdrop. One can see the reflection of the majestic Chaukhamba on the crystal clear waters of the lake which is an awe-inspiring sight indeed.",
                             "best_season": "March",
-                            "type": "camping"
+                            "type": "family"
                         },
                         {
                             "spot_id": 4,
@@ -165,8 +255,11 @@
                             },
                             "city": "Chamoli",
                             "activity": "Trekking",
+                            "level": "Moderate to Difficult",
+                            "image_URL": "https://tripntravels.com/wp-content/uploads/2018/06/roopkund-trek-3.jpg",
+                            "trivia": "Roopkund is a high altitude glacial lake at an altitude of 16,499 ft in the Chamoli district of Uttarakhand. It is also known as the Skeleton Lake because of the remains of hundreds of human skeletons that were found at the bottom of the lake in 1942.",
                             "best_season": "June",
-                            "type": "nature"
+                            "type": "camping"
                         },
                         {
                             "spot_id": 5,
@@ -177,8 +270,11 @@
                             },
                             "city": "Purola",
                             "activity": "Trekking",
+                            "level": "Moderate to Difficult",
+                            "image_URL": "https://indiahikes.com/wp-content/uploads/2016/06/Har-Ki-Dun-Ruinsara-Tal-Trek-Indiahikes-Trek-The-Himalayas-scaled.jpg",
+                            "trivia": "Har Ki Doon or Har Ki Dun is a cradle-shaped hanging valley in the Garhwal Himalayas of Uttarakhand, India. It is surrounded by snow-covered peaks and alpine vegetation.[1] It is connected to Baspa Valley by the Borasu Pass.",
                             "best_season": "November to December",
-                            "type": "camping"
+                            "type": "family"
                         },
                         {
                             "spot_id": 6,
@@ -189,8 +285,11 @@
                             },
                             "city": "Mussoorie",
                             "activity": "Trekking",
+                            "level": "Easy to Moderate",
+                            "image_URL": "https://imgcld.yatra.com/ytimages/image/upload/v1517481327/AdvNation/ANN_TRP171/BloomingRhododendronForest_1432206825_NQvgOC.jpg",
+                            "trivia": "Nag Tibba, 3,022 metres, is the highest peak in the lesser himalayan region of Uttarakhand state, and lends its name to the 'Nag Tibba Range', itself the next-northerly of the five folds of the Himalaya.",
                             "best_season": "December",
-                            "type": "camping"
+                            "type": "family"
                         },
                         {
                             "spot_id": 7,
@@ -201,20 +300,26 @@
                             },
                             "city": "Joshimath",
                             "activity": "Trekking",
+                            "level": "Easy to Moderate",
+                            "image_URL": "https://secureservercdn.net/160.153.138.219/vkh.6aa.myftpupload.com/wp-content/uploads/2019/05/Kuari-Pass-Cover-001.jpg",
+                            "trivia": "it is a gateway to several Himalayan mountain climbing expeditions, trekking trails and pilgrim centres like Badrinath.",
                             "best_season": "December",
-                            "type": "camping"
+                            "type": "family"
                         },
                         {
                             "spot_id": 8,
-                            "spot_name": "River Ganga",
+                            "spot_name": "Rishikesh Ganges",
                             "location": {
                                 "Latitude": 30.121791,
                                 "Longitude": 78.307204
                             },
                             "city": "Rishikesh",
                             "activity": "River Rafting",
+                            "level": "Easy to Moderate",
+                            "image_URL": "https://www.thethirdpole.net/wp-content/uploads/2015/12/ganga.jpg",
+                            "trivia": "Rishikesh is a city in India\u2019s northern state of Uttarakhand, in the Himalayan foothills beside the Ganges River. The river is considered holy, and the city is renowned as a center for studying yoga and meditation.",
                             "best_season": "September to June",
-                            "type": "nature"
+                            "type": "camping"
                         },
                         {
                             "spot_id": 9,
@@ -225,6 +330,9 @@
                             },
                             "city": "Dagar",
                             "activity": "River Rafting",
+                            "level": "Moderate to Difficult",
+                            "image_URL": "https://www.indiacityblog.com/wp-content/uploads/2020/06/yamuna-peakadventuretour.jpg",
+                            "trivia": "In Hindu faith and culture, the Bhagirathi is considered the source stream of the Ganges.",
                             "best_season": "October to May",
                             "type": "camping"
                         }
@@ -243,7 +351,7 @@
                             },
                             "city": "",
                             "activity": "Bruh, Bruh",
-                            "type": "camping"
+                            "type": "nature"
                         }
                     ]
                 },
@@ -270,15 +378,18 @@
                     "spots": [
                         {
                             "spot_id": 1,
-                            "spot_name": "Zanskar",
+                            "spot_name": "Chadar Trek",
                             "location": {
                                 "Latitude": 33.771917,
                                 "Longitude": 76.845349
                             },
                             "city": "Kargil",
-                            "activity": "Trekking, Mountaineering",
+                            "activity": "Trekking",
+                            "level": "Difficult",
+                            "image_URL": "https://dmgupcwbwy0wl.cloudfront.net/system/images/000/099/974/c250547572ceb5d182d6767bd24241a1/x600gt/chadar-day-5-1.jpg?1557508912",
+                            "trivia": "Traditionally the only means of travel in the area during the harsh winter months, the trail has become popular with international adventure tourists.",
                             "best_season": "January to February",
-                            "type": "nature"
+                            "type": "family"
                         },
                         {
                             "spot_id": 2,
@@ -289,8 +400,11 @@
                             },
                             "city": "Leh",
                             "activity": "Trekking",
+                            "level": "Difficult",
+                            "image_URL": "https://www.trekmunk.com/uploads/systemuploads/Lamayuru-Padum-Trek.jpg",
+                            "trivia": "Home of one of the oldest monasteries in Ladakh, legends believe that this place was once a lake that dried up.",
                             "best_season": "May to November",
-                            "type": "nature"
+                            "type": "family"
                         },
                         {
                             "spot_id": 3,
@@ -301,7 +415,25 @@
                             },
                             "city": "Leh",
                             "activity": "River Rafting",
+                            "level": "Easy",
+                            "image_URL": "https://www.go2ladakh.in/img/shared/gallery/f613ee37ddbb6df8f5610ead9083b942.jpg",
+                            "trivia": "The Indus River is one of the longest rivers in Asia. It flows through China, India and Pakistan. Originating in the Tibetan Plateau in the vicinity of Lake Manasarovar",
                             "best_season": "July to September",
+                            "type": "camping"
+                        },
+                        {
+                            "spot_id": 4,
+                            "spot_name": "Leh-Zanskar",
+                            "location": {
+                                "Latitude": 33.5626,
+                                "Longitude": 76.9878
+                            },
+                            "city": "Leh",
+                            "activity": "Mountain Biking",
+                            "level": "Difficult",
+                            "image_URL": "https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/03/Leh-Zanskar.jpg",
+                            "trivia": "The Zanskar Range is a mountain range in the union territory of Ladakh that separates Zanskar from Ladakh. Geologically, the Zanskar Range is part of the Tethys Himalaya, an approximately 100-km-wide synclinorium formed by strongly folded and imbricated, weakly metamorphosed sedimentary series.",
+                            "best_season": "June to September",
                             "type": "family"
                         }
                     ]
@@ -323,7 +455,10 @@
                                 "Longitude": 73.7092
                             },
                             "city": "Igatpuri",
-                            "activity": "Trekking, Mountaineering",
+                            "activity": "Trekking",
+                            "level": "Moderate to Difficult",
+                            "image_URL": "https://logout.world/media/kalsubai-day-trek-highest-peak-of-maharashtra/sayadri-maharastra1.jpg",
+                            "trivia": "Kalsubai (Marathi: \u0915\u0933\u0938\u0942\u092c\u093e\u0908 \u0936\u093f\u0916\u0930) is a mountain in the Western Ghats, located in the Indian state of Maharashtra. Its summit situated at an elevation of 1646 metres (5400 feet) is the highest point in Maharashtra.",
                             "best_season": "June to August",
                             "type": "family"
                         },
@@ -336,8 +471,11 @@
                             },
                             "city": "Pune",
                             "activity": "Trekking",
+                            "level": "Easy",
+                            "image_URL": "https://images.thrillophilia.com/image/upload/s--udF2ORE3--/c_fill,f_auto,fl_strip_profile,h_775,q_auto,w_1600/v1/images/photos/000/048/163/original/1465450882_loh4.jpg.jpg?1465450882",
+                            "trivia": " Shivaji Maharaj recaptured the fort in 1670 AD and used it for keeping his treasury. This fort was used to keep the loot from Surat.",
                             "best_season": "June to September",
-                            "type": "nature"
+                            "type": "camping"
                         },
                         {
                             "spot_id": 3,
@@ -348,6 +486,9 @@
                             },
                             "city": "Pune",
                             "activity": "Trekking",
+                            "level": "Easy",
+                            "image_URL": "https://www.gosahin.com/go/p/g/1549202193_Purandar-Fort1.jpg",
+                            "trivia": "Purandar Fort is known as the birthplace of Sambhaji, the son of Shivaji.he fort is repeatedly mentioned in the rising of Shivaji Maharaj against the Adil Shahi Bijapur Sultanate and the Mughals.",
                             "best_season": "June to September",
                             "type": "nature"
                         },
@@ -360,6 +501,9 @@
                             },
                             "city": "Lonavala",
                             "activity": "Trekking",
+                            "level": "Moderate",
+                            "image_URL": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rajmachi.jpg",
+                            "trivia": "Rajmachi Fort (Killa) is one of the many historical forts in the rugged hills of Sahyadri mountains (Western Ghats). It consists of two twin fortresses Shriwardhan Ballekilla and Manaranjan Balekilla, with a wide machi (plateau) surrounding the two Balekillas",
                             "best_season": "June to September",
                             "type": "camping"
                         },
@@ -372,8 +516,11 @@
                             },
                             "city": "Lonavala",
                             "activity": "Trekking",
+                            "level": "Easy",
+                            "image_URL": "https://storage.googleapis.com/ehimages/2017/6/28/img_0862cd19bbe927113b9f605e0071f1cc_1498655454475_processed_original.jpg",
+                            "trivia": "This fort was incorporated into his kingdom by the Maratha ruler Shivaji along with the forts of Lohagad, Visapur, Tung and Tikona in 1657",
                             "best_season": "June to September",
-                            "type": "family"
+                            "type": "nature"
                         },
                         {
                             "spot_id": 6,
@@ -384,8 +531,11 @@
                             },
                             "city": "Asangaon",
                             "activity": "Trekking",
+                            "level": "Moderate",
+                            "image_URL": "https://dmgupcwbwy0wl.cloudfront.net/system/images/000/219/935/6cff44fbc95905c5ccc3ff5b4bb70ff8/x1000gt/Mahuli_Fort_From_Pivali_End.JPG?1561216242",
+                            "trivia": "Shivaji took this fort from the Mughals on 8 January 1658, but lost it in 1661, and later won it back. ",
                             "best_season": "June to September",
-                            "type": "nature"
+                            "type": "family"
                         },
                         {
                             "spot_id": 7,
@@ -396,8 +546,11 @@
                             },
                             "city": "Pune",
                             "activity": "Trekking",
+                            "level": "Moderate",
+                            "image_URL": "https://i.pinimg.com/564x/0d/84/14/0d84140eed274497575f15573782f7a7.jpg",
+                            "trivia": "Raireshwar is the birth place of Swarajya. Shivaji took the Swarajya Oath at Raireshwar at the age of 16 on 27 April 1645.",
                             "best_season": "June to September",
-                            "type": "camping"
+                            "type": "nature"
                         },
                         {
                             "spot_id": 8,
@@ -408,8 +561,54 @@
                             },
                             "city": "Sondewadi",
                             "activity": "Trekking",
+                            "level": "Easy to Moderate",
+                            "image_URL": "https://static2.tripoto.com/media/filter/tst/img/24757/TripDocument/1535370673_photo_2018_08_27_17_19_28.jpg",
+                            "trivia": "At a distance of 17 km from Matheran and 8 km from Diksal, Garbett Point or Garbut Point is located near Matheran with grand view of the plateau below. The huge plateau gives a view to various waterfalls on the neighboring mountains. ",
                             "best_season": "June to September",
+                            "type": "camping"
+                        },
+                        {
+                            "spot_id": 9,
+                            "spot_name": "Kundalika River",
+                            "location": {
+                                "Latitude": 18.407664,
+                                "Longitude": 73.210182
+                            },
+                            "city": "Kolad",
+                            "activity": "River Rafting",
+                            "level": "Moderate",
+                            "image_URL": "https://www.holidify.com/images/cmsuploads/articles/291.jpg",
+                            "trivia": "The Kundalika is a small river flowing from the hills of Sahyadri to the Arabian Sea. This river originates at a small town called Bhira in the Indian state of Maharashtra, 150 km south east of Bombay (Mumbai).",
+                            "best_season": "January to December",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 10,
+                            "spot_name": "Kamshet",
+                            "location": {
+                                "Latitude": 18.76153,
+                                "Longitude": 73.558261
+                            },
+                            "city": "Pune",
+                            "activity": "Paragliding",
+                            "level": "Moderate",
+                            "image_URL": "https://dmgupcwbwy0wl.cloudfront.net/system/images/000/187/872/111f4c66293203e69cda91beb002a1dc/original/paragliding-wide.jpg?1583244165",
+                            "best_season": "October to February",
                             "type": "family"
+                        },
+                        {
+                            "spot_id": 11,
+                            "spot_name": "Panchgani",
+                            "location": {
+                                "Latitude": 17.932342,
+                                "Longitude": 73.803456
+                            },
+                            "city": "Satara",
+                            "activity": "Paragliding",
+                            "level": "Easy to Moderate",
+                            "image_URL": "https://adrenalins.lv/uploads/media/photo/0001/07/thumb_6382_photo_big.jpg",
+                            "best_season": "November to February",
+                            "type": "camping"
                         }
                     ]
                 },
@@ -436,14 +635,255 @@
                     "spots": [
                         {
                             "spot_id": 1,
-                            "spot_name": "spot1",
+                            "spot_name": "Calangute Beach",
                             "location": {
-                                "Latitude": 74.25,
-                                "Longitude": 25.32
+                                "Latitude": 15.5494,
+                                "Longitude": 73.7535
                             },
-                            "city": "",
-                            "activity": "Bruh, Bruh",
+                            "city": "Panaji",
+                            "activity": "Parasailing,Jet Ski,Bumper Ride",
+                            "level": "Easy,Easy,Easy",
+                            "image_URL": "https://i.postimg.cc/0Nc4j8Fs/shutterstock-1307916307.jpg",
+                            "best_season": "October to February,October to February,October to February",
+                            "type": "family"
+                        },
+                        {
+                            "spot_id": 2,
+                            "spot_name": "Baga Beach",
+                            "location": {
+                                "Latitude": 15.5553,
+                                "Longitude": 73.7517
+                            },
+                            "city": "Panaji",
+                            "activity": "Parasailing,Jet Ski,Bumper Ride,Paddleboarding",
+                            "level": "Easy,Easy,Easy,Easy",
+                            "image_URL": "https://i.postimg.cc/yxGv8hpr/shutterstock-59202550.jpg",
+                            "best_season": "October to January,October to January,October to January,October to January",
+                            "type": "camping"
+                        },
+                        {
+                            "spot_id": 3,
+                            "spot_name": "Anjuna Beach",
+                            "location": {
+                                "Latitude": 15.5733,
+                                "Longitude": 73.741
+                            },
+                            "city": "Panaji",
+                            "activity": "Parasailing,Jet Ski,Bumper Ride,Snorkeling",
+                            "level": "Easy,Easy,Easy,Easy",
+                            "image_URL": "https://images.haarets.co.il/image/upload/v1551784243/1.6996414.286649684.jpg",
+                            "best_season": "November to March,November to March,November to March,November to March",
                             "type": "nature"
+                        },
+                        {
+                            "spot_id": 4,
+                            "spot_name": "Dudhsagar Waterfalls",
+                            "location": {
+                                "Latitude": 15.3144,
+                                "Longitude": 74.3143
+                            },
+                            "city": "Kulem",
+                            "activity": "Trekking",
+                            "level": "Moderate",
+                            "image_URL": "https://www.weekendthrill.com/wp-content/uploads/2017/09/Dudhsagar-3.jpg",
+                            "best_season": "June to September",
+                            "type": "family"
+                        },
+                        {
+                            "spot_id": 5,
+                            "spot_name": "Dona Paula Beach",
+                            "location": {
+                                "Latitude": 15.4547,
+                                "Longitude": 73.8045
+                            },
+                            "city": "Panaji",
+                            "activity": "Water skiing,Parasailing,Snorkeling,Kayaking",
+                            "level": "Easy,Easy,Easy,Easy",
+                            "image_URL": "https://fwt.asia/wp-content/uploads/2019/12/Dona-Paula-Beach-Panji-Statue-View-Goa-fwt-asia-1.webp",
+                            "best_season": "October to January,October to January,October to January,October to January",
+                            "type": "family"
+                        },
+                        {
+                            "spot_id": 6,
+                            "spot_name": "Grand Island",
+                            "location": {
+                                "Latitude": 15.3527,
+                                "Longitude": 73.7779
+                            },
+                            "city": "Panaji",
+                            "activity": "Scuba Diving,Snorkeling",
+                            "level": "Easy to Moderate,Easy to Moderate",
+                            "image_URL": "https://makemygoatour.com/wp-content/uploads/2019/12/grandisland-goa4-min.jpg",
+                            "best_season": "October to March,October to March",
+                            "type": "family"
+                        },
+                        {
+                            "spot_id": 7,
+                            "spot_name": "Candolim Beach",
+                            "location": {
+                                "Latitude": 15.518,
+                                "Longitude": 73.7626
+                            },
+                            "city": "Panaji",
+                            "activity": "Parasailing,Snorkeling,Jet Ski,Bumpy Banana Ride",
+                            "level": "Easy,Easy,Easy,Easy",
+                            "image_URL": "https://otdyhateli.com/wp-content/uploads/2016/07/goa-candolim-beach-147713826572o.jpg",
+                            "best_season": "April to November,April to November,April to November,April to November",
+                            "type": "camping"
+                        },
+                        {
+                            "spot_id": 8,
+                            "spot_name": "Palolem Beach",
+                            "location": {
+                                "Latitude": 15.01,
+                                "Longitude": 74.0232
+                            },
+                            "city": "Canacona",
+                            "activity": "Wind Surfing,Kayaking,Paragliding,Water Scooter",
+                            "level": "Easy,Easy,Easy,Easy",
+                            "image_URL": "https://storage.googleapis.com/karmagroup-d66ca.appspot.com/karmagroupcdn/2019/04/ce2b292b-goa-min.jpg",
+                            "best_season": "November to February,November to February,November to February,November to February",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 9,
+                            "spot_name": "Butterfly Beach",
+                            "location": {
+                                "Latitude": 15.0196,
+                                "Longitude": 74.0016
+                            },
+                            "city": "Canacona",
+                            "activity": "Snorkeling,kayaking",
+                            "level": "Easy,Easy",
+                            "image_URL": "https://www.californiabeaches.com/wp-content/uploads/2014/09/Butterfly-Beach-Montecito-BryceFeb2016-2-997x700.jpg",
+                            "best_season": "November to March,November to March",
+                            "type": "family"
+                        },
+                        {
+                            "spot_id": 10,
+                            "spot_name": "Vagator Beach",
+                            "location": {
+                                "Latitude": 15.603,
+                                "Longitude": 73.7336
+                            },
+                            "city": "Bardez",
+                            "activity": "Parasailing,Jet Ski,Bumper Ride",
+                            "level": "Easy,Easy,Easy",
+                            "image_URL": "https://cfda.imgix.net/2016/09/W-GOA-Rockpool.jpg",
+                            "best_season": "November to March,November to March,November to March",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 11,
+                            "spot_name": "Arambol Beach",
+                            "location": {
+                                "Latitude": 15.6847,
+                                "Longitude": 73.7033
+                            },
+                            "city": "Arambol",
+                            "activity": "Parasailing,Jet Ski,Bumper Ride,Surfing",
+                            "level": "Easy,Easy,Easy,Easy",
+                            "image_URL": "https://i.postimg.cc/B6TQ2qJF/Arambol-Beach.jpg",
+                            "best_season": "October to March,October to March,October to March,October to March",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 12,
+                            "spot_name": "Ashwem Beach",
+                            "location": {
+                                "Latitude": 15.6438,
+                                "Longitude": 73.7174
+                            },
+                            "city": "Mandrem",
+                            "activity": "Paragliding,Surfing,Windsurfing,Jet Ski",
+                            "level": "Easy,Easy,Easy,Easy",
+                            "image_URL": "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/72000/72421-Ashvem-Beach.jpg",
+                            "best_season": "November to February,November to February,November to February,November to February",
+                            "type": "family"
+                        },
+                        {
+                            "spot_id": 13,
+                            "spot_name": "Benaulim Beach",
+                            "location": {
+                                "Latitude": 15.2508,
+                                "Longitude": 73.9202
+                            },
+                            "city": "Benaulim",
+                            "activity": "Parasailing,Jet Ski",
+                            "level": "Easy,Easy",
+                            "image_URL": "https://nextholiday.ir//uploads/2018/07/jpg/438e7698be45e91aa17827401e9882a0.jpg",
+                            "best_season": "October to April,October to April",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 14,
+                            "spot_name": "Mobor Beach",
+                            "location": {
+                                "Latitude": 15.156895,
+                                "Longitude": 73.945646
+                            },
+                            "city": "Mobor",
+                            "activity": "Parasailing,Jet Ski,Ringo Ride",
+                            "level": "Easy,Easy,Easy",
+                            "image_URL": "https://mapio.net/images-p/5157515.jpg",
+                            "best_season": "November to February,November to February,November to February",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 15,
+                            "spot_name": "Colva Beach",
+                            "location": {
+                                "Latitude": 15.280647,
+                                "Longitude": 73.911984
+                            },
+                            "city": "Colva",
+                            "activity": "Parasailing,Jet Ski,Water Scooter",
+                            "level": "Easy,Easy,Easy",
+                            "image_URL": "https://storage.googleapis.com/ehimages/2017/12/14/img_90e8594dd813bd02ad9b4342e65f345d_1513225298701_processed_original.jpg",
+                            "best_season": "October to March,October to March,October to March",
+                            "type": "nature"
+                        },
+                        {
+                            "spot_id": 16,
+                            "spot_name": "Sinquerim Beach",
+                            "location": {
+                                "Latitude": 15.4991,
+                                "Longitude": 73.7675
+                            },
+                            "city": "Candolim",
+                            "activity": "Parasailing,Jet Ski,Water Scooter",
+                            "level": "Easy,Easy,Easy",
+                            "image_URL": "https://static.tildacdn.com/tild3437-6465-4262-b539-643163353634/shutterstock_2.jpg",
+                            "best_season": "November to February,November to February,November to February",
+                            "type": "family"
+                        },
+                        {
+                            "spot_id": 17,
+                            "spot_name": "Bambolim Beach",
+                            "location": {
+                                "Latitude": 15.4522,
+                                "Longitude": 73.8487
+                            },
+                            "city": "Panaji",
+                            "activity": "Parasailing,Jet Ski,Speed Boating,Ringo Ride",
+                            "level": "Easy,Easy,Moderate,Easy",
+                            "image_URL": "http://st.biglion.ru/cfs15/deal_offer/59/ed/59ed4a2cc05e3f6368ee26473ba97d92.jpg",
+                            "best_season": "October to March,October to March,October to March,October to March",
+                            "type": "family"
+                        },
+                        {
+                            "spot_id": 18,
+                            "spot_name": "Chapora River",
+                            "location": {
+                                "Latitude": 15.634901,
+                                "Longitude": 73.753255
+                            },
+                            "city": "Chopdem",
+                            "activity": "River rafting,kayaking",
+                            "level": "Easy,Easy to Moderate",
+                            "image_URL": "https://images.thrillophilia.com/image/upload/s--Lp7FIu8n--/c_fill,dpr_1.0,f_auto,fl_strip_profile,g_center,h_450,q_auto,w_753/v1/images/photos/000/118/445/original/1507730512_1465125807_3970878623_bab401a1b0_o.jpg.jpg.jpg",
+                            "best_season": "June to September,June to September",
+                            "type": "camping"
                         }
                     ]
                 },
@@ -460,7 +900,7 @@
                             },
                             "city": "",
                             "activity": "Bruh, Bruh",
-                            "type": "family"
+                            "type": "nature"
                         }
                     ]
                 },
@@ -477,7 +917,7 @@
                             },
                             "city": "",
                             "activity": "Bruh, Bruh",
-                            "type": "nature"
+                            "type": "family"
                         }
                     ]
                 }
@@ -492,25 +932,25 @@
                     "spots": [
                         {
                             "spot_id": 1,
-                            "spot_name": "Leh",
+                            "spot_name": "",
                             "location": {
                                 "Latitude": 34.1526,
                                 "Longitude": 77.5771
                             },
                             "city": "",
                             "activity": "Trekking, Mountaineering",
-                            "type": "camping"
+                            "type": "nature"
                         },
                         {
                             "spot_id": 2,
-                            "spot_name": "Sangam",
+                            "spot_name": "",
                             "location": {
                                 "Latitude": 34.1031,
                                 "Longitude": 74.7764
                             },
                             "city": "",
                             "activity": "",
-                            "type": "family"
+                            "type": "camping"
                         }
                     ]
                 },
@@ -527,7 +967,7 @@
                             },
                             "city": "",
                             "activity": "Bruh, Bruh",
-                            "type": "nature"
+                            "type": "camping"
                         }
                     ]
                 },
@@ -537,13 +977,16 @@
                     "spots": [
                         {
                             "spot_id": 1,
-                            "spot_name": "spot1",
+                            "spot_name": "Munnar",
                             "location": {
-                                "Latitude": 74.25,
-                                "Longitude": 25.32
+                                "Latitude": 10.0889,
+                                "Longitude": 77.0595
                             },
-                            "city": "",
-                            "activity": "Bruh, Bruh",
+                            "city": "Munnar",
+                            "activity": "Mountain Biking",
+                            "level": "Easy",
+                            "image_URL": "https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/03/Munnar.jpg",
+                            "best_season": "March to May",
                             "type": "nature"
                         }
                     ]
@@ -560,19 +1003,23 @@
                                 "Longitude": 77.700934
                             },
                             "city": "Bangalore",
-                            "activity": "Trekking",
-                            "best_season": "June to October",
-                            "type": "family"
+                            "activity": "Trekking,Paragliding",
+                            "level": "Moderate,Easy",
+                            "image_URL": "https://www.treebo.com/blog/wp-content/uploads/2018/01/Nandi-Hills-Bangalore_1.jpg",
+                            "best_season": "June to October,January to May",
+                            "type": "camping"
                         },
                         {
                             "spot_id": 2,
-                            "spot_name": "Barapoole River",
+                            "spot_name": "Barapole River",
                             "location": {
                                 "Latitude": 12.028316,
                                 "Longitude": 75.929758
                             },
                             "city": "Coorg",
                             "activity": "River Rafting",
+                            "level": "Difficult",
+                            "image_URL": "https://www.holidify.com/images/cmsuploads/articles/290.jpg",
                             "best_season": "July to September",
                             "type": "nature"
                         }
@@ -584,14 +1031,17 @@
                     "spots": [
                         {
                             "spot_id": 1,
-                            "spot_name": "spot1",
+                            "spot_name": "Yelagiri",
                             "location": {
-                                "Latitude": 74.25,
-                                "Longitude": 25.32
+                                "Latitude": 12.574439,
+                                "Longitude": 78.61339
                             },
-                            "city": "",
-                            "activity": "Bruh, Bruh",
-                            "type": "nature"
+                            "city": "Chennai",
+                            "activity": "Paragliding",
+                            "level": "Easy to Moderate",
+                            "image_URL": "https://static-blog.treebo.com/wp-content/uploads/2018/08/Yelagiri-views.jpg",
+                            "best_season": "October to January",
+                            "type": "camping"
                         }
                     ]
                 },
@@ -601,14 +1051,17 @@
                     "spots": [
                         {
                             "spot_id": 1,
-                            "spot_name": "spot1",
+                            "spot_name": "Havelock Islands",
                             "location": {
-                                "Latitude": 74.25,
-                                "Longitude": 25.32
+                                "Latitude": 12.030533,
+                                "Longitude": 93.00021
                             },
-                            "city": "",
-                            "activity": "Bruh, Bruh",
-                            "type": "family"
+                            "city": "Port Blair",
+                            "activity": "Scuba Diving",
+                            "level": "Easy to Moderate",
+                            "image_URL": "https://discoverandaman.in/storage/uploads/2019/5/Scuba%20Diving%20in%20Havelock.jpg",
+                            "best_season": "October to April",
+                            "type": "nature"
                         }
                     ]
                 },
@@ -625,7 +1078,7 @@
                             },
                             "city": "",
                             "activity": "Bruh, Bruh",
-                            "type": "nature"
+                            "type": "camping"
                         }
                     ]
                 }
@@ -646,19 +1099,22 @@
                                 "Longitude": 96.153181
                             },
                             "city": "Tezu",
+                            "level": "Moderate",
                             "activity": "River Rafting",
-                            "type": "camping"
+                            "image_URL": "https://www.tourmyindia.com/states/arunachalpradesh/images/rafting.jpg",
+                            "best_season": "July to September",
+                            "type": "family"
                         },
                         {
                             "spot_id": 2,
-                            "spot_name": "Sangam",
+                            "spot_name": "",
                             "location": {
                                 "Latitude": 34.1031,
                                 "Longitude": 74.7764
                             },
                             "city": "",
                             "activity": "",
-                            "type": "nature"
+                            "type": "camping"
                         }
                     ]
                 },
@@ -692,8 +1148,10 @@
                             },
                             "city": "Siliguri",
                             "activity": "Trekking",
+                            "level": "Moderate to Difficult",
+                            "image_URL": "https://www.himalayajourneys.com/assets/images/india/sikkim-goecha-la-trek.jpg",
                             "best_season": "November",
-                            "type": "nature"
+                            "type": "family"
                         },
                         {
                             "spot_id": 2,
@@ -704,6 +1162,8 @@
                             },
                             "city": "Gangtok",
                             "activity": "Trekking",
+                            "level": "Easy",
+                            "image_URL": "https://devilonwheels.com/wp-content/uploads/2018/07/IMG_20161026_110501_HDR_01.jpg",
                             "best_season": "November",
                             "type": "family"
                         }
@@ -756,8 +1216,10 @@
                             },
                             "city": "Agartala",
                             "activity": "Trekking",
+                            "level": "Easy to Moderate",
+                            "image_URL": "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/06/Jampui-Hill.jpg",
                             "best_season": "October to December",
-                            "type": "family"
+                            "type": "nature"
                         }
                     ]
                 },
@@ -791,8 +1253,10 @@
                             },
                             "city": "Kohima",
                             "activity": "Trekking",
+                            "level": "Moderate",
+                            "image_URL": "https://carrypro.in/wp-content/uploads/2019/06/dzukou-valley-6-1550573951.jpg",
                             "best_season": "June to September",
-                            "type": "family"
+                            "type": "camping"
                         },
                         {
                             "spot_id": 2,
@@ -803,8 +1267,10 @@
                             },
                             "city": "Kiphire",
                             "activity": "Trekking",
+                            "level": "Moderate to Difficult",
+                            "image_URL": "https://www.shikhar.com/images/gallery/tours/194/2.jpg",
                             "best_season": "October to November",
-                            "type": "family"
+                            "type": "nature"
                         },
                         {
                             "spot_id": 3,
@@ -815,8 +1281,10 @@
                             },
                             "city": "Wokha",
                             "activity": "Trekking",
+                            "level": "Moderate to Difficult",
+                            "image_URL": "https://www.hlimg.com/images/things2do/738X538/ttd_201809241059011537766941615424t.jpg",
                             "best_season": "October to February",
-                            "type": "nature"
+                            "type": "camping"
                         }
                     ]
                 },
@@ -833,8 +1301,10 @@
                             },
                             "city": "Darjeeling",
                             "activity": "Trekking",
+                            "level": "Moderate",
+                            "image_URL": "https://d3hne3c382ip58.cloudfront.net/resized/750x420/sandakphu-trek-3-nights-4-days-tour-2-33796_1592568018.JPG",
                             "best_season": "April",
-                            "type": "camping"
+                            "type": "family"
                         }
                     ]
                 },
@@ -851,7 +1321,7 @@
                             },
                             "city": "",
                             "activity": "Bruh, Bruh",
-                            "type": "family"
+                            "type": "nature"
                         }
                     ]
                 }

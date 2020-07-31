@@ -1,11 +1,12 @@
-please set my food as {veg|food}
-set it to {non-veg|food}
-yes set {non-veg|food}
+please set my food as {veg|food} and {chinese|food}
+set my food as {veg|food} and {italian|food}
+set it to {non-veg|food} and {chinese|food}
+yes set {non-veg|food},{spanish|food}
 my food will be {veg|food} and {spanish|food}
 my pref are {italian|food}
 set {chinese|food}
 set {chinese|food}
-my pref are {italian|food}
+my pref are {italian|food},{veg|food}
 set {chinese|food}
 my pref are {italian|food}
 set {chinese|food}
@@ -42,7 +43,8 @@ my food will be {vegetarian|food}
 my choice will be {non-vegetarian|food}
 {mexican|food} is my choice
 {vegan|food} is my choice
-{vegan|food}
+{vegan|food} and {italian|food}
+{vegetarian|food},{italian|food}
 give me {mandarin|food} food
 give me {veg|food}, {indian|food}
 i prefer {vegetarian|food}

@@ -14,7 +14,7 @@ def start_tour(request, responder):
     id = request.params.dynamic_resource['id']
     res = firebase.changeStatus(1,id)
     responder.params.target_dialogue_state = "select_tourism"
-    responder.reply("What type of Adventure would you like to go on.\n1. Nature\n2. Camping\n3. Family")
+    responder.reply("What type of Adventure would you like to go on.\n1. Nature⛰\n2. Camping🏕\n3. Family👨‍👩‍👧‍👧")
     
 
 @app.handle(intent='select_tourism')
@@ -26,10 +26,10 @@ def select_tourism(request, responder):
     responder.frame["spot_list"] = spot_list[1]
     if len(spot_list[0]) > 1:
         responder.params.target_dialogue_state = "select_destination_from_choice"
-        reply = "Here are some good options for " + tourism_type +" tourism: "+spot_list[0] + "Select the spot name to travel.\nYou can always ask a like 'Tell me about spot name'"
+        reply = "Here are some good options for " + tourism_type +" tourism: "+spot_list[0] + "Select the spot name to travel.~You can always ask a like 'Tell me about spot name' to know more😀"
     else:
         responder.params.target_dialogue_state = "select_tourism"
-        reply = "Could not understand try again" + "\nWhat type of Adventure would you like to go on.\n1. Nature\n2. Camping\n3. Family"
+        reply = "Sorry..Could not understand.~Please try again😕" + "\nWhat type of Adventure would you like to go on.\n1. Nature\n2. Camping\n3. Family"
     responder.reply(reply)
 
 
@@ -46,14 +46,14 @@ def select_destination_from_choice(request, responder):
             if lat and long:
                 responder.params.allowed_intents = ('general.set_current_loc','tourism.set_source','tourism.resume')
                 loc = firebase.getCurrLocationName(id)
-                msg = "Your current location is "+loc['city']+" and is set as source.\n\nPlease tell us the source location or share the new source location if you want to change it, otherwise resume."
-                responder.reply("Your destination has been set to:" + data + "\n\n"+msg)
+                msg = "Your current location is "+loc['city']+" and is set as source.~Please tell us the source location or share the new source location if you want to change it, otherwise resume."
+                responder.reply("Your destination has been set to:" + data + "\n\n"+msg+"~👍")
 
             else:
                 
                 responder.params.allowed_intents = ['general.set_current_loc','tourism.set_source']
-                msg = "Please tell us the source location or share the location"
-                responder.reply("Your destination has been set to:" + request.entities[0]["text"] + "\n"+msg)
+                msg = "Please tell us the source location or share your location"
+                responder.reply("Your destination has been set to:" + request.entities[0]["text"] + "\n"+msg+"~👍")
                 # return
 
         elif request.entities[0]["text"]:
@@ -66,33 +66,33 @@ def select_destination_from_choice(request, responder):
                 responder.params.allowed_intents = ('general.set_current_loc','tourism.set_source','tourism.resume')
                 loc = firebase.getCurrLocationName(id)
                 msg = "Your current location is "+loc['city']+" and is set as source.\n\nPlease tell us the source location or share the new source location if you want to change it, otherwise resume."
-                responder.reply("The selected adventure spot is not under the chosen class, Continuing.....\nYour destination has been set to:" + data + "\n\n"+msg)
+                responder.reply("The selected adventure spot is not under the chosen class,😕~Continuing.....~Your destination has been set to:" + data + "\n\n"+msg)
 
             else:
                 
                 responder.params.allowed_intents = ['general.set_current_loc','tourism.set_source']
                 msg = "Please tell us the source location or share the location"
-                responder.reply("The selected adventure spot is not under the chosen class, Continuing.....\nYour destination has been set to:" + request.entities[0]["text"] + "\n"+msg)
+                responder.reply("The selected adventure spot is not under the chosen class,😕~Continuing.....\nYour destination has been set to:" + request.entities[0]["text"] + "\n"+msg)
 
         else:
-            responder.reply("Oops.....your adventure spot is not found in our data, enter any other spot")
+            responder.reply("Oops!😕...We don't find any such spot in our data.~Try some other spot.")
     except IndexError:
         responder.params.target_dialogue_state = "start_tour"
-        responder.reply("Didn't unnderstand, say start to start plannig of tour.")
+        responder.reply("Sorry😕~I didn't unnderstand, say 'start' to start planning of tour.")
     except KeyError:
         responder.params.target_dialogue_state = "start_tour"
-        responder.reply("Didn't unnderstand, say start to start plannig of tour.")
+        responder.reply("Sorry😕~I didn't unnderstand, say start to start planning of tour.")
     return
 
 @app.handle(domain='tourism',intent='resume')
 def resume(request,responder):
     responder.params.target_dialogue_state = 'food_pref'
-    responder.reply("Before we personalize your journey, we would like to ask some preferences.\nPlease tell us any preferences about your food (veg/italian/etc)")
+    responder.reply("Before we personalize your journey, we would like to ask some preferences😀.\nPlease tell us any preferences about your food (veg/non-veg/italian/etc)")
 
 @app.handle(domain='general', intent='set_curr_loc')
 def set_curr_loc(request,responder):
     responder.params.target_dialogue_state = 'food_pref'
-    responder.reply("Before we personalize your journey, we would like to ask some preferences.\nPlease tell us any preferences about your food (veg/italian/etc)")
+    responder.reply("Before we personalize your journey, we would like to ask some preferences😀.\nPlease tell us any preferences about your food (veg/non-veg/italian/etc)")
 
 @app.handle(intent='set_source', has_entity='city_name')
 def set_source(request, responder):
@@ -101,7 +101,7 @@ def set_source(request, responder):
     res = firebase.setSource(data,id)
     responder.params.target_dialogue_state = 'food_pref'
     # responder.params.allowed_intents = ['tourism.food_pref']
-    responder.reply("Before we personalize your journey, we would like to ask some preferences.\nPlease tell us any preferences about your food (veg/italian/etc)")
+    responder.reply("Before we personalize your journey, we would like to ask some preferences😀.\nPlease tell us any preferences about your food (veg/non-veg/italian/etc)")
 
 @app.handle(intent='food_pref', has_entity='food')
 def food_pref(request, responder):
@@ -109,23 +109,20 @@ def food_pref(request, responder):
     data=""
     for item in request.entities:
         data += item['value'][0]["cname"]+" "
-    print(data)
     res = firebase.setFoodPref(data,id)
     responder.params.target_dialogue_state = 'hotel_pref'
     # responder.params.allowed_intents = ['tourism.hotel_pref']
-    responder.reply('Good, Now have you any preferences for hotels(number of rooms/ac/non-ac/etc)')
+    responder.reply("That's great😀!~Now do you have any preferences for hotels i.e Number of rooms ac/non-ac/etc.")
 
 @app.handle(intent='hotel_pref')
 def hotel_pref(request,responder):
     id = request.params.dynamic_resource['id']
     data={}
     for item in request.entities:
-        print(item)
         data[item["type"]]=item["value"][0]["cname"]
 
-    print(data)
     res = firebase.setHotelPref(data,id)
-    responder.reply('Thank you we will remember these preferences along the journey.\nYou are free to search restaurants and hotels anytime you feel according to your location')
+    responder.reply("Don't worry😀, I will take care of your comfort throughout the journey~I will remember these preferences along the journey.~Whenever You are hungry or want to have some rest you are free to ask for my help.~I will help you in searching restaurants and hotels😀")
 
 
 

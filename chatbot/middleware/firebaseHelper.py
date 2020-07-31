@@ -90,6 +90,7 @@ class firebaseHelper:
 
 	def setHotelPref(self,data,id):
 		print("setting hotel pref",data, "for", id)
+		res = None
 		if 'nof_room' in data.keys():
 			res = self.db.child("user").child(id).child("preferences").child("hotel").child("room").set(data['nof_room'])
 		if 'nof_bed' in data.keys():
@@ -98,7 +99,7 @@ class firebaseHelper:
 			res = self.db.child("user").child(id).child("preferences").child("hotel").child("price").set(data['price'])
 		if 'ac' in data.keys():
 			res = self.db.child("user").child(id).child("preferences").child("hotel").child("ac").set(1)
-		if 'n0n-ac' in data.keys():
+		if 'non-ac' in data.keys():
 			res = self.db.child("user").child(id).child("preferences").child("hotel").child("ac").set(0)
 		return res
 

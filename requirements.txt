@@ -6,3 +6,4 @@ pyrebase
 APScheduler==3.6.3
 twilio
 beautifulsoup4
+validators

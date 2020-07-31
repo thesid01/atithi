@@ -1,0 +1,13 @@
+change {food|food} preferences
+I want to change {cuisines|food} pref
+i want to change {food|food} preference
+i want to change {meal|food} preferences
+please change {food|food} preferences
+can you change the {restaurant|food} preferences
+change the preference of {foods|food}
+change my choice for {restaurants|food}
+{food|food}
+{restaurants|food}
+for {food|food}
+of {cuisines|food}
+change for {restaurants|food}
