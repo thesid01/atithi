@@ -2,14 +2,8 @@ hello there
 what can you do
 help
 tell me what can you do
-can you do this
-what else
 Poke
-All well
-nothing much
-Good day!
 salutations my friend
-How's it hanging?
 Yo, what's up?
 Hey you
 Yo man, Hows it going.
@@ -18,7 +12,6 @@ Hello, how are you?
 Hola!
 HI, how's it going?
 Aloha!
-Hey now!
 hello
 hi!
 Yo man, Hows it going.
@@ -27,6 +20,7 @@ How are you?
 Hi! How are you?
 Hello, what you up to?
 hiya
+heya
 whatsup!
 whatup!
 whatsup
@@ -47,7 +41,6 @@ Good day!
 sup my friend!
 Hello there!
 can you speak
-can you understand me
 Hello there!
 Yo
 hola!
@@ -56,7 +49,6 @@ sup!?
 Hello to you!
 Good day!
 how are you?
-ola
 Hi there, how're you doing?
 hey you!
 Hey!  What's going on in your world today?
