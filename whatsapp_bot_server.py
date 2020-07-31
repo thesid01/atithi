@@ -85,7 +85,7 @@ class WhatsappBotServer:
     
     def start_remainder(self):
         remainder_service = remainderHelper(self.firebase)
-        remainder_service.start(self.firebase.getReminders())
+        # remainder_service.start(self.firebase.getReminders())
 
 
 if __name__ == '__main__':
@@ -100,7 +100,7 @@ if __name__ == '__main__':
     scheduler.start()
     scheduler.add_job(
         func=server.start_remainder,
-        trigger=IntervalTrigger(seconds=1*60),
+        trigger=IntervalTrigger(seconds=2*60),
         id='send_remainders',
         name='send remainder every minute',
         replace_existing=True)

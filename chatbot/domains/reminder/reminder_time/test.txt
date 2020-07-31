@@ -1,2 +1,4 @@
-set for {5 am|time}
-{5 am|time} will be good
+set for {5 am|sys_time|sys_interval}
+{5 am|sys_time|sys_interval} will be good
+{5 |sys_time|sys_interval} pm will be good
+go for {5 |sys_time|sys_interval} pm

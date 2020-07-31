@@ -2,218 +2,196 @@
     "entities": [
         {
             "whitelist": [
-                "1",
-                "one",
                 "one am",
-                "1 am"
+                "1 am",
+                "1am"
             ],
             "cname": "1"
         },
         {
             "whitelist": [
-                "2",
-                "two",
                 "two am",
-                "2 am"
+                "2 am",
+                "2am"
             ],
             "cname": "2"
         },
         {
             "whitelist": [
-                "3",
                 "3 am",
-                "three",
-                "three am"
+                "three am",
+                "3am"
             ],
             "cname": "3"
         },
         {
             "whitelist": [
-                "4",
                 "4 am",
-                "four",
-                "four am"
+                "four am",
+                "4am"
             ],
             "cname": "4"
         },
         {
             "whitelist": [
-                "5",
                 "5 am",
-                "5 am",
-                "five am"
+                "five am",
+                "5am"
             ],
             "cname": "5"
         },
         {
             "whitelist": [
-                "6",
-                "5 am",
-                "six",
-                "six am"
+                "6 am",
+                "six am",
+                "6am"
             ],
             "cname": "6"
         },
         {
             "whitelist": [
-                "7",
                 "7 am",
-                "seven",
-                "seven am"
+                "seven am",
+                "7am"
             ],
             "cname": "7"
         },
         {
             "whitelist": [
-                "8",
                 "8 am",
-                "eight",
-                "eight am"
+                "eight am",
+                "8am"
             ],
             "cname": "8"
         },
         {
             "whitelist": [
-                "9",
                 "9 am",
-                "nine",
-                "nine am"
+                "nine am",
+                "9am"
             ],
             "cname": "9"
         },
         {
             "whitelist": [
-                "10",
                 "10 am",
-                "ten",
-                "ten am"
+                "ten am",
+                "10am"
             ],
             "cname": "10"
         },
         {
             "whitelist": [
-                "11",
                 "11 am",
-                "eleven",
-                "eleven am"
+                "eleven am",
+                "11am"
             ],
             "cname": "11"
         },
         {
             "whitelist": [
-                "12",
                 "12 pm",
-                "tweleve",
                 "tweleve pm",
+                "12pm",
                 "noon"
             ],
             "cname": "12"
         },
         {
             "whitelist": [
-                "13",
-                "one",
                 "one pm",
-                "1 pm"
+                "1 pm",
+                "1pm"
             ],
             "cname": "13"
         },
         {
             "whitelist": [
-                "14",
-                "two",
                 "two pm",
-                "2 pm"
+                "2 pm",
+                "2pm"
             ],
             "cname": "14"
         },
         {
             "whitelist": [
-                "15",
                 "3 pm",
-                "three",
-                "three pm"
+                "three pm",
+                "3pm"
             ],
             "cname": "15"
         },
         {
             "whitelist": [
-                "16",
                 "4 pm",
-                "four",
-                "four pm"
+                "four pm",
+                "4pm"
             ],
             "cname": "16"
         },
         {
             "whitelist": [
-                "17",
                 "5 pm",
-                "5 pm",
-                "five pm"
+                "five pm",
+                "5pm"
             ],
             "cname": "17"
         },
         {
             "whitelist": [
-                "18",
                 "6 pm",
-                "six",
-                "six pm"
+                "six pm",
+                "6pm"
             ],
             "cname": "18"
         },
         {
             "whitelist": [
-                "19",
                 "7 pm",
-                "seven",
-                "seven pm"
+                "seven pm",
+                "7pm"
             ],
             "cname": "19"
         },
         {
             "whitelist": [
-                "20",
                 "8 pm",
-                "eight",
-                "eight pm"
+                "eight pm",
+                "8pm"
             ],
             "cname": "20"
         },
         {
             "whitelist": [
-                "21",
                 "9 pm",
-                "nine",
-                "nine pm"
+                "nine pm",
+                "9pm"
             ],
             "cname": "21"
         },
         {
             "whitelist": [
-                "22",
                 "10 pm",
-                "ten",
-                "ten pm"
+                "ten pm",
+                "10pm"
             ],
             "cname": "22"
         },
         {
             "whitelist": [
-                "23",
                 "11 pm",
-                "eleven",
-                "eleven pm"
+                "eleven pm",
+                "11pm"
             ],
             "cname": "23"
         },
         {
             "whitelist": [
-                "00",
                 "12 am",
-                "tweleve",
-                "tweleve am"
+                "tweleve am",
+                "12pm",
+                "midnight",
+                "mid night"
             ],
             "cname": "00"
         }
