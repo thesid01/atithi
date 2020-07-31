@@ -1,0 +1,17 @@
+remind me at {5 am |time} am
+at {5:45|sys_time|sys_interval} am
+{5 pm |sys_time|sys_interval} am
+{5 pm|sys_time|sys_interval} am will be suitable
+{5:05 |sys_time|sys_interval} am will be fine
+set for {5:10 |sys_time|sys_interval} am
+{5pm |sys_time|sys_interval} am will be good
+go for {5.00 pm |sys_time|sys_interval} am
+remind me at {5 |sys_time|sys_interval} pm
+at {5 |sys_time|sys_interval} pm
+{5 |sys_time|sys_interval} pm
+{5 |sys_time|sys_interval} pm will be suitable
+{5 |sys_time|sys_interval} pm will be fine
+set for {5 |sys_time|sys_interval} pm
+{5 |sys_time|sys_interval} pm will be good
+go for {5 |sys_time|sys_interval} pm
+{tomorrow |sys_time|sys_interval}

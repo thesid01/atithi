@@ -15,6 +15,8 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 from twilio.rest import Client
 
+from chatbot.middleware import next_target_setHelper as nth
+
 import atexit
 import time
 import validators
@@ -74,8 +76,11 @@ class WhatsappBotServer:
             else:
                 resp = MessagingResponse()
                 msg = resp.message()
-                # Used to send dynamic id of the user making query
-                params = dict(dynamic_resource=dict(id=id))
+                params = None
+                if nth.getTarget() == None :
+                    params = dict(dynamic_resource =dict(id=id)) #Used to send dynamic id of the user making query
+                else:
+                    params = dict(dynamic_resource =dict(id=id),target_dialogue_state=nth.getTarget())
                 try:
                     response_text = self.conv.say(incoming_msg, params=params)[0]
                     messages = response_text.split("~")
@@ -111,12 +116,15 @@ if __name__ == '__main__':
     configure_logs()
     server = WhatsappBotServer(name='whatsapp', app_path='./chatbot')
 
+
+    nth.delTarget()
+
     # create schedule for printing time
     scheduler = BackgroundScheduler()
     scheduler.start()
     scheduler.add_job(
         func=server.start_remainder,
-        trigger=IntervalTrigger(seconds=1*60),
+        trigger=IntervalTrigger(seconds=2*60),
         id='send_remainders',
         name='send remainder every minute',
         replace_existing=True)

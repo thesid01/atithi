@@ -1,0 +1,199 @@
+{
+    "entities": [
+        {
+            "whitelist": [
+                "one am",
+                "1 am",
+                "1am"
+            ],
+            "cname": "1"
+        },
+        {
+            "whitelist": [
+                "two am",
+                "2 am",
+                "2am"
+            ],
+            "cname": "2"
+        },
+        {
+            "whitelist": [
+                "3 am",
+                "three am",
+                "3am"
+            ],
+            "cname": "3"
+        },
+        {
+            "whitelist": [
+                "4 am",
+                "four am",
+                "4am"
+            ],
+            "cname": "4"
+        },
+        {
+            "whitelist": [
+                "5 am",
+                "five am",
+                "5am"
+            ],
+            "cname": "5"
+        },
+        {
+            "whitelist": [
+                "6 am",
+                "six am",
+                "6am"
+            ],
+            "cname": "6"
+        },
+        {
+            "whitelist": [
+                "7 am",
+                "seven am",
+                "7am"
+            ],
+            "cname": "7"
+        },
+        {
+            "whitelist": [
+                "8 am",
+                "eight am",
+                "8am"
+            ],
+            "cname": "8"
+        },
+        {
+            "whitelist": [
+                "9 am",
+                "nine am",
+                "9am"
+            ],
+            "cname": "9"
+        },
+        {
+            "whitelist": [
+                "10 am",
+                "ten am",
+                "10am"
+            ],
+            "cname": "10"
+        },
+        {
+            "whitelist": [
+                "11 am",
+                "eleven am",
+                "11am"
+            ],
+            "cname": "11"
+        },
+        {
+            "whitelist": [
+                "12 pm",
+                "tweleve pm",
+                "12pm",
+                "noon"
+            ],
+            "cname": "12"
+        },
+        {
+            "whitelist": [
+                "one pm",
+                "1 pm",
+                "1pm"
+            ],
+            "cname": "13"
+        },
+        {
+            "whitelist": [
+                "two pm",
+                "2 pm",
+                "2pm"
+            ],
+            "cname": "14"
+        },
+        {
+            "whitelist": [
+                "3 pm",
+                "three pm",
+                "3pm"
+            ],
+            "cname": "15"
+        },
+        {
+            "whitelist": [
+                "4 pm",
+                "four pm",
+                "4pm"
+            ],
+            "cname": "16"
+        },
+        {
+            "whitelist": [
+                "5 pm",
+                "five pm",
+                "5pm"
+            ],
+            "cname": "17"
+        },
+        {
+            "whitelist": [
+                "6 pm",
+                "six pm",
+                "6pm"
+            ],
+            "cname": "18"
+        },
+        {
+            "whitelist": [
+                "7 pm",
+                "seven pm",
+                "7pm"
+            ],
+            "cname": "19"
+        },
+        {
+            "whitelist": [
+                "8 pm",
+                "eight pm",
+                "8pm"
+            ],
+            "cname": "20"
+        },
+        {
+            "whitelist": [
+                "9 pm",
+                "nine pm",
+                "9pm"
+            ],
+            "cname": "21"
+        },
+        {
+            "whitelist": [
+                "10 pm",
+                "ten pm",
+                "10pm"
+            ],
+            "cname": "22"
+        },
+        {
+            "whitelist": [
+                "11 pm",
+                "eleven pm",
+                "11pm"
+            ],
+            "cname": "23"
+        },
+        {
+            "whitelist": [
+                "12 am",
+                "tweleve am",
+                "12pm",
+                "midnight",
+                "mid night"
+            ],
+            "cname": "00"
+        }
+    ]
+}

@@ -5,6 +5,7 @@ class remainderHelper:
 		self.firebase = f
 		
 	def start(self, data):
+		
 		for d in data:
 			print(d["time"])
 			if(int(round(time.time() * 1000))) > d["time"]:
@@ -14,9 +15,9 @@ class remainderHelper:
 
 	def sendMessage(self, v):
 		client = Client()
-		#export TWILIO_AUTH_TOKEN=e0e696089a9a6a65774500c37edcb963
-		#export TWILIO_ACCOUNT_SID=AC589b234a1d386d213e4434b0f148f1f0
-		client.messages.create(media_url=['https://images.unsplash.com/photo-1545093149-618ce3bcf49d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80'],
+		# export TWILIO_AUTH_TOKEN=36418b6fe7615bd068ad13f614bdc19d
+		# export TWILIO_ACCOUNT_SID=ACc47f3cc342412b7097ad6f6c6fe19398
+		client.messages.create(media_url=['https://image.shutterstock.com/image-vector/reminder-red-square-sticker-isolated-260nw-274255889.jpg'],
 								body=v["message"],
 								from_="whatsapp:+14155238886",
 								to="whatsapp:+"+str(v["to"]))
