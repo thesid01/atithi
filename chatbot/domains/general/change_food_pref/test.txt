@@ -1,4 +1,5 @@
-i want to change {food|food} preference
-i want to change {meal|food} preferences
-please change {food|food} preferences
-can you change the {restaurant|food} preferences
+change food preferences
+I want to change food pref
+can you change the food preferences
+change the preference of food
+change my choice for food

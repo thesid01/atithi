@@ -19,11 +19,11 @@ import atexit
 import time
 import validators
 
-#TWILIO_ACCOUNT_SID = 'ACc47f3cc342412b7097ad6f6c6fe19398'
-#TWILIO_AUTH_TOKEN = '36418b6fe7615bd068ad13f614bdc19d'
+# TWILIO_ACCOUNT_SID = 'ACc47f3cc342412b7097ad6f6c6fe19398'
+# TWILIO_AUTH_TOKEN = '36418b6fe7615bd068ad13f614bdc19d'
 #export TWILIO_AUTH_TOKEN=e0e696089a9a6a65774500c37edcb963
 #export TWILIO_ACCOUNT_SID=AC589b234a1d386d213e4434b0f148f1f0
-#client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
+# client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 client = Client()
 class WhatsappBotServer:
 
@@ -103,7 +103,7 @@ class WhatsappBotServer:
 
     def start_remainder(self):
         remainder_service = remainderHelper(self.firebase)
-        # remainder_service.start(self.firebase.getReminders())
+        remainder_service.start(self.firebase.getReminders())
 
 
 if __name__ == '__main__':
