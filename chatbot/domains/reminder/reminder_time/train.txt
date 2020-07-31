@@ -1,8 +1,16 @@
-remind me at {5 am|time}
-at {5 am|time}
-{5 am|time}
-{5 am|time} will be suitable
-{5 am|time} will be fine
-set for {5 am|time}
-{5 am|time} will be good
-go for {5 am|time}
+remind me at {5 |time} am
+at {5 |time} am
+{5 |time} am
+{5 |time} am will be suitable
+{5 |time} am will be fine
+set for {5 |time} am
+{5 |time} am will be good
+go for {5 |time} am
+remind me at {5 |time} pm
+at {5 |time} pm
+{5 |time} pm
+{5 |time} pm will be suitable
+{5 |time} pm will be fine
+set for {5 |time} pm
+{5 |time} pm will be good
+go for {5 |time} pm

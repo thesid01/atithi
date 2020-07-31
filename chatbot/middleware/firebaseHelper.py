@@ -121,7 +121,7 @@ class firebaseHelper:
 		return rooms, beds, price, ac
 
 	def setReminder(self, data):
-		print("setting remainder", data,)
+		print("setting remainder", data)
 		return self.db.child("reminder").child(int(round(time.time() * 1000))).set(data)
 	
 	def removeReminder(self, data):

@@ -108,6 +108,114 @@
                 "noon"
             ],
             "cname": "12"
+        },
+        {
+            "whitelist": [
+                "13",
+                "one",
+                "one pm",
+                "1 pm"
+            ],
+            "cname": "13"
+        },
+        {
+            "whitelist": [
+                "14",
+                "two",
+                "two pm",
+                "2 pm"
+            ],
+            "cname": "14"
+        },
+        {
+            "whitelist": [
+                "15",
+                "3 pm",
+                "three",
+                "three pm"
+            ],
+            "cname": "15"
+        },
+        {
+            "whitelist": [
+                "16",
+                "4 pm",
+                "four",
+                "four pm"
+            ],
+            "cname": "16"
+        },
+        {
+            "whitelist": [
+                "17",
+                "5 pm",
+                "5 pm",
+                "five pm"
+            ],
+            "cname": "17"
+        },
+        {
+            "whitelist": [
+                "18",
+                "6 pm",
+                "six",
+                "six pm"
+            ],
+            "cname": "18"
+        },
+        {
+            "whitelist": [
+                "19",
+                "7 pm",
+                "seven",
+                "seven pm"
+            ],
+            "cname": "19"
+        },
+        {
+            "whitelist": [
+                "20",
+                "8 pm",
+                "eight",
+                "eight pm"
+            ],
+            "cname": "20"
+        },
+        {
+            "whitelist": [
+                "21",
+                "9 pm",
+                "nine",
+                "nine pm"
+            ],
+            "cname": "21"
+        },
+        {
+            "whitelist": [
+                "22",
+                "10 pm",
+                "ten",
+                "ten pm"
+            ],
+            "cname": "22"
+        },
+        {
+            "whitelist": [
+                "23",
+                "11 pm",
+                "eleven",
+                "eleven pm"
+            ],
+            "cname": "23"
+        },
+        {
+            "whitelist": [
+                "00",
+                "12 am",
+                "tweleve",
+                "tweleve am"
+            ],
+            "cname": "00"
         }
     ]
 }
