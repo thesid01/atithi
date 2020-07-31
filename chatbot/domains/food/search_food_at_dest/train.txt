@@ -1,7 +1,53 @@
 search restaurants in {lohagad|spot_name}
+search restaurants close to {Zanskar|spot_name}
+search restaurants nearby {Purandar Fort|spot_name}
 find restaurants near {lohagad fort|spot_name}
 search {mahuli fort|spot_name} restaurants
 restaurants near {spiti valley|spot_name}
 can you find some restaurants in {leh|spot_name}
+can you find some restaurants nearby {Mahuli Fort|spot_name}
 tell me some restaurants for {rajmachi fort|spot_name}
+tell me some restaurants nearby {Kalahoi Glacier|spot_name}
+give me restaurant in{Nandi Hills|spot_name}
+give me restaurant closest to {Raireshwar|spot_name}
+list out food places for{Sangam|spot_name}
+list out food places near to {Barapoole River|spot_name}
+search places to eat for {Lohit River|spot_name}
+search places to eat close to {Dodital|spot_name}
+{Indus River|spot_name} restaurants
+{Bhagirathi river|spot_name} nearby restaurants
+{Lamayuru|spot_name} food shops
+{Mane Bhanjang|spot_name} food shops nearby
+lunch in {Rajmachi Fort|spot_name}
+lunch near {Spiti Valley|spot_name}
+brunch in {Aritar|spot_name}
+brunch nearby {Aritar|spot_name}
+dinner in {Goecha La|spot_name}
+dinner close to {Goecha La|spot_name}
+breakfast in {Roopkund|spot_name}
+find restaurants for {Nandi Hills|spot_name}
+find restaurants for {Dzukou Valley|spot_name}
+find restaurants near {Nandi Hills|spot_name}
+find restaurants in {Barapoole River|spot_name}
+restaurant nearby {Nag Tibba Peak|spot_name}
+restaurant nearby {Garbut Point|spot_name}
+food places {Saramati Peak|spot_name}
+food places near {River Ganga|spot_name}
+please give restaurants in {Kuari Pass|spot_name}
+please give restaurants nearby {Korigad Hill Fort|spot_name}
+{Tarsar Marsar|spot_name} find restaurant
+{Tarsar Marsar|spot_name} nearby restaurant
+suggest some {Jampui Hills|spot_name} restaurants
+suggest some  nearby restaurants in {Jampui Hills|spot_name}
+famous restaurants in {Har ki doon|spot_name}
+famous restaurants near {Har ki doon|spot_name}
+famous {Beas River|spot_name} restaurants
+famous {Mount Tiyi|spot_name} restaurants nearby
+popular restaurants in {Kalsubai Peak|spot_name} 
+popular nearby restaurants in {Kalsubai Peak|spot_name} 
+most famous restaurant in {Triund Hill Station|spot_name}
+most famous nearby restaurants in {Triund Hill Station|spot_name}
+{Aritar|spot_name} best restaurants
+ 
+
 

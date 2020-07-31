@@ -103,7 +103,7 @@ def set_source(request, responder):
     # responder.params.allowed_intents = ['tourism.food_pref']
     responder.reply("Before we personalize your journey, we would like to ask some preferences😀.\nPlease tell us any preferences about your food (veg/non-veg/italian/etc)")
 
-@app.handle(intent='food_pref', has_entity='cuisines')
+@app.handle(intent='food_pref', has_entity='food')
 def food_pref(request, responder):
     id = request.params.dynamic_resource['id']
     data=""
