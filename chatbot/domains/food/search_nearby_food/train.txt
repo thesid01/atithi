@@ -1,10 +1,95 @@
-search restaurants nearby me
-search nearby restaurants
-find restaurants near me
-restaurants near me
-can you find some restaurants near me
-tell me some restaurants near me
-search food nearby me
-search nearby food shops
-search food shops nearby me
-
+search hotels nearby me
+search nearby hotels
+find hotels near me
+hotels near me
+can you find some hotels near me
+tell me some hotels near me
+find hotels nearby me
+find nearby hotels
+search hotels near me
+can you search some hotels near me
+search me some hotels near me
+suggest hotels nearby me
+suggest nearby hotels
+suggest hotels near me
+can you suggest some hotels near me
+suggest me some hotels near me
+recommend hotels nearby me
+recommend nearby hotels
+recommend hotels near me
+hotels near me
+can you recommend some hotels near me
+recommend me some hotels near me
+search some hotels nearby me
+search some nearby hotels
+find some hotels near me
+some hotels near me
+find some hotels nearby me
+find some nearby hotels
+search some hotels near me
+suggest some hotels nearby me
+suggest some nearby hotels
+suggest some hotels near me
+some hotels nearby me
+can you suggest some hotels near me
+suggest me some hotels near me
+recommend some hotels nearby me
+recommend some nearby hotels
+recommend some hotels near me
+search few hotels nearby me
+search few nearby hotels
+find few hotels near me
+few hotels near me
+find few hotels nearby me
+find few nearby hotels
+search few hotels near me
+suggest few hotels nearby me
+suggest few nearby hotels
+suggest few hotels near me
+few hotels nearby me
+can you suggest few hotels near me
+suggest me few hotels near me
+recommend few hotels nearby me
+recommend few nearby hotels
+recommend few hotels near me
+search some hotels near me please
+suggest some hotels nearby me please
+suggest some nearby hotels please
+suggest some hotels near me please
+some hotels nearby me please
+can you suggest some hotels near me please
+suggest me some hotels near me please
+recommend some hotels nearby me please
+recommend some nearby hotels please
+recommend some hotels near me please
+search few hotels nearby me please
+search few nearby hotels please
+find few hotels near me please
+few hotels near me please
+find few hotels nearby me please
+find few nearby hotels please
+search few hotels near me please
+suggest few hotels nearby me please
+suggest few nearby hotels please
+suggest few hotels near me please
+few hotels nearby me please
+can you suggest few hotels near me please
+suggest me few hotels near me please
+recommend few hotels nearby me please
+recommend few nearby hotels please
+recommend few hotels near me please
+please recommend hotels near me
+please hotels near me
+please can you recommend some hotels near me
+please recommend me some hotels near me
+please search some hotels nearby me
+please search some nearby hotels
+please find some hotels near me
+please some hotels near me
+please find some hotels nearby me
+please find some nearby hotels
+please search some hotels near me
+please suggest some hotels nearby me
+please suggest some nearby hotels
+please suggest some hotels near me
+please some hotels nearby me
