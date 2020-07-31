@@ -2,40 +2,19 @@
     "entities": [
         {
             "whitelist": [
-                "veg",
-		"vegan",
-		"vegetarian"
+                "food",
+                "foods",
+                "meal",
+                "meals",
+                "restaurant",
+                "restaurants",
+                "food stores",
+                "food shops",
+                "cuisines",
+                "cuisine",
+                "dish"
             ],
-            "cname": "veg"
-        },
-        {
-            "whitelist": [
-                "non-veg",
-		"non veg",
-		"non vegan",
-		"non-vegetarian"
-            ],
-            "cname": "non-veg"
-        },
-	{
-            "whitelist": [
-                "spanish"
-            ],
-            "cname": "spanish"
-        },
-	{
-            "whitelist": [
-                "italian"
-            ],
-            "cname": "italian"
-        },
-	{
-            "whitelist": [
-                "indian",
-		"north-indian",
-		"south-indian"
-            ],
-            "cname": "indian"
+            "cname": "food"
         }
         
     ]

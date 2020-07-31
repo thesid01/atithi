@@ -1,58 +1,10 @@
 search restaurants nearby me
 search nearby restaurants
-search nearby places to eat
 find restaurants near me
 restaurants near me
 can you find some restaurants near me
 tell me some restaurants near me
-tell me about food places around me
 search food nearby me
 search nearby food shops
 search food shops nearby me
-search food near me
-tell me about restaurants near me
-give restaurants near me
-give restaurants nearby
-restaurant near me
-restaurants near me
-restaurant nearby
-restaurants nearby
-food shop nearby
-food shop near me
-food places nearby
-food places near me
-restaurants close to me
-food shops near me
-food nearby
-food shop nearby
-restaurant nearby
-restaurants nearby
-food near me
-restaurants in closest proximity
-nearest restaurant
-nearest food shop
-nearest place for food
-nearest place to eat food
-breakfast nearby
-lunch nearby
-dinner nearby
-brunch near me
-suggest a restaurant nearby
-give information about nearby restaurant
-give list of nearby restaurant
-list of nearby food shops
-i want to eat nearby
-places to eat near me
-tell some restaurant near me
-give me nearby restaurant
-give me nearby restaurants
-nice restaurants near me
-famous places to eat nearby
-famous places to eat near me
-popular restaurants near me
-popular restaurant nearby
-popular food places to eat near me
-famous places to eat nearby
-find restaurants nearby me
-find food places near me
-find places to eat closer to me
+
