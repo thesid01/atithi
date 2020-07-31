@@ -4,7 +4,7 @@ tell me some restaurants
 can you suggest some restaurants
 suggest restaurants
 please suggests some restaurants
-tell some restaurants
+tell some restaurantss
 restaurants search
 search food
 i am hungry
@@ -14,54 +14,5 @@ search foods nearby me
 can you search some restaurants
 can you tell me some food stores
 search food shops
-i want food
-what about restaurant
-where are the restaurants
-food shops 
-restaurant
-restaurants
-i want to eat 
-i need some restaurants
-suggest some restaurant
-suggest some restaurants
-suggest some food shop
-places to eat 
-nice places to eat
-where can i eat food
-where is the food
-search for the food
-search for restaurants
-search restaurants
-recommend some restaurants
-tell me about some restaurants
-tell me restaurants
-search for the restaurants
-suggest some place to eat
-tell me about some nice places to eat
-i want to have lunch
-i want to have breakfast
-i want to have dinner
-need food
-dinner
-lunch
-food
-breakfast
-brunch
-i want to eat good food
-where is the food
-give me list of restaurant
-give me list of restaurants
-give me information about the restaurants
-give info about the restaurants
-popular restaurant 
-give me popular restaurants
-popular food places
-famous restaurants 
-tell me about some famous restaurants
-find restaurants
-find food places
-find food
-find places to eat 
-find food
 
 
