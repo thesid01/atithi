@@ -18,14 +18,14 @@ firebase = firebaseHelper()
 def reminder_start(request, responder):
     responder.params.target_dialogue_state = 'targ'
     nth.setTarget("targ")
-    responder.reply("Yeah Sure! I will set the reminder. Please tell message to send you.")
+    responder.reply("Yeah Sure!😀~I will set the reminder.~First tell me what to remind you?")
 
 @app.handle(domain='reminder', intent='reminder_time')
 def get_time(request, responder):
     id = request.params.dynamic_resource['id']
     try:
         if responder.frame["message"] is None:
-            responder.reply("Did not gwt it.")
+            responder.reply("Did not get it..😕.~Try Again")
         else:
             # In request.entities it is showing on digit 
             samay = request.entities[0]["value"][0]["value"]
@@ -49,13 +49,13 @@ def get_time(request, responder):
             responder.frame["retry_reminder"] = c + 1
             if(c<3) :
                 responder.params.allowed_intents = ['reminder.reminder_time']
-                responder.reply("Enter Valid time") 
+                responder.reply("This is not time I think.🤔~Please enter valid time") 
             else:      
-                responder.reply("Sorry could not set ")
+                responder.reply("Sorry could not set😕")
         else:
             responder.params.allowed_intents = ['reminder.reminder_time']
             responder.frame["retry_reminder"] = 1
-            responder.reply("Enter Valid time") 
+            responder.reply("This is not time I think.🤔~Please enter valid time") 
 
 @app.handle(targeted_only = True)
 def targ(request, responder):
@@ -63,4 +63,4 @@ def targ(request, responder):
     message = request.text
     responder.frame["message"] = message
     responder.params.allowed_intents = ['reminder.reminder_time']
-    responder.reply("I will set a reminder for "+message + " At what time?")
+    responder.reply("I will set a reminder for "+message + ".~At what time?")
