@@ -1,3 +1,0 @@
-change {hotel|hotel} preferences
-I want to change {lodging|hotel} pref
-i want to change {hotels|hotel} preference

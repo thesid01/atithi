@@ -1,5 +1,5 @@
 import logging
-
+import json
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
 
@@ -15,11 +15,10 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 from twilio.rest import Client
 
-from chatbot.middleware import next_target_setHelper as nth
-
 import atexit
 import time
 import validators
+from chatbot.middleware import latest_intent as l_t
 
 #TWILIO_ACCOUNT_SID = 'ACc47f3cc342412b7097ad6f6c6fe19398'
 #TWILIO_AUTH_TOKEN = '36418b6fe7615bd068ad13f614bdc19d'
@@ -65,22 +64,28 @@ class WhatsappBotServer:
                 'Longitude': request.values.get('Longitude', '')
             }
             if request.values.get('Latitude', '') and request.values.get('Longitude', ''):
+                intent = l_t.getIntent()
+                print(intent)
                 result = self.firebase.setCurrLocation(location, id)
                 resp = MessagingResponse()
                 msg = resp.message()
                 params = dict(dynamic_resource=dict(id=id))
-                incoming_msg = "lat long is set"
+                if intent == 'loc_for_source':
+                    incoming_msg = "source for location"
+                elif intent == 'loc_for_hotel':
+                    incoming_msg = "location for hotel"
+                elif intent == 'loc_for_food':
+                    incoming_msg = "location for food"
+                else:
+                    incoming_msg = "general location"
                 response_text = self.conv.say(incoming_msg, params=params)[0]
                 msg.body(response_text)
                 return str(resp)
             else:
                 resp = MessagingResponse()
                 msg = resp.message()
-                params = None
-                if nth.getTarget() == None :
-                    params = dict(dynamic_resource =dict(id=id)) #Used to send dynamic id of the user making query
-                else:
-                    params = dict(dynamic_resource =dict(id=id),target_dialogue_state=nth.getTarget())
+                # Used to send dynamic id of the user making query
+                params = dict(dynamic_resource=dict(id=id))
                 try:
                     response_text = self.conv.say(incoming_msg, params=params)[0]
                     messages = response_text.split("~")
@@ -116,15 +121,12 @@ if __name__ == '__main__':
     configure_logs()
     server = WhatsappBotServer(name='whatsapp', app_path='./chatbot')
 
-
-    nth.delTarget()
-
     # create schedule for printing time
     scheduler = BackgroundScheduler()
     scheduler.start()
     scheduler.add_job(
         func=server.start_remainder,
-        trigger=IntervalTrigger(seconds=2*60),
+        trigger=IntervalTrigger(seconds=1*60),
         id='send_remainders',
         name='send remainder every minute',
         replace_existing=True)
