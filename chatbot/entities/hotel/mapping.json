@@ -1,0 +1,20 @@
+{
+    "entities": [
+        {
+            "whitelist": [
+                "hotel",
+                "hotels",
+                "inn",
+                "inns",
+                "motel",
+                "motels",
+                "lodge",
+                "lodging",
+                "shelter"
+
+            ],
+            "cname": "hotel"
+        }
+        
+    ]
+}
