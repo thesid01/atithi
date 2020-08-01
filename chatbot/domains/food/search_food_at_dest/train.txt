@@ -8,9 +8,9 @@ can you find some restaurants in {leh|spot_name}
 can you find some restaurants nearby {Mahuli Fort|spot_name}
 tell me some restaurants for {rajmachi fort|spot_name}
 tell me some restaurants nearby {Kalahoi Glacier|spot_name}
-give me restaurant in{Nandi Hills|spot_name}
+give me restaurant in {Nandi Hills|spot_name}
 give me restaurant closest to {Raireshwar|spot_name}
-list out food places for{Sangam|spot_name}
+list out food places for {Sangam|spot_name}
 list out food places near to {Barapoole River|spot_name}
 search places to eat for {Lohit River|spot_name}
 search places to eat close to {Dodital|spot_name}
