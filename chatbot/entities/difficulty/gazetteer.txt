@@ -1,0 +1,10 @@
+easy
+very easy
+moderate
+hard
+difficult
+tough
+
+
+
+

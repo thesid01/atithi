@@ -13,14 +13,63 @@ firebase = firebaseHelper()
 def start_tour(request, responder):
     id = request.params.dynamic_resource['id']
     res = firebase.changeStatus(1,id)
-    responder.params.target_dialogue_state = "select_tourism"
-    responder.reply("What type of Adventure would you like to go on.\n1. Nature⛰\n2. Camping🏕\n3. Family👨‍👩‍👧‍👧")
+    responder.params.target_dialogue_state = "select_tourism_basis"
+    responder.reply("How do you want to choose your tour spot~Based on activities, type, season or difficulty wise?")
     
+@app.handle(intent='select_tourism_basis',has_entity='tour_basis')
+def select_tour_basis(request, responder):
+    id = request.params.dynamic_resource['id']
+    res = firebase.changeStatus(1,id)
+    basis = request.entities[0]["value"][0]["cname"]
+    if basis = 'activities':
+        responder.params.target_dialogue_state = "select_activity"
+        responder.reply("What type of activities would you like to enjoy on the tour.\n1. Trekking⛰\n2. Camping🏕\n3. Mountaneering👨‍👩‍👧‍👧")
+    if basis = 'type':
+        responder.params.target_dialogue_state = "select_type"
+        responder.reply("What type of Adventure would you like to go on.\n1. Nature⛰\n2. Hills🏕\n3. Beach\n4. Family👨‍👩‍👧‍👧")
+    if basis = 'season':
+        responder.params.target_dialogue_state = "select_season"
+        responder.reply("What type of season would you like to go on.\n1. Summer⛰\n2. Winter🏕\n3. Monsoon👨‍👩‍👧‍👧\n4. Autumn")
+    if basis = 'difficulty':
+        responder.params.target_dialogue_state = "select_difficulty"
+        responder.reply("What type of difficulty would you like to enjoy on the tour.\n1. easy⛰\n2. Moderate🏕\n3. Difficult👨‍👩‍👧‍👧")
 
-@app.handle(intent='select_tourism')
-def select_tourism(request, responder):
-    tourism_type = request.entities[0]["text"]
-    spot_list = _fetch_spot_from_kb(tourism_type.lower())
+@app.handle(intent='select_activity',has_entity='activity')
+def select_activity(request, responder):
+    activity_type = request.entities[0]["value"][0]["cname"]
+    spot_list = _fetch_spot_from_kb(activity_type.lower())
+    for i in range(len(spot_list[1])):
+        spot_list[1][i] = spot_list[1][i].lower()
+    responder.frame["spot_list"] = spot_list[1]
+    if len(spot_list[0]) > 1:
+        responder.params.target_dialogue_state = "select_destination_from_choice"
+        reply = "Here are some good options for " + tourism_type +" tourism: "+spot_list[0] + "Select the spot name to travel.~You can always ask a like 'Tell me about spot name' to know more😀"
+    else:
+        responder.params.target_dialogue_state = "select_tourism"
+        reply = "Sorry..Could not understand.~Please try again😕" + "\nWhat type of activities would you like to enjoy on the tour.\n1. Trekking⛰\n2. Camping🏕\n3. Mountaneering👨‍👩‍👧‍👧"
+    responder.reply(reply)
+
+
+@app.handle(intent='select_type', has_entity='tour_type')
+def select_type(request, responder):
+    type_type = request.entities[0]["value"][0]["cname"]
+    spot_list = _fetch_spot_from_kb(type_type.lower())
+    for i in range(len(spot_list[1])):
+        spot_list[1][i] = spot_list[1][i].lower()
+    responder.frame["spot_list"] = spot_list[1]
+    if len(spot_list[0]) > 1:
+        responder.params.target_dialogue_state = "select_destination_from_choice"
+        reply = "Here are some good options for " + tourism_type +" tourism: "+spot_list[0] + "Select the spot name to travel.~You can always ask a like 'Tell me about spot name' to know more😀"
+    else:
+        responder.params.target_dialogue_state = "select_tourism"
+        reply = "Sorry..Could not understand.~Please try again😕" + "\nWhat type of activities would you like to enjoy on the tour.\n1. Trekking⛰\n2. Camping🏕\n3. Mountaneering👨‍👩‍👧‍👧"
+    responder.reply(reply)
+
+
+@app.handle(intent='select_season',  has_entity='season')
+def select_season(request, responder):
+    season_type = request.entities[0]["value"][0]["cname"]
+    spot_list = _fetch_spot_from_kb(season_type.lower())
     for i in range(len(spot_list[1])):
         spot_list[1][i] = spot_list[1][i].lower()
     responder.frame["spot_list"] = spot_list[1]
@@ -32,13 +81,27 @@ def select_tourism(request, responder):
         reply = "Sorry..Could not understand.~Please try again😕" + "\nWhat type of Adventure would you like to go on.\n1. Nature\n2. Camping\n3. Family"
     responder.reply(reply)
 
+@app.handle(intent='select_difficulty', has_entity='difficulty')
+def select_difficulty(request, responder):
+    difficulty_type = request.entities[0]["value"][0]["cname"]
+    spot_list = _fetch_spot_from_kb(difficulty_type.lower())
+    for i in range(len(spot_list[1])):
+        spot_list[1][i] = spot_list[1][i].lower()
+    responder.frame["spot_list"] = spot_list[1]
+    if len(spot_list[0]) > 1:
+        responder.params.target_dialogue_state = "select_destination_from_choice"
+        reply = "Here are some good options for " + tourism_type +" tourism: "+spot_list[0] + "Select the spot name to travel.~You can always ask a like 'Tell me about spot name' to know more😀"
+    else:
+        responder.params.target_dialogue_state = "select_tourism"
+        reply = "Sorry..Could not understand.~Please try again😕" + "\nWhat type of Adventure would you like to go on.\n1. Nature\n2. Camping\n3. Family"
+    responder.reply(reply)
 
 @app.handle(intent = 'select_destination', has_entity='spot_name')
 def select_destination_from_choice(request, responder):
     id = request.params.dynamic_resource['id']
     try:
-        if request.entities[0]["text"] in responder.frame["spot_list"]:
-            data = request.entities[0]["text"]
+        if request.entities[0]["value"][0]["cname"] in responder.frame["spot_list"]:
+            data = request.entities[0]["value"][0]["cname"]
 
             res = firebase.setDest(data,id)
             lat, long = firebase.getCurrLocation(id)
@@ -56,8 +119,8 @@ def select_destination_from_choice(request, responder):
                 responder.reply("Your destination has been set to:" + request.entities[0]["text"] + "\n"+msg+"~👍")
                 # return
 
-        elif request.entities[0]["text"]:
-            data = request.entities[0]["text"]
+        elif request.entities[0]["value"][0]["cname"]:
+            data = request.entities[0]["value"][0]["cname"]
 
             res = firebase.setDest(data,id)
             lat, long = firebase.getCurrLocation(id)
@@ -96,14 +159,14 @@ def set_curr_loc(request,responder):
 
 @app.handle(intent='set_source', has_entity='city_name')
 def set_source(request, responder):
-    data = request.entities[0]["text"]
+    data = request.entities[0]["value"][0]["cname"]
     id = request.params.dynamic_resource['id']
     res = firebase.setSource(data,id)
     responder.params.target_dialogue_state = 'food_pref'
     # responder.params.allowed_intents = ['tourism.food_pref']
     responder.reply("Before we personalize your journey, we would like to ask some preferences😀.\nPlease tell us any preferences about your food (veg/non-veg/italian/etc)")
 
-@app.handle(intent='food_pref', has_entity='cuisines')
+@app.handle(intent='food_pref', has_entity='food')
 def food_pref(request, responder):
     id = request.params.dynamic_resource['id']
     data=""

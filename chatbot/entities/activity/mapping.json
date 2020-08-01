@@ -1,0 +1,44 @@
+{
+    "entities": [
+        {
+            "whitelist": [
+                "trekking",
+                "trek",
+                "camping",
+                "camp"
+            ],
+            "cname": "trekking"
+        },
+        {
+            "whitelist": [
+                "river rafting",
+                "rafting",
+                "diving",
+                "scuba diving",
+                "water sport",
+                "water sports"
+            ],
+            "cname": "water sport"
+        },
+	    {
+            "whitelist": [
+                "paragliding"
+            ],
+            "cname": "paragliding"
+        },
+        {
+            "whitelist": [
+                "parasailing"
+            ],
+            "cname": "parasailing"
+        },
+        {
+            "whitelist": [
+                "biking",
+                "mountain biking"
+            ],
+            "cname": "mountain biking"
+        }
+        
+    ]
+}
