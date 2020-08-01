@@ -88,7 +88,7 @@ ok lets begin {family|tour_type}
 ok lets begin {nature|tour_type}
 please choose {beach|tour_type}
 please choose {family|tour_type}
-i want to set {hillstour_type}
+i want to set {hills|tour_type}
 i will set {nature|tour_type}
 please set {family|tour_type}
 please set {nature|tour_type}
