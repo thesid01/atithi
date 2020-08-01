@@ -1,0 +1,26 @@
+{
+    "entities": [
+        {
+            "whitelist": [
+                "easy",
+                "very easy"
+            ],
+            "cname": "easy"
+        },
+	    {
+            "whitelist": [
+                "moderate"
+            ],
+            "cname": "moderate"
+        },
+        {
+            "whitelist": [
+                "difficult",
+                "hard",
+                "tough"
+            ],
+            "cname": "difficult"
+        }
+        
+    ]
+}

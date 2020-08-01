@@ -1,0 +1,40 @@
+{mountain biking|activity}
+{trekking|activity}
+{water sports|activity}
+choose {mountain biking|activity}
+choose {paragliding|activity}
+{mountain biking|activity}
+{trekking|activity} choose 
+{water sports|activity} choose 
+i like {paragliding|activity} 
+i like {trekking|activity}
+i like {mountain biking|activity}
+set {mountain biking|activity}
+set {trekking|activity}
+set {water sports|activity}
+{mountain biking|activity} is ok
+{trekking|activity} is ok
+{water sports|activity} is ok
+i want to select {paragliding|activity}
+i want to select {trekking|activity}
+i want to select {water sports|activity}
+i choose {paragliding|activity}
+i choose {trekking|activity}
+i choose {parasailing|activity}
+{paragliding|activity} is fine with me
+{trekking|activity} is fine with me
+{paragliding|activity} is fine with me
+{mountain biking|activity} is fine
+{trekking|activity} is fine
+{water sports|activity} is fine
+i select {paragliding|activity}
+i select {trekking|activity}
+i select {water sports|activity}
+my choice is {mountain biking|activity} 
+my choice is {trekking|activity}
+my choice is {river rafting|activity}
+i want to go for {paragliding|activity}
+i want to go for {trekking|activity}
+i want to go for {parasailing|activity}
+select {mountain biking|activity}
+select {paragliding|activity}

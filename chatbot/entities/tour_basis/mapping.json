@@ -1,0 +1,32 @@
+{
+    "entities": [
+        {
+            "whitelist": [
+                "activity",
+                "activities"
+            ],
+            "cname": "activity"
+        },
+        {
+            "whitelist": [
+                "type",
+                "tour type"
+            ],
+            "cname": "type"
+        },
+	    {
+            "whitelist": [
+                "seasons",
+                "season"
+            ],
+            "cname": "season"
+        },
+        {
+            "whitelist": [
+                "difficulty"
+            ],
+            "cname": "difficulty"
+        }
+        
+    ]
+}

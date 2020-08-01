@@ -1,0 +1,34 @@
+{
+    "entities": [
+        {
+            "whitelist": [
+                "nature",
+                "wildlife"
+            ],
+            "cname": "nature"
+        },
+        {
+            "whitelist": [
+                "hills",
+                "hill",
+                "mountain",
+                "mountains"
+            ],
+            "cname": "hills"
+        },
+	    {
+            "whitelist": [
+                "family"
+            ],
+            "cname": "family"
+        },
+        {
+            "whitelist": [
+                "beach",
+                "beaches"
+            ],
+            "cname": "beach"
+        }
+        
+    ]
+}

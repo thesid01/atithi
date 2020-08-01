@@ -1,0 +1,99 @@
+{summer|season}
+{winter|season}
+{monsoon|season}
+choose {summer|season}
+choose {winter|season}
+{summer|season}
+{winter|season} choose 
+{monsoon|season} choose 
+i like {monsoon|season} 
+i like {winter|season}
+i like {autumn|season}
+set {summer|season}
+set {winter|season}
+set {monsoon|season}
+{autumn|season} is ok
+{winter|season} is ok
+{monsoon|season} is ok
+i want to select {summer|season}
+i want to select {winter|season}
+i want to select {monsoon|season}
+i choose {summer|season}
+i choose {autumn|season}
+i choose {monsoon|season}
+{summer|season} is fine with me
+{winter|season} is fine with me
+{monsoon|season} is fine with me
+{autumn|season} is fine
+{winter|season} is fine
+{monsoon|season} is fine
+i select {autumn|season}
+i select {winter|season}
+i select {monsoon|season}
+my choice is {autumn|season} 
+my choice is {winter|season}
+my choice is {monsoon|season}
+i want to go for {summer|season}
+i want to go for {winter|season}
+i want to go for {monsoon|season}
+select {summer|season}
+select {autumn|season}
+select {monsoon|season}
+set {summer|season}
+set {autumn|season}
+set {monsoon|season}
+start {summer|season}
+start {winter|season}
+start {autumn|season}
+begin {summer|season}
+begin {winter|season}
+begin {monsoon|season}
+continue with {summer|season}
+continue with {autumn|season}
+continue with {monsoon|season}
+i want to select {autumn|season}
+i want to select {winter|season}
+i want to select {monsoon|season}
+i want to begin with {summer|season}
+i want to begin with {winter|season}
+i want to begin with {monsoon|season}
+lets start with {summer|season}
+lets start with {winter|season}
+lets start with {monsoon|season}
+i want to do {summer|season}
+i want to do {autumn|season}
+i want to do {monsoon|season}
+my preference is {summer|season}
+my preference is {autumn|season}
+my preference is {monsoon|season}
+my choice is {summer|season}
+my choice is {winter|season}
+my choice is {autumn|season}
+i will select {summer|season}
+i will select {winter|season}
+i will select {monsoon|season}
+i will go with {summer|season}
+i will go with {winter|season}
+i will go with {autumn|season}
+i will go with {autumn|season}
+i will go with {winter|season}
+i will go with {monsoon|season}
+i like to experience {winter|season}
+i like to experience {monsoon|season}
+i like to experience {summer|season}
+lets start {autumn|season}
+lets start {monsoon|season}
+lets start {summer|season}
+ok lets begin {winter|season}
+ok lets begin {monsoon|season}
+ok lets begin {autumn|season}
+please choose {winter|season}
+please choose {monsoon|season}
+i want to set {autumn|season}
+i will set {summer|season}
+please set {monsoon|season}
+please set {summer|season}
+select {autumn|season} as my choice
+set {monsoon|season} as my preference
+{autumn|season} i want to experience
+{winter|season} i want to explore

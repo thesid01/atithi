@@ -1,0 +1,12 @@
+activity
+activities
+type
+tour type
+seasons
+season
+difficulty
+
+
+
+
+
