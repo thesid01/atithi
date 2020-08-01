@@ -1,0 +1,10 @@
+hotel
+hotels
+inn
+inns
+motel
+motels
+lodge
+lodging
+shelter
+

@@ -8,10 +8,8 @@ begin
 ready
 plan tour
 plan
-yes
 I am ready
 lets go
-yeah i am ready
 plan travel
 ready
 start journey
@@ -52,22 +50,17 @@ begin the journey
 begin the tour
 lets start rolling
 i am all ready
-yes
 i am ready
-yes, i want to start
 lets start
 please start the tour
-yes lets go
 go on
 start this journey
 ready to go
 lets travel
 i would like to travel
-yes
 ready
 travel
 lets do it
-yes please start
 i want to explore
 begin my experience
 begin my travel
@@ -76,11 +69,3 @@ start my travel
 start my journey
 start my tour
 begin my tour
-yess
-yeah
-yupp
-yo
-yoo
-yes
-haan
-yup

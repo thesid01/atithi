@@ -1,0 +1,34 @@
+{
+    "entities": [
+        {
+            "whitelist": [
+                "summer",
+                "hot"
+            ],
+            "cname": "summer"
+        },
+        {
+            "whitelist": [
+                "rainy",
+                "rain",
+                "monsoon",
+                "monsoons"
+            ],
+            "cname": "monsoon"
+        },
+	    {
+            "whitelist": [
+                "autumn"
+            ],
+            "cname": "autumn"
+        },
+        {
+            "whitelist": [
+                "winter",
+                "cold"
+            ],
+            "cname": "winter"
+        }
+        
+    ]
+}

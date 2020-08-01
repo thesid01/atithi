@@ -45,21 +45,45 @@ def get_city(request, responder):
         responder = _fetch_from_kb(responder, name, entity_type)
     return responder
 
-@app.handle(domain='general',intent='change_pref')
-def change_pref(request,responder):
-    responder.params.allowed_intents = ('general.change_hotel_pref','general.change_food_pref')
-    responder.reply('Sure, which preference do you want to change- hotel or food')
+# @app.handle(domain='general',intent='change_pref')
+# def change_pref(request,responder):
+#     responder.params.allowed_intents = ('general.change_hotel_pref','general.change_food_pref')
+#     responder.reply('Sure, which preference do you want to change- hotel or food')
 
-@app.handle(domain='general',intent='change_hotel_pref',has_entity='hotel')
-def change_hotel_pref(request,responder):
-    responder.params.allowed_intents = ('tourism.hotel_pref')
-    responder.reply("Fine, now please tell us any preferences for hotels i.e Number of rooms ac/non-ac/etc.")
+# @app.handle(domain='general',intent='change_hotel_pref',has_entity='hotel')
+# def change_hotel_pref(request,responder):
+#     responder.params.allowed_intents = ('tourism.hotel_pref')
+#     responder.reply("Fine, now please tell us any preferences for hotels i.e Number of rooms ac/non-ac/etc.")
     
 
-@app.handle(domain='general',intent='change_food_pref',has_entity='food')
-def change_food_pref(request,responder):
-    responder.params.allowed_intents = ('tourism.food_pref')
-    responder.reply("Fine, now please tell us any preferences about your food (veg/non-veg/italian/etc)")
+# @app.handle(domain='general',intent='change_food_pref',has_entity='food')
+# def change_food_pref(request,responder):
+#     responder.params.allowed_intents = ('tourism.food_pref')
+#     responder.reply("Fine, now please tell us any preferences about your food (veg/non-veg/italian/etc)")
+
+@app.handle(intent = 'confirmation')
+def confirmation(request, responder):
+    if "for_confirmation" in responder.frame:
+        if responder.frame["for_confirmation"]:
+            responder.frame["for_confirmation"] = None
+            responder.reply(responder.frame["for_confirmation_message"])
+        else:
+            responder.reply("yahan suggestion dalna hai.(in confirm)")
+    else:
+        responder.reply("yahan suggestion/faq dalna hai.(in confirm)")
+
+@app.handle(intent = 'denial')
+def denial(request, responder):
+    if "for_denial" in responder.frame:
+        if responder.frame["for_denial"]:
+            responder.frame["for_denial"] = None
+            responder.reply(responder.frame["for_denial_message"])
+        else:
+            responder.reply("yahan suggestion dalna hai.(in denial)")
+    else:
+        responder.reply("yahan suggestion/faq dalna hai.(in denial)")
+
+
 
 def _fetch_from_kb(responder, name, entity_type):
     """

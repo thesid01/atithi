@@ -8,22 +8,28 @@ from .root import app
 from chatbot.middleware.firebaseHelper import firebaseHelper
 from chatbot.middleware.hotelHelper import hotelList
 import random
+from chatbot.middleware import latest_intent as l_t
+
 
 firebase = firebaseHelper()
 
 @app.handle(intent='start_flow_hotel')
 def start_flow_hotel(request, responder):
+    id = request.params.dynamic_resource['id']
     _,_,_,res = firebase.getHotelPref(id)
+    print(res)
     if not res:
         responder.params.allowed_intents = ('tourism.hotel_pref')
         responder.reply("Sure, please first tell us the preferences for the hotels (number of rooms/ac/non-ac/etc)")
     else:
-        responder.params.allowed_intents = ['general.set_current_loc','hotel.search_nearby_hotel','hotel.searc_hotel_at_dest']
+        responder.params.allowed_intents = ('hotel.set_curr_loc_hotel','hotel.search_nearby_hotel','hotel.searc_hotel_at_dest')
+        l_t.setIntent('loc_for_hotel')
         responder.reply("Sure😀"+"~"+"Can you tell me where you are or just share your location so that I can assist you finding Hotels near you")
 
 @app.handle(domain='hotel', intent='search_nearby_hotel')
 def search_nearby_hotel(request,responder):
     print('f')
+    l_t.delIntent()
     id = request.params.dynamic_resource['id']
 
     _,_,_,res = firebase.getHotelPref(id)
@@ -35,8 +41,12 @@ def search_nearby_hotel(request,responder):
         try:
             lat,long = firebase.getCurrLocation(id)
             if lat and long:
-                hotel_msg = hotelList(id,lat,long)
-                if hotel_msg is None:
+                hotel_msg = "We are facing issue with our scrapper rght now."
+                try:
+                    hotel_msg = hotelList(id,lat,long)
+                except:
+                    responder.reply(hotel_msg)
+                if hotel_msg == '':
                     responder.reply("Currently, We don't have any hotels for you😕 But you can always try saying find hotels near " + firebase.getDest(id)+"~"+"I will be there to help you 🙂")
                 else:
                     responder.reply("I have found some hotels🛏 near by you, you can check it out:\n~"+hotel_msg)
@@ -47,14 +57,15 @@ def search_nearby_hotel(request,responder):
             responder.reply("Oops ! Sorry, can you please share your location first so that I can assist you in finding hotels nearby you...🙂")
 
 
-@app.handle(domain='general',intent='set_current_loc')
+@app.handle(domain='hotel',intent='set_curr_loc_hotel')
 def search_hotel_at_curr(request, responder):
-
+    l_t.delIntent()
     # code for getting nearest_city for the loc
     id = request.params.dynamic_resource['id']
     lat,long = firebase.getCurrLocation(id)
     # end
     _,_,_,res = firebase.getHotelPref(id)
+    print(res)
     if not res:
         responder.params.allowed_intents = ('tourism.hotel_pref')
         responder.reply("Sure, please first tell us the preferences for the hotels (number of rooms/ac/non-ac/etc)")
@@ -72,6 +83,7 @@ def search_hotel_at_curr(request, responder):
 
 @app.handle(domain='hotel',intent='search_hotel_at_dest', has_entity='spot_name')
 def search_hotel_at_dest(request, responder):
+    l_t.delIntent()
     id = request.params.dynamic_resource['id']
     _,_,_,res = firebase.getHotelPref(id)
     
@@ -91,11 +103,11 @@ def search_hotel_at_dest(request, responder):
 
 
 def _fetch_spot_from_kb(spot_name):
-    spots = app.question_answerer.get(index='spot_data')
-    j = 1
+    spots = app.question_answerer.get(index='spot_data', size=66)
+    lat,long = "", ""
     for i in range(len(spots)):
-        if spot_name in spots[i]["spot_name"]:
-            loc = spots[i]["location"]
+        if spot_name.lower() == spots[i]["spot_name"].lower():
+            loc = spots[i]["location"].lower()
             lat,long = loc.split(',')
             break
     return lat,long

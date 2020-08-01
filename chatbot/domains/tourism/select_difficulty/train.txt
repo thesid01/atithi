@@ -1,0 +1,99 @@
+{easy|difficulty}
+{moderate|difficulty}
+{difficult|difficulty}
+choose {easy|difficulty}
+choose {moderate|difficulty}
+{easy|difficulty}
+{moderate|difficulty} choose 
+{hard|difficulty} choose 
+i like {difficult|difficulty} 
+i like {moderate|difficulty}
+i like {easy|difficulty}
+set {easy|difficulty}
+set {moderate|difficulty}
+set {difficult|difficulty}
+{easy|difficulty} is ok
+{moderate|difficulty} is ok
+{difficult|difficulty} is ok
+i want to select {easy|difficulty}
+i want to select {moderate|difficulty}
+i want to select {difficult|difficulty}
+i choose {easy|difficulty}
+i choose {moderate|difficulty}
+i choose {difficult|difficulty}
+{easy|difficulty} is fine with me
+{hard|difficulty} is fine with me
+{difficult|difficulty} is fine with me
+{easy|difficulty} is fine
+{moderate|difficulty} is fine
+{difficult|difficulty} is fine
+i select {easy|difficulty}
+i select {moderate|difficulty}
+i select {hard|difficulty}
+my choice is {easy|difficulty} 
+my choice is {moderate|difficulty}
+my choice is {difficult|difficulty}
+i want to go for {easy|difficulty}
+i want to go for {moderate|difficulty}
+i want to go for {difficult|difficulty}
+select {easy|difficulty}
+select {moderate|difficulty}
+select {difficult|difficulty}
+set {easy|difficulty}
+set {moderate|difficulty}
+set {difficult|difficulty}
+start {easy|difficulty}
+start {moderate|difficulty}
+start {difficult|difficulty}
+begin {easy|difficulty}
+begin {moderate|difficulty}
+begin {difficult|difficulty}
+continue with {easy|difficulty}
+continue with {moderate|difficulty}
+continue with {difficult|difficulty}
+i want to select {hard|difficulty}
+i want to select {moderate|difficulty}
+i want to select {difficult|difficulty}
+i want to begin with {easy|difficulty}
+i want to begin with {moderate|difficulty}
+i want to begin with {difficult|difficulty}
+lets start with {easy|difficulty}
+lets start with {moderate|difficulty}
+lets start with {difficult|difficulty}
+i want to do {easy|difficulty}
+i want to do {moderate|difficulty}
+i want to do {difficult|difficulty}
+my preference is {easy|difficulty}
+my preference is {moderate|difficulty}
+my preference is {difficult|difficulty}
+my choice is {easy|difficulty}
+my choice is {moderate|difficulty}
+my choice is {difficult|difficulty}
+i will select {easy|difficulty}
+i will select {moderate|difficulty}
+i will select {difficult|difficulty}
+i will go with {easy|difficulty}
+i will go with {moderate|difficulty}
+i will go with {difficult|difficulty}
+i will go with {easy|difficulty}
+i will go with {hard|difficulty}
+i will go with {difficult|difficulty}
+i like to experience {moderate|difficulty}
+i like to experience {hard|difficulty}
+i like to experience {easy|difficulty}
+lets start {moderate|difficulty}
+lets start {difficult|difficulty}
+lets start {easy|difficulty}
+ok lets begin {moderate|difficulty}
+ok lets begin {difficult|difficulty}
+ok lets begin {easy|difficulty}
+please choose {moderate|difficulty}
+please choose {difficult|difficulty}
+i want to set {difficult|difficulty}
+i will set {easy|difficulty}
+please set {difficult|difficulty}
+please set {easy|difficulty}
+select {easy|difficulty} as my choice
+set {difficult|difficulty} as my preference
+{moderate|difficulty} i want to experience
+{moderate|difficulty} i want to explore

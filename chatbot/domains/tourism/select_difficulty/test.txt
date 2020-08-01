@@ -1,0 +1,20 @@
+{easy|difficulty}
+{moderate|difficulty}
+{difficult|difficulty}
+choose {easy|difficulty}
+choose {moderate|difficulty}
+{easy|difficulty}
+{moderate|difficulty} choose 
+{hard|difficulty} choose 
+i like {difficult|difficulty} 
+i like {moderate|difficulty}
+i like {easy|difficulty}
+set {easy|difficulty}
+set {moderate|difficulty}
+set {difficult|difficulty}
+{easy|difficulty} is ok
+{moderate|difficulty} is ok
+{difficult|difficulty} is ok
+i want to select {easy|difficulty}
+i want to select {moderate|difficulty}
+i want to select {difficult|difficulty}

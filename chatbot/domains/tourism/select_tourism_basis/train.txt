@@ -1,0 +1,19 @@
+{activity|tour_basis}
+{season|tour_basis}
+{type|tour_basis}
+choose {activity|tour_basis}
+choose {difficulty|tour_basis}
+{activity|tour_basis}
+{season|tour_basis} choose 
+{type|tour_basis} choose 
+i like {type|tour_basis} 
+i like {difficulty|tour_basis}
+i like {activity|tour_basis}
+set {activity|tour_basis}
+set {difficulty|tour_basis}
+set {type|tour_basis}
+according to {type|tour_basis}
+according to {difficulty|tour_basis}
+on the basis of {activity|tour_basis}
+on the basis of {season|tour_basis}
+

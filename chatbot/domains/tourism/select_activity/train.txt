@@ -1,0 +1,99 @@
+{mountain biking|activity}
+{trekking|activity}
+{water sports|activity}
+choose {mountain biking|activity}
+choose {paragliding|activity}
+{mountain biking|activity}
+{trekking|activity} choose 
+{water sports|activity} choose 
+i like {paragliding|activity} 
+i like {trekking|activity}
+i like {mountain biking|activity}
+set {mountain biking|activity}
+set {trekking|activity}
+set {water sports|activity}
+{mountain biking|activity} is ok
+{trekking|activity} is ok
+{water sports|activity} is ok
+i want to select {paragliding|activity}
+i want to select {trekking|activity}
+i want to select {water sports|activity}
+i choose {paragliding|activity}
+i choose {trekking|activity}
+i choose {parasailing|activity}
+{paragliding|activity} is fine with me
+{trekking|activity} is fine with me
+{paragliding|activity} is fine with me
+{mountain biking|activity} is fine
+{trekking|activity} is fine
+{water sports|activity} is fine
+i select {paragliding|activity}
+i select {trekking|activity}
+i select {water sports|activity}
+my choice is {mountain biking|activity} 
+my choice is {trekking|activity}
+my choice is {river rafting|activity}
+i want to go for {paragliding|activity}
+i want to go for {trekking|activity}
+i want to go for {parasailing|activity}
+select {mountain biking|activity}
+select {paragliding|activity}
+select {river rafting|activity}
+set {mountain biking|activity}
+set {trekking|activity}
+set {paragliding|activity}
+start {mountain biking|activity}
+start {trekking|activity}
+start {paragliding|activity}
+begin {mountain biking|activity}
+begin {trekking|activity}
+begin {water sports|activity}
+continue with {paragliding|activity}
+continue with {trekking|activity}
+continue with {water sports|activity}
+i want to select {parasailing|activity}
+i want to select {trekking|activity}
+i want to select {water sports|activity}
+i want to begin with {mountain biking|activity}
+i want to begin with {trekking|activity}
+i want to begin with {water sports|activity}
+lets start with {mountain biking|activity}
+lets start with {trekking|activity}
+lets start with {water sports|activity}
+i want to do {mountain biking|activity}
+i want to do {trekking|activity}
+i want to do {water sports|activity}
+my preference is {paragliding|activity}
+my preference is {trekking|activity}
+my preference is {water sports|activity}
+my choice is {paragliding|activity}
+my choice is {trekking|activity}
+my choice is {water sports|activity}
+i will select {mountain biking|activity}
+i will select {paragliding|activity}
+i will select {parasailing|activity}
+i will go with {parasailing|activity}
+i will go with {parasailing|activity}
+i will go with {water sports|activity}
+i will go with {mountain biking|activity}
+i will go with {trekking|activity}
+i will go with {water sports|activity}
+i like to experience {paragliding|activity}
+i like to experience {camping|activity}
+i like to experience {mountain biking|activity}
+lets start {camping|activity}
+lets start {water sports|activity}
+lets start {mountain biking|activity}
+ok lets begin {trekking|activity}
+ok lets begin {water sports|activity}
+ok lets begin {mountain biking|activity}
+please choose {trekking|activity}
+please choose {paragliding|activity}
+i want to set {parasailing|activity}
+i will set {parasailing|activity}
+please set {water sports|activity}
+please set {paragliding|activity}
+select {mountain biking|activity} as my choice
+set {water sports|activity} as my preference
+{trekking|activity} i want to experience
+{trekking|activity} i want to explore

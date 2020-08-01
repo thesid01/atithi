@@ -56,7 +56,10 @@ def convertForElasticSearch(file, filename) :
                     temp[k] = spot[k]
                 temp["location"] = str(spot["location"]["Latitude"]) + "," + str(spot["location"]["Longitude"])
                 temp['spot_id'] = str(spot["spot_id"])
-                if spot["spot_name"] != "spot1":
+                temp["level"] = random.choice(["Easy","Moderate","Difficult"])
+                if "best_season" in spot:
+                    temp["best_season"] = spot["best_season"][0]
+                if spot["spot_name"] != "spot1" and spot["spot_name"] != "":
                     data.append(temp)
                     id += 1
     f.close()
@@ -64,10 +67,4 @@ def convertForElasticSearch(file, filename) :
         json.dump(data, json_file,  indent = 4,)
 
 if __name__ == "__main__":
-    addSpotType("../data/spot.json")
-    # data = getSpotName("../data/spot.json")
-    # print(data)
-    # print(json.dumps(data,indent=4))
-    # jj = generateMappingjson(list(data))
-    # print(json.dumps(jj,indent=4))
     convertForElasticSearch("../data/spot.json", "../data/spot_data.json")

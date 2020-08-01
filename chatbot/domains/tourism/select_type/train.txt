@@ -1,0 +1,98 @@
+{nature|tour_type}
+{hills|tour_type}
+{beach|tour_type}
+{family|tour_type}
+select {nature|tour_type}
+select {hills|tour_type}
+choose {beach|tour_type}
+choose {family|tour_type}
+{beach|tour_type} choose 
+{family|tour_type} choose 
+i like {family|tour_type} 
+i like {hill|tour_type}
+i like {nature|tour_type}
+set {nature|tour_type}
+set {hills|tour_type}
+set {family|tour_type}
+{nature|tour_type} is ok
+{hills|tour_type} is ok
+{family|tour_type} is ok
+i want to select {nature|tour_type}
+i want to select {beach|tour_type}
+i want to select {family|tour_type}
+i choose {nature|tour_type}
+i choose {beaches|tour_type}
+i choose {family|tour_type}
+{nature|tour_type} is fine with me
+{beach|tour_type} is fine with me
+{family|tour_type} is fine with me
+{nature|tour_type} is fine
+{beach|tour_type} is fine
+{family|tour_type} is fine
+i select {nature|tour_type}
+i select {beach|tour_type}
+i select {family|tour_type}
+my choice is {nature|tour_type} 
+my choice is {beach|tour_type}
+my choice is {family|tour_type}
+i want to go for {nature|tour_type}
+i want to go for {beach|tour_type}
+i want to go for {family|tour_type}
+select {nature|tour_type}
+select {beach|tour_type}
+select {family|tour_type}
+set {nature|tour_type}
+set {beach|tour_type}
+set {family|tour_type}
+start {nature|tour_type}
+start {beach|tour_type}
+start {family|tour_type}
+begin {nature|tour_type}
+begin {beach|tour_type}
+begin {family|tour_type}
+continue with {nature|tour_type}
+continue with {beach|tour_type}
+continue with {family|tour_type}
+i want to select {nature|tour_type}
+i want to select {beach|tour_type}
+i want to select {family|tour_type}
+i want to begin with {nature|tour_type}
+i want to begin with {beach|tour_type}
+i want to begin with {family|tour_type}
+lets start with {nature|tour_type}
+lets start with {beach|tour_type}
+lets start with {family|tour_type}
+i want to do {nature|tour_type}
+i want to do {beach|tour_type}
+i want to do {family|tour_type}
+my preference is {nature|tour_type}
+my preference is {beach|tour_type}
+my preference is {family|tour_type}
+my choice is {nature|tour_type}
+my choice is {beach|tour_type}
+my choice is {family|tour_type}
+i will select {nature|tour_type}
+i will select {beach|tour_type}
+i will select {family|tour_type}
+i will go with {nature|tour_type}
+i will go with {beach|tour_type}
+i will go with {family|tour_type}
+i like to experience {beach|tour_type}
+i like to experience {family|tour_type}
+i like to experience {nature|tour_type}
+lets start {beach|tour_type}
+lets start {family|tour_type}
+lets start {nature|tour_type}
+ok lets begin {beach|tour_type}
+ok lets begin {family|tour_type}
+ok lets begin {nature|tour_type}
+please choose {beach|tour_type}
+please choose {family|tour_type}
+i want to set {hills|tour_type}
+i will set {nature|tour_type}
+please set {family|tour_type}
+please set {nature|tour_type}
+select {nature|tour_type} as my choice
+set {family|tour_type} as my preference
+{hills|tour_type} i want to experience
+{beach|tour_type} i want to explore

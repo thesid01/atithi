@@ -1,0 +1,19 @@
+veg
+vegan
+vegetarian
+non-veg
+non veg
+non vegan
+non-vegetarian
+spanish
+italian
+chinese
+mandarin
+japanese
+seafood
+indian
+north-indian
+south-indian
+mexican
+taiwanese
+french
