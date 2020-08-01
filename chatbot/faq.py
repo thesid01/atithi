@@ -3,11 +3,11 @@
 from .root import app
 
 
-@app.handle(intent='generic')
-def generic(request, responder):
-    responder.reply("Sure, what do you want to know?")
-    responder.params.target_dialogue_state = 'india'
-    responder.listen()
+#@app.handle(intent='generic')
+#def generic(request, responder):
+#    responder.reply("Sure, what do you want to know?")
+#    responder.params.target_dialogue_state = 'india'
+#    responder.listen()
 
 
 @app.handle(intent='india')
