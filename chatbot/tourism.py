@@ -7,6 +7,7 @@ import json
 from .root import app
 from chatbot.middleware.firebaseHelper import firebaseHelper
 import random
+from chatbot.middleware import latest_intent as l_t
 
 firebase = firebaseHelper()
 
@@ -110,14 +111,16 @@ def select_destination_from_choice(request, responder):
             lat, long = firebase.getCurrLocation(id)
 
             if lat and long:
-                responder.params.allowed_intents = ('general.set_current_loc','tourism.set_source','tourism.resume')
+                responder.params.allowed_intents = ('tourism.set_source_loc','tourism.set_source','tourism.resume')
+                l_t.setIntent('loc_for_source')
                 loc = firebase.getCurrLocationName(id)
                 msg = "Your current location is "+loc['city']+" and is set as source.~Please tell us the source location or share the new source location if you want to change it, otherwise resume."
                 responder.reply("Your destination has been set to:" + data + "\n\n"+msg+"~👍")
 
             else:
                 
-                responder.params.allowed_intents = ['general.set_current_loc','tourism.set_source']
+                responder.params.allowed_intents = ('tourism.set_source_loc','tourism.set_source')
+                l_t.setIntent('loc_for_source')
                 msg = "Please tell us the source location or share your location"
                 responder.reply("Your destination has been set to:" + request.entities[0]["text"] + "\n"+msg+"~👍")
                 # return
@@ -129,14 +132,16 @@ def select_destination_from_choice(request, responder):
             lat, long = firebase.getCurrLocation(id)
 
             if lat and long:
-                responder.params.allowed_intents = ('general.set_current_loc','tourism.set_source','tourism.resume')
+                responder.params.allowed_intents = ('tourism.set_source_loc','tourism.set_source','tourism.resume')
+                l_t.setIntent('loc_for_source')
                 loc = firebase.getCurrLocationName(id)
                 msg = "Your current location is "+loc['city']+" and is set as source.\n\nPlease tell us the source location or share the new source location if you want to change it, otherwise resume."
                 responder.reply("The selected adventure spot is not under the chosen class,😕~Continuing.....~Your destination has been set to:" + data + "\n\n"+msg)
 
             else:
                 
-                responder.params.allowed_intents = ['general.set_current_loc','tourism.set_source']
+                responder.params.allowed_intents = ['tourism.set_source_loc','tourism.set_source']
+                l_t.setIntent('loc_for_source')
                 msg = "Please tell us the source location or share the location"
                 responder.reply("The selected adventure spot is not under the chosen class,😕~Continuing.....\nYour destination has been set to:" + request.entities[0]["text"] + "\n"+msg)
 
@@ -152,16 +157,19 @@ def select_destination_from_choice(request, responder):
 
 @app.handle(domain='tourism',intent='resume')
 def resume(request,responder):
+    l_t.delIntent()
     responder.params.target_dialogue_state = 'food_pref'
     responder.reply("Before we personalize your journey, we would like to ask some preferences😀.\nPlease tell us any preferences about your food (veg/non-veg/italian/etc)")
 
-@app.handle(domain='general', intent='set_curr_loc')
+@app.handle(domain='tourism', intent='set_source_loc')
 def set_curr_loc(request,responder):
+    l_t.delIntent()
     responder.params.target_dialogue_state = 'food_pref'
     responder.reply("Before we personalize your journey, we would like to ask some preferences😀.\nPlease tell us any preferences about your food (veg/non-veg/italian/etc)")
 
 @app.handle(intent='set_source', has_entity='city_name')
 def set_source(request, responder):
+    l_t.delIntent()
     data = request.entities[0]["value"][0]["cname"]
     id = request.params.dynamic_resource['id']
     res = firebase.setSource(data,id)
@@ -188,7 +196,7 @@ def hotel_pref(request,responder):
         data[item["type"]]=item["value"][0]["cname"]
 
     res = firebase.setHotelPref(data,id)
-    responder.reply("Don't worry😀, I will take care of your comfort throughout the journey~I will remember these preferences along the journey.~Whenever You are hungry or want to have some rest you are free to ask for my help.~I will help you in searching restaurants and hotels😀")
+    responder.reply("Thanks😀, I will take care of your comfort throughout the journey~I will remember these preferences along the journey.~Whenever You are hungry or want to have some rest you are free to ask for my help.~I will help you in searching restaurants and hotels😀")
 
 
 
