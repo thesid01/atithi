@@ -45,21 +45,21 @@ def get_city(request, responder):
         responder = _fetch_from_kb(responder, name, entity_type)
     return responder
 
-@app.handle(domain='general',intent='change_pref')
-def change_pref(request,responder):
-    responder.params.allowed_intents = ('general.change_hotel_pref','general.change_food_pref')
-    responder.reply('Sure, which preference do you want to change- hotel or food')
+# @app.handle(domain='general',intent='change_pref')
+# def change_pref(request,responder):
+#     responder.params.allowed_intents = ('general.change_hotel_pref','general.change_food_pref')
+#     responder.reply('Sure, which preference do you want to change- hotel or food')
 
-@app.handle(domain='general',intent='change_hotel_pref',has_entity='hotel')
-def change_hotel_pref(request,responder):
-    responder.params.allowed_intents = ('tourism.hotel_pref')
-    responder.reply("Fine, now please tell us any preferences for hotels i.e Number of rooms ac/non-ac/etc.")
+# @app.handle(domain='general',intent='change_hotel_pref',has_entity='hotel')
+# def change_hotel_pref(request,responder):
+#     responder.params.allowed_intents = ('tourism.hotel_pref')
+#     responder.reply("Fine, now please tell us any preferences for hotels i.e Number of rooms ac/non-ac/etc.")
     
 
-@app.handle(domain='general',intent='change_food_pref',has_entity='food')
-def change_food_pref(request,responder):
-    responder.params.allowed_intents = ('tourism.food_pref')
-    responder.reply("Fine, now please tell us any preferences about your food (veg/non-veg/italian/etc)")
+# @app.handle(domain='general',intent='change_food_pref',has_entity='food')
+# def change_food_pref(request,responder):
+#     responder.params.allowed_intents = ('tourism.food_pref')
+#     responder.reply("Fine, now please tell us any preferences about your food (veg/non-veg/italian/etc)")
 
 def _fetch_from_kb(responder, name, entity_type):
     """
