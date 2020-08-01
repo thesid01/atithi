@@ -6,12 +6,29 @@ at {5:45|sys_time|sys_interval} am
 set for {5:10 |sys_time|sys_interval} am
 {5pm |sys_time|sys_interval} am will be good
 go for {5.00 pm |sys_time|sys_interval} am
+go for {5:00 pm |sys_time|sys_interval} am
 remind me at {5 |sys_time|sys_interval} pm
+remind me at {5 |sys_time|sys_interval}
 at {5 |sys_time|sys_interval} pm
 {5 |sys_time|sys_interval} pm
 {5 |sys_time|sys_interval} pm will be suitable
 {5 |sys_time|sys_interval} pm will be fine
+{5.00|sys_time|sys_interval} pm will be fine
+{5:19 |sys_time|sys_interval} pm will be fine
+{5:00 |sys_time|sys_interval} pm will be fine
 set for {5 |sys_time|sys_interval} pm
 {5 |sys_time|sys_interval} pm will be good
+{5 |sys_time|sys_interval}  will be good
 go for {5 |sys_time|sys_interval} pm
 {tomorrow |sys_time|sys_interval}
+time is {5 |sys_time|sys_interval} am
+time is {5 |sys_time|sys_interval} pm
+time is {5 |sys_time|sys_interval} 
+note that time is {5 |sys_time|sys_interval} pm
+note that time is {5 |sys_time|sys_interval} am
+note that time is {5 |sys_time|sys_interval}
+time is {5:00 |sys_time|sys_interval}
+time is {5.00 |sys_time|sys_interval} pm
+time is {5:00 |sys_time|sys_interval} am
+time is {5.00 |sys_time|sys_interval} am
+time is {5.00 |sys_time|sys_interval}
