@@ -86,7 +86,7 @@ class firebaseHelper:
 
 	def getFoodPref(self,id):
 		res = self.db.child("user").child(id).child("preferences").child("food").get()
-		return res
+		return res.val()
 
 	def setHotelPref(self,data,id):
 		print("setting hotel pref",data, "for", id)
@@ -106,6 +106,7 @@ class firebaseHelper:
 	def getHotelPref(self,id):
 		pref = self.db.child("user").child(id).child("preferences").child("hotel").get()
 		pref = pref.val()
+		print(pref,'wtf')
 		if pref is None:
 			return None, None, None, None
 		rooms=beds=price=''
