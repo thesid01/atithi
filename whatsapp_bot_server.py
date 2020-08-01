@@ -90,7 +90,8 @@ class WhatsappBotServer:
                     response_text = self.conv.say(incoming_msg, params=params)[0]
                     messages = response_text.split("~")
                     for msg in messages:
-                        sendMessage(msg, id)
+                        if msg:
+                            sendMessage(msg, id)
                     #msg.body(response_text)
                 except IndexError:
                     msg.body("Didn't understand. sorry")

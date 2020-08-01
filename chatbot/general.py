@@ -61,6 +61,30 @@ def get_city(request, responder):
 #     responder.params.allowed_intents = ('tourism.food_pref')
 #     responder.reply("Fine, now please tell us any preferences about your food (veg/non-veg/italian/etc)")
 
+@app.handle(intent = 'confirmation')
+def confirmation(request, responder):
+    if "for_confirmation" in responder.frame:
+        if responder.frame["for_confirmation"]:
+            responder.frame["for_confirmation"] = None
+            responder.reply(responder.frame["for_confirmation_message"])
+        else:
+            responder.reply("yahan suggestion dalna hai.(in confirm)")
+    else:
+        responder.reply("yahan suggestion/faq dalna hai.(in confirm)")
+
+@app.handle(intent = 'denial')
+def denial(request, responder):
+    if "for_denial" in responder.frame:
+        if responder.frame["for_denial"]:
+            responder.frame["for_denial"] = None
+            responder.reply(responder.frame["for_denial_message"])
+        else:
+            responder.reply("yahan suggestion dalna hai.(in denial)")
+    else:
+        responder.reply("yahan suggestion/faq dalna hai.(in denial)")
+
+
+
 def _fetch_from_kb(responder, name, entity_type):
     """
     This function is used the fetch a particular information about the given employee

@@ -41,7 +41,11 @@ def search_nearby_hotel(request,responder):
         try:
             lat,long = firebase.getCurrLocation(id)
             if lat and long:
-                hotel_msg = hotelList(id,lat,long)
+                hotel_msg = "We are facing issue with our scrapper rght now."
+                try:
+                    hotel_msg = hotelList(id,lat,long)
+                except:
+                    responder.reply(hotel_msg)
                 if hotel_msg == '':
                     responder.reply("Currently, We don't have any hotels for you😕 But you can always try saying find hotels near " + firebase.getDest(id)+"~"+"I will be there to help you 🙂")
                 else:
@@ -99,10 +103,10 @@ def search_hotel_at_dest(request, responder):
 
 
 def _fetch_spot_from_kb(spot_name):
-    spots = app.question_answerer.get(index='spot_data')
-    j = 1
+    spots = app.question_answerer.get(index='spot_data', size=66)
+    lat,long = "", ""
     for i in range(len(spots)):
-        if spot_name in spots[i]["spot_name"]:
+        if spot_name.lower() == spots[i]["spot_name"].lower():
             loc = spots[i]["location"].lower()
             lat,long = loc.split(',')
             break

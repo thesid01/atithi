@@ -104,7 +104,7 @@ def select_difficulty(request, responder):
 def select_destination_from_choice(request, responder):
     id = request.params.dynamic_resource['id']
     try:
-        if request.entities[0]["value"][0]["cname"] in responder.frame["spot_list"]:
+        if request.entities[0]["value"][0]["cname"].lower() in responder.frame["spot_list"]:
             data = request.entities[0]["value"][0]["cname"]
 
             res = firebase.setDest(data,id)
