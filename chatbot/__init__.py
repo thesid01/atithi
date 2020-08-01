@@ -10,5 +10,5 @@ import chatbot.tourism
 import chatbot.hotel
 import chatbot.food
 import chatbot.reminder
-
+import chatbot.sos
 __all__ = ['app']

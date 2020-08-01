@@ -21,18 +21,18 @@ def select_tour_basis(request, responder):
     id = request.params.dynamic_resource['id']
     res = firebase.changeStatus(1,id)
     basis = request.entities[0]["value"][0]["cname"]
-    if basis = 'activities':
+    if basis == 'activities':
         responder.params.target_dialogue_state = "select_activity"
         responder.reply("What type of activities would you like to enjoy on the tour.\n1. Trekking⛰\n2. Camping🏕\n3. Mountaneering👨‍👩‍👧‍👧")
-    if basis = 'type':
+    if basis == 'type':
         responder.params.target_dialogue_state = "select_type"
         responder.reply("What type of Adventure would you like to go on.\n1. Nature⛰\n2. Hills🏕\n3. Beach\n4. Family👨‍👩‍👧‍👧")
-    if basis = 'season':
+    if basis == 'season':
         responder.params.target_dialogue_state = "select_season"
         responder.reply("What type of season would you like to go on.\n1. Summer⛰\n2. Winter🏕\n3. Monsoon👨‍👩‍👧‍👧\n4. Autumn")
-    if basis = 'difficulty':
+    if basis == 'difficulty':
         responder.params.target_dialogue_state = "select_difficulty"
-        responder.reply("What type of difficulty would you like to enjoy on the tour.\n1. easy⛰\n2. Moderate🏕\n3. Difficult👨‍👩‍👧‍👧")
+        responder.reply("What type of difficulty would you like to enjoy on the tour.\n1. Easy⛰\n2. Moderate🏕\n3. Difficult👨‍👩‍👧‍👧")
 
 @app.handle(intent='select_activity',has_entity='activity')
 def select_activity(request, responder):
