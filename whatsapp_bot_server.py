@@ -86,8 +86,7 @@ class WhatsappBotServer:
                             sendMessage(msg, id)
                 except IndexError:
                     msg.body("Didn't understand. sorry")
-                msg.body(response_text)
-                return str(resp)
+                
             else:
                 resp = MessagingResponse()
                 msg = resp.message()
