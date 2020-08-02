@@ -16,7 +16,7 @@ def start_tour(request, responder):
     id = request.params.dynamic_resource['id']
     res = firebase.changeStatus(1,id)
     responder.params.target_dialogue_state = "select_tourism_basis"
-    responder.reply("How do you want to choose your tour spot~Based on activities, type, season or difficulty wise?")
+    responder.reply("How do you want to choose your tour spot?~Any preference on activities, type, season or difficulty?")
     
 @app.handle(intent='select_tourism_basis',has_entity='tour_basis')
 def select_tour_basis(request, responder):
@@ -47,7 +47,7 @@ def select_activity(request, responder):
     responder.frame["spot_list"] = spot_list[1]
     if len(spot_list[0]) > 1:
         responder.params.target_dialogue_state = "select_destination_from_choice"
-        reply = "Here are some good options for " + activity_type +" tourism: "+spot_list[0] + "Select the spot name to travel.~You can always ask a like 'Tell me about spot name' to know more😀"
+        reply = "Here are some good options for " + activity_type +" tourism: "+spot_list[0] + "Select the spot name to travel.~You can always ask me to 'Tell me about spot name' to know more😀"
     else:
         responder.params.target_dialogue_state = "select_tourism"
         reply = "Sorry..Could not understand.~Please try again😕" + "\nWhat type of activities would you like to enjoy on the tour.\n1. Trekking⛰\n2. Camping🏕\n3. Mountaneering👨‍👩‍👧‍👧"
@@ -63,7 +63,7 @@ def select_type(request, responder):
     responder.frame["spot_list"] = spot_list[1]
     if len(spot_list[0]) > 1:
         responder.params.target_dialogue_state = "select_destination_from_choice"
-        reply = "Here are some good options for " + type_type +" tourism: "+spot_list[0] + "Select the spot name to travel.~You can always ask a like 'Tell me about spot name' to know more😀"
+        reply = "Here are some good options for " + type_type +" tourism: "+spot_list[0] + "Select the spot name to travel.~You can always ask me to 'Tell me about spot name' to know more😀"
     else:
         responder.params.target_dialogue_state = "select_tourism"
         reply = "Sorry..Could not understand.~Please try again😕" + "\nWhat type of activities would you like to enjoy on the tour.\n1. Trekking⛰\n2. Camping🏕\n3. Mountaneering👨‍👩‍👧‍👧"
@@ -217,6 +217,7 @@ def _fetch_spot_from_kb(filter,type):
     spot = app.question_answerer.get(index='spot_data',size=66)
     spot_list = "\n"
     spot_array = []
+    map_spot={}
     print(filter, type)
     j = 1
     for i in range(len(spot)):
@@ -225,15 +226,20 @@ def _fetch_spot_from_kb(filter,type):
                 print(spot[i][filter].split(","))
                 if type in spot[i][filter].split(","):
                     spot_array.append(spot[i]["spot_name"].lower())
+                    map_spot[spot[i]["spot_name"].lower()]=spot[i]["image_URL"]
             else :
                 if type in spot[i][filter]:
                     spot_array.append(spot[i]["spot_name"].lower())
-    mn = min(5,len(spot_array))
+                    map_spot[spot[i]["spot_name"].lower()]=spot[i]["image_URL"]
+
+    mn = min(3y,len(spot_array))
     new_list = random.sample(spot_array, mn)
     print(new_list)
+
     for i in new_list:
-        spot_list += str(j)+": "+i + "\n"
+        spot_list += "~"+map_spot[i]+"~"+str(j)+" "+i + "\n"
         j = j+1
+    
     return [spot_list,new_list]
 
 def _fetch_all_spot_from_kb():
