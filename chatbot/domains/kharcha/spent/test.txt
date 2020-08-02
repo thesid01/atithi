@@ -1,0 +1,3 @@
+i spent {100|sys_number} {rupee|currency} in mcdonalds
+ spent {rupee|currency} {10|sys_number} on bike
+i spent {100|sys_number} {rupee|currency} in buying cycle

@@ -1,0 +1,17 @@
+{
+    "entities": [
+        {
+            "whitelist": [
+                "Rs.",
+                "ruppe",
+                "rupees",
+                "rupaie",
+                "paise",
+                "rupees",
+                "rupee"
+            ],
+            "cname": "rupee"
+        }
+        
+    ]
+}
