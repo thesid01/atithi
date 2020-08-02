@@ -17,15 +17,23 @@ firebase = firebaseHelper()
 def start_flow_hotel(request, responder):
     id = request.params.dynamic_resource['id']
     _,_,_,res = firebase.getHotelPref(id)
-    print(res)
     if res is None:
         responder.params.target_dialogue_state = "set_hotel_pref"
         responder.reply("Sure, please first tell us the preferences for the hotels (number of rooms/ac/non-ac/etc)")
     else:
-
+        r,b,p,a = firebase.getHotelPref(id)
+        if a==0:
+            a='non ac'
+        else:
+            a='ac'
+        pref = ' '.join([r,b,p,a])
+        responder.frame["for_confirmation"] = 1
+        responder.frame["for_confirmation_message"] = "Sure😀"+"~"+"Can you tell me destination or where you are or just share your location so that I can assist you finding Hotels near you"
+        responder.frame["for_denial"] = 1
+        responder.frame["for_denial_message"] = "Ok, please first tell us the preferences for the hotels (number of rooms/ac/non-ac/etc)"
         responder.params.allowed_intents = ('hotel.set_curr_loc_hotel','hotel.search_nearby_hotel','hotel.searc_hotel_at_dest')
         l_t.setIntent('loc_for_hotel')
-        responder.reply("Sure😀"+"~"+"Can you tell me where you are or just share your location so that I can assist you finding Hotels near you")
+        responder.reply("Your previous preferences for hotel was: "+pref+"\nWould you like to continue")
 
 @app.handle(domain='hotel', intent='search_nearby_hotel')
 def search_nearby_hotel(request,responder):
@@ -50,7 +58,17 @@ def search_nearby_hotel(request,responder):
                 if hotel_msg == '':
                     responder.reply("Currently, We don't have any hotels for you😕 But you can always try saying find hotels near " + firebase.getDest(id)+"~"+"I will be there to help you 🙂")
                 else:
-                    responder.reply("I have found some hotels🛏 near by you, you can check it out:\n~"+hotel_msg)
+                    r,b,p,a = firebase.getHotelPref(id)
+                    if a==0:
+                        a='non ac'
+                    else:
+                        a='ac'
+                    pref = ' '.join([r,b,p,a])
+                    responder.frame["for_confirmation"] = 1
+                    responder.frame["for_confirmation_message"] = "I have found some hotels🛏 near by you, you can check it out:\n~"+hotel_msg
+                    responder.frame["for_denial"] = 1
+                    responder.frame["for_denial_message"] = "Ok, please first tell us the preferences for the hotels (number of rooms/ac/non-ac/etc)"
+                    responder.reply("Your previous preferences for hotel was: "+pref+"\nWould you like to continue")
             else :
                 responder.reply("I Didn't understand😕.\n Try saying find hotels near " + firebase.getDest(id))
         except (TypeError):
@@ -99,7 +117,17 @@ def search_hotel_at_dest(request, responder):
         if hotel_msg is None:
             responder.reply("Currently, We don't have any hotel preferences for you😕.\nYou can set your preference saying. ➡" + _fetch_hotel_pref_suggestion()["suggestion"])
         else:
-            responder.reply("Yupp"+"~"+"I have found some hotel🏘 at your destination"+"~"+"Check out the following list of hotels:\n~"+hotel_msg)
+            r,b,p,a = firebase.getHotelPref(id)
+            if a==0:
+                a='non ac'
+            else:
+                a='ac'
+            pref = ' '.join([r,b,p,a])
+            responder.frame["for_confirmation"] = 1
+            responder.frame["for_confirmation_message"] = "Yupp"+"~"+"I have found some hotel🏘 at your destination"+"~"+"Check out the following list of hotels:\n~"+hotel_msg
+            responder.frame["for_denial"] = 1
+            responder.frame["for_denial_message"] = "Ok, please first tell us the preferences for the hotels (number of rooms/ac/non-ac/etc)"
+            responder.reply("Your previous preferences for hotel was: "+pref+"\nWould you like to continue")
     
 @app.handle(domain='tourism',intent='hotel_pref')
 def set_hotel_pref(request, responder):
