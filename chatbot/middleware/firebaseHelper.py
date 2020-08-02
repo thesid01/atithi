@@ -1,6 +1,7 @@
 import pyrebase
 import time
 from . import nearbyPlacesHelper
+from datetime import date
 
 config = {
   "apiKey": "AIzaSyBiv6ZNCNcoHDiOkAhq9vHKiG0AqE2VjFY",
@@ -124,6 +125,7 @@ class firebaseHelper:
 
 	def setReminder(self, data):
 		print("setting remainder", data)
+		data["created_at"] = int(round(time.time() * 1000))
 		return self.db.child("reminder").child(int(round(time.time() * 1000))).set(data)
 	
 	def removeReminder(self, data):
@@ -138,12 +140,58 @@ class firebaseHelper:
 		for rem in reminders.val():
 			data.append(self.db.child("reminder").child(rem).get().val())
 		return data
+	
+	def setExpenditure(self, data, id):
+		res = self.db.child("user").child(id).get()
+		exists = False
+		for i in res.val():
+			if i == 'expenditure':
+				exists = True
+		if exists :
+			current =  self.getExpenditure(id)
+			res = self.db.child("user").child(id).child("expenditure").child(date.today()).set(data+current)
+		return res
+	
+	def getExpenditure(self, id):
+		res = self.db.child("user").child(id).get()
+		exists = False
+		for i in res.val():
+			if i == 'expenditure':
+				exists = True
+		if exists :
+			res = self.db.child("user").child(id).child("expenditure").get()
+			for i in res.val():
+				dt = date.today()
+				if dt.strftime("%Y-%m-%d") == i:
+					return self.db.child("user").child(id).child("expenditure").child(date.today()).get().val()
+				else :
+					return 0
+		else:
+			return 0
+	
+	def getTotalExpenditure(self, id):
+		res = self.db.child("user").child(id).get()
+		exists = False
+		msg = ""
+		exp = [0]
+		for i in res.val():
+			if i == 'expenditure':
+				exists = True
+		if exists :
+			res = self.db.child("user").child(id).child("expenditure").get()
+			for i in res.val():
+				am = self.db.child("user").child(id).child("expenditure").child(i).get().val()
+				exp[0] += am
+				msg += "*" +str(i)+ "* : ₹ "+str(am)
+		exp.append(msg)
+		return exp
 
 if __name__ == "__main__":
 	f = firebaseHelper()
-	f.setReminder({
-		"to":"918604074906",
-		"time" : int(round(time.time() * 1000)),
-		"message": "Hi Siddharth Its time to sleep"
-	})
-	f.getReminders()
+	# f.setReminder({
+	# 	"to":"918604074906",
+	# 	"time" : int(round(time.time() * 1000)),
+	# 	"message": "Hi Siddharth Its time to sleep"
+	# })
+	# f.getReminders()
+	f.setExpenditure(500,918604074906)

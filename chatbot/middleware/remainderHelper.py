@@ -7,10 +7,10 @@ class remainderHelper:
 	def start(self, data):
 		
 		for d in data:
-			print(d["time"])
 			if(int(round(time.time() * 1000))) > d["time"]:
 				self.sendMessage(d)
-				self.firebase.removeReminder(d["time"])
+				self.firebase.removeReminder(d["created_at"])
+			time.sleep(5)
 
 
 	def sendMessage(self, v):

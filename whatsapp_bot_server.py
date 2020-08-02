@@ -19,6 +19,8 @@ import atexit
 import time
 import validators
 from chatbot.middleware import latest_intent as l_t
+from chatbot.middleware import next_target_setHelper as nth
+
 
 #TWILIO_ACCOUNT_SID = 'ACc47f3cc342412b7097ad6f6c6fe19398'
 #TWILIO_AUTH_TOKEN = '36418b6fe7615bd068ad13f614bdc19d'
@@ -78,21 +80,30 @@ class WhatsappBotServer:
                     incoming_msg = "location for food"
                 else:
                     incoming_msg = "general location"
-                response_text = self.conv.say(incoming_msg, params=params)[0]
-                msg.body(response_text)
-                return str(resp)
-            else:
-                resp = MessagingResponse()
-                msg = resp.message()
-                # Used to send dynamic id of the user making query
-                params = dict(dynamic_resource=dict(id=id))
                 try:
                     response_text = self.conv.say(incoming_msg, params=params)[0]
                     messages = response_text.split("~")
                     for msg in messages:
                         if msg:
                             sendMessage(msg, id)
-                    #msg.body(response_text)
+                except IndexError:
+                    msg.body("Didn't understand. sorry")
+                
+            else:
+                resp = MessagingResponse()
+                msg = resp.message()
+                # Used to send dynamic id of the user making query
+                params = None
+                if nth.getTarget() == None :
+                    params = dict(dynamic_resource =dict(id=id)) #Used to send dynamic id of the user making query
+                else:
+                    params = dict(dynamic_resource =dict(id=id),target_dialogue_state=nth.getTarget())
+                try:
+                    response_text = self.conv.say(incoming_msg, params=params)[0]
+                    messages = response_text.split("~")
+                    for msg in messages:
+                        if msg:
+                            sendMessage(msg, id)
                 except IndexError:
                     msg.body("Didn't understand. sorry")
             return str(resp)
@@ -114,7 +125,7 @@ class WhatsappBotServer:
 
     def start_remainder(self):
         remainder_service = remainderHelper(self.firebase)
-        # remainder_service.start(self.firebase.getReminders())
+        remainder_service.start(self.firebase.getReminders())
 
 
 if __name__ == '__main__':
@@ -127,7 +138,7 @@ if __name__ == '__main__':
     scheduler.start()
     scheduler.add_job(
         func=server.start_remainder,
-        trigger=IntervalTrigger(seconds=1*60),
+        trigger=IntervalTrigger(seconds=5*60),
         id='send_remainders',
         name='send remainder every minute',
         replace_existing=True)

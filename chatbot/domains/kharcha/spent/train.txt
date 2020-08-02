@@ -1,0 +1,9 @@
+i spent {100|sys_number} {rupee|currency}
+please remember i spent {100|sys_number} {rupee|currency}
+i bought tea for {5|sys_number} {rupee|currency}
+i bought chai for {rupee|currency} {10|sys_number}
+note down i spent {rupee|currency} {10|sys_number}
+i spent {rupee|currency} {10|sys_number} in subway
+i spent {100|sys_number} {rupee|currency} in mcdonalds
+ spent {rupee|currency} {10|sys_number} on bike
+i spent {100|sys_number} {rupee|currency} in buying cycle
