@@ -21,7 +21,7 @@ def hotelList(id, latitude, longitude):
         if not rating:
             rating = 'NA'
         url = hotel_obj['url']
-        hotel_msg += ''.join("name: {name}\nrating: {rating}\nlink: {url}\n~".format(name=name,rating=rating,url=url))
+        hotel_msg += ''.join("*Hotel Name*: {name}\n*Rating*: {rating}⭐\n*Link*: {url} ~".format(name=name,rating=rating,url=url))
     return hotel_msg
 
 
