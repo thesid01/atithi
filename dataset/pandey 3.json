@@ -71,7 +71,7 @@
                      "type":"Hills",
                      "image_URL":"https://www.weekendthrill.com/wp-content/uploads/2017/02/Spiti-Bike-Trip.jpg",
                      "trivia":"The name 'Spiti' literally means 'The Middle Land'. Spiti lies on the Indian border with Tibet.",
-                     "best_season":[["Monsoon","Autumn"]]
+                     "best_season":[["Monsoon"],["Autumn"],["Monsoon"]]
                   },
                   {
                      "spot_id":2,
@@ -114,7 +114,7 @@
                      "activity":"Water Sports",
                      "level":"Moderate to Difficult",
                      "type":"Nature",
-                     "image_URL":"https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2014/11/Rafting-in-Beas.jpg",
+                     "image_URL":"https://ssl.c.photoshelter.com/img-get2/I0000gjEDdfXOlck/fit=1000x750/20130815-asia-00282.jpg",
                      "trivia":"Beas River, Beas also spelled Bias, ancient Greek Hyphasis, Sanskrit Vipasha, river in Himachal Pradesh and Punjab states, northwestern India. It is one of the five rivers that give the Punjab (“Five Rivers”) its name.",
                      "best_season":[["Summer","Monsoon"]]
                   },
@@ -129,7 +129,7 @@
                      "activity":"Mountain Biking",
                      "level":"Difficult",
                      "type":"Hills",
-                     "image_URL":"https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/03/Manali-Leh.jpg",
+                     "image_URL":"https://cdn.explara.com/row-no-30420150929125105.jpg",
                      "trivia":"Manali is named after saint Manu, and literally translates into Manu-alaya, meaning home to Manu. Legend has it that saint Manu came to Manali and meditated here to re-create the human life after it was washed out in the great floods",
                      "best_season":[["Monsoon"]]
                   },
@@ -145,8 +145,8 @@
                      "level":"Moderate",
                      "type":"Hills",
                      "image_URL":"https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/03/Kangra-Valley.jpg",
-                     "trivia":"Kangra Valley is situated in the Western Himalayas. It is a popular tourist destination, with the peak season around March and April.",
-                     "best_season":[["Monsoon","Autumn"]]
+                     "trivia":"Bir has the world’s second best paragliding launch site in the world (after Lake Como, Italy), and the best for paragliding in India, at Billing, a valley 14 kms north to Bir.",
+                     "best_season":[["Monsoon,Autumn"]]
                   },
                   {
                      "spot_id":7,
@@ -174,7 +174,7 @@
                      "activity":"Paragliding",
                      "level":"Easy",
                      "type":"Hills",
-                     "image_URL":"https://static-blog.treebo.com/wp-content/uploads/2018/08/Paragliding-in-Solang-Valley.jpg",
+                     "image_URL":"https://i.pinimg.com/originals/e4/b2/89/e4b289c83e3e4101bf760e3167efe177.jpg",
                      "trivia":"Solang Valley derives its name from combination of words Solang (Nearby village) and Nallah (water stream). ",
                      "best_season":[["Summer","Monsoon"]]
                   }
@@ -318,7 +318,7 @@
                      "type":"Nature",
                      "image_URL":"https://www.thethirdpole.net/wp-content/uploads/2015/12/ganga.jpg",
                      "trivia":"Rishikesh is a city in India’s northern state of Uttarakhand, in the Himalayan foothills beside the Ganges River. The river is considered holy, and the city is renowned as a center for studying yoga and meditation.",
-                     "best_season":[["Autumn","Winter","Summer"]]
+                     "best_season":[["Autumn,Winter,Summer"]]
                   },
                   {
                      "spot_id":9,
@@ -333,7 +333,7 @@
                      "type":"Nature",
                      "image_URL":"https://www.indiacityblog.com/wp-content/uploads/2020/06/yamuna-peakadventuretour.jpg",
                      "trivia":"In Hindu faith and culture, the Bhagirathi is considered the source stream of the Ganges.",
-                     "best_season":[["Autumn","Winter","Summer"]]
+                     "best_season":[["Autumn,Winter,Summer"]]
                   }
                ]
             },
@@ -401,7 +401,7 @@
                      "type":"Hills",
                      "image_URL":"https://www.trekmunk.com/uploads/systemuploads/Lamayuru-Padum-Trek.jpg",
                      "trivia":"Home of one of the oldest monasteries in Ladakh, legends believe that this place was once a lake that dried up.",
-                     "best_season":[["Summer","Monsoon","Autumn"]]
+                     "best_season":[["Summer,Monsoon,Autumn"]]
                   },
                   {
                      "spot_id":3,
@@ -577,7 +577,7 @@
                      "type":"Family",
                      "image_URL":"https://www.holidify.com/images/cmsuploads/articles/291.jpg",
                      "trivia":"The Kundalika is a small river flowing from the hills of Sahyadri to the Arabian Sea. This river originates at a small town called Bhira in the Indian state of Maharashtra, 150 km south east of Bombay (Mumbai).",
-                     "best_season":[["Winter","Summer","Monsoon","Autumn"]]
+                     "best_season":[["Winter,Summer,Monsoon,Autumn"]]
                   },
                   {
                      "spot_id":10,
@@ -591,8 +591,7 @@
                      "level":"Moderate",
                      "type":"Hills",
                      "image_URL":"https://dmgupcwbwy0wl.cloudfront.net/system/images/000/187/872/111f4c66293203e69cda91beb002a1dc/original/paragliding-wide.jpg?1583244165",
-                     "trivia": "Kamshet is a small town located between the hills station of Lonavala and the city of Pune in Maharashtra. Known primarily for its paragliding clubs and natural picturesque scenery,",
-                     "best_season":[["Autumn","Winter"]]
+                     "best_season":[["Autumn,Winter"]]
                   },
                   {
                      "spot_id":11,
@@ -606,8 +605,7 @@
                      "level":"Easy to Moderate",
                      "type":"Hills",
                      "image_URL":"https://adrenalins.lv/uploads/media/photo/0001/07/thumb_6382_photo_big.jpg",
-                     "trivia":"The 'Land of Five Hills', or Panchgani, is a distinguished hill station in Maharashtra. Located far away from the bustling city of Mumbai, Panchgani promises its visitors a trip they could cherish for life.",
-                     "best_season":[["Autumn","Winter"]]
+                     "best_season":[["Autumn,Winter"]]
                   }
                ]
             },
@@ -643,8 +641,7 @@
                      "level":"Easy,Easy",
                      "type":"Beach",
                      "image_URL":"https://i.postimg.cc/0Nc4j8Fs/shutterstock-1307916307.jpg",
-                     "trivia" :"Calangute is a town in North Goa, famous for its beach. The beach is the largest in North Goa and visited by thousands of domestic and international tourists alike",
-                     "best_season":[["Autumn","Winter"]]
+                     "best_season":[["Autumn,Winter"],["Autumn,Winter"]]
                   },
                   {
                      "spot_id":2,
@@ -658,8 +655,7 @@
                      "level":"Easy,Easy",
                      "type":"Beach",
                      "image_URL":"https://i.postimg.cc/yxGv8hpr/shutterstock-59202550.jpg",
-                     "trivia": "Goa Baga beach is actually an extension of Calangute beach North of Panaji. This beach along the Arabian Sea lies between Calangute and Anjuna beaches.",
-                     "best_season":[["Autumn","Winter"]]
+                     "best_season":[["Autumn,Winter"],["Autumn,Winter"]]
                   },
                   {
                      "spot_id":3,
@@ -673,8 +669,7 @@
                      "level":"Easy,Easy",
                      "type":"Beach",
                      "image_URL":"https://images.haarets.co.il/image/upload/v1551784243/1.6996414.286649684.jpg",
-                     "trivia":"It is situated in Anjuna village of Bardez taluka in North Goa. The beach is the part of a 30 kilometres extended beach coastline along the west coast of Goa by the Arabian sea.",
-                     "best_season":[["Autumn","Winter","Summer"]]
+                     "best_season":[["Autumn,Winter,Summer"],["Autumn,Winter,Summer"]]
                   },
                   {
                      "spot_id":4,
@@ -688,7 +683,6 @@
                      "level":"Moderate",
                      "type":"Beach",
                      "image_URL":"https://www.weekendthrill.com/wp-content/uploads/2017/09/Dudhsagar-3.jpg",
-                     "trivia": "Dudhsagar Falls is amongst India's tallest waterfalls with a height of 310 m (1017 feet) and an average width of 30 metres (100 feet). The falls is located in the Bhagwan Mahaveer Sanctuary and Mollem National Park among the Western Ghats. ",
                      "best_season":[["Monsoon"]]
                   },
                   {
@@ -703,8 +697,7 @@
                      "level":"Easy,Easy",
                      "type":"Beach",
                      "image_URL":"https://fwt.asia/wp-content/uploads/2019/12/Dona-Paula-Beach-Panji-Statue-View-Goa-fwt-asia-1.webp",
-                     "trivia":"This place is called the Lovers Paradise in Goa, named after Dona Paula de Menezes. ... 7-km from Panjim, situated on the south side of the, hammer-shaped headland that divides the Zuari and Mandovi, is a fishing village",
-                     "best_season":[["Autumn","Winter"]]
+                     "best_season":[["Autumn,Winter"],["Autumn,Winter"]]
                   },
                   {
                      "spot_id":6,
@@ -718,8 +711,7 @@
                      "level":"Easy to Moderate",
                      "type":"Beach",
                      "image_URL":"https://makemygoatour.com/wp-content/uploads/2019/12/grandisland-goa4-min.jpg",
-                     "trivia":"it is one of the most exotic location for watersports like snorkeling in Goa. The only way to reach Ilha Grande is by sailing on a boat. A Complete Boat tour to the Island includes snorkeling, fishing, and a scrumptious lunch.",
-                     "best_season":[["Autumn","Winter"]]
+                     "best_season":[["Autumn,Winter"]]
                   },
                   {
                      "spot_id":7,
@@ -733,8 +725,7 @@
                      "level":"Easy,Easy",
                      "type":"Beach",
                      "image_URL":"https://otdyhateli.com/wp-content/uploads/2016/07/goa-candolim-beach-147713826572o.jpg",
-                     "trivia":"Candolim. Candolim is a census town in North Goa and is located in the Bardez taluka in the state of Goa, India. It is situated just south of Calangute Beach, and is a tourist destination.",
-                     "best_season":[["Summer","Monsoon","Autumn"]]
+                     "best_season":[["Summer","Monsoon","Autumn"],["Summer","Monsoon","Autumn"]]
                   },
                   {
                      "spot_id":8,
@@ -748,8 +739,7 @@
                      "level":"Easy,Easy",
                      "type":"Beach",
                      "image_URL":"https://storage.googleapis.com/karmagroup-d66ca.appspot.com/karmagroupcdn/2019/04/ce2b292b-goa-min.jpg",
-                     "trivia":"Palolem Beach - is also known as 'Paradise Beach' located in South Goa. This beach is about a mile long and it provides seclusion and idyllic scenery. This beach in Goa is not very developed in terms of tourism.",
-                     "best_season":[["Autumn","Winter"]]
+                     "best_season":[["Autumn,Winter"],["Autumn,Winter"]]
                   },
                   {
                      "spot_id":9,
@@ -763,8 +753,7 @@
                      "level":"Easy,Easy",
                      "type":"Beach",
                      "image_URL":"https://www.californiabeaches.com/wp-content/uploads/2014/09/Butterfly-Beach-Montecito-BryceFeb2016-2-997x700.jpg",
-                     "trivia":"This beach, also known as Honeymoon Beach, is in the form of a small cove surrounded by dense trees. One of the most secluded and lesser-known beach of Goa, the butterfly beach is mostly accessible by a boat (ferry) ride from the nearby beaches, which only adds to the charm.",
-                     "best_season":[["Autumn","Winter","Summer"]]
+                     "best_season":[["Autumn,Winter,Summer"]]
                   },
                   {
                      "spot_id":10,
@@ -778,8 +767,7 @@
                      "level":"Easy,Easy",
                      "type":"Beach",
                      "image_URL":"https://cfda.imgix.net/2016/09/W-GOA-Rockpool.jpg",
-                     "trivia":"Turned up 22 km from the Panaji, the Vagator beach is one of the most beautiful beaches in Goa that is enclosed with soft white sand and speckled by huge black rocks, coconut & palm trees. It is famous due to its dynamic cliffs and its secluded nature.",
-                     "best_season":[["Autumn","Winter","Summer"]]
+                     "best_season":[["Autumn,Winter,Summer"],["Autumn,Winter,Summer"]]
                   },
                   {
                      "spot_id":11,
@@ -793,8 +781,7 @@
                      "level":"Easy,Easy",
                      "type":"Beach",
                      "image_URL":"https://i.postimg.cc/B6TQ2qJF/Arambol-Beach.jpg",
-                     "trivia":"Arambol beach, situated 50 kms from Panaji is a unique beach in North Goa which is much sought after. It is both a rocky and a sandy beach and has a sweet water pond right on the shore. ",
-                     "best_season":[["Autumn","Winter","Summer"]]
+                     "best_season":[["Autumn,Winter,Summer"],["Autumn,Winter,Summer"]]
                   },
                   {
                      "spot_id":12,
@@ -808,8 +795,7 @@
                      "level":"Easy,Easy",
                      "type":"Beach",
                      "image_URL":"https://a.travel-assets.com/findyours-php/viewfinder/images/res70/72000/72421-Ashvem-Beach.jpg",
-                     "trivia":"Ashwem beach, also known as Ashvem beach is one of the best kept secrets of North Goa. Located to the north of the capital city of Panaji.",
-                     "best_season":[["Autumn","Winter"]]
+                     "best_season":[["Autumn,Winter"],["Autumn,Winter"]]
                   },
                   {
                      "spot_id":13,
@@ -823,8 +809,7 @@
                      "level":"Easy,Easy",
                      "type":"Beach",
                      "image_URL":"https://nextholiday.ir//uploads/2018/07/jpg/438e7698be45e91aa17827401e9882a0.jpg",
-                     "trivia":"Contemporary Benaulim is a popular seaside resort in South Goa district, renowned for its balmy weather, golden sands, and palm‑fringed beaches. It also houses Goa's only Don Bosco Animation Center. ",
-                     "best_season":[["Autumn","Winter","Summer"]]
+                     "best_season":[["Autumn,Winter,Summer"],["Autumn,Winter,Summer"]]
                   },
                   {
                      "spot_id":14,
@@ -838,8 +823,7 @@
                      "level":"Easy,Easy",
                      "type":"Beach",
                      "image_URL":"https://mapio.net/images-p/5157515.jpg",
-                     "trivia":"Mobor Beach is one of the pristine beaches in South Goa that attracts hordes of tourists every year from all over the country. ... The incredible scenery serves as a true getaway",
-                     "best_season":[["Autumn","Winter"]]
+                     "best_season":[["Autumn,Winter"],["Autumn,Winter"]]
                   },
                   {
                      "spot_id":15,
@@ -853,8 +837,7 @@
                      "level":"Easy,Easy",
                      "type":"Beach",
                      "image_URL":"https://storage.googleapis.com/ehimages/2017/12/14/img_90e8594dd813bd02ad9b4342e65f345d_1513225298701_processed_original.jpg",
-                     "trivia":"Colva beach stretches for around 2.4 km, part of a beach consisting of about 25 km of powder white sand, lined along its shore by coconut palms, and extending as far as Bogmalo Beach to the north and Cabo de rama Beach to the South Goa's coastline.",
-                     "best_season":[["Autumn","Winter","Summer"]]
+                     "best_season":[["Autumn,Winter,Summer"],["Autumn,Winter,Summer"]]
                   },
                   {
                      "spot_id":16,
@@ -868,8 +851,7 @@
                      "level":"Easy,Easy",
                      "type":"Beach",
                      "image_URL":"https://static.tildacdn.com/tild3437-6465-4262-b539-643163353634/shutterstock_2.jpg",
-                     "trivia":"Candolim is a census town in North Goa and is located in the Bardez taluka in the state of Goa, India. It is situated just south of Calangute Beach, and is a tourist destination.",
-                     "best_season":[["Autumn","Winter"]]
+                     "best_season":[["Autumn,Winter"],["Autumn,Winter"]]
                   },
                   {
                      "spot_id":17,
@@ -883,8 +865,7 @@
                      "level":"Easy,Easy",
                      "type":"Beach",
                      "image_URL":"http://st.biglion.ru/cfs15/deal_offer/59/ed/59ed4a2cc05e3f6368ee26473ba97d92.jpg",
-                     "trivia":"Unlike most of the other beaches of Goa, the Bambolim beach is not cluttered with vendors and shacks lining the shore cheek by jowl, instead it is a stretch of golden sand interspersed with rocky outcroppings, and of course boarded by the blue waters of the Arabian Sea.",
-                     "best_season":[["Autumn","Winter","Summer"]]
+                     "best_season":[["Autumn,Winter,Summer"],["Autumn,Winter,Summer"]]
                   },
                   {
                      "spot_id":18,
@@ -898,9 +879,8 @@
                      "level":"Easy",
                      "type":"Nature",
                      "image_URL":"https://images.thrillophilia.com/image/upload/s--Lp7FIu8n--/c_fill,dpr_1.0,f_auto,fl_strip_profile,g_center,h_450,q_auto,w_753/v1/images/photos/000/118/445/original/1507730512_1465125807_3970878623_bab401a1b0_o.jpg.jpg.jpg",
-                     "trivia":"Chapora River is a river in northern Goa, India. It runs westward into the Arabian sea at Chapora and demarcates the border between the North Goa talukas of Pernem and Bardez. ",
                      "best_season":[["Monsoon"]]
-                  }
+                  },
                ]
             },
             {
@@ -998,7 +978,6 @@
                      "level":"Easy",
                      "type":"Hills",
                      "image_URL":"https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/03/Munnar.jpg",
-                     "trivia":"Munnar is a town and hill station located in the Idukki district of the southwestern Indian state of Kerala. Munnar is situated at around 1,600 metres (5,200 ft) above mean sea level, in the Western Ghats mountain range.",
                      "best_season":[["Summer"]]
                   }
                ]
@@ -1017,10 +996,9 @@
                      "city":"Bangalore",
                      "activity":"Trekking,Paragliding",
                      "level":"Moderate,Easy",
-                     "type":"Hills",
-                     "image_URL":"https://www.treebo.com/blog/wp-content/uploads/2018/01/Nandi-Hills-Bangalore_1.jpg",
-                     "trivia":"Nandi Hills (Anglicised forms include Nandidurg and Nandydoorg) is an ancient hill fortress built by Ganga Dynasty and later enlarged and strengthened by Tipu Sultan in southern India, in the Chikkaballapur district of Karnataka state.",
-                     "best_season":[["Monsoon","Autumn","Winter","Summer"]]
+                     "type":"Hillsl",
+                     "image_URL":"https://img.traveltriangle.com/blog/wp-content/uploads/2018/05/Cover2.jpg",
+                     "best_season":[["Monsoon,Autumn"],["Winter,Summer"]]
                   },
                   {
                      "spot_id":2,
@@ -1034,7 +1012,6 @@
                      "level":"Difficult",
                      "type":"Nature",
                      "image_URL":"https://www.holidify.com/images/cmsuploads/articles/290.jpg",
-                     "trivia":"Barapole River is a famous white river rafting destination in Coorg. The white frothy river with speedy waters and rapids, flowing through beautiful landscapes, makes for an ideal river rafting experience.",
                      "best_season":[["Monsoon"]]
                   }
                ]
@@ -1054,9 +1031,8 @@
                      "activity":"Paragliding",
                      "level":"Easy to Moderate",
                      "type":"Hills",
-                     "image_URL":"https://static-blog.treebo.com/wp-content/uploads/2018/08/Yelagiri-views.jpg",
-                     "trivia":"Yelagiri or Elagiri is a small hill station located in between the towns of Vaniyambadi and Jolarpettai (Tamil Nadu, India). The hill station dates back to the British colonial days.",
-                     "best_season":[["Autumn","Winter"]]
+                     "image_URL":"https://k6u8v6y8.stackpathcdn.com/blog/wp-content/uploads/2018/04/places-to-visit-things-to-do-yelagiri-2.png",
+                     "best_season":[["Autumn,Winter"]]
                   }
                ]
             },
@@ -1076,8 +1052,7 @@
                      "level":"Easy to Moderate",
                      "type":"Beach",
                      "image_URL":"https://discoverandaman.in/storage/uploads/2019/5/Scuba%20Diving%20in%20Havelock.jpg",
-                     "trivia":"The Jewel of the Andaman Islands Havelock Island (new official name: Swaraj Dweep), the most popular island among tourists, is located about 70 km north of the capital city, Port Blair.",
-                     "best_season":[["Autumn","Winter","Summer"]]
+                     "best_season":[["Autumn,Winter,Summer"]]
                   }
                ]
             },
@@ -1118,7 +1093,6 @@
                      "activity":"Water Sports",
                      "type":"Nature",
                      "image_URL":"https://www.tourmyindia.com/states/arunachalpradesh/images/rafting.jpg",
-                     "trivia":"The Lohit River or Zayü River is a river in India and China. It is a tributary to the Brahmaputra River. The river rises in Tibet Autonomous Region, in the Kangri Garpo range, where it is known as the Zayü River",
                      "best_season":[["Monsoon"]]
                   },
                   {
@@ -1165,7 +1139,6 @@
                      "level":"Moderate to Difficult",
                      "type":"Hills",
                      "image_URL":"https://www.himalayajourneys.com/assets/images/india/sikkim-goecha-la-trek.jpg",
-                     "trivia":"Goecha La (el. 4940 mt or 16,207 ft) is a high mountain pass in Sikkim, India in the Himalaya range. The southeast face of Mt. Kanchenjunga, the world's third highest mountain, can be viewed from the pass,",
                      "best_season":[["Autumn"]]
                   },
                   {
@@ -1180,7 +1153,6 @@
                      "level":"Easy",
                      "type":"Hills",
                      "image_URL":"https://devilonwheels.com/wp-content/uploads/2018/07/IMG_20161026_110501_HDR_01.jpg",
-                     "trivia":"Aritar is a region in the East Sikkim district of the Indian state of Sikkim under Rongli Sub-Division. It is known for its natural and landscaped beauty. It is located on the edge of the Himalayas,",
                      "best_season":[["Autumn"]]
                   }
                ]
@@ -1233,7 +1205,6 @@
                      "level":"Easy to Moderate",
                      "type":"Hills",
                      "image_URL":"https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/06/Jampui-Hill.jpg",
-                     "trivia":"Jampui Hills is situated about 200 Km. away from Agartala and is the highest hill range in the state bordering Mizoram. This permanent seat of eternal spring is situated at an altitude of 3000' above sea level. ... ",
                      "best_season":[["Autumn"]]
                   }
                ]
@@ -1270,7 +1241,6 @@
                      "level":"Moderate",
                      "type":"Nature",
                      "image_URL":"https://carrypro.in/wp-content/uploads/2019/06/dzukou-valley-6-1550573951.jpg",
-                     "trivia":"The Dzüko Valley is a valley located in borders of the state of Nagaland and Manipur in the Southern Angami region of northeast India. This valley is well known for its natural environment, seasonal flowers and flora and fauna. ",
                      "best_season":[["Monsoon"]]
                   },
                   {
@@ -1285,7 +1255,6 @@
                      "level":"Moderate to Difficult",
                      "type":"Hills",
                      "image_URL":"https://www.shikhar.com/images/gallery/tours/194/2.jpg",
-                     "trivia":"Saramati is a peak rising above the surrounding peaks at the mountainous border of Nagaland state and the Sagaing Region, Burma. It is located near Thanamir Village in the Kiphire District of Nagaland.",
                      "best_season":[["Autumn"]]
                   },
                   {
@@ -1300,8 +1269,7 @@
                      "level":"Moderate to Difficult",
                      "type":"Hills",
                      "image_URL":"https://www.hlimg.com/images/things2do/738X538/ttd_201809241059011537766941615424t.jpg",
-                     "trivia":"Mount Tiyi is situated in Wokha in Nagaland. It is a hill which has supernatural legends associated with it. Most Nagas believe that this mountain is the abode of departed souls. ",
-                     "best_season":[["Autumn","Winter"]]
+                     "best_season":[["Autumn,Winter"]]
                   }
                ]
             },
@@ -1321,7 +1289,6 @@
                      "level":"Moderate",
                      "type":"Hills",
                      "image_URL":"https://d3hne3c382ip58.cloudfront.net/resized/750x420/sandakphu-trek-3-nights-4-days-tour-2-33796_1592568018.JPG",
-                     "trivia":"Mane Bhanjang lies on the border between India and Nepal. The two countries are separated by a small culvert, which also acts as a motor stand for vehicles ferrying people to Sukhiapokhri and Darjeeling.",
                      "best_season":[["Summer"]]
                   }
                ]
