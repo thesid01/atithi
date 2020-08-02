@@ -150,8 +150,25 @@ class firebaseHelper:
 		if exists :
 			current =  self.getExpenditure(id)
 			res = self.db.child("user").child(id).child("expenditure").child(date.today()).set(data+current)
+		else :
+			res = self.db.child("user").child(id).child("expenditure").set(0)
+			res = self.db.child("user").child(id).child("expenditure").child(date.today()).set(data)
 		return res
-	
+
+	def resetExpenditure(self, data, id):
+		res = self.db.child("user").child(id).get()
+		exists = False
+		for i in res.val():
+			if i == 'expenditure':
+				exists = True
+		if exists :
+			current =  self.getExpenditure(id)
+			res = self.db.child("user").child(id).child("expenditure").child(date.today()).set(data)
+		else :
+			res = self.db.child("user").child(id).child("expenditure").set(0)
+			res = self.db.child("user").child(id).child("expenditure").child(date.today()).set(data)
+		return res
+
 	def getExpenditure(self, id):
 		res = self.db.child("user").child(id).get()
 		exists = False
