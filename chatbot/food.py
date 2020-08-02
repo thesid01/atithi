@@ -16,7 +16,7 @@ def start_flow_food(request, responder):
     id = request.params.dynamic_resource['id']
     res = firebase.getFoodPref(id)
     if not res:
-        responder.params.allowed_intents = ('tourism.food_pref')
+        responder.params.target_dialogue_state = "set_food_pref"
         responder.reply("Sure, please first tell us the preferences for the (veg/non-veg/italian/etc)")
     else:
         responder.params.allowed_intents = ('food.set_curr_loc_food','food.search_nearby_food','food.search_food_at_dest')
@@ -32,7 +32,7 @@ def search_nearby_food(request,responder):
     res = firebase.getFoodPref(id)
     
     if not res:
-        responder.params.allowed_intents = ('tourism.food_pref')
+        responder.params.target_dialogue_state = "set_food_pref"
         responder.reply("Sure, please first tell us the preferences for the (veg/non-veg/italian/etc)")
     else:
         try:
@@ -69,12 +69,22 @@ def search_at_dest(request, responder):
     res = firebase.getFoodPref('id')
     
     if not res:
-        responder.params.allowed_intents = ('tourism.food_pref')
+        responder.params.target_dialogue_state = "set_food_pref"
         responder.reply("Sure, Can you tell me your food preference😋?~So What would you like to have like veg, non-veg, italian or something else?")
     else:
         res_msg = getRestaurant(id,lat,long)
 
         responder.reply("There are some restaurants at your destination😋~"+"Kindly check out the following list:\n~"+res_msg)
+
+@app.handle(domain='tourism',intent='food_pref', has_entity='food')
+def set_food_pref(request, responder):
+    id = request.params.dynamic_resource['id']
+    data=""
+    for item in request.entities:
+        data += item['value'][0]["cname"]+" "
+    res = firebase.setFoodPref(data,id)
+    responder.params.allowed_intents = ('food.set_curr_loc_food','food.search_nearby_food','food.search_food_at_dest')   # responder.params.allowed_intents = ['tourism.hotel_pref']
+    responder.reply("I have set the food preferences. You can now search restaurants 😊")
 
 def _fetch_spot_from_kb(spot_name):
     spots = app.question_answerer.get(index='spot_data')
