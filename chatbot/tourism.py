@@ -47,7 +47,7 @@ def select_activity(request, responder):
     responder.frame["spot_list"] = spot_list[1]
     if len(spot_list[0]) > 1:
         responder.params.target_dialogue_state = "select_destination_from_choice"
-        reply = "Here are some good options for " + activity_type +" tourism: "+spot_list[0] + "Select the spot name to travel.~You can always ask me to 'Tell me about spot name' to know more😀"
+        reply = "Here are some good options for " + activity_type +" tourism: "+spot_list[0] + "~Select the spot name to travel.~You can always ask me to 'Tell me about spot name' to know more😀"
     else:
         responder.params.target_dialogue_state = "select_tourism_basis"
         reply = "Sorry..Could not understand.~Please try again😕" + "\nHow do you want to choose your tour spot?~Any preference on activities, type, season or difficulty?"
@@ -63,7 +63,7 @@ def select_type(request, responder):
     responder.frame["spot_list"] = spot_list[1]
     if len(spot_list[0]) > 1:
         responder.params.target_dialogue_state = "select_destination_from_choice"
-        reply = "Here are some good options for " + type_type +" tourism: "+spot_list[0] + "Select the spot name to travel.~You can always ask me to 'Tell me about spot name' to know more😀"
+        reply = "Here are some good options for " + type_type +" tourism: "+spot_list[0] + "~Select the spot name to travel.~You can always ask me to 'Tell me about spot name' to know more😀"
     else:
         responder.params.target_dialogue_state = "select_tourism_basis"
         reply = "Sorry..Could not understand.~Please try again😕" + "\nHow do you want to choose your tour spot?~Any preference on activities, type, season or difficulty?"
@@ -79,7 +79,7 @@ def select_season(request, responder):
     responder.frame["spot_list"] = spot_list[1]
     if len(spot_list[0]) > 1:
         responder.params.target_dialogue_state = "select_destination_from_choice"
-        reply = "Here are some good options for " + season_type +" tourism: "+spot_list[0] + "Select the spot name to travel.~You can always ask a like 'Tell me about spot name' to know more😀"
+        reply = "Here are some good options for " + season_type +" tourism: "+spot_list[0] + "~Select the spot name to travel.~You can always ask a like 'Tell me about spot name' to know more😀"
     else:
         responder.params.target_dialogue_state = "select_tourism_basis"
         reply = "Sorry..Could not understand.~Please try again😕" + "\nHow do you want to choose your tour spot?~Any preference on activities, type, season or difficulty?"
@@ -94,7 +94,7 @@ def select_difficulty(request, responder):
     responder.frame["spot_list"] = spot_list[1]
     if len(spot_list[0]) > 1:
         responder.params.target_dialogue_state = "select_destination_from_choice"
-        reply = "Here are some good options for " + difficulty_type +" tourism: "+spot_list[0] + "Select the spot name to travel.~You can always ask a like 'Tell me about spot name' to know more😀"
+        reply = "Here are some good options for " + difficulty_type +" tourism: "+spot_list[0] + "~Select the spot name to travel.~You can always ask a like 'Tell me about spot name' to know more😀"
     else:
         responder.params.target_dialogue_state = "select_tourism_basis"
         reply = "Sorry..Could not understand.~Please try again😕" + "\nHow do you want to choose your tour spot?~Any preference on activities, type, season or difficulty?"
@@ -237,7 +237,7 @@ def _fetch_spot_from_kb(filter,type):
     print(new_list)
 
     for i in new_list:
-        spot_list += "~"+map_spot[i]+"~"+str(j)+" "+i + "\n"
+        spot_list += "~"+map_spot[i]+"~ "+i.title() + "\n"
         j = j+1
     
     return [spot_list,new_list]
