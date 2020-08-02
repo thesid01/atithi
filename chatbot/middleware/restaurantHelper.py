@@ -69,7 +69,7 @@ def getRestaurant(id,lat,long,count=5):
 		if not rating:
 			rating = 'NA'
 		url = res_obj['url']
-		res_msg += ''.join("name: {name}\nrating: {rating}\nlink: {url}\n~".format(name=name,rating=rating,url=url))
+		res_msg += ''.join("*Name*: {name}\n*Rating*: {rating}\n*Link*: {url} ~".format(name=name,rating=rating,url=url))
 	return res_msg
 
 
