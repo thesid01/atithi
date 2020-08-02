@@ -18,10 +18,11 @@ def start_flow_hotel(request, responder):
     id = request.params.dynamic_resource['id']
     _,_,_,res = firebase.getHotelPref(id)
     print(res)
-    if not res:
-        responder.params.allowed_intents = ('tourism.hotel_pref')
+    if res is None:
+        responder.params.target_dialogue_state = "set_hotel_pref"
         responder.reply("Sure, please first tell us the preferences for the hotels (number of rooms/ac/non-ac/etc)")
     else:
+
         responder.params.allowed_intents = ('hotel.set_curr_loc_hotel','hotel.search_nearby_hotel','hotel.searc_hotel_at_dest')
         l_t.setIntent('loc_for_hotel')
         responder.reply("Sure😀"+"~"+"Can you tell me where you are or just share your location so that I can assist you finding Hotels near you")
@@ -33,15 +34,19 @@ def search_nearby_hotel(request,responder):
     id = request.params.dynamic_resource['id']
 
     _,_,_,res = firebase.getHotelPref(id)
-    if not res:
-        responder.params.allowed_intents = ('tourism.hotel_pref')
+    if res is None:
+        responder.params.target_dialogue_state = "set_hotel_pref"
         responder.reply("Sure, please first tell us the preferences for the hotels (number of rooms/ac/non-ac/etc)")
     
     else:
         try:
             lat,long = firebase.getCurrLocation(id)
             if lat and long:
-                hotel_msg = hotelList(id,lat,long)
+                hotel_msg = "We are facing issue with our scrapper rght now."
+                try:
+                    hotel_msg = hotelList(id,lat,long)
+                except:
+                    responder.reply(hotel_msg)
                 if hotel_msg == '':
                     responder.reply("Currently, We don't have any hotels for you😕 But you can always try saying find hotels near " + firebase.getDest(id)+"~"+"I will be there to help you 🙂")
                 else:
@@ -62,8 +67,8 @@ def search_hotel_at_curr(request, responder):
     # end
     _,_,_,res = firebase.getHotelPref(id)
     print(res)
-    if not res:
-        responder.params.allowed_intents = ('tourism.hotel_pref')
+    if res is None:
+        responder.params.target_dialogue_state = "set_hotel_pref"
         responder.reply("Sure, please first tell us the preferences for the hotels (number of rooms/ac/non-ac/etc)")
     else:
         try:
@@ -72,7 +77,7 @@ def search_hotel_at_curr(request, responder):
             if hotel_msg is None:
                 responder.reply("We don't have any hotels for you😕. You can always try saying "+ _fetch_find_hotel_in_suggestion()["suggestion"] + firebase.getDest(id))
             else:
-                responder.reply("I have found some hotels at your current location."+"~"+"Checkout the following list of hotels:\n~"+hotel_msg+"\n~" + _fetch_find_hotel_in_suggestion()["suggestion"] + firebase.getDest(id))
+                responder.reply("I have found some hotels at your current location."+"~"+"Checkout the following list of hotels:\n~"+hotel_msg+"\n")
         except :
             responder.reply("Ooops!"+"~"+"Sorry..We couldn't find best hotels at your current location😕."+"~"+"Please try sending your location again")
 
@@ -83,8 +88,8 @@ def search_hotel_at_dest(request, responder):
     id = request.params.dynamic_resource['id']
     _,_,_,res = firebase.getHotelPref(id)
     
-    if not res:
-        responder.params.allowed_intents = ('tourism.hotel_pref')
+    if res is None:
+        responder.params.target_dialogue_state = "set_hotel_pref"
         responder.reply("Sure, please first tell us the preferences for the hotels (number of rooms/ac/non-ac/etc)")
     else:
         spot_name = request.entities[0]["value"][0]["cname"]
@@ -96,13 +101,23 @@ def search_hotel_at_dest(request, responder):
         else:
             responder.reply("Yupp"+"~"+"I have found some hotel🏘 at your destination"+"~"+"Check out the following list of hotels:\n~"+hotel_msg)
     
+@app.handle(domain='tourism',intent='hotel_pref')
+def set_hotel_pref(request, responder):
+    id = request.params.dynamic_resource['id']
+    data={}
+    for item in request.entities:
+        data[item["type"]]=item["value"][0]["cname"]
 
+    res = firebase.setHotelPref(data,id)
+    responder.params.allowed_intents = ('hotel.set_curr_loc_hotel','hotel.search_nearby_hotel','hotel.searc_hotel_at_dest')
+
+    responder.reply('I have set the hotel preferences. You can now search hotels 😊')
 
 def _fetch_spot_from_kb(spot_name):
-    spots = app.question_answerer.get(index='spot_data')
-    j = 1
+    spots = app.question_answerer.get(index='spot_data', size=66)
+    lat,long = "", ""
     for i in range(len(spots)):
-        if spot_name in spots[i]["spot_name"]:
+        if spot_name.lower() == spots[i]["spot_name"].lower():
             loc = spots[i]["location"].lower()
             lat,long = loc.split(',')
             break
