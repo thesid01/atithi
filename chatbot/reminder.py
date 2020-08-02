@@ -29,7 +29,7 @@ def get_time(request, responder):
         else:
             # In request.entities it is showing on digit 
             samay = request.entities[0]["value"][0]["value"]
-            print(type(samay))
+            print(samay)
             pattern = "%Y-%m-%dT%H:%M:%S.%fZ"
             samay = "-".join(samay.split("-")[:-1]) +"Z"
             samay = datetime.datetime.strptime(samay,pattern)
