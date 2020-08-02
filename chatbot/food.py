@@ -19,9 +19,13 @@ def start_flow_food(request, responder):
         responder.params.target_dialogue_state = "set_food_pref"
         responder.reply("Sure, please first tell us the preferences for the (veg/non-veg/italian/etc)")
     else:
+        responder.frame["for_confirmation"] = 1
+        responder.frame["for_confirmation_message"] = "Sure, please tell me where you are or just share your location so that I can assist you in finding nearby restaurants."
+        responder.frame["for_denial"] = 1
+        responder.frame["for_denial_message"] = "Ok, please first tell us the preferences for the (veg/non-veg/italian/etc)"
         responder.params.allowed_intents = ('food.set_curr_loc_food','food.search_nearby_food','food.search_food_at_dest')
         l_t.setIntent('loc_for_food')
-        responder.reply("Sure, please tell me where you are or just share your location so that I can assist you in finding nearby restaurants.")
+        responder.reply("Your previous preferences for food was: "+res+"\nWould you like to continue?")
 
 
 @app.handle(domain='food', intent='search_nearby_food')
@@ -39,10 +43,15 @@ def search_nearby_food(request,responder):
             lat,long = firebase.getCurrLocation(id)
             if lat and long:
                 res_msg = getRestaurant(id, lat, long)
-                print('d')
-                responder.reply("Yay ..I found some restaurants nearby you🌮~Go and enjoy some yummy local food there😋~Below is list of restaurants, check it out:\n"+res_msg)
+                if res_msg=='':
+                    responder.reply("Oops! I cannot find any restaurants near you, must be a remote place 🙂~why don't you try searching with a place name.....")
+                else:
+                    responder.frame["for_confirmation"] = 1
+                    responder.frame["for_confirmation_message"] = "Yay ..I found some restaurants nearby you🌮~Go and enjoy some yummy local food there😋~Below is list of restaurants, check it out:\n"+res_msg
+                    responder.frame["for_denial"] = 1
+                    responder.frame["for_denial_message"] = "Ok, please first tell us the preferences for the (veg/non-veg/italian/etc)"
+                    responder.reply("Your previous preferences for food was: "+res+"\nWould you like to continue?")
         except (TypeError,AttributeError):
-            print('g')
             responder.params.target_dialogue_state = "search_food_at_curr"
             responder.reply('I know you are hungry😅.~But can you please share your location first so that I can help you in finding restaurants nearby you...🙂')
 
@@ -66,15 +75,21 @@ def search_at_dest(request, responder):
     spot_name = request.entities[0]["value"][0]["cname"]
     id = request.params.dynamic_resource['id']
     lat,long = _fetch_spot_from_kb(spot_name)
-    res = firebase.getFoodPref('id')
+    res = firebase.getFoodPref(id)
     
     if not res:
         responder.params.target_dialogue_state = "set_food_pref"
-        responder.reply("Sure, Can you tell me your food preference😋?~So What would you like to have like veg, non-veg, italian or something else?")
+        responder.reply("Sure, please first tell us the preferences for the (veg/non-veg/italian/etc)")
     else:
         res_msg = getRestaurant(id,lat,long)
-
-        responder.reply("There are some restaurants at your destination😋~"+"Kindly check out the following list:\n~"+res_msg)
+        if res_msg=='':
+            responder.reply("Oops! I cannot find any restaurants near you, must be a remote place 🙂~why don't you try searching with a place name.....")
+        else:
+            responder.frame["for_confirmation"] = 1
+            responder.frame["for_confirmation_message"] = "There are some restaurants at your destination😋~"+"Kindly check out the following list:\n~"+res_msg
+            responder.frame["for_denial"] = 1
+            responder.frame["for_denial_message"] = "Ok, please first tell us the preferences for the (veg/non-veg/italian/etc)"
+            responder.reply("Your previous preferences for food was: "+res+"\nWould you like to continue?")
 
 @app.handle(domain='tourism',intent='food_pref', has_entity='food')
 def set_food_pref(request, responder):
@@ -89,6 +104,7 @@ def set_food_pref(request, responder):
 def _fetch_spot_from_kb(spot_name):
     spots = app.question_answerer.get(index='spot_data')
     j = 1
+    lat,long = "", ""
     for i in range(len(spots)):
         if spot_name in spots[i]["spot_name"]:
             loc = spots[i]["location"]
