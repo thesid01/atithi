@@ -30,13 +30,13 @@ def select_tour_basis(request, responder):
         responder.reply("What type of activities would you like to enjoy on the tour.\n.Trekking\n.Water Sport\n. Mountaneering")
     if basis == 'type':
         responder.params.target_dialogue_state = "select_type"
-        responder.reply("What type of Adventure would you like to go on.\n. Nature\n. Hills\n. Beach\n. Family")
+        responder.reply("What type of Adventure would you like to go on.\nNature\nHills\nBeach\nFamily")
     if basis == 'season':
         responder.params.target_dialogue_state = "select_season"
-        responder.reply("What type of season would you like to go on.\n. Summer\n. Winter\n. Monsoon\n. Autumn")
+        responder.reply("What type of season would you like to go on.\nSummer\nWinter\nMonsoon\nAutumn")
     if basis == 'difficulty':
         responder.params.target_dialogue_state = "select_difficulty"
-        responder.reply("What type of difficulty would you like to enjoy on the tour.\n. Easy\n. Moderate\n. Difficult")
+        responder.reply("What type of difficulty would you like to enjoy on the tour.\nEasy\nModerate\nDifficult")
 
 @app.handle(intent='select_activity',has_entity='activity')
 def select_activity(request, responder):
