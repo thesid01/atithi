@@ -27,16 +27,16 @@ def select_tour_basis(request, responder):
     basis = request.entities[0]["value"][0]["cname"]
     if basis == 'activity':
         responder.params.target_dialogue_state = "select_activity"
-        responder.reply("What type of activities would you like to enjoy on the tour.\n1. Trekking⛰\n2. water sport🏕\n3. Mountaneering👨‍👩‍👧‍👧")
+        responder.reply("What type of activities would you like to enjoy on the tour.\n.Trekking\n.Water Sport\n. Mountaneering")
     if basis == 'type':
         responder.params.target_dialogue_state = "select_type"
-        responder.reply("What type of Adventure would you like to go on.\n1. Nature⛰\n2. Hills🏕\n3. Beach\n4. Family👨‍👩‍👧‍👧")
+        responder.reply("What type of Adventure would you like to go on.\n. Nature\n. Hills\n. Beach\n. Family")
     if basis == 'season':
         responder.params.target_dialogue_state = "select_season"
-        responder.reply("What type of season would you like to go on.\n1. Summer⛰\n2. Winter🏕\n3. Monsoon👨‍👩‍👧‍👧\n4. Autumn")
+        responder.reply("What type of season would you like to go on.\n. Summer\n. Winter\n. Monsoon\n. Autumn")
     if basis == 'difficulty':
         responder.params.target_dialogue_state = "select_difficulty"
-        responder.reply("What type of difficulty would you like to enjoy on the tour.\n1. Easy⛰\n2. Moderate🏕\n3. Difficult👨‍👩‍👧‍👧")
+        responder.reply("What type of difficulty would you like to enjoy on the tour.\n. Easy\n. Moderate\n. Difficult")
 
 @app.handle(intent='select_activity',has_entity='activity')
 def select_activity(request, responder):
@@ -49,8 +49,8 @@ def select_activity(request, responder):
         responder.params.target_dialogue_state = "select_destination_from_choice"
         reply = "Here are some good options for " + activity_type +" tourism: "+spot_list[0] + "Select the spot name to travel.~You can always ask me to 'Tell me about spot name' to know more😀"
     else:
-        responder.params.target_dialogue_state = "select_tourism"
-        reply = "Sorry..Could not understand.~Please try again😕" + "\nWhat type of activities would you like to enjoy on the tour.\n1. Trekking⛰\n2. Camping🏕\n3. Mountaneering👨‍👩‍👧‍👧"
+        responder.params.target_dialogue_state = "select_tourism_basis"
+        reply = "Sorry..Could not understand.~Please try again😕" + "\nHow do you want to choose your tour spot?~Any preference on activities, type, season or difficulty?"
     responder.reply(reply)
 
 
@@ -65,8 +65,8 @@ def select_type(request, responder):
         responder.params.target_dialogue_state = "select_destination_from_choice"
         reply = "Here are some good options for " + type_type +" tourism: "+spot_list[0] + "Select the spot name to travel.~You can always ask me to 'Tell me about spot name' to know more😀"
     else:
-        responder.params.target_dialogue_state = "select_tourism"
-        reply = "Sorry..Could not understand.~Please try again😕" + "\nWhat type of activities would you like to enjoy on the tour.\n1. Trekking⛰\n2. Camping🏕\n3. Mountaneering👨‍👩‍👧‍👧"
+        responder.params.target_dialogue_state = "select_tourism_basis"
+        reply = "Sorry..Could not understand.~Please try again😕" + "\nHow do you want to choose your tour spot?~Any preference on activities, type, season or difficulty?"
     responder.reply(reply)
 
 
@@ -81,8 +81,8 @@ def select_season(request, responder):
         responder.params.target_dialogue_state = "select_destination_from_choice"
         reply = "Here are some good options for " + season_type +" tourism: "+spot_list[0] + "Select the spot name to travel.~You can always ask a like 'Tell me about spot name' to know more😀"
     else:
-        responder.params.target_dialogue_state = "select_tourism"
-        reply = "Sorry..Could not understand.~Please try again😕" + "\nWhat type of Adventure would you like to go on.\n1. Nature\n2. Camping\n3. Family"
+        responder.params.target_dialogue_state = "select_tourism_basis"
+        reply = "Sorry..Could not understand.~Please try again😕" + "\nHow do you want to choose your tour spot?~Any preference on activities, type, season or difficulty?"
     responder.reply(reply)
 
 @app.handle(intent='select_difficulty', has_entity='difficulty')
@@ -96,8 +96,8 @@ def select_difficulty(request, responder):
         responder.params.target_dialogue_state = "select_destination_from_choice"
         reply = "Here are some good options for " + difficulty_type +" tourism: "+spot_list[0] + "Select the spot name to travel.~You can always ask a like 'Tell me about spot name' to know more😀"
     else:
-        responder.params.target_dialogue_state = "select_tourism"
-        reply = "Sorry..Could not understand.~Please try again😕" + "\nWhat type of Adventure would you like to go on.\n1. Nature\n2. Camping\n3. Family"
+        responder.params.target_dialogue_state = "select_tourism_basis"
+        reply = "Sorry..Could not understand.~Please try again😕" + "\nHow do you want to choose your tour spot?~Any preference on activities, type, season or difficulty?"
     responder.reply(reply)
 
 @app.handle(intent = 'select_destination', has_entity='spot_name')

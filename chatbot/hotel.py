@@ -76,7 +76,7 @@ def search_hotel_at_curr(request, responder):
             if hotel_msg is None:
                 responder.reply("We don't have any hotels for you😕. You can always try saying "+ _fetch_find_hotel_in_suggestion()["suggestion"] + firebase.getDest(id))
             else:
-                responder.reply("I have found some hotels at your current location."+"~"+"Checkout the following list of hotels:\n~"+hotel_msg+"\n~" + _fetch_find_hotel_in_suggestion()["suggestion"] + firebase.getDest(id))
+                responder.reply("I have found some hotels at your current location."+"~"+"Checkout the following list of hotels:\n~"+hotel_msg+"\n")
         except :
             responder.reply("Ooops!"+"~"+"Sorry..We couldn't find best hotels at your current location😕."+"~"+"Please try sending your location again")
 
