@@ -1,0 +1,8 @@
+set my expenditure to {100|sys_number} {rupee|currency}
+Reset my expenditure {100|sys_number} {rupee|currency}
+set expenditure to {100|sys_number} {rupee|currency}
+Reset expenditure {100|sys_number} {rupee|currency}
+set my expenditure to {rupee|currency} {100|sys_number}
+Reset my expenditure {rupee|currency} {100|sys_number}
+set expenditure to {rupee|currency} {100|sys_number}
+Reset expenditure {rupee|currency} {100|sys_number}

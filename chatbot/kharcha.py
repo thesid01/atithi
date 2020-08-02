@@ -29,6 +29,21 @@ def spent(request, responder):
     firebase.setExpenditure(first,id)
     responder.reply("I have noted it down.")
 
+@app.handle(domain='kharcha', intent='set_expenditure')
+def set_expenditure(request, responder):
+    id = request.params.dynamic_resource['id']
+    first, second, nxt = "", "" , ""
+    if 'value' in request.entities[0]['value'][0] :
+        first = request.entities[0]["value"][0]["value"]
+        nxt = 1
+    else:
+        first = request.entities[1]["value"][0]["value"]
+        nxt = 0
+    second = request.entities[nxt]['value'][0]['cname']
+    firebase.resetExpenditure(first,id)
+    responder.reply("I have reset your expenditure.")
+
+
 @app.handle(domain='kharcha', intent='view_expenditure')
 def view_expenditure(request, responder):
     id = request.params.dynamic_resource['id']
