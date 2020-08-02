@@ -78,7 +78,14 @@ class WhatsappBotServer:
                     incoming_msg = "location for food"
                 else:
                     incoming_msg = "general location"
-                response_text = self.conv.say(incoming_msg, params=params)[0]
+                try:
+                    response_text = self.conv.say(incoming_msg, params=params)[0]
+                    messages = response_text.split("~")
+                    for msg in messages:
+                        if msg:
+                            sendMessage(msg, id)
+                except IndexError:
+                    msg.body("Didn't understand. sorry")
                 msg.body(response_text)
                 return str(resp)
             else:
@@ -92,7 +99,6 @@ class WhatsappBotServer:
                     for msg in messages:
                         if msg:
                             sendMessage(msg, id)
-                    #msg.body(response_text)
                 except IndexError:
                     msg.body("Didn't understand. sorry")
             return str(resp)

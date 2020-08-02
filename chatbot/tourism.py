@@ -232,7 +232,7 @@ def _fetch_spot_from_kb(filter,type):
                     spot_array.append(spot[i]["spot_name"].lower())
                     map_spot[spot[i]["spot_name"].lower()]=spot[i]["image_URL"]
 
-    mn = min(3y,len(spot_array))
+    mn = min(3,len(spot_array))
     new_list = random.sample(spot_array, mn)
     print(new_list)
 
