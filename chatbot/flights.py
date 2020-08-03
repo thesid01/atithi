@@ -12,11 +12,6 @@ import requests
 
 firebase = firebaseHelper()
 
-@app.handle(intent='start_flow')
-def start_flow(request, responder):
-    # responder.params.target_dialogue_state = "hotel.set_current_loc"
-    responder.params.allowed_intents = ['general.set_current_loc','hotel.search_nearby','hotel.search_at_dest']
-    responder.reply("Sure, please tell us the the destination name or just share your location if you want to search flights")
 
 @app.handle(domain='flight', intent='show_flights')
 def show_flight_data(request,responder):
