@@ -6,8 +6,8 @@ from chatbot.middleware.firebaseHelper import firebaseHelper
 
 firebase = firebaseHelper()
 @app.handle(domain='feedback', has_entity='feedback')
-def confirm_feedback():
+def confirm_feedback(request, responder):
     id = request.params.dynamic_resource['id']
-    setFeedback(id, responder.frame["message"])
-    responder.reply("Thank you for your feedback🙂")
+    firebase.setFeedback(id, responder.frame["message"])
+    responder.reply("Thank you for your feedback🙂~")
 
