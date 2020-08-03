@@ -12,6 +12,5 @@ import chatbot.food
 import chatbot.reminder
 import chatbot.sos
 import chatbot.kharcha
-import chatbot.flights
 
 __all__ = ['app']
