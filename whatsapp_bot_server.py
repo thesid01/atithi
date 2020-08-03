@@ -132,7 +132,8 @@ if __name__ == '__main__':
     app = Flask(__name__)
     configure_logs()
     server = WhatsappBotServer(name='whatsapp', app_path='./chatbot')
-
+    nth.delTarget()
+    l_t.delIntent()
     # create schedule for printing time
     scheduler = BackgroundScheduler()
     scheduler.start()
