@@ -27,13 +27,13 @@ def select_tour_basis(request, responder):
     basis = request.entities[0]["value"][0]["cname"]
     if basis == 'activity':
         responder.params.target_dialogue_state = "select_activity"
-        responder.reply("What type of activities would you like to enjoy on the tour.\n.Trekking\n.Water Sport\n. Mountaneering")
+        responder.reply("What type of activities would you like to enjoy on the tour.\nTrekking🏕\nWater Sports🏄‍♀️\nParagliding🏖")
     if basis == 'type':
         responder.params.target_dialogue_state = "select_type"
-        responder.reply("What type of Adventure would you like to go on.\nNature\nHills\nBeach\nFamily")
+        responder.reply("What type of Adventure would you like to go on.\nNature🌳\nHills⛰\nBeach🏖\nFamily👪")
     if basis == 'season':
         responder.params.target_dialogue_state = "select_season"
-        responder.reply("What type of season would you like to go on.\nSummer\nWinter\nMonsoon\nAutumn")
+        responder.reply("What type of season would you like to go on.\nSummer🌞\nWinter⛄\nMonsoon🌧\nAutumn🍂")
     if basis == 'difficulty':
         responder.params.target_dialogue_state = "select_difficulty"
         responder.reply("What type of difficulty would you like to enjoy on the tour.\nEasy\nModerate\nDifficult")

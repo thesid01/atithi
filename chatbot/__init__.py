@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""This module contains the MindMeld HR assistant blueprint application"""
+"""This module contains Travel assistant application"""
 
 from chatbot.root import app
 
@@ -12,4 +12,6 @@ import chatbot.food
 import chatbot.reminder
 import chatbot.sos
 import chatbot.kharcha
+import chatbot.flights
+
 __all__ = ['app']
