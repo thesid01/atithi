@@ -233,7 +233,10 @@
         },
         {
             "whitelist": [
-                "Visakhapatnam"
+                "Visakhapatnam",
+                "Vishakhapatnam",
+                "Vishakapatnam",
+                "Vizag"
             ],
             "cname": "Visakhapatnam"
         },
@@ -302,12 +305,6 @@
                 "Coimbatore"
             ],
             "cname": "Coimbatore"
-        },
-        {
-            "whitelist": [
-                "Trichupalli"
-            ],
-            "cname": "Trichupalli"
         },
         {
             "whitelist": [
@@ -412,12 +409,6 @@
                 "Patiala"
             ],
             "cname": "Patiala"
-        },
-        {
-            "whitelist": [
-                "Jalandhar"
-            ],
-            "cname": "Jalandhar"
         },
         {
             "whitelist": [
