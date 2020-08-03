@@ -26,7 +26,12 @@ def get_spot_info(request, responder):
         except KeyError:
             trivia = "Trivia is empty now"
         image_URL = data[0]["image_URL"]
-        data = image_URL + "~" + trivia
+        ac = ""
+        j = 1
+        for i in data[0]["activity"].split(","):
+            ac += "\n" +str(j) + ": " + i.title()
+            j+=1
+        data = image_URL + "~" + trivia + "\n*Suggested Activities:* "+ac
         responder.reply(data)
     except:
         responder.reply(NOT_A_SPOT)

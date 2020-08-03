@@ -1,6 +1,6 @@
 import pyrebase
 import time
-from . import nearbyPlacesHelper
+# from . import nearbyPlacesHelper
 from datetime import date
 
 config = {
@@ -203,6 +203,9 @@ class firebaseHelper:
 		exp.append(msg)
 		return exp
 
+	def setFeedback(self, data, id):
+		return self.db.child("feedback").child(str(id) + "+"+str(int(round(time.time() * 1000)))).set(data)
+
 if __name__ == "__main__":
 	f = firebaseHelper()
 	# f.setReminder({
@@ -211,4 +214,5 @@ if __name__ == "__main__":
 	# 	"message": "Hi Siddharth Its time to sleep"
 	# })
 	# f.getReminders()
-	f.setExpenditure(500,918604074906)
+	# f.setExpenditure(500,918604074906)
+	f.setFeedback("This is business2",918604074906)
