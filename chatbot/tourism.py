@@ -27,7 +27,7 @@ def select_tour_basis(request, responder):
     basis = request.entities[0]["value"][0]["cname"]
     if basis == 'activity':
         responder.params.target_dialogue_state = "select_activity"
-        responder.reply("What type of activities would you like to enjoy on the tour.\n.Trekking\n.Water Sport\n. Mountaneering")
+        responder.reply("What type of activities would you like to enjoy on the tour.\nTrekking\nWater Sport\nMountianeering")
     if basis == 'type':
         responder.params.target_dialogue_state = "select_type"
         responder.reply("What type of Adventure would you like to go on.\nNature\nHills\nBeach\nFamily")

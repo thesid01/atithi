@@ -1,0 +1,12 @@
+{
+    "entities": [
+        {
+            "whitelist": [
+                "flights",
+                "flight",
+                "transport"
+            ],
+            "cname": "flights"
+        } 
+    ]
+}
