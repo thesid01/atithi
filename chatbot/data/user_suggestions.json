@@ -1,0 +1,33 @@
+[{
+    "id": 1,
+    "_type": "spot_selection",
+    "suggestion": "It's bad manners to keep a vacation waiting."
+}, {
+    "id": 2,
+    "_type": "spot_selection",
+    "suggestion": "There's no time to be bored in a world as beautiful as this."
+}, {
+    "id": 3,
+    "_type": "spot_selection",
+    "suggestion": "Off to get some vitamin sea."
+}, {
+    "id": 4,
+    "_type": "spot_selection",
+    "suggestion": "Good vibes happen on the tides."
+}, {
+    "id": 5,
+    "_type": "spot_selection",
+    "suggestion": "Salt in the air. Sand in my hair."
+}, {
+    "id": 6,
+    "_type": "hotel",
+    "suggestion": "Living the suite life."
+}, {
+    "id": 7,
+    "_type": "food",
+    "suggestion": "Perfect for sharing. Or not."
+}, {
+    "id": 8,
+    "_type": "food",
+    "suggestion": "Calories don’t count when you’re on vacation."
+}]
