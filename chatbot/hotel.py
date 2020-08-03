@@ -28,12 +28,13 @@ def start_flow_hotel(request, responder):
             a='ac'
         pref = ' '.join([r,b,p,a])
         responder.frame["for_confirmation"] = 1
-        responder.frame["for_confirmation_message"] = "Sure😀"+"~"+"Can you tell me destination or where you are or just share your location so that I can assist you finding Hotels near you"
+        responder.frame["for_confirmation_message"] = "Sure😀"+"~"+"Can you tell me destination or city in which you are or just share your location so that I can assist you finding Hotels near you"
         responder.frame["for_denial"] = 1
         responder.frame["for_denial_message"] = "Ok, please first tell us the preferences for the hotels (number of rooms/ac/non-ac/etc)"
-        responder.params.allowed_intents = ('hotel.set_curr_loc_hotel','hotel.search_nearby_hotel','hotel.searc_hotel_at_dest')
+        responder.params.allowed_intents = ('hotel.set_curr_loc_hotel','hotel.search_nearby_hotel','hotel.searc_hotel_at_dest','general.present_city')
         l_t.setIntent('loc_for_hotel')
         responder.reply("Your previous preferences for hotel was: "+pref+"\nWould you like to continue")
+
 
 @app.handle(domain='hotel', intent='search_nearby_hotel')
 def search_nearby_hotel(request,responder):

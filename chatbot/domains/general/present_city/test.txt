@@ -1,0 +1,10 @@
+i am in {jaipur|city_name}
+currently in {Agra|city_name}
+{bhopal|city_name}
+{trichy|city_name} 
+i am currently in {ujjain|city_name}
+i am present at {jodhpur|city_name}
+at {jodhpur|city_name}
+i am at {Delhi|city_name}
+residing at {Mumbai|city_name}
+residing in {Nagpur|city_name}
