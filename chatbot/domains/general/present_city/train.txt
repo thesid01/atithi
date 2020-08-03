@@ -1,0 +1,33 @@
+i am in {jaipur|city_name}
+currently in {Agra|city_name}
+{bhopal|city_name}
+{trichy|city_name} 
+i am currently in {ujjain|city_name}
+i am present at {jodhpur|city_name}
+at {jodhpur|city_name}
+i am at {jabalpur|city_name}
+residing at {Mumbai|city_name}
+residing in {Nagpur|city_name}
+city {Kolkata|city_name}
+in the city {Delhi|city_name} 
+I am at {patna|city_name} city
+city {Jammu|city_name} 
+{rajkot|city_name} city 
+in city {nalanda|city_name}
+in city {Nagpur|city_name}
+in the city {bikaner|city_name}
+i am at {kolkata|city_name}
+i am currently in {chennai|city_name}
+i am currently in {faridabad|city_name}
+present in {howrah|city_name}
+present at {darjeeling|city_name}
+at {Gangtok|city_name}
+presently at {vadodara|city_name}
+at {jamshedpur|city_name}
+presently in {jamshedpur|city_name}
+{hazaribagh|city_name}
+staying at {Bhubaneswar|city_name}
+staying in {Shimla|city_name}
+my stay is in {Ambala|city_name}
+i am in {Nashik|city_name}
+

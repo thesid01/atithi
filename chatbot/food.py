@@ -23,7 +23,7 @@ def start_flow_food(request, responder):
         responder.frame["for_confirmation_message"] = "Sure, please tell me where you are or just share your location so that I can assist you in finding nearby restaurants."
         responder.frame["for_denial"] = 1
         responder.frame["for_denial_message"] = "Ok, please first tell us the preferences for the (veg/non-veg/italian/etc)"
-        responder.params.allowed_intents = ('food.set_curr_loc_food','food.search_nearby_food','food.search_food_at_dest')
+        responder.params.allowed_intents = ('food.set_curr_loc_food','food.search_nearby_food','food.search_food_at_dest','general.present_city')
         l_t.setIntent('loc_for_food')
         responder.reply("Your previous preferences for food was: "+res+"\nWould you like to continue?")
 
