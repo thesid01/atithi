@@ -5,7 +5,9 @@ from .helpers import extract_entities_from_type
 from chatbot.middleware import latest_intent as l_t
 from chatbot.middleware.hotelHelper import hotelList
 from chatbot.middleware.restaurantHelper import getRestaurant
+from chatbot.middleware.firebaseHelper import firebaseHelper
 
+firebase = firebaseHelper()
 
 NOT_A_CITY="Sorry😕...This city is not in India."+"~"+"Let me help you with this🙂"+"~"+"Some popular cities in India are : Lucknow, Goa, Jodhpur,  etc."+"~"+"Please choose another city."
 NOT_A_SPOT="Sorry😕...This spot is not in our list."+"~"+"Let me help you with this🙂"+"~"+"Some popular spots in India are : Tarsar Marsar, Nandi Hills, , Spiti Valley etc."+"~"+"Please choose another spot."
@@ -112,10 +114,37 @@ def present_city(request,responder):
             responder.reply("Yummy food is waiting for you😋!~I found some restaurants at your current location:\nHere is the list of restaurants you can check it out:\n\n"+res_msg)
         else:
             responder.reply("We don't have any restaurants for you😕.")
+    elif intent=='loc_for_source':
+
+        responder.reply("Your current location has been set. Feel free to search hotels and restaurants near you")
+
     else:
-        pass
+        lat,long = fetch_city_coord_from_kb(city_name)
+        location = {
+                'Latitude': lat,
+                'Longitude': long
+        }
+        result = firebase.setCurrLocation(location, id)
+        responder.reply("Your current location has been set. Feel free to search hotels and restaurants near you")
+        
+
     l_t.delIntent()
-    
+
+@app.handle(intent = 'lost')
+def lost(request, responder):
+    id = request.params.dynamic_resource['id']
+    loc = firebase.getCurrLoactionName(id)
+    if 'state' in loc.keys():
+        responder.reply("Your current location is"+loc['city']+", "+loc['state']+"\nYou can use emergency services if required")
+    else:
+        responder.reply("Your current location is"+loc['city']+"\nYou can use emergency services if required")
+
+
+@app.handle(intent = 'services')
+def services(request, responder):
+    responder.reply("Here is a list of things I can do for you : 😀\n1. Plan your journey.\n2. Search hotels for you.\n3. Serch food and restaurants for you.\n4. Manage your Expenses.\n5. Guide you in emergency.")
+
+
 
 def _fetch_from_kb(responder, name, entity_type):
     """
