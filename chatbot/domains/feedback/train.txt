@@ -1,4 +1,4 @@
-I want to give you {feedback}
-I have a {feedback}
-take my {feedback}
-Note my {feedback}
+I want to give you {feedback|feedback}
+I have a {feedback|feedback}
+take my {feedback|feedback}
+Note my {feedback|feedback}
