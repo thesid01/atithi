@@ -1,6 +1,6 @@
 import pyrebase
 import time
-# from . import nearbyPlacesHelper
+from . import nearbyPlacesHelper
 from datetime import date
 
 config = {

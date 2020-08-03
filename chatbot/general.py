@@ -133,11 +133,11 @@ def present_city(request,responder):
 @app.handle(intent = 'lost')
 def lost(request, responder):
     id = request.params.dynamic_resource['id']
-    loc = firebase.getCurrLoactionName(id)
+    loc = firebase.getCurrLocationName (id)
     if 'state' in loc.keys():
-        responder.reply("Your current location is"+loc['city']+", "+loc['state']+"\nYou can use emergency services if required")
+        responder.reply("Your current location is "+loc['city']+", "+loc['state']+"\nYou can use emergency services if required")
     else:
-        responder.reply("Your current location is"+loc['city']+"\nYou can use emergency services if required")
+        responder.reply("Your current location is "+loc['city']+"\nYou can use emergency services if required")
 
 
 @app.handle(intent = 'services')
