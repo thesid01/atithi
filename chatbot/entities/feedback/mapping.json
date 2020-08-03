@@ -1,0 +1,11 @@
+{
+    "entities": [
+        {
+            "whitelist": [
+                "feedback",
+                "improvement"
+            ],
+            "cname": "feedback"
+        } 
+    ]
+}

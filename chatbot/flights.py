@@ -23,7 +23,6 @@ def show_flight_data(request,responder):
         dest = firebase.getDest(id)
         if source and dest:
             flight_msg = flightsList(id)
-            print(flight_msg)
             responder.reply("Here is the list of flights you can take 🛫\n ~"+flight_msg)
     except (TypeError):
         responder.reply("Sorry I didn't find any Flights😕")

@@ -13,9 +13,9 @@ def greet(request, responder):
     responder.frame["for_denial"] = 1
     responder.frame["for_denial_message"] = "Dont worry you can do a alot more."
     # responder.reply("Namaskar Atithi🙏"+"~"+"I am your virtual travel agent for your adventure. You can now start and stop journey 😀"+"~"+"Are you ready to start to your journey?")
-    responder.reply("Namaskar Atithi🙏"+"~"+"I am your virtual travel agent for your adventure." + "~" + "Here is a list of things I can do for you : 😀\n1. Plan your journey.\n2. Search hotels for you.\n3. Serch food and restaurants for you.\n4. Manage your Expenses.\n5. Guide you in emergency.")
+    responder.reply("Namaskar Atithi🙏"+"~"+"I am your virtual travel agent for your adventure." + "~" + "Here is a list of things I can do for you : 😀\n1. Plan your journey.\n2. Search Flights\n3. Search hotels for you.\n4. Search food and restaurants for you.\n5. Track of your Expenses.\n5. Help you in emergency.")
 
 
 @app.handle(intent='exit')
 def exit(request, responder):
-    responder.reply("Alright, See you soon"+"~"+"Let me know when you need my help😀")
+    responder.reply("Alright, See you soon"+"~"+"Let me know when you need any help😀")
