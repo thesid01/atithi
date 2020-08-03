@@ -160,7 +160,7 @@ def _fetch_from_kb(responder, name, entity_type):
     return responder
 
 def fetch_city_coord_from_kb(city_name):
-    cities = app.question_answerer.get(index='city_data', size=143)
+    cities = app.question_answerer.get(index='city_data', size=140)
     lat,long = "", ""
     for i in range(len(cities)):
         print(cities[i]["city_name"])
