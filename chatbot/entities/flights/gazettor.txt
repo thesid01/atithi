@@ -1,3 +1,0 @@
-flights
-aeroplane
-flight
