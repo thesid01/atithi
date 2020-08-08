@@ -1,4 +1,4 @@
-flask==0.12
+flask==1.0
 mindmeld==4.2.4
 ciscosparkapi==0.10.1
 requests
